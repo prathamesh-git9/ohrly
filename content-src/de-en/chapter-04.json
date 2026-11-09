@@ -1,0 +1,241 @@
+{
+  "id": "c04",
+  "title": "Essen, Einkaufen und Orte",
+  "cefr": "A1",
+  "description": "Du sprichst über Essen, bestellst im Café, kaufst ein, beschreibst dein Zuhause und findest den Weg.",
+  "units": [
+    {
+      "id": "u16",
+      "title": "Essen und Trinken",
+      "canDo": "Du kannst wichtige Lebensmittel und Getränke benennen und sagen, was du gern isst oder trinkst.",
+      "tip": {
+        "title": "Zählbar oder nicht zählbar?",
+        "body": "Einzelne zählbare Dinge stehen mit **a/an**: **an apple**. Bei Stoffen und Lebensmitteln wie **water**, **rice** oder **cheese** verwendest du normalerweise kein **a/an**. Für eine unbestimmte Menge passt oft **some**: **some rice**.\n\nIm Deutschen kann „ein“ auch eine Portion meinen. Im Englischen sagst du ohne Behälter aber **some coffee**, nicht *a coffee*, wenn du allgemein von Kaffee sprichst.",
+        "examples": [
+          { "target": "I eat an apple.", "source": "Ich esse einen Apfel." },
+          { "target": "I have some rice.", "source": "Ich habe etwas Reis." },
+          { "target": "Do you drink coffee?", "source": "Trinkst du Kaffee?" }
+        ]
+      },
+      "words": [
+        { "id": "w-bread", "target": "bread", "source": "das Brot", "targetAccept": ["the bread", "some bread"], "sourceAccept": ["Brot", "etwas Brot"], "pos": "noun", "emoji": "🍞" },
+        { "id": "w-cheese", "target": "cheese", "source": "der Käse", "targetAccept": ["the cheese", "some cheese"], "sourceAccept": ["Käse", "etwas Käse"], "pos": "noun", "emoji": "🧀" },
+        { "id": "w-milk", "target": "milk", "source": "die Milch", "targetAccept": ["the milk", "some milk"], "sourceAccept": ["Milch", "etwas Milch"], "pos": "noun", "emoji": "🥛" },
+        { "id": "w-coffee", "target": "coffee", "source": "der Kaffee", "targetAccept": ["the coffee", "some coffee"], "sourceAccept": ["Kaffee", "etwas Kaffee"], "pos": "noun", "emoji": "☕" },
+        { "id": "w-tea", "target": "tea", "source": "der Tee", "targetAccept": ["the tea", "some tea"], "sourceAccept": ["Tee", "etwas Tee"], "pos": "noun" },
+        { "id": "w-water", "target": "water", "source": "das Wasser", "targetAccept": ["the water", "some water"], "sourceAccept": ["Wasser", "etwas Wasser"], "pos": "noun", "emoji": "💧" },
+        { "id": "w-apple", "target": "apple", "source": "der Apfel", "targetAccept": ["the apple", "an apple"], "sourceAccept": ["Apfel", "ein Apfel"], "forms": ["apples"], "pos": "noun", "emoji": "🍎" },
+        { "id": "w-rice", "target": "rice", "source": "der Reis", "targetAccept": ["the rice", "some rice"], "sourceAccept": ["Reis", "etwas Reis"], "pos": "noun", "emoji": "🍚" },
+        { "id": "w-drink", "target": "drink", "source": "trinken", "sourceAccept": ["trinke", "trinkst", "trinkt"], "forms": ["drinks", "drinking", "drank", "drunk"], "pos": "verb" },
+        { "id": "w-hungry", "target": "hungry", "source": "hungrig", "pos": "adj" }
+      ],
+      "sentences": [
+        { "id": "u16-s01", "target": "I eat bread and cheese.", "source": "Ich esse Brot und Käse.", "words": ["w-i", "w-eat", "w-bread", "w-and", "w-cheese"] },
+        { "id": "u16-s02", "target": "Do you drink milk?", "source": "Trinkst du Milch?", "sourceAccept": ["Trinkt ihr Milch?", "Trinken Sie Milch?"], "words": ["w-do", "w-you", "w-drink", "w-milk"], "cloze": { "answer": "drink", "distractors": ["drinks", "drinking"] } },
+        { "id": "u16-s03", "target": "Coffee and tea, please.", "source": "Kaffee und Tee, bitte.", "words": ["w-coffee", "w-and", "w-tea", "w-please"] },
+        { "id": "u16-s04", "target": "This bread has cheese.", "source": "Dieses Brot enthält Käse.", "words": ["w-this", "w-bread", "w-have", "w-cheese"] },
+        { "id": "u16-s05", "target": "Milk, please, not coffee.", "source": "Milch, bitte, keinen Kaffee.", "words": ["w-milk", "w-please", "w-not", "w-coffee"] },
+        { "id": "u16-s06", "target": "I drink tea every morning.", "source": "Ich trinke jeden Morgen Tee.", "words": ["w-i", "w-drink", "w-tea", "w-every", "w-morning"], "cloze": { "answer": "drink", "distractors": ["drinks", "drinking"] } },
+        { "id": "u16-s07", "target": "Can I have some water?", "source": "Kann ich etwas Wasser haben?", "words": ["w-can", "w-i", "w-have", "w-some", "w-water"], "cloze": { "answer": "some", "distractors": ["a", "an"] } },
+        { "id": "u16-s08", "target": "She eats an apple at work.", "source": "Sie isst bei der Arbeit einen Apfel.", "words": ["w-she", "w-eat", "w-an", "w-apple", "w-at", "w-work"], "cloze": { "answer": "an", "distractors": ["a", "some"] } },
+        { "id": "u16-s09", "target": "I have some rice.", "source": "Ich habe etwas Reis.", "words": ["w-i", "w-have", "w-some", "w-rice"] },
+        { "id": "u16-s10", "target": "Are you hungry? Yes, really hungry.", "source": "Bist du hungrig? Ja, wirklich hungrig.", "sourceAccept": ["Seid ihr hungrig? Ja, wirklich hungrig.", "Sind Sie hungrig? Ja, wirklich hungrig."], "words": ["w-are", "w-you", "w-hungry", "w-yes", "w-really"] },
+        { "id": "u16-s11", "target": "The water is here.", "source": "Das Wasser ist hier.", "words": ["w-water", "w-is", "w-here"] },
+        { "id": "u16-s12", "target": "My child likes apples.", "source": "Mein Kind mag Äpfel.", "words": ["w-my", "w-child", "w-like", "w-apple"], "cloze": { "answer": "likes", "distractors": ["like", "liking"] } },
+        { "id": "u16-s13", "target": "Do you eat rice at home?", "source": "Isst du zu Hause Reis?", "sourceAccept": ["Esst ihr zu Hause Reis?", "Essen Sie zu Hause Reis?"], "words": ["w-do", "w-you", "w-eat", "w-rice", "w-at", "w-home"] },
+        { "id": "u16-s14", "target": "No water, thanks.", "source": "Kein Wasser, danke.", "words": ["w-no", "w-water", "w-thanks"] },
+        { "id": "u16-s15", "target": "He drinks coffee but not tea.", "source": "Er trinkt Kaffee, aber keinen Tee.", "words": ["w-he", "w-drink", "w-coffee", "w-but", "w-not", "w-tea"], "cloze": { "answer": "drinks", "distractors": ["drink", "drinking"] } },
+        { "id": "u16-s16", "target": "Hungry? Eat an apple.", "source": "Hungrig? Iss einen Apfel.", "sourceAccept": ["Hungrig? Esst einen Apfel.", "Hungrig? Essen Sie einen Apfel."], "words": ["w-hungry", "w-eat", "w-an", "w-apple"] },
+        { "id": "u16-s17", "target": "I have bread, cheese and rice.", "source": "Ich habe Brot, Käse und Reis.", "words": ["w-i", "w-have", "w-bread", "w-cheese", "w-and", "w-rice"] },
+        { "id": "u16-s18", "target": "I drink tea and milk.", "source": "Ich trinke Tee und Milch.", "words": ["w-i", "w-drink", "w-tea", "w-and", "w-milk"] }
+      ]
+    },
+    {
+      "id": "u17",
+      "title": "Im Café",
+      "canDo": "Du kannst im Café höflich bestellen, nach dem Preis fragen und bezahlen.",
+      "tip": {
+        "title": "Höflich bestellen",
+        "body": "Mit **I'd like …** äußerst du höflich einen Wunsch. **I'd** ist die Kurzform von **I would**: **I'd like lunch**. Das klingt bei einer Bestellung freundlicher als **I want**.\n\nAuch **Can I have …, please?** ist üblich. **Have** bedeutet hier nicht „besitzen“, sondern „bekommen“. Für die Rechnung sagst du im britischen Englisch **the bill**.",
+        "examples": [
+          { "target": "I'd like breakfast, please.", "source": "Ich hätte gern Frühstück, bitte." },
+          { "target": "Can I have the menu?", "source": "Kann ich die Speisekarte haben?" },
+          { "target": "Can I pay in cash?", "source": "Kann ich bar bezahlen?" }
+        ]
+      },
+      "words": [
+        { "id": "w-menu", "target": "menu", "source": "die Speisekarte", "targetAccept": ["the menu", "a menu"], "sourceAccept": ["Speisekarte", "eine Speisekarte"], "forms": ["menus"], "pos": "noun" },
+        { "id": "w-breakfast", "target": "breakfast", "source": "das Frühstück", "targetAccept": ["the breakfast", "a breakfast"], "sourceAccept": ["Frühstück", "ein Frühstück"], "forms": ["breakfasts"], "pos": "noun" },
+        { "id": "w-lunch", "target": "lunch", "source": "das Mittagessen", "targetAccept": ["the lunch", "a lunch"], "sourceAccept": ["Mittagessen", "ein Mittagessen"], "forms": ["lunches"], "pos": "noun" },
+        { "id": "w-bill", "target": "bill", "source": "die Rechnung", "targetAccept": ["the bill", "a bill", "check", "the check"], "sourceAccept": ["Rechnung", "eine Rechnung"], "forms": ["bills"], "pos": "noun" },
+        { "id": "w-order", "target": "order", "source": "bestellen", "sourceAccept": ["bestelle", "bestellst", "bestellt", "Bestellung"], "forms": ["orders", "ordering", "ordered"], "pos": "verb" },
+        { "id": "w-pay", "target": "pay", "source": "bezahlen", "sourceAccept": ["bezahle", "bezahlst", "bezahlt"], "forms": ["pays", "paying", "paid"], "pos": "verb" },
+        { "id": "w-cost", "target": "cost", "source": "kosten", "sourceAccept": ["kostet"], "forms": ["costs", "costing"], "pos": "verb" },
+        { "id": "w-pound", "target": "pound", "source": "das Pfund", "targetAccept": ["the pound", "a pound"], "sourceAccept": ["Pfund", "ein Pfund"], "forms": ["pounds"], "pos": "noun" },
+        { "id": "w-would-like", "target": "would like", "source": "hätte gern", "sourceAccept": ["möchte", "würde gern haben"], "forms": ["'d like"], "pos": "phrase" },
+        { "id": "w-cash", "target": "cash", "source": "das Bargeld", "targetAccept": ["the cash"], "sourceAccept": ["Bargeld", "bar"], "pos": "noun" }
+      ],
+      "sentences": [
+        { "id": "u17-s01", "target": "The menu, please.", "source": "Die Speisekarte, bitte.", "words": ["w-menu", "w-please"] },
+        { "id": "u17-s02", "target": "I'd like breakfast, please.", "source": "Ich hätte gern Frühstück, bitte.", "targetAccept": ["I would like breakfast, please."], "words": ["w-i", "w-would-like", "w-breakfast", "w-please"], "cloze": { "answer": "like", "distractors": ["likes", "liking"] } },
+        { "id": "u17-s03", "target": "Can I order lunch?", "source": "Kann ich Mittagessen bestellen?", "words": ["w-can", "w-i", "w-order", "w-lunch"], "cloze": { "answer": "order", "distractors": ["orders", "ordered"] } },
+        { "id": "u17-s04", "target": "Can I have the bill?", "source": "Kann ich die Rechnung haben?", "words": ["w-can", "w-i", "w-have", "w-bill"] },
+        { "id": "u17-s05", "target": "Do you have breakfast and lunch?", "source": "Bietest du Frühstück und Mittagessen an?", "sourceAccept": ["Bietet ihr Frühstück und Mittagessen an?", "Bieten Sie Frühstück und Mittagessen an?", "Hast du Frühstück und Mittagessen?", "Habt ihr Frühstück und Mittagessen?", "Haben Sie Frühstück und Mittagessen?"], "words": ["w-do", "w-you", "w-have", "w-breakfast", "w-and", "w-lunch"] },
+        { "id": "u17-s06", "target": "I order tea and bread.", "source": "Ich bestelle Tee und Brot.", "words": ["w-i", "w-order", "w-tea", "w-and", "w-bread"] },
+        { "id": "u17-s07", "target": "Can I pay in cash?", "source": "Kann ich bar bezahlen?", "words": ["w-can", "w-i", "w-pay", "w-live-in", "w-cash"], "cloze": { "answer": "pay", "distractors": ["pays", "paying"] } },
+        { "id": "u17-s08", "target": "Lunch costs ten pounds.", "source": "Das Mittagessen kostet zehn Pfund.", "words": ["w-lunch", "w-cost", "w-ten", "w-pound"], "cloze": { "answer": "costs", "distractors": ["cost", "costing"] } },
+        { "id": "u17-s09", "target": "The bill is twenty pounds.", "source": "Die Rechnung beträgt zwanzig Pfund.", "words": ["w-bill", "w-is", "w-twenty", "w-pound"] },
+        { "id": "u17-s10", "target": "I'd like coffee and milk.", "source": "Ich hätte gern Kaffee und Milch.", "targetAccept": ["I would like coffee and milk."], "words": ["w-i", "w-would-like", "w-coffee", "w-and", "w-milk"] },
+        { "id": "u17-s11", "target": "Do you have a breakfast menu?", "source": "Hast du eine Frühstückskarte?", "sourceAccept": ["Habt ihr eine Frühstückskarte?", "Haben Sie eine Frühstückskarte?"], "words": ["w-do", "w-you", "w-have", "w-a", "w-breakfast", "w-menu"] },
+        { "id": "u17-s12", "target": "Yes, the menu is here.", "source": "Ja, die Speisekarte ist hier.", "words": ["w-yes", "w-menu", "w-is", "w-here"] },
+        { "id": "u17-s13", "target": "Please pay the bill here.", "source": "Bitte bezahle die Rechnung hier.", "sourceAccept": ["Bitte bezahlt die Rechnung hier.", "Bitte bezahlen Sie die Rechnung hier."], "words": ["w-please", "w-pay", "w-bill", "w-here"], "cloze": { "answer": "pay", "distractors": ["pays", "paid"] } },
+        { "id": "u17-s14", "target": "Does the breakfast cost ten pounds?", "source": "Kostet das Frühstück zehn Pfund?", "words": ["w-does", "w-breakfast", "w-cost", "w-ten", "w-pound"] },
+        { "id": "u17-s15", "target": "I have ten pounds in cash.", "source": "Ich habe zehn Pfund Bargeld.", "words": ["w-i", "w-have", "w-ten", "w-pound", "w-live-in", "w-cash"] },
+        { "id": "u17-s16", "target": "Would you like tea?", "source": "Möchtest du Tee?", "sourceAccept": ["Möchtet ihr Tee?", "Möchten Sie Tee?"], "words": ["w-would-like", "w-you", "w-tea"] },
+        { "id": "u17-s17", "target": "No lunch, thanks.", "source": "Kein Mittagessen, danke.", "words": ["w-no", "w-lunch", "w-thanks"] },
+        { "id": "u17-s18", "target": "Please order lunch and pay.", "source": "Bestelle bitte Mittagessen und bezahle.", "sourceAccept": ["Bestellt bitte Mittagessen und bezahlt.", "Bestellen Sie bitte Mittagessen und bezahlen Sie."], "words": ["w-please", "w-order", "w-lunch", "w-and", "w-pay"] }
+      ]
+    },
+    {
+      "id": "u18",
+      "title": "Wie viel?",
+      "canDo": "Du kannst nach Preisen und Mengen fragen und beim Einkaufen sagen, was du brauchst.",
+      "tip": {
+        "title": "much, many und any",
+        "body": "Mit **many** fragst du nach zählbaren Dingen im Plural: **How many bottles?** Mit **much** fragst du nach nicht zählbaren Mengen oder einem Preis: **How much water?**\n\nIn Fragen und Verneinungen steht oft **any**: **Do you have any tea?** Im bejahten Satz ist meist **some** natürlicher: **I need some tea.** Das Deutsche verwendet für beide häufig „etwas“ oder gar kein Mengenwort.",
+        "examples": [
+          { "target": "How much water do you need?", "source": "Wie viel Wasser brauchst du?" },
+          { "target": "How many bottles do you have?", "source": "Wie viele Flaschen hast du?" },
+          { "target": "Do you have any tea?", "source": "Hast du Tee?" }
+        ]
+      },
+      "words": [
+        { "id": "w-much", "target": "much", "source": "viel", "pos": "det" },
+        { "id": "w-any", "target": "any", "source": "etwas", "sourceAccept": ["irgendwelche", "irgendein", "keine"], "pos": "det" },
+        { "id": "w-bottle", "target": "bottle", "source": "die Flasche", "targetAccept": ["the bottle", "a bottle"], "sourceAccept": ["Flasche", "eine Flasche"], "forms": ["bottles"], "pos": "noun", "emoji": "🍾" },
+        { "id": "w-cup", "target": "cup", "source": "die Tasse", "targetAccept": ["the cup", "a cup"], "sourceAccept": ["Tasse", "eine Tasse"], "forms": ["cups"], "pos": "noun" },
+        { "id": "w-kilo", "target": "kilo", "source": "das Kilo", "targetAccept": ["the kilo", "a kilo", "kilogram", "the kilogram", "a kilogram"], "sourceAccept": ["Kilo", "ein Kilo", "das Kilogramm", "Kilogramm", "ein Kilogramm"], "forms": ["kilos", "kilograms"], "pos": "noun" },
+        { "id": "w-of", "target": "of", "source": "von", "sourceAccept": ["aus"], "pos": "prep" },
+        { "id": "w-two", "target": "two", "source": "zwei", "pos": "num" },
+        { "id": "w-cheap", "target": "cheap", "source": "günstig", "sourceAccept": ["billig"], "pos": "adj" },
+        { "id": "w-expensive", "target": "expensive", "source": "teuer", "pos": "adj" },
+        { "id": "w-buy", "target": "buy", "source": "kaufen", "sourceAccept": ["kaufe", "kaufst", "kauft"], "forms": ["buys", "buying", "bought"], "pos": "verb" },
+        { "id": "w-need", "target": "need", "source": "brauchen", "sourceAccept": ["brauche", "brauchst", "braucht"], "forms": ["needs", "needing", "needed"], "pos": "verb" },
+        { "id": "w-price", "target": "price", "source": "der Preis", "targetAccept": ["the price", "a price"], "sourceAccept": ["Preis", "ein Preis"], "forms": ["prices"], "pos": "noun" }
+      ],
+      "sentences": [
+        { "id": "u18-s01", "target": "How much is the cheese?", "source": "Wie viel kostet der Käse?", "words": ["w-how", "w-much", "w-is", "w-cheese"], "cloze": { "answer": "much", "distractors": ["many", "any"] } },
+        { "id": "u18-s02", "target": "Do you have any water?", "source": "Hast du Wasser?", "sourceAccept": ["Habt ihr Wasser?", "Haben Sie Wasser?"], "words": ["w-do", "w-you", "w-have", "w-any", "w-water"] },
+        { "id": "u18-s03", "target": "I need two bottles.", "source": "Ich brauche zwei Flaschen.", "words": ["w-i", "w-need", "w-two", "w-bottle"] },
+        { "id": "u18-s04", "target": "Can I have a cup?", "source": "Kann ich eine Tasse haben?", "words": ["w-can", "w-i", "w-have", "w-a", "w-cup"] },
+        { "id": "u18-s05", "target": "One kilo of rice, please.", "source": "Ein Kilo Reis, bitte.", "words": ["w-one", "w-kilo", "w-of", "w-rice", "w-please"] },
+        { "id": "u18-s06", "target": "This bread is cheap.", "source": "Dieses Brot ist günstig.", "sourceAccept": ["Dieses Brot ist billig."], "words": ["w-this", "w-bread", "w-is", "w-cheap"] },
+        { "id": "u18-s07", "target": "The coffee is expensive.", "source": "Der Kaffee ist teuer.", "words": ["w-coffee", "w-is", "w-expensive"], "cloze": { "answer": "expensive", "distractors": ["cheap", "expense"] } },
+        { "id": "u18-s08", "target": "I need some milk.", "source": "Ich brauche etwas Milch.", "words": ["w-i", "w-need", "w-some", "w-milk"], "cloze": { "answer": "some", "distractors": ["any", "many"] } },
+        { "id": "u18-s09", "target": "Do you buy expensive tea?", "source": "Kaufst du teuren Tee?", "sourceAccept": ["Kauft ihr teuren Tee?", "Kaufen Sie teuren Tee?"], "words": ["w-do", "w-you", "w-buy", "w-expensive", "w-tea"] },
+        { "id": "u18-s10", "target": "What is the price?", "source": "Wie hoch ist der Preis?", "sourceAccept": ["Was ist der Preis?"], "words": ["w-what", "w-is", "w-price"] },
+        { "id": "u18-s11", "target": "How many cups do you need?", "source": "Wie viele Tassen brauchst du?", "sourceAccept": ["Wie viele Tassen braucht ihr?", "Wie viele Tassen brauchen Sie?"], "words": ["w-how", "w-many", "w-cup", "w-do", "w-you", "w-need"], "cloze": { "answer": "many", "distractors": ["much", "any"] } },
+        { "id": "u18-s12", "target": "I don't have any apples.", "source": "Ich habe keine Äpfel.", "targetAccept": ["I do not have any apples."], "words": ["w-i", "w-do-not", "w-have", "w-any", "w-apple"] },
+        { "id": "u18-s13", "target": "This bottle costs one pound.", "source": "Diese Flasche kostet ein Pfund.", "words": ["w-this", "w-bottle", "w-cost", "w-one", "w-pound"], "cloze": { "answer": "costs", "distractors": ["cost", "costing"] } },
+        { "id": "u18-s14", "target": "I need the cheap cup.", "source": "Ich brauche die günstige Tasse.", "sourceAccept": ["Ich brauche die billige Tasse."], "words": ["w-i", "w-need", "w-cheap", "w-cup"] },
+        { "id": "u18-s15", "target": "I buy a kilo of apples.", "source": "Ich kaufe ein Kilo Äpfel.", "words": ["w-i", "w-buy", "w-a", "w-kilo", "w-of", "w-apple"] },
+        { "id": "u18-s16", "target": "The price is ten pounds.", "source": "Der Preis beträgt zehn Pfund.", "words": ["w-price", "w-is", "w-ten", "w-pound"] },
+        { "id": "u18-s17", "target": "How much coffee is in the cup?", "source": "Wie viel Kaffee ist in der Tasse?", "words": ["w-how", "w-much", "w-coffee", "w-is", "w-live-in", "w-cup"] },
+        { "id": "u18-s18", "target": "Buy two bottles of water.", "source": "Kaufe zwei Flaschen Wasser.", "sourceAccept": ["Kauft zwei Flaschen Wasser.", "Kaufen Sie zwei Flaschen Wasser."], "words": ["w-buy", "w-two", "w-bottle", "w-of", "w-water"] }
+      ]
+    },
+    {
+      "id": "u19",
+      "title": "Mein Zuhause",
+      "canDo": "Du kannst Räume und Möbel nennen und sagen, wo sie sich befinden.",
+      "tip": {
+        "title": "there is und there are",
+        "body": "Mit **there is** sagst du, dass eine einzelne Sache vorhanden ist: **There is a bed.** Für mehrere Dinge verwendest du **there are**: **There are two rooms.** Das deutsche „es gibt“ unterscheidet hier nicht zwischen Einzahl und Mehrzahl.\n\nFür den Ort stehen **in**, **on** und **under** vor dem Nomen: **in the kitchen**, **on the bed**, **under the sofa**. Verwechsle **there is** nicht mit **it is**: *there is* führt etwas ein, *it is* beschreibt etwas Bekanntes.",
+        "examples": [
+          { "target": "There is a bed in the room.", "source": "Im Zimmer steht ein Bett." },
+          { "target": "There are two bedrooms.", "source": "Es gibt zwei Schlafzimmer." },
+          { "target": "The bag is under the sofa.", "source": "Die Tasche liegt unter dem Sofa." }
+        ]
+      },
+      "words": [
+        { "id": "w-room", "target": "room", "source": "das Zimmer", "targetAccept": ["the room", "a room"], "sourceAccept": ["Zimmer", "ein Zimmer"], "forms": ["rooms"], "pos": "noun" },
+        { "id": "w-kitchen", "target": "kitchen", "source": "die Küche", "targetAccept": ["the kitchen", "a kitchen"], "sourceAccept": ["Küche", "eine Küche"], "forms": ["kitchens"], "pos": "noun" },
+        { "id": "w-bathroom", "target": "bathroom", "source": "das Badezimmer", "targetAccept": ["the bathroom", "a bathroom"], "sourceAccept": ["Badezimmer", "ein Badezimmer", "das Bad", "Bad", "ein Bad"], "forms": ["bathrooms"], "pos": "noun" },
+        { "id": "w-bedroom", "target": "bedroom", "source": "das Schlafzimmer", "targetAccept": ["the bedroom", "a bedroom"], "sourceAccept": ["Schlafzimmer", "ein Schlafzimmer"], "forms": ["bedrooms"], "pos": "noun" },
+        { "id": "w-bed", "target": "bed", "source": "das Bett", "targetAccept": ["the bed", "a bed"], "sourceAccept": ["Bett", "ein Bett"], "forms": ["beds"], "pos": "noun", "emoji": "🛏️" },
+        { "id": "w-sofa", "target": "sofa", "source": "das Sofa", "targetAccept": ["the sofa", "a sofa", "couch", "the couch", "a couch"], "sourceAccept": ["Sofa", "ein Sofa", "die Couch", "Couch", "eine Couch"], "forms": ["sofas"], "pos": "noun" },
+        { "id": "w-on", "target": "on", "source": "auf", "pos": "prep" },
+        { "id": "w-under", "target": "under", "source": "unter", "pos": "prep" },
+        { "id": "w-there-is", "target": "there is", "source": "es gibt", "targetAccept": ["there's"], "sourceAccept": ["da ist", "da steht", "da liegt"], "forms": ["is there"], "pos": "phrase" },
+        { "id": "w-there-are", "target": "there are", "source": "es gibt", "sourceAccept": ["da sind", "da stehen", "da liegen"], "pos": "phrase" }
+      ],
+      "sentences": [
+        { "id": "u19-s01", "target": "This room is my kitchen.", "source": "Dieses Zimmer ist meine Küche.", "words": ["w-this", "w-room", "w-is", "w-my", "w-kitchen"] },
+        { "id": "u19-s02", "target": "The bathroom is here; the bedroom is there.", "source": "Das Badezimmer ist hier, das Schlafzimmer ist dort.", "sourceAccept": ["Das Bad ist hier, das Schlafzimmer ist dort."], "words": ["w-bathroom", "w-is", "w-here", "w-bedroom", "w-there"] },
+        { "id": "u19-s03", "target": "There is a bed in the room.", "source": "Im Zimmer steht ein Bett.", "sourceAccept": ["Es gibt ein Bett im Zimmer."], "words": ["w-there-is", "w-a", "w-bed", "w-live-in", "w-room"], "cloze": { "answer": "is", "distractors": ["are", "has"] } },
+        { "id": "u19-s04", "target": "There are two bedrooms.", "source": "Es gibt zwei Schlafzimmer.", "words": ["w-there-are", "w-two", "w-bedroom"], "cloze": { "answer": "are", "distractors": ["is", "has"] } },
+        { "id": "u19-s05", "target": "The sofa is in the room.", "source": "Das Sofa steht im Zimmer.", "words": ["w-sofa", "w-is", "w-live-in", "w-room"] },
+        { "id": "u19-s06", "target": "Your bag is on the bed.", "source": "Deine Tasche liegt auf dem Bett.", "sourceAccept": ["Eure Tasche liegt auf dem Bett.", "Ihre Tasche liegt auf dem Bett."], "words": ["w-your", "w-bag", "w-is", "w-on", "w-bed"], "cloze": { "answer": "on", "distractors": ["in", "under"] } },
+        { "id": "u19-s07", "target": "The key is under the sofa.", "source": "Der Schlüssel liegt unter dem Sofa.", "words": ["w-key", "w-is", "w-under", "w-sofa"], "cloze": { "answer": "under", "distractors": ["on", "at"] } },
+        { "id": "u19-s08", "target": "Is there a bathroom here?", "source": "Gibt es hier ein Badezimmer?", "sourceAccept": ["Gibt es hier ein Bad?"], "words": ["w-there-is", "w-a", "w-bathroom", "w-here"] },
+        { "id": "u19-s09", "target": "Yes, it is in the kitchen.", "source": "Ja, es ist in der Küche.", "words": ["w-yes", "w-it", "w-is", "w-live-in", "w-kitchen"] },
+        { "id": "u19-s10", "target": "There are some books on the sofa.", "source": "Auf dem Sofa liegen einige Bücher.", "sourceAccept": ["Es liegen einige Bücher auf dem Sofa.", "Auf dem Sofa liegen ein paar Bücher.", "Es liegen ein paar Bücher auf dem Sofa."], "words": ["w-there-are", "w-some", "w-book", "w-on", "w-sofa"] },
+        { "id": "u19-s11", "target": "There is water in the kitchen.", "source": "In der Küche gibt es Wasser.", "words": ["w-there-is", "w-water", "w-live-in", "w-kitchen"] },
+        { "id": "u19-s12", "target": "My bedroom has one window.", "source": "Mein Schlafzimmer hat ein Fenster.", "words": ["w-my", "w-bedroom", "w-have", "w-one", "w-window"] },
+        { "id": "u19-s13", "target": "Is the phone under the bed?", "source": "Liegt das Telefon unter dem Bett?", "words": ["w-is", "w-phone", "w-under", "w-bed"], "cloze": { "answer": "under", "distractors": ["on", "in"] } },
+        { "id": "u19-s14", "target": "No, the phone is on the table.", "source": "Nein, das Telefon liegt auf dem Tisch.", "words": ["w-no", "w-phone", "w-is", "w-on", "w-table"] },
+        { "id": "u19-s15", "target": "The bathroom has an open window.", "source": "Das Badezimmer hat ein offenes Fenster.", "sourceAccept": ["Das Bad hat ein offenes Fenster."], "words": ["w-bathroom", "w-have", "w-an", "w-open", "w-window"] },
+        { "id": "u19-s16", "target": "There are two beds in this room.", "source": "In diesem Zimmer stehen zwei Betten.", "sourceAccept": ["Es gibt zwei Betten in diesem Zimmer."], "words": ["w-there-are", "w-two", "w-bed", "w-live-in", "w-this", "w-room"] },
+        { "id": "u19-s17", "target": "I read on the sofa every evening.", "source": "Ich lese jeden Abend auf dem Sofa.", "words": ["w-i", "w-read", "w-on", "w-sofa", "w-every", "w-evening"] },
+        { "id": "u19-s18", "target": "I sleep in the bedroom.", "source": "Ich schlafe im Schlafzimmer.", "words": ["w-i", "w-sleep", "w-live-in", "w-bedroom"] }
+      ]
+    },
+    {
+      "id": "u20",
+      "title": "In der Stadt",
+      "canDo": "Du kannst nach wichtigen Orten fragen und kurzen Wegbeschreibungen folgen.",
+      "tip": {
+        "title": "Kurze Wegbeschreibungen",
+        "body": "Wegbeschreibungen beginnen oft mit der Grundform: **Go straight.** Wie bei anderen englischen Anweisungen wird kein „du“ genannt. Für die Position verwendest du feste Verbindungen: **on the left**, **on the right**, **opposite the bank**.\n\n**Near** bedeutet „in der Nähe von“ und steht direkt vor dem Ort: **near the station**. Anders als im Deutschen braucht Englisch dabei keinen Ausdruck wie „in der Nähe von“.",
+        "examples": [
+          { "target": "Go straight.", "source": "Geh geradeaus." },
+          { "target": "The bank is on the left.", "source": "Die Bank ist links." },
+          { "target": "The hotel is opposite the station.", "source": "Das Hotel liegt gegenüber dem Bahnhof." }
+        ]
+      },
+      "words": [
+        { "id": "w-station", "target": "station", "source": "der Bahnhof", "targetAccept": ["the station", "a station", "train station", "the train station", "a train station"], "sourceAccept": ["Bahnhof", "ein Bahnhof"], "forms": ["stations"], "pos": "noun", "emoji": "🚉" },
+        { "id": "w-bank", "target": "bank", "source": "die Bank", "targetAccept": ["the bank", "a bank"], "sourceAccept": ["Bank", "eine Bank"], "forms": ["banks"], "pos": "noun" },
+        { "id": "w-supermarket", "target": "supermarket", "source": "der Supermarkt", "targetAccept": ["the supermarket", "a supermarket"], "sourceAccept": ["Supermarkt", "ein Supermarkt"], "forms": ["supermarkets"], "pos": "noun", "emoji": "🛒" },
+        { "id": "w-hotel", "target": "hotel", "source": "das Hotel", "targetAccept": ["the hotel", "a hotel"], "sourceAccept": ["Hotel", "ein Hotel"], "forms": ["hotels"], "pos": "noun", "emoji": "🏨" },
+        { "id": "w-restaurant", "target": "restaurant", "source": "das Restaurant", "targetAccept": ["the restaurant", "a restaurant"], "sourceAccept": ["Restaurant", "ein Restaurant"], "forms": ["restaurants"], "pos": "noun", "emoji": "🍽️" },
+        { "id": "w-left", "target": "left", "source": "links", "pos": "adv" },
+        { "id": "w-right", "target": "right", "source": "rechts", "pos": "adv" },
+        { "id": "w-straight", "target": "straight", "source": "geradeaus", "pos": "adv" },
+        { "id": "w-near", "target": "near", "source": "in der Nähe von", "sourceAccept": ["nahe", "bei"], "pos": "prep" },
+        { "id": "w-opposite", "target": "opposite", "source": "gegenüber", "pos": "prep" }
+        ,{ "id": "w-turn", "target": "turn", "source": "abbiegen", "sourceAccept": ["biege ab", "biegt ab", "biegen Sie ab"], "forms": ["turns", "turning", "turned"], "pos": "verb" }
+      ],
+      "sentences": [
+        { "id": "u20-s01", "target": "Where is the station?", "source": "Wo ist der Bahnhof?", "words": ["w-where", "w-is", "w-station"] },
+        { "id": "u20-s02", "target": "The bank is near the station.", "source": "Die Bank ist in der Nähe des Bahnhofs.", "words": ["w-bank", "w-is", "w-near", "w-station"], "cloze": { "answer": "near", "distractors": ["on", "under"] } },
+        { "id": "u20-s03", "target": "The supermarket is opposite the bank.", "source": "Der Supermarkt liegt gegenüber der Bank.", "words": ["w-supermarket", "w-is", "w-opposite", "w-bank"] },
+        { "id": "u20-s04", "target": "Is the hotel on the left?", "source": "Ist das Hotel links?", "words": ["w-is", "w-hotel", "w-on", "w-left"], "cloze": { "answer": "left", "distractors": ["right", "straight"] } },
+        { "id": "u20-s05", "target": "The restaurant is on the right.", "source": "Das Restaurant ist rechts.", "words": ["w-restaurant", "w-is", "w-on", "w-right"] },
+        { "id": "u20-s06", "target": "Go straight to the station.", "source": "Geh geradeaus zum Bahnhof.", "sourceAccept": ["Geht geradeaus zum Bahnhof.", "Gehen Sie geradeaus zum Bahnhof."], "words": ["w-go", "w-straight", "w-to", "w-station"], "cloze": { "answer": "straight", "distractors": ["left", "right"] } },
+        { "id": "u20-s07", "target": "Turn left at the bank.", "source": "Biege an der Bank links ab.", "sourceAccept": ["Biegt an der Bank links ab.", "Biegen Sie an der Bank links ab."], "words": ["w-turn", "w-left", "w-at", "w-bank"] },
+        { "id": "u20-s08", "target": "The supermarket is on your right.", "source": "Der Supermarkt ist rechts von dir.", "sourceAccept": ["Der Supermarkt ist rechts von euch.", "Der Supermarkt ist rechts von Ihnen."], "words": ["w-supermarket", "w-is", "w-on", "w-your", "w-right"], "cloze": { "answer": "right", "distractors": ["left", "straight"] } },
+        { "id": "u20-s09", "target": "Is there a hotel near here?", "source": "Gibt es hier in der Nähe ein Hotel?", "words": ["w-is", "w-there", "w-a", "w-hotel", "w-near", "w-here"] },
+        { "id": "u20-s10", "target": "Yes, it is opposite the restaurant.", "source": "Ja, es liegt gegenüber dem Restaurant.", "words": ["w-yes", "w-it", "w-is", "w-opposite", "w-restaurant"] },
+        { "id": "u20-s11", "target": "Where is the supermarket?", "source": "Wo ist der Supermarkt?", "words": ["w-where", "w-is", "w-supermarket"] },
+        { "id": "u20-s12", "target": "Go straight. The bank is on the right.", "source": "Geh geradeaus. Die Bank ist rechts.", "sourceAccept": ["Geht geradeaus. Die Bank ist rechts.", "Gehen Sie geradeaus. Die Bank ist rechts."], "words": ["w-go", "w-straight", "w-bank", "w-is", "w-on", "w-right"] },
+        { "id": "u20-s13", "target": "The bank is opposite the hotel.", "source": "Die Bank liegt gegenüber dem Hotel.", "words": ["w-bank", "w-is", "w-opposite", "w-hotel"], "cloze": { "answer": "opposite", "distractors": ["on", "under"] } },
+        { "id": "u20-s14", "target": "Is the restaurant near the station?", "source": "Ist das Restaurant in der Nähe des Bahnhofs?", "words": ["w-is", "w-restaurant", "w-near", "w-station"] },
+        { "id": "u20-s15", "target": "No, the restaurant is near the hotel.", "source": "Nein, das Restaurant ist in der Nähe des Hotels.", "words": ["w-no", "w-restaurant", "w-is", "w-near", "w-hotel"] },
+        { "id": "u20-s16", "target": "The station is on the left.", "source": "Der Bahnhof ist links.", "words": ["w-station", "w-is", "w-on", "w-left"] },
+        { "id": "u20-s17", "target": "Turn right at the supermarket.", "source": "Biege am Supermarkt rechts ab.", "sourceAccept": ["Biegt am Supermarkt rechts ab.", "Biegen Sie am Supermarkt rechts ab."], "words": ["w-turn", "w-right", "w-at", "w-supermarket"] },
+        { "id": "u20-s18", "target": "Lunch is in the hotel restaurant.", "source": "Das Mittagessen ist im Hotelrestaurant.", "words": ["w-lunch", "w-is", "w-live-in", "w-hotel", "w-restaurant"] }
+      ]
+    }
+  ]
+}

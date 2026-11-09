@@ -1,0 +1,235 @@
+{
+  "id": "c03",
+  "title": "Routines and direct objects",
+  "cefr": "A1",
+  "description": "Describe daily routines, ask for everyday items, order in a café, talk about a home, and make simple plans.",
+  "units": [
+    {
+      "id": "u11",
+      "title": "My day",
+      "canDo": "Describe a basic daily routine and say when things happen",
+      "tip": {
+        "title": "The conjugated verb stays in position two",
+        "body": "A German statement keeps its conjugated verb in the second position. You can begin with the person: **Ich frühstücke morgens.** If you begin with the time, the person moves after the verb: **Morgens frühstücke ich.** English normally keeps the subject before the verb in both versions.\n\nSome common routine verbs change their stem: **du fährst** and **du liest**. Learn **ich stehe auf** as a useful routine chunk for “I get up”; the small word **auf** goes at the end here.",
+        "examples": [
+          { "target": "Morgens frühstücke ich.", "source": "I eat breakfast in the morning." },
+          { "target": "Abends liest sie.", "source": "She reads in the evening." },
+          { "target": "Ich stehe früh auf.", "source": "I get up early." }
+        ]
+      },
+      "words": [
+        { "id": "w-morgens", "target": "morgens", "source": "in the morning", "sourceAccept": ["mornings"], "pos": "adv" },
+        { "id": "w-mittags", "target": "mittags", "source": "at midday", "sourceAccept": ["at noon", "midday"], "pos": "adv" },
+        { "id": "w-abends", "target": "abends", "source": "in the evening", "sourceAccept": ["evenings"], "pos": "adv" },
+        { "id": "w-aufstehen", "target": "aufstehen", "source": "to get up", "forms": ["stehe", "stehst", "steht", "stehen", "auf"], "pos": "verb" },
+        { "id": "w-fruehstuecken", "target": "frühstücken", "source": "to eat breakfast", "sourceAccept": ["to have breakfast"], "forms": ["frühstücke", "frühstückst", "frühstückt", "frühstücken"], "pos": "verb" },
+        { "id": "w-fahren", "target": "fahren", "source": "to travel", "sourceAccept": ["to drive", "to go by vehicle"], "forms": ["fahre", "fährst", "fährt", "fahrt", "fahren"], "pos": "verb" },
+        { "id": "w-schlafen", "target": "schlafen", "source": "to sleep", "forms": ["schlafe", "schläfst", "schläft", "schlaft", "schlafen"], "emoji": "😴", "pos": "verb" },
+        { "id": "w-frueh", "target": "früh", "source": "early", "pos": "adv" },
+        { "id": "w-spaet", "target": "spät", "source": "late", "pos": "adv" },
+        { "id": "w-jeden-tag", "target": "jeden Tag", "source": "every day", "sourceAccept": ["daily"], "pos": "phrase" }
+      ],
+      "sentences": [
+        { "id": "u11-s01", "target": "Morgens frühstücke ich.", "source": "I eat breakfast in the morning.", "targetAccept": ["Ich frühstücke morgens."], "sourceAccept": ["I have breakfast in the morning."], "words": ["w-morgens", "w-fruehstuecken", "w-ich"], "cloze": { "answer": "frühstücke", "distractors": ["frühstückst", "frühstückt", "frühstücken"] } },
+        { "id": "u11-s02", "target": "Mittags arbeite ich.", "source": "I work at midday.", "targetAccept": ["Ich arbeite mittags."], "sourceAccept": ["I work at noon.", "I am working at midday.", "I'm working at midday."], "words": ["w-mittags", "w-arbeiten", "w-ich"] },
+        { "id": "u11-s03", "target": "Abends lerne ich Deutsch.", "source": "I study German in the evening.", "targetAccept": ["Ich lerne abends Deutsch.", "Ich lerne Deutsch abends."], "sourceAccept": ["I learn German in the evening."], "words": ["w-abends", "w-lernen", "w-ich", "w-deutsch"], "cloze": { "answer": "lerne", "distractors": ["lernst", "lernt", "lernen"] } },
+        { "id": "u11-s04", "target": "Ich stehe morgens auf.", "source": "I get up in the morning.", "targetAccept": ["Morgens stehe ich auf."], "words": ["w-ich", "w-aufstehen", "w-morgens"] },
+        { "id": "u11-s05", "target": "Frühstückst du morgens?", "source": "Do you eat breakfast in the morning?", "targetAccept": ["Frühstückt ihr morgens?", "Frühstücken Sie morgens?"], "sourceAccept": ["Do you have breakfast in the morning?"], "words": ["w-fruehstuecken", "w-du", "w-morgens"], "cloze": { "answer": "Frühstückst", "distractors": ["Frühstücke", "Frühstückt", "Frühstücken"] } },
+        { "id": "u11-s06", "target": "Morgens fahre ich in die Stadt.", "source": "I travel to the city in the morning.", "targetAccept": ["Ich fahre morgens in die Stadt."], "sourceAccept": ["I drive into town in the morning.", "I go into town in the morning."], "words": ["w-morgens", "w-fahren", "w-ich", "w-in", "w-stadt"] },
+        { "id": "u11-s07", "target": "Fährst du heute spät?", "source": "Are you travelling late today?", "targetAccept": ["Fahrt ihr heute spät?", "Fahren Sie heute spät?", "Heute fährst du spät?", "Heute fahrt ihr spät?", "Heute fahren Sie spät?"], "sourceAccept": ["Are you traveling late today?", "Are you driving late today?"], "words": ["w-fahren", "w-du", "w-heute", "w-spaet"], "cloze": { "answer": "Fährst", "distractors": ["Fahre", "Fährt", "Fahren"] } },
+        { "id": "u11-s08", "target": "Abends liest sie.", "source": "She reads in the evening.", "targetAccept": ["Sie liest abends."], "words": ["w-abends", "w-lesen", "w-sie-she"] },
+        { "id": "u11-s09", "target": "Liest du morgens?", "source": "Do you read in the morning?", "targetAccept": ["Lest ihr morgens?", "Lesen Sie morgens?"], "words": ["w-lesen", "w-du", "w-morgens"] },
+        { "id": "u11-s10", "target": "Das Kind schläft mittags.", "source": "The child sleeps at midday.", "targetAccept": ["Mittags schläft das Kind."], "sourceAccept": ["The child sleeps at noon.", "The kid sleeps at midday.", "The kid sleeps at noon."], "words": ["w-das", "w-kind", "w-schlafen", "w-mittags"], "cloze": { "answer": "schläft", "distractors": ["schlafe", "schläfst", "schlafen"] } },
+        { "id": "u11-s11", "target": "Stehen Sie früh auf?", "source": "Do you get up early?", "targetAccept": ["Stehst du früh auf?", "Steht ihr früh auf?"], "words": ["w-aufstehen", "w-sie", "w-frueh"] },
+        { "id": "u11-s12", "target": "Ich frühstücke jeden Tag.", "source": "I eat breakfast every day.", "targetAccept": ["Jeden Tag frühstücke ich."], "sourceAccept": ["I have breakfast every day.", "I eat breakfast daily.", "I have breakfast daily."], "words": ["w-ich", "w-fruehstuecken", "w-jeden-tag"] },
+        { "id": "u11-s13", "target": "Jeden Tag arbeite ich.", "source": "I work every day.", "targetAccept": ["Ich arbeite jeden Tag."], "sourceAccept": ["I work daily."], "words": ["w-jeden-tag", "w-arbeiten", "w-ich"], "cloze": { "answer": "arbeite", "distractors": ["arbeitest", "arbeitet", "arbeiten"] } },
+        { "id": "u11-s14", "target": "Ich stehe früh auf.", "source": "I get up early.", "targetAccept": ["Früh stehe ich auf."], "words": ["w-ich", "w-aufstehen", "w-frueh"] },
+        { "id": "u11-s15", "target": "Wir arbeiten heute spät.", "source": "We are working late today.", "targetAccept": ["Heute arbeiten wir spät."], "sourceAccept": ["We work late today.", "We're working late today."], "words": ["w-wir", "w-arbeiten", "w-heute", "w-spaet"] },
+        { "id": "u11-s16", "target": "Fahrt ihr morgens oder abends?", "source": "Do you travel in the morning or evening?", "targetAccept": ["Fährst du morgens oder abends?", "Fahren Sie morgens oder abends?"], "sourceAccept": ["Do you drive in the morning or evening?"], "words": ["w-fahren", "w-ihr", "w-morgens", "w-oder", "w-abends"], "cloze": { "answer": "Fahrt", "distractors": ["Fahre", "Fährst", "Fahren"] } },
+        { "id": "u11-s17", "target": "Mittags lese ich.", "source": "I read at midday.", "targetAccept": ["Ich lese mittags."], "sourceAccept": ["I read at noon."], "words": ["w-mittags", "w-lesen", "w-ich"] },
+        { "id": "u11-s18", "target": "Schläfst du mittags?", "source": "Do you sleep at midday?", "targetAccept": ["Schlaft ihr mittags?", "Schlafen Sie mittags?"], "sourceAccept": ["Do you sleep at noon?"], "words": ["w-schlafen", "w-du", "w-mittags"] }
+      ]
+    },
+    {
+      "id": "u12",
+      "title": "I need a…",
+      "canDo": "Ask for, find, and buy common everyday items",
+      "tip": {
+        "title": "Masculine objects change to den or einen",
+        "body": "A direct object receives the action. For a masculine noun, **der** changes to **den**, and **ein** changes to **einen**: **der Apfel**, but **Ich nehme den Apfel** or **Ich suche einen Apfel**. English articles do not change this way.\n\nFeminine and neuter articles stay the same in the accusative: **die Banane**, **Ich nehme die Banane**; **das Ticket**, **Ich brauche das Ticket**.",
+        "examples": [
+          { "target": "Ich nehme den Saft.", "source": "I will take the juice." },
+          { "target": "Ich suche einen Apfel.", "source": "I am looking for an apple." },
+          { "target": "Ich brauche das Ticket.", "source": "I need the ticket." }
+        ]
+      },
+      "words": [
+        { "id": "w-suchen", "target": "suchen", "source": "to look for", "sourceAccept": ["to search for"], "forms": ["suche", "suchst", "sucht", "suchen"], "pos": "verb" },
+        { "id": "w-nehmen", "target": "nehmen", "source": "to take", "forms": ["nehme", "nimmst", "nimmt", "nehmt", "nehmen"], "pos": "verb" },
+        { "id": "w-apfel", "target": "der Apfel", "source": "the apple", "sourceAccept": ["apple", "an apple"], "plural": "die Äpfel", "emoji": "🍎", "pos": "noun" },
+        { "id": "w-saft", "target": "der Saft", "source": "the juice", "sourceAccept": ["juice", "a juice"], "plural": "die Säfte", "emoji": "🧃", "pos": "noun" },
+        { "id": "w-banane", "target": "die Banane", "source": "the banana", "sourceAccept": ["banana", "a banana"], "plural": "die Bananen", "emoji": "🍌", "pos": "noun" },
+        { "id": "w-zeitung", "target": "die Zeitung", "source": "the newspaper", "sourceAccept": ["newspaper", "a newspaper", "the paper", "paper", "a paper"], "plural": "die Zeitungen", "emoji": "📰", "pos": "noun" },
+        { "id": "w-ticket", "target": "das Ticket", "source": "the ticket", "sourceAccept": ["ticket", "a ticket"], "plural": "die Tickets", "emoji": "🎫", "pos": "noun" },
+        { "id": "w-den", "target": "den", "source": "the", "note": "masculine accusative", "pos": "det" },
+        { "id": "w-einen", "target": "einen", "source": "a", "sourceAccept": ["an", "one"], "note": "masculine accusative", "pos": "det" }
+      ],
+      "sentences": [
+        { "id": "u12-s01", "target": "Ich suche den Apfel.", "source": "I am looking for the apple.", "sourceAccept": ["I'm looking for the apple.", "I look for the apple.", "I am searching for the apple.", "I'm searching for the apple."], "words": ["w-ich", "w-suchen", "w-den", "w-apfel"], "cloze": { "answer": "den", "distractors": ["der", "das"] } },
+        { "id": "u12-s02", "target": "Brauchst du einen Apfel?", "source": "Do you need an apple?", "targetAccept": ["Braucht ihr einen Apfel?", "Brauchen Sie einen Apfel?"], "words": ["w-brauchen", "w-du", "w-einen", "w-apfel"] },
+        { "id": "u12-s03", "target": "Der Saft schmeckt.", "source": "The juice tastes good.", "sourceAccept": ["The juice is tasty."], "words": ["w-saft", "w-schmecken"] },
+        { "id": "u12-s04", "target": "Ich nehme den Saft.", "source": "I will take the juice.", "sourceAccept": ["I'll take the juice.", "I take the juice.", "I am taking the juice.", "I'm taking the juice."], "words": ["w-ich", "w-nehmen", "w-den", "w-saft"], "cloze": { "answer": "den", "distractors": ["die", "das"] } },
+        { "id": "u12-s05", "target": "Ich esse die Banane.", "source": "I am eating the banana.", "sourceAccept": ["I'm eating the banana.", "I eat the banana."], "words": ["w-ich", "w-essen", "w-banane"] },
+        { "id": "u12-s06", "target": "Suchst du die Banane?", "source": "Are you looking for the banana?", "targetAccept": ["Sucht ihr die Banane?", "Suchen Sie die Banane?"], "sourceAccept": ["Are you searching for the banana?"], "words": ["w-suchen", "w-du", "w-banane"], "cloze": { "answer": "Suchst", "distractors": ["Suche", "Sucht", "Suchen"] } },
+        { "id": "u12-s07", "target": "Ich lese die Zeitung.", "source": "I am reading the newspaper.", "sourceAccept": ["I'm reading the newspaper.", "I read the newspaper.", "I am reading the paper.", "I'm reading the paper.", "I read the paper."], "words": ["w-ich", "w-lesen", "w-zeitung"] },
+        { "id": "u12-s08", "target": "Nehmen Sie die Zeitung?", "source": "Are you taking the newspaper?", "targetAccept": ["Nimmst du die Zeitung?", "Nehmt ihr die Zeitung?"], "sourceAccept": ["Are you taking the paper?"], "words": ["w-nehmen", "w-sie", "w-zeitung"], "cloze": { "answer": "Nehmen", "distractors": ["Nehme", "Nimmst", "Nehmt"] } },
+        { "id": "u12-s09", "target": "Ich brauche das Ticket.", "source": "I need the ticket.", "words": ["w-ich", "w-brauchen", "w-ticket"] },
+        { "id": "u12-s10", "target": "Wo ist das Ticket?", "source": "Where is the ticket?", "sourceAccept": ["Where's the ticket?"], "words": ["w-wo", "w-sein", "w-ticket"] },
+        { "id": "u12-s11", "target": "Ich suche einen Tisch.", "source": "I am looking for a table.", "sourceAccept": ["I'm looking for a table.", "I am searching for a table.", "I'm searching for a table."], "words": ["w-ich", "w-suchen", "w-einen", "w-tisch"], "cloze": { "answer": "einen", "distractors": ["ein", "eine"] } },
+        { "id": "u12-s12", "target": "Wir nehmen einen Kaffee.", "source": "We will have a coffee.", "sourceAccept": ["We'll have a coffee.", "We will take a coffee.", "We'll take a coffee."], "words": ["w-wir", "w-nehmen", "w-einen", "w-kaffee"] },
+        { "id": "u12-s13", "target": "Kaufen Sie den Apfel?", "source": "Are you buying the apple?", "targetAccept": ["Kaufst du den Apfel?", "Kauft ihr den Apfel?"], "sourceAccept": ["Do you buy the apple?"], "words": ["w-kaufen", "w-sie", "w-den", "w-apfel"] },
+        { "id": "u12-s14", "target": "Den Saft, bitte.", "source": "The juice, please.", "words": ["w-den", "w-saft", "w-bitte"] },
+        { "id": "u12-s15", "target": "Eine Banane oder einen Apfel?", "source": "A banana or an apple?", "words": ["w-eine", "w-banane", "w-oder", "w-einen", "w-apfel"] },
+        { "id": "u12-s16", "target": "Brauchen Sie die Zeitung?", "source": "Do you need the newspaper?", "targetAccept": ["Brauchst du die Zeitung?", "Braucht ihr die Zeitung?"], "sourceAccept": ["Do you need the paper?"], "words": ["w-brauchen", "w-sie", "w-zeitung"], "cloze": { "answer": "Brauchen", "distractors": ["Brauche", "Brauchst", "Braucht"] } },
+        { "id": "u12-s17", "target": "Ich nehme das Ticket.", "source": "I will take the ticket.", "sourceAccept": ["I'll take the ticket.", "I take the ticket.", "I am taking the ticket.", "I'm taking the ticket."], "words": ["w-ich", "w-nehmen", "w-ticket"] },
+        { "id": "u12-s18", "target": "Suchst du den Saft?", "source": "Are you looking for the juice?", "targetAccept": ["Sucht ihr den Saft?", "Suchen Sie den Saft?"], "sourceAccept": ["Are you searching for the juice?"], "words": ["w-suchen", "w-du", "w-den", "w-saft"] }
+      ]
+    },
+    {
+      "id": "u13",
+      "title": "At the café",
+      "canDo": "Order breakfast, ask the price, and pay politely",
+      "tip": {
+        "title": "Ich möchte makes a polite order",
+        "body": "Use **ich möchte** for a polite request: **Ich möchte einen Kaffee.** It is much closer to English “I would like” than a direct **Ich will**. With informal **du**, ask **Möchtest du ...?**; with formal **Sie**, ask **Möchten Sie ...?**\n\nThe item ordered is a direct object, so masculine **ein** becomes **einen**. To ask a price, use **Was kostet ...?** for one item and **Was kosten ...?** for more than one.",
+        "examples": [
+          { "target": "Ich möchte einen Kaffee.", "source": "I would like a coffee." },
+          { "target": "Möchten Sie Frühstück?", "source": "Would you like breakfast?" },
+          { "target": "Was kostet der Kaffee?", "source": "How much is the coffee?" }
+        ]
+      },
+      "words": [
+        { "id": "w-moechten", "target": "möchten", "source": "would like", "forms": ["möchte", "möchtest", "möchtet", "möchten"], "pos": "verb" },
+        { "id": "w-bestellen", "target": "bestellen", "source": "to order", "forms": ["bestelle", "bestellst", "bestellt", "bestellen"], "pos": "verb" },
+        { "id": "w-bezahlen", "target": "bezahlen", "source": "to pay", "forms": ["bezahle", "bezahlst", "bezahlt", "bezahlen"], "pos": "verb" },
+        { "id": "w-kosten", "target": "kosten", "source": "to cost", "forms": ["kostet", "kosten"], "pos": "verb" },
+        { "id": "w-speisekarte", "target": "die Speisekarte", "source": "the menu", "sourceAccept": ["menu", "a menu"], "plural": "die Speisekarten", "emoji": "📋", "pos": "noun" },
+        { "id": "w-rechnung", "target": "die Rechnung", "source": "the bill", "sourceAccept": ["bill", "a bill", "the check", "check", "a check"], "plural": "die Rechnungen", "emoji": "🧾", "pos": "noun" },
+        { "id": "w-fruehstueck", "target": "das Frühstück", "source": "the breakfast", "sourceAccept": ["breakfast", "a breakfast"], "plural": "die Frühstücke", "pos": "noun" },
+        { "id": "w-euro", "target": "der Euro", "source": "the euro", "sourceAccept": ["euro", "a euro"], "plural": "die Euro", "emoji": "💶", "pos": "noun" },
+        { "id": "w-zusammen", "target": "zusammen", "source": "together", "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u13-s01", "target": "Ich möchte das Frühstück bestellen.", "source": "I would like to order breakfast.", "sourceAccept": ["I'd like to order breakfast."], "words": ["w-ich", "w-moechten", "w-fruehstueck", "w-bestellen"], "cloze": { "answer": "möchte", "distractors": ["möchtest", "möchtet", "möchten"] } },
+        { "id": "u13-s02", "target": "Möchten Sie Kaffee oder Tee bestellen?", "source": "Would you like to order coffee or tea?", "targetAccept": ["Möchtest du Kaffee oder Tee bestellen?", "Möchtet ihr Kaffee oder Tee bestellen?"], "words": ["w-moechten", "w-sie", "w-kaffee", "w-oder", "w-tee", "w-bestellen"] },
+        { "id": "u13-s03", "target": "Die Speisekarte, bitte.", "source": "The menu, please.", "words": ["w-speisekarte", "w-bitte"] },
+        { "id": "u13-s04", "target": "Ich lese die Speisekarte.", "source": "I am reading the menu.", "sourceAccept": ["I'm reading the menu.", "I read the menu."], "words": ["w-ich", "w-lesen", "w-speisekarte"], "cloze": { "answer": "lese", "distractors": ["liest", "lest", "lesen"] } },
+        { "id": "u13-s05", "target": "Die Rechnung, bitte.", "source": "The bill, please.", "sourceAccept": ["The check, please."], "words": ["w-rechnung", "w-bitte"] },
+        { "id": "u13-s06", "target": "Ich bezahle die Rechnung.", "source": "I am paying the bill.", "sourceAccept": ["I'm paying the bill.", "I pay the bill.", "I am paying the check.", "I'm paying the check."], "words": ["w-ich", "w-bezahlen", "w-rechnung"] },
+        { "id": "u13-s07", "target": "Das Frühstück kostet zehn Euro.", "source": "Breakfast costs ten euros.", "sourceAccept": ["The breakfast costs ten euros."], "words": ["w-das", "w-fruehstueck", "w-kosten", "w-zehn", "w-euro"], "cloze": { "answer": "kostet", "distractors": ["kosten", "koste"] } },
+        { "id": "u13-s08", "target": "Was kostet der Kaffee?", "source": "How much is the coffee?", "sourceAccept": ["What does the coffee cost?", "How much does the coffee cost?"], "words": ["w-was", "w-kosten", "w-kaffee"] },
+        { "id": "u13-s09", "target": "Wir bezahlen zusammen.", "source": "We are paying together.", "sourceAccept": ["We're paying together.", "We pay together."], "words": ["w-wir", "w-bezahlen", "w-zusammen"], "cloze": { "answer": "bezahlen", "distractors": ["bezahle", "bezahlst", "bezahlt"] } },
+        { "id": "u13-s10", "target": "Zusammen, bitte.", "source": "Together, please.", "words": ["w-zusammen", "w-bitte"] },
+        { "id": "u13-s11", "target": "Ich möchte einen Kaffee.", "source": "I would like a coffee.", "sourceAccept": ["I'd like a coffee."], "words": ["w-ich", "w-moechten", "w-einen", "w-kaffee"] },
+        { "id": "u13-s12", "target": "Möchtest du Tee?", "source": "Would you like tea?", "targetAccept": ["Möchtet ihr Tee?", "Möchten Sie Tee?"], "words": ["w-moechten", "w-du", "w-tee"], "cloze": { "answer": "Möchtest", "distractors": ["Möchte", "Möchtet", "Möchten"] } },
+        { "id": "u13-s13", "target": "Bestellen Sie das Frühstück?", "source": "Are you ordering breakfast?", "targetAccept": ["Bestellst du das Frühstück?", "Bestellt ihr das Frühstück?"], "words": ["w-bestellen", "w-sie", "w-das", "w-fruehstueck"] },
+        { "id": "u13-s14", "target": "Ich bestelle das Frühstück.", "source": "I am ordering breakfast.", "sourceAccept": ["I'm ordering breakfast.", "I order breakfast."], "words": ["w-ich", "w-bestellen", "w-das", "w-fruehstueck"] },
+        { "id": "u13-s15", "target": "Bezahlen Sie zusammen?", "source": "Are you paying together?", "targetAccept": ["Bezahlst du zusammen?", "Bezahlt ihr zusammen?"], "sourceAccept": ["Do you pay together?"], "words": ["w-bezahlen", "w-sie", "w-zusammen"] },
+        { "id": "u13-s16", "target": "Der Kaffee kostet zwei Euro.", "source": "The coffee costs two euros.", "words": ["w-kaffee", "w-kosten", "w-zwei", "w-euro"] },
+        { "id": "u13-s17", "target": "Zwei Euro, bitte.", "source": "Two euros, please.", "words": ["w-zwei", "w-euro", "w-bitte"] },
+        { "id": "u13-s18", "target": "Die Rechnung ist leider falsch.", "source": "Unfortunately, the bill is wrong.", "sourceAccept": ["Sadly, the bill is wrong.", "Unfortunately, the check is wrong.", "Sadly, the check is wrong."], "words": ["w-rechnung", "w-sein", "w-leider", "w-falsch"], "cloze": { "answer": "ist", "distractors": ["bin", "bist", "sind"] } }
+      ]
+    },
+    {
+      "id": "u14",
+      "title": "My home",
+      "canDo": "Describe rooms, furniture, and where things are in a home",
+      "tip": {
+        "title": "Use es gibt for there is and there are",
+        "body": "German uses **es gibt** for both English “there is” and “there are”: **Es gibt ein Bad** and **Es gibt zwei Zimmer**. The thing that exists is a direct object, so a masculine noun uses **einen**: **Es gibt einen Schrank.**\n\nUse **hier** for “here” and **dort** for “there.” They can begin the sentence, but the conjugated verb still comes second: **Hier ist die Küche.**",
+        "examples": [
+          { "target": "Es gibt ein Bad.", "source": "There is a bathroom." },
+          { "target": "Es gibt zwei Zimmer.", "source": "There are two rooms." },
+          { "target": "Hier ist die Küche.", "source": "The kitchen is here." }
+        ]
+      },
+      "words": [
+        { "id": "w-wohnung", "target": "die Wohnung", "source": "the apartment", "sourceAccept": ["apartment", "an apartment", "the flat", "flat", "a flat"], "plural": "die Wohnungen", "pos": "noun" },
+        { "id": "w-zimmer", "target": "das Zimmer", "source": "the room", "sourceAccept": ["room", "a room"], "plural": "die Zimmer", "pos": "noun" },
+        { "id": "w-kueche", "target": "die Küche", "source": "the kitchen", "sourceAccept": ["kitchen", "a kitchen"], "plural": "die Küchen", "pos": "noun" },
+        { "id": "w-bad", "target": "das Bad", "source": "the bathroom", "sourceAccept": ["bathroom", "a bathroom"], "plural": "die Bäder", "emoji": "🛁", "pos": "noun" },
+        { "id": "w-bett", "target": "das Bett", "source": "the bed", "sourceAccept": ["bed", "a bed"], "plural": "die Betten", "emoji": "🛏️", "pos": "noun" },
+        { "id": "w-es-gibt", "target": "es gibt", "source": "there is", "sourceAccept": ["there are"], "pos": "phrase" },
+        { "id": "w-schrank", "target": "der Schrank", "source": "the cupboard", "sourceAccept": ["cupboard", "a cupboard", "the wardrobe", "wardrobe", "a wardrobe", "the cabinet", "cabinet", "a cabinet"], "plural": "die Schränke", "pos": "noun" },
+        { "id": "w-gross", "target": "groß", "source": "big", "sourceAccept": ["large"], "pos": "adj" },
+        { "id": "w-klein", "target": "klein", "source": "small", "sourceAccept": ["little"], "pos": "adj" },
+        { "id": "w-hier", "target": "hier", "source": "here", "pos": "adv" },
+        { "id": "w-dort", "target": "dort", "source": "there", "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u14-s01", "target": "Die Wohnung ist groß.", "source": "The apartment is big.", "sourceAccept": ["The apartment is large.", "The flat is big.", "The flat is large."], "words": ["w-wohnung", "w-sein", "w-gross"], "cloze": { "answer": "groß", "distractors": ["große", "großen", "großes"] } },
+        { "id": "u14-s02", "target": "Das Zimmer ist klein.", "source": "The room is small.", "words": ["w-das", "w-zimmer", "w-sein", "w-klein"] },
+        { "id": "u14-s03", "target": "Die Küche ist hier.", "source": "The kitchen is here.", "targetAccept": ["Hier ist die Küche."], "words": ["w-kueche", "w-sein", "w-hier"] },
+        { "id": "u14-s04", "target": "Das Bad ist dort.", "source": "The bathroom is there.", "targetAccept": ["Dort ist das Bad."], "words": ["w-das", "w-bad", "w-sein", "w-dort"] },
+        { "id": "u14-s05", "target": "Hier ist das Bett.", "source": "The bed is here.", "targetAccept": ["Das Bett ist hier."], "words": ["w-hier", "w-sein", "w-das", "w-bett"], "cloze": { "answer": "ist", "distractors": ["bin", "bist", "sind"] } },
+        { "id": "u14-s06", "target": "Es gibt ein Bad.", "source": "There is a bathroom.", "sourceAccept": ["There's a bathroom."], "words": ["w-es-gibt", "w-ein", "w-bad"] },
+        { "id": "u14-s07", "target": "Hier gibt es ein Bett.", "source": "There is a bed here.", "targetAccept": ["Es gibt hier ein Bett."], "sourceAccept": ["There's a bed here."], "words": ["w-hier", "w-es-gibt", "w-ein", "w-bett"], "cloze": { "answer": "gibt", "distractors": ["gibst", "bin"] } },
+        { "id": "u14-s08", "target": "Dort gibt es einen Schrank.", "source": "There is a cupboard there.", "targetAccept": ["Es gibt dort einen Schrank."], "sourceAccept": ["There's a cupboard there.", "There is a wardrobe there.", "There's a wardrobe there.", "There is a cabinet there.", "There's a cabinet there."], "words": ["w-dort", "w-es-gibt", "w-einen", "w-schrank"] },
+        { "id": "u14-s09", "target": "Der Schrank ist groß.", "source": "The cupboard is big.", "sourceAccept": ["The cupboard is large.", "The wardrobe is big.", "The wardrobe is large.", "The cabinet is big.", "The cabinet is large."], "words": ["w-schrank", "w-sein", "w-gross"] },
+        { "id": "u14-s10", "target": "Ist die Küche klein?", "source": "Is the kitchen small?", "words": ["w-sein", "w-kueche", "w-klein"], "cloze": { "answer": "klein", "distractors": ["kleine", "kleinen", "kleines"] } },
+        { "id": "u14-s11", "target": "Das Zimmer hat ein Bett.", "source": "The room has a bed.", "words": ["w-das", "w-zimmer", "w-haben", "w-ein", "w-bett"] },
+        { "id": "u14-s12", "target": "Die Wohnung hat zwei Zimmer.", "source": "The apartment has two rooms.", "sourceAccept": ["The flat has two rooms."], "words": ["w-wohnung", "w-haben", "w-zwei", "w-zimmer"] },
+        { "id": "u14-s13", "target": "Was gibt es hier?", "source": "What is here?", "sourceAccept": ["What's here?"], "words": ["w-was", "w-es-gibt", "w-hier"] },
+        { "id": "u14-s14", "target": "Hier gibt es eine Küche.", "source": "There is a kitchen here.", "targetAccept": ["Es gibt hier eine Küche."], "sourceAccept": ["There's a kitchen here."], "words": ["w-hier", "w-es-gibt", "w-eine", "w-kueche"], "cloze": { "answer": "eine", "distractors": ["ein", "einen"] } },
+        { "id": "u14-s15", "target": "Das Bett ist klein, aber der Schrank ist groß.", "source": "The bed is small, but the cupboard is big.", "sourceAccept": ["The bed is small, but the cupboard is large.", "The bed is small, but the wardrobe is big.", "The bed is small, but the cabinet is big."], "words": ["w-das", "w-bett", "w-sein", "w-klein", "w-aber", "w-schrank", "w-gross"] },
+        { "id": "u14-s16", "target": "Ist hier ein Zimmer?", "source": "Is there a room here?", "words": ["w-sein", "w-hier", "w-ein", "w-zimmer"] },
+        { "id": "u14-s17", "target": "Die Küche ist dort und das Bad ist hier.", "source": "The kitchen is there and the bathroom is here.", "words": ["w-kueche", "w-sein", "w-dort", "w-und", "w-das", "w-bad", "w-hier"] },
+        { "id": "u14-s18", "target": "Es gibt ein Bad und eine Küche.", "source": "There is a bathroom and a kitchen.", "sourceAccept": ["There's a bathroom and a kitchen."], "words": ["w-es-gibt", "w-ein", "w-bad", "w-und", "w-eine", "w-kueche"], "cloze": { "answer": "gibt", "distractors": ["gibst", "bin"] } }
+      ]
+    },
+    {
+      "id": "u15",
+      "title": "People and plans review",
+      "canDo": "Exchange a short profile and talk about who meets or visits whom",
+      "tip": {
+        "title": "Wer asks who; wen asks whom",
+        "body": "Use **wer** when the unknown person does the action: **Wer besucht den Freund?** Use **wen** when the unknown person receives the action: **Wen besucht die Freundin?** English often uses “who” for both, so German makes the contrast more visible.\n\nThe same contrast appears in articles. A masculine subject uses **der**, while a masculine direct object uses **den**: **Der Freund besucht die Freundin. Die Freundin besucht den Freund.**",
+        "examples": [
+          { "target": "Wer besucht den Freund?", "source": "Who is visiting the friend?" },
+          { "target": "Wen besucht die Freundin?", "source": "Who is the friend visiting?" },
+          { "target": "Die Freundin besucht den Freund.", "source": "The female friend is visiting the male friend." }
+        ]
+      },
+      "words": [
+        { "id": "w-treffen", "target": "treffen", "source": "to meet", "forms": ["treffe", "triffst", "trifft", "trefft", "treffen"], "pos": "verb" },
+        { "id": "w-besuchen", "target": "besuchen", "source": "to visit", "forms": ["besuche", "besuchst", "besucht", "besuchen"], "pos": "verb" },
+        { "id": "w-freund", "target": "der Freund", "source": "the male friend", "sourceAccept": ["male friend", "a male friend", "the boyfriend", "boyfriend", "a boyfriend", "the friend", "friend", "a friend"], "plural": "die Freunde", "pos": "noun" },
+        { "id": "w-freundin", "target": "die Freundin", "source": "the female friend", "sourceAccept": ["female friend", "a female friend", "the girlfriend", "girlfriend", "a girlfriend", "the friend", "friend", "a friend"], "plural": "die Freundinnen", "pos": "noun" },
+        { "id": "w-allein", "target": "allein", "source": "alone", "sourceAccept": ["by oneself"], "pos": "adv" },
+        { "id": "w-morgen", "target": "morgen", "source": "tomorrow", "pos": "adv" },
+        { "id": "w-wer", "target": "wer", "source": "who", "note": "nominative", "pos": "pron" },
+        { "id": "w-wen", "target": "wen", "source": "whom", "sourceAccept": ["who"], "note": "accusative", "pos": "pron" }
+      ],
+      "sentences": [
+        { "id": "u15-s01", "target": "Wer besucht den Freund?", "source": "Who is visiting the male friend?", "sourceAccept": ["Who visits the male friend?", "Who is visiting the boyfriend?", "Who visits the boyfriend?", "Who is visiting the friend?", "Who visits the friend?"], "words": ["w-wer", "w-besuchen", "w-den", "w-freund"], "cloze": { "answer": "Wer", "distractors": ["Wen", "Wie", "Was"] } },
+        { "id": "u15-s02", "target": "Wen besucht die Freundin?", "source": "Who is the female friend visiting?", "sourceAccept": ["Whom is the female friend visiting?", "Who does the female friend visit?", "Who is the girlfriend visiting?", "Who does the girlfriend visit?", "Who is the friend visiting?"], "words": ["w-wen", "w-besuchen", "w-freundin"], "cloze": { "answer": "Wen", "distractors": ["Wer", "Wo", "Was"] } },
+        { "id": "u15-s03", "target": "Der Freund besucht die Freundin.", "source": "The male friend is visiting the female friend.", "sourceAccept": ["The male friend visits the female friend.", "The boyfriend is visiting the girlfriend.", "The boyfriend visits the girlfriend."], "words": ["w-freund", "w-besuchen", "w-freundin"] },
+        { "id": "u15-s04", "target": "Die Freundin besucht den Freund.", "source": "The female friend is visiting the male friend.", "sourceAccept": ["The female friend visits the male friend.", "The girlfriend is visiting the boyfriend.", "The girlfriend visits the boyfriend."], "words": ["w-freundin", "w-besuchen", "w-den", "w-freund"] },
+        { "id": "u15-s05", "target": "Ich treffe morgen einen Freund.", "source": "I am meeting a male friend tomorrow.", "targetAccept": ["Morgen treffe ich einen Freund."], "sourceAccept": ["I'm meeting a male friend tomorrow.", "I meet a male friend tomorrow.", "I am meeting a friend tomorrow.", "I'm meeting a friend tomorrow."], "words": ["w-ich", "w-treffen", "w-morgen", "w-einen", "w-freund"], "cloze": { "answer": "einen", "distractors": ["ein", "eine"] } },
+        { "id": "u15-s06", "target": "Triffst du heute die Freundin?", "source": "Are you meeting the female friend today?", "targetAccept": ["Trefft ihr heute die Freundin?", "Treffen Sie heute die Freundin?", "Heute triffst du die Freundin?", "Heute trefft ihr die Freundin?", "Heute treffen Sie die Freundin?"], "sourceAccept": ["Do you meet the female friend today?", "Are you meeting the girlfriend today?", "Are you meeting the friend today?"], "words": ["w-treffen", "w-du", "w-heute", "w-freundin"] },
+        { "id": "u15-s07", "target": "Morgen besucht sie die Freundin.", "source": "She is visiting the female friend tomorrow.", "targetAccept": ["Sie besucht morgen die Freundin."], "sourceAccept": ["She visits the female friend tomorrow.", "She is visiting the girlfriend tomorrow.", "She's visiting the girlfriend tomorrow.", "She is visiting the friend tomorrow."], "words": ["w-morgen", "w-besuchen", "w-sie-she", "w-freundin"] },
+        { "id": "u15-s08", "target": "Wir besuchen morgen einen Freund.", "source": "We are visiting a male friend tomorrow.", "targetAccept": ["Morgen besuchen wir einen Freund."], "sourceAccept": ["We're visiting a male friend tomorrow.", "We visit a male friend tomorrow.", "We are visiting a friend tomorrow.", "We're visiting a friend tomorrow."], "words": ["w-wir", "w-besuchen", "w-morgen", "w-einen", "w-freund"] },
+        { "id": "u15-s09", "target": "Wer trifft wen?", "source": "Who is meeting whom?", "sourceAccept": ["Who meets whom?", "Who is meeting who?", "Who meets who?"], "words": ["w-wer", "w-treffen", "w-wen"], "cloze": { "answer": "wen", "distractors": ["wer", "wo", "was"] } },
+        { "id": "u15-s10", "target": "Wen triffst du morgen?", "source": "Who are you meeting tomorrow?", "targetAccept": ["Wen trefft ihr morgen?", "Wen treffen Sie morgen?"], "sourceAccept": ["Whom are you meeting tomorrow?", "Who do you meet tomorrow?"], "words": ["w-wen", "w-treffen", "w-du", "w-morgen"] },
+        { "id": "u15-s11", "target": "Wer ist heute allein?", "source": "Who is alone today?", "words": ["w-wer", "w-sein", "w-heute", "w-allein"] },
+        { "id": "u15-s12", "target": "Ich arbeite heute allein.", "source": "I am working alone today.", "targetAccept": ["Heute arbeite ich allein."], "sourceAccept": ["I'm working alone today.", "I work alone today."], "words": ["w-ich", "w-arbeiten", "w-heute", "w-allein"], "cloze": { "answer": "allein", "distractors": ["kein", "keine"] } },
+        { "id": "u15-s13", "target": "Meine Freundin lernt allein.", "source": "My female friend studies alone.", "sourceAccept": ["My female friend learns alone.", "My girlfriend studies alone.", "My friend studies alone."], "words": ["w-mein", "w-freundin", "w-lernen", "w-allein"] },
+        { "id": "u15-s14", "target": "Der Freund und die Freundin lernen zusammen.", "source": "The male and female friends study together.", "sourceAccept": ["The male and female friends learn together.", "The boyfriend and girlfriend study together.", "The friends study together."], "words": ["w-freund", "w-und", "w-freundin", "w-lernen", "w-zusammen"] },
+        { "id": "u15-s15", "target": "Besuchen Sie morgen den Freund?", "source": "Are you visiting the male friend tomorrow?", "targetAccept": ["Besuchst du morgen den Freund?", "Besucht ihr morgen den Freund?", "Morgen besuchst du den Freund?", "Morgen besucht ihr den Freund?", "Morgen besuchen Sie den Freund?"], "sourceAccept": ["Do you visit the male friend tomorrow?", "Are you visiting the boyfriend tomorrow?", "Are you visiting the friend tomorrow?"], "words": ["w-besuchen", "w-sie", "w-morgen", "w-den", "w-freund"] },
+        { "id": "u15-s16", "target": "Ich besuche meine Freundin.", "source": "I am visiting my female friend.", "sourceAccept": ["I'm visiting my female friend.", "I visit my female friend.", "I am visiting my girlfriend.", "I'm visiting my girlfriend.", "I am visiting my friend.", "I'm visiting my friend."], "words": ["w-ich", "w-besuchen", "w-mein", "w-freundin"] },
+        { "id": "u15-s17", "target": "Bist du morgen allein?", "source": "Will you be alone tomorrow?", "targetAccept": ["Seid ihr morgen allein?", "Sind Sie morgen allein?", "Morgen bist du allein?", "Morgen seid ihr allein?", "Morgen sind Sie allein?"], "sourceAccept": ["Are you alone tomorrow?"], "words": ["w-sein", "w-du", "w-morgen", "w-allein"] },
+        { "id": "u15-s18", "target": "Morgen frühstücke ich allein.", "source": "I am eating breakfast alone tomorrow.", "targetAccept": ["Ich frühstücke morgen allein."], "sourceAccept": ["I'm eating breakfast alone tomorrow.", "I have breakfast alone tomorrow.", "I am having breakfast alone tomorrow."], "words": ["w-morgen", "w-fruehstuecken", "w-ich", "w-allein"], "cloze": { "answer": "allein", "distractors": ["einen", "eine"] } }
+      ]
+    }
+  ]
+}

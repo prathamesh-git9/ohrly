@@ -1,0 +1,37 @@
+{
+  "name": "ohrly",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ohrly: learn languages in short, playful lessons. An original web app.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "validate": "tsx scripts/validate-courses.ts",
+    "e2e": "playwright test",
+    "course": "tsx scripts/merge-course.ts",
+    "vocab": "tsx scripts/vocab.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/nunito": "^5.3.0",
+    "@fontsource/fredoka": "^5.3.0",
+    "lucide-react": "^1.70.0",
+    "motion": "^14.11.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}

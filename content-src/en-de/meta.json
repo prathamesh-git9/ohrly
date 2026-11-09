@@ -1,0 +1,8 @@
+{
+  "id": "en-de",
+  "from": "en",
+  "to": "de",
+  "title": "German",
+  "version": 1,
+  "names": ["Mara", "Leon", "Berlin"]
+}

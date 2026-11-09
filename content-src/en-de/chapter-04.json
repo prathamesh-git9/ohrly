@@ -1,0 +1,240 @@
+{
+  "id": "c04",
+  "title": "Around town",
+  "cefr": "A1",
+  "description": "Find places, use public transport, follow directions, talk about abilities, and arrange appointments.",
+  "units": [
+    {
+      "id": "u16",
+      "title": "Places nearby",
+      "canDo": "Ask where public places are and understand simple location directions",
+      "tip": {
+        "title": "Ask wo for a fixed location",
+        "body": "Use **wo** when you want to know where a place is. German puts the conjugated verb directly after the question word: **Wo ist die Post?** English adds “is” in the same kind of question, but does not use “do.”\n\nFor a short route answer, **links**, **rechts**, and **geradeaus** can stand alone. To describe distance, use **nahe** with **sein**: **Die Bank ist nahe.**",
+        "examples": [
+          { "target": "Wo ist der Bahnhof?", "source": "Where is the train station?" },
+          { "target": "Die Post ist rechts.", "source": "The post office is on the right." },
+          { "target": "Das Hotel ist nahe.", "source": "The hotel is nearby." }
+        ]
+      },
+      "words": [
+        { "id": "w-bahnhof", "target": "der Bahnhof", "source": "the train station", "sourceAccept": ["train station", "a train station", "the railway station", "railway station", "a railway station", "the station", "station", "a station"], "plural": "die Bahnhöfe", "emoji": "🚉", "pos": "noun" },
+        { "id": "w-post", "target": "die Post", "source": "the post office", "sourceAccept": ["post office", "a post office"], "plural": "die Postämter", "pos": "noun" },
+        { "id": "w-bank", "target": "die Bank", "source": "the bank", "sourceAccept": ["bank", "a bank"], "plural": "die Banken", "emoji": "🏦", "pos": "noun" },
+        { "id": "w-supermarkt", "target": "der Supermarkt", "source": "the supermarket", "sourceAccept": ["supermarket", "a supermarket", "the grocery store", "grocery store", "a grocery store"], "plural": "die Supermärkte", "emoji": "🛒", "pos": "noun" },
+        { "id": "w-hotel", "target": "das Hotel", "source": "the hotel", "sourceAccept": ["hotel", "a hotel"], "plural": "die Hotels", "emoji": "🏨", "pos": "noun" },
+        { "id": "w-restaurant", "target": "das Restaurant", "source": "the restaurant", "sourceAccept": ["restaurant", "a restaurant"], "plural": "die Restaurants", "emoji": "🍽️", "pos": "noun" },
+        { "id": "w-links", "target": "links", "source": "on the left", "sourceAccept": ["left", "to the left"], "pos": "adv" },
+        { "id": "w-rechts", "target": "rechts", "source": "on the right", "sourceAccept": ["right", "to the right"], "pos": "adv" },
+        { "id": "w-geradeaus", "target": "geradeaus", "source": "straight ahead", "sourceAccept": ["straight on"], "pos": "adv" },
+        { "id": "w-nahe", "target": "nahe", "source": "nearby", "sourceAccept": ["near", "close"], "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u16-s01", "target": "Wo ist der Bahnhof?", "source": "Where is the train station?", "sourceAccept": ["Where is the railway station?", "Where is the station?", "Where's the train station?", "Where's the railway station?", "Where's the station?"], "words": ["w-wo", "w-sein", "w-bahnhof"], "cloze": { "answer": "Wo", "distractors": ["Wie", "Wer", "Wen"] } },
+        { "id": "u16-s02", "target": "Die Post ist nahe.", "source": "The post office is nearby.", "sourceAccept": ["The post office is near.", "The post office is close."], "words": ["w-post", "w-sein", "w-nahe"] },
+        { "id": "u16-s03", "target": "Ist die Bank hier?", "source": "Is the bank here?", "words": ["w-sein", "w-bank", "w-hier"], "cloze": { "answer": "die", "distractors": ["der", "das", "den"] } },
+        { "id": "u16-s04", "target": "Der Supermarkt ist rechts.", "source": "The supermarket is on the right.", "sourceAccept": ["The grocery store is on the right."], "words": ["w-supermarkt", "w-sein", "w-rechts"] },
+        { "id": "u16-s05", "target": "Das Hotel ist links.", "source": "The hotel is on the left.", "words": ["w-das", "w-hotel", "w-sein", "w-links"] },
+        { "id": "u16-s06", "target": "Wo ist das Restaurant?", "source": "Where is the restaurant?", "sourceAccept": ["Where's the restaurant?"], "words": ["w-wo", "w-sein", "w-das", "w-restaurant"] },
+        { "id": "u16-s07", "target": "Der Bahnhof ist geradeaus.", "source": "The train station is straight ahead.", "sourceAccept": ["The railway station is straight ahead.", "The station is straight ahead.", "The train station is straight on.", "The railway station is straight on."], "words": ["w-bahnhof", "w-sein", "w-geradeaus"], "cloze": { "answer": "geradeaus", "distractors": ["links", "rechts", "nahe"] } },
+        { "id": "u16-s08", "target": "Die Post ist links, nicht rechts.", "source": "The post office is on the left, not the right.", "words": ["w-post", "w-sein", "w-links", "w-nicht", "w-rechts"] },
+        { "id": "u16-s09", "target": "Ist die Bank nahe?", "source": "Is the bank nearby?", "sourceAccept": ["Is the bank near?", "Is the bank close?"], "words": ["w-sein", "w-bank", "w-nahe"], "cloze": { "answer": "nahe", "distractors": ["naher", "nahen", "nahem"] } },
+        { "id": "u16-s10", "target": "Geradeaus ist der Supermarkt.", "source": "The supermarket is straight ahead.", "sourceAccept": ["The grocery store is straight ahead.", "The supermarket is straight on.", "The grocery store is straight on."], "targetAccept": ["Der Supermarkt ist geradeaus."], "words": ["w-geradeaus", "w-sein", "w-supermarkt"] },
+        { "id": "u16-s11", "target": "Das Hotel ist dort rechts.", "source": "The hotel is over there on the right.", "words": ["w-das", "w-hotel", "w-sein", "w-dort", "w-rechts"] },
+        { "id": "u16-s12", "target": "Das Restaurant ist hier links.", "source": "The restaurant is here on the left.", "words": ["w-das", "w-restaurant", "w-sein", "w-hier", "w-links"], "cloze": { "answer": "links", "distractors": ["linke", "linken", "linkes"] } },
+        { "id": "u16-s13", "target": "Bahnhof oder Hotel?", "source": "Train station or hotel?", "sourceAccept": ["Railway station or hotel?", "Station or hotel?"], "words": ["w-bahnhof", "w-oder", "w-hotel"] },
+        { "id": "u16-s14", "target": "Die Bank ist dort, geradeaus.", "source": "The bank is over there, straight ahead.", "sourceAccept": ["The bank is over there, straight on."], "words": ["w-bank", "w-sein", "w-dort", "w-geradeaus"] },
+        { "id": "u16-s15", "target": "Ist der Supermarkt oder das Restaurant nahe?", "source": "Is the supermarket or the restaurant nearby?", "sourceAccept": ["Is the grocery store or the restaurant nearby?", "Is the supermarket or the restaurant close?"], "words": ["w-sein", "w-supermarkt", "w-oder", "w-das", "w-restaurant", "w-nahe"] },
+        { "id": "u16-s16", "target": "Die Post ist rechts, die Bank links.", "source": "The post office is on the right, the bank on the left.", "words": ["w-post", "w-sein", "w-rechts", "w-bank", "w-links"] },
+        { "id": "u16-s17", "target": "Der Bahnhof ist nicht nahe.", "source": "The train station is not nearby.", "sourceAccept": ["The railway station is not nearby.", "The station is not nearby.", "The train station is not close."], "words": ["w-bahnhof", "w-sein", "w-nicht", "w-nahe"], "cloze": { "answer": "nicht", "distractors": ["kein", "keine"] } },
+        { "id": "u16-s18", "target": "Links ist die Post, rechts die Bank.", "source": "The post office is on the left, the bank on the right.", "words": ["w-links", "w-sein", "w-post", "w-rechts", "w-bank"] }
+      ]
+    },
+    {
+      "id": "u17",
+      "title": "Getting around",
+      "canDo": "Say when transport leaves and arrives and where to get on or off",
+      "tip": {
+        "title": "Separable prefixes move to the end",
+        "body": "In a main clause, German splits verbs such as **abfahren** and **ankommen**. The conjugated verb takes position 2, while the prefix moves to the end: **Der Zug fährt ab.** English keeps “leave” as one piece.\n\nThe same pattern appears in questions: **Wann kommt der Bus an?** Keep the prefix at the end even when a time word begins the sentence: **Jetzt steigt sie ein.**",
+        "examples": [
+          { "target": "Der Zug fährt jetzt ab.", "source": "The train is leaving now." },
+          { "target": "Wann kommt der Bus an?", "source": "When does the bus arrive?" },
+          { "target": "An der Post steige ich aus.", "source": "I get off at the post office." }
+        ]
+      },
+      "words": [
+        { "id": "w-abfahren", "target": "abfahren", "source": "to depart", "sourceAccept": ["to leave"], "forms": ["fahre", "fährst", "fährt", "fahrt", "fahren", "ab"], "pos": "verb" },
+        { "id": "w-ankommen", "target": "ankommen", "source": "to arrive", "forms": ["komme", "kommst", "kommt", "kommen", "an"], "pos": "verb" },
+        { "id": "w-einsteigen", "target": "einsteigen", "source": "to get on", "sourceAccept": ["to board"], "forms": ["steige", "steigst", "steigt", "steigen", "ein"], "pos": "verb" },
+        { "id": "w-aussteigen", "target": "aussteigen", "source": "to get off", "sourceAccept": ["to exit"], "forms": ["steige", "steigst", "steigt", "steigen", "aus"], "pos": "verb" },
+        { "id": "w-bus", "target": "der Bus", "source": "the bus", "sourceAccept": ["bus", "a bus"], "plural": "die Busse", "emoji": "🚌", "pos": "noun" },
+        { "id": "w-zug", "target": "der Zug", "source": "the train", "sourceAccept": ["train", "a train"], "plural": "die Züge", "emoji": "🚆", "pos": "noun" },
+        { "id": "w-haltestelle", "target": "die Haltestelle", "source": "the stop", "sourceAccept": ["stop", "a stop", "the bus stop", "bus stop", "a bus stop"], "plural": "die Haltestellen", "pos": "noun" },
+        { "id": "w-wann", "target": "wann", "source": "when", "pos": "adv" },
+        { "id": "w-jetzt", "target": "jetzt", "source": "now", "pos": "adv" },
+        { "id": "w-puenktlich", "target": "pünktlich", "source": "on time", "sourceAccept": ["punctual"], "pos": "adv" },
+        { "id": "w-am", "target": "am", "source": "at the", "sourceAccept": ["on"], "note": "contraction of an dem", "pos": "prep" }
+      ],
+      "sentences": [
+        { "id": "u17-s01", "target": "Der Bus fährt jetzt ab.", "source": "The bus is leaving now.", "sourceAccept": ["The bus leaves now.", "The bus is departing now.", "The bus departs now."], "words": ["w-bus", "w-abfahren", "w-jetzt"], "cloze": { "answer": "ab", "distractors": ["an", "ein", "aus"] } },
+        { "id": "u17-s02", "target": "Wann kommt der Zug an?", "source": "When does the train arrive?", "sourceAccept": ["When is the train arriving?"], "words": ["w-wann", "w-ankommen", "w-zug"] },
+        { "id": "u17-s03", "target": "Hier steige ich ein.", "source": "I get on here.", "sourceAccept": ["I am getting on here.", "I board here.", "I am boarding here."], "targetAccept": ["Ich steige hier ein."], "words": ["w-hier", "w-einsteigen", "w-ich"] },
+        { "id": "u17-s04", "target": "Dort steige ich aus.", "source": "I get off there.", "sourceAccept": ["I am getting off there."], "targetAccept": ["Ich steige dort aus."], "words": ["w-dort", "w-aussteigen", "w-ich"] },
+        { "id": "u17-s05", "target": "Der Zug fährt pünktlich ab.", "source": "The train leaves on time.", "sourceAccept": ["The train is leaving on time.", "The train departs on time.", "The train is departing on time."], "words": ["w-zug", "w-abfahren", "w-puenktlich"] },
+        { "id": "u17-s06", "target": "Der Bus kommt spät an.", "source": "The bus arrives late.", "sourceAccept": ["The bus is arriving late."], "words": ["w-bus", "w-ankommen", "w-spaet"], "cloze": { "answer": "kommt", "distractors": ["komme", "kommst", "kommen"] } },
+        { "id": "u17-s07", "target": "Die Haltestelle ist nahe.", "source": "The stop is nearby.", "sourceAccept": ["The bus stop is nearby.", "The stop is close.", "The bus stop is close."], "words": ["w-haltestelle", "w-sein", "w-nahe"] },
+        { "id": "u17-s08", "target": "Wann fährt der Bus ab?", "source": "When does the bus leave?", "sourceAccept": ["When is the bus leaving?", "When does the bus depart?", "When is the bus departing?"], "words": ["w-wann", "w-bus", "w-abfahren"], "cloze": { "answer": "fährt", "distractors": ["fahre", "fährst", "fahren"] } },
+        { "id": "u17-s09", "target": "Steigst du jetzt ein?", "source": "Are you getting on now?", "targetAccept": ["Steigt ihr jetzt ein?", "Steigen Sie jetzt ein?"], "sourceAccept": ["Do you get on now?", "Are you boarding now?"], "words": ["w-einsteigen", "w-du", "w-jetzt"] },
+        { "id": "u17-s10", "target": "Wir steigen am Bahnhof aus.", "source": "We get off at the train station.", "sourceAccept": ["We are getting off at the train station.", "We get off at the railway station.", "We are getting off at the railway station."], "words": ["w-wir", "w-aussteigen", "w-am", "w-bahnhof"] },
+        { "id": "u17-s11", "target": "Der Zug kommt jetzt an.", "source": "The train is arriving now.", "sourceAccept": ["The train arrives now."], "words": ["w-zug", "w-ankommen", "w-jetzt"], "cloze": { "answer": "an", "distractors": ["ab", "ein", "aus"] } },
+        { "id": "u17-s12", "target": "Bitte steigen Sie ein.", "source": "Please get on.", "sourceAccept": ["Please board."], "words": ["w-bitte", "w-einsteigen", "w-sie"] },
+        { "id": "u17-s13", "target": "Wo steigt ihr aus?", "source": "Where are you getting off?", "sourceAccept": ["Where do you get off?", "Where are you exiting?"], "targetAccept": ["Wo steigst du aus?", "Wo steigen Sie aus?"], "words": ["w-wo", "w-aussteigen", "w-ihr"] },
+        { "id": "u17-s14", "target": "Fährt der Bus heute pünktlich ab?", "source": "Does the bus leave on time today?", "sourceAccept": ["Is the bus leaving on time today?", "Does the bus depart on time today?"], "words": ["w-abfahren", "w-bus", "w-heute", "w-puenktlich"] },
+        { "id": "u17-s15", "target": "Der Zug ist leider nicht pünktlich.", "source": "Unfortunately, the train is not on time.", "sourceAccept": ["Sadly, the train is not on time.", "Unfortunately, the train is not punctual."], "words": ["w-zug", "w-sein", "w-leider", "w-nicht", "w-puenktlich"] },
+        { "id": "u17-s16", "target": "Jetzt kommt der Bus an.", "source": "The bus is arriving now.", "targetAccept": ["Der Bus kommt jetzt an."], "sourceAccept": ["The bus arrives now."], "words": ["w-jetzt", "w-ankommen", "w-bus"], "cloze": { "answer": "an", "distractors": ["aus", "auf", "ab"] } },
+        { "id": "u17-s17", "target": "Ist das die Haltestelle?", "source": "Is that the stop?", "sourceAccept": ["Is that the bus stop?"], "words": ["w-sein", "w-das", "w-haltestelle"] },
+        { "id": "u17-s18", "target": "Am Bahnhof steigen wir nicht aus.", "source": "We do not get off at the train station.", "targetAccept": ["Wir steigen am Bahnhof nicht aus."], "sourceAccept": ["We don't get off at the train station.", "We do not get off at the railway station.", "We aren't getting off at the train station."], "words": ["w-am", "w-bahnhof", "w-aussteigen", "w-wir", "w-nicht"] }
+      ]
+    },
+    {
+      "id": "u18",
+      "title": "Which way?",
+      "canDo": "Understand and give short directions around town",
+      "tip": {
+        "title": "Use short commands for directions",
+        "body": "Formal German directions often use the verb first with **Sie**: **Gehen Sie geradeaus.** English directions usually omit “you,” but German keeps polite **Sie**. In everyday signs or quick instructions, you may also hear the infinitive alone.\n\nUse **zu** for a destination such as a place: **zum Bahnhof** and **zur Bank**. Use **nach** before a city or a direction without an article: **nach Berlin**, **nach links**.",
+        "examples": [
+          { "target": "Gehen Sie geradeaus.", "source": "Go straight ahead." },
+          { "target": "Fahren Sie zum Bahnhof.", "source": "Travel to the train station." },
+          { "target": "Gehen Sie nach links.", "source": "Go to the left." }
+        ]
+      },
+      "words": [
+        { "id": "w-gehen", "target": "gehen", "source": "to go", "sourceAccept": ["to walk"], "forms": ["gehe", "gehst", "geht", "gehen"], "pos": "verb" },
+        { "id": "w-folgen", "target": "folgen", "source": "to follow", "forms": ["folge", "folgst", "folgt", "folgen"], "pos": "verb" },
+        { "id": "w-ueber", "target": "über", "source": "across", "sourceAccept": ["over"], "pos": "prep" },
+        { "id": "w-durch", "target": "durch", "source": "through", "pos": "prep" },
+        { "id": "w-bis", "target": "bis", "source": "as far as", "sourceAccept": ["until", "to"], "pos": "prep" },
+        { "id": "w-zu", "target": "zu", "source": "to", "forms": ["zum", "zur"], "pos": "prep" },
+        { "id": "w-nach", "target": "nach", "source": "to", "sourceAccept": ["towards", "after"], "pos": "prep" },
+        { "id": "w-strasse", "target": "die Straße", "source": "the street", "sourceAccept": ["street", "a street", "the road", "road", "a road"], "plural": "die Straßen", "emoji": "🛣️", "pos": "noun" },
+        { "id": "w-ecke", "target": "die Ecke", "source": "the corner", "sourceAccept": ["corner", "a corner"], "plural": "die Ecken", "pos": "noun" },
+        { "id": "w-weg", "target": "der Weg", "source": "the way", "sourceAccept": ["way", "a way", "the path", "path", "a path"], "plural": "die Wege", "pos": "noun" }
+      ],
+      "sentences": [
+        { "id": "u18-s01", "target": "Gehen Sie geradeaus.", "source": "Go straight ahead.", "sourceAccept": ["Walk straight ahead.", "Go straight on.", "Walk straight on."], "words": ["w-gehen", "w-sie", "w-geradeaus"], "cloze": { "answer": "Gehen", "distractors": ["Gehe", "Gehst", "Geht"] } },
+        { "id": "u18-s02", "target": "Folgen Sie der Straße.", "source": "Follow the street.", "sourceAccept": ["Follow the road."], "words": ["w-folgen", "w-sie", "w-strasse"] },
+        { "id": "u18-s03", "target": "Gehen Sie über die Straße.", "source": "Go across the street.", "sourceAccept": ["Walk across the street.", "Go across the road.", "Walk across the road."], "words": ["w-gehen", "w-sie", "w-ueber", "w-strasse"] },
+        { "id": "u18-s04", "target": "Fahren Sie durch die Stadt.", "source": "Travel through the city.", "sourceAccept": ["Travel through the town.", "Drive through the city.", "Go through the city."], "words": ["w-fahren", "w-sie", "w-durch", "w-stadt"] },
+        { "id": "u18-s05", "target": "Gehen Sie bis zur Ecke.", "source": "Go as far as the corner.", "sourceAccept": ["Walk as far as the corner.", "Go to the corner.", "Walk to the corner."], "words": ["w-gehen", "w-sie", "w-bis", "w-zu", "w-ecke"], "cloze": { "answer": "zur", "distractors": ["zu", "zum", "der"] } },
+        { "id": "u18-s06", "target": "Nehmen Sie den Bus zum Bahnhof.", "source": "Take the bus to the train station.", "sourceAccept": ["Take the bus to the railway station.", "Take the bus to the station."], "words": ["w-nehmen", "w-sie", "w-den", "w-bus", "w-zu", "w-bahnhof"] },
+        { "id": "u18-s07", "target": "Jetzt gehen Sie nach links.", "source": "Now go to the left.", "sourceAccept": ["Now walk to the left.", "Now go left.", "Now walk left."], "words": ["w-jetzt", "w-gehen", "w-sie", "w-nach", "w-links"] },
+        { "id": "u18-s08", "target": "Fahren Sie heute nach Berlin.", "source": "Travel to Berlin today.", "sourceAccept": ["Go to Berlin today.", "Drive to Berlin today."], "words": ["w-fahren", "w-sie", "w-heute", "w-nach"] },
+        { "id": "u18-s09", "target": "Ich suche den Weg zum Hotel.", "source": "I am looking for the way to the hotel.", "sourceAccept": ["I'm looking for the way to the hotel.", "I am looking for the path to the hotel."], "words": ["w-ich", "w-suchen", "w-den", "w-weg", "w-zu", "w-hotel"] },
+        { "id": "u18-s10", "target": "Ist das der Weg zur Bank?", "source": "Is that the way to the bank?", "sourceAccept": ["Is this the way to the bank?"], "words": ["w-sein", "w-das", "w-weg", "w-zu", "w-bank"], "cloze": { "answer": "zur", "distractors": ["zum", "zu", "durch"] } },
+        { "id": "u18-s11", "target": "Die Ecke ist dort rechts.", "source": "The corner is over there on the right.", "words": ["w-ecke", "w-sein", "w-dort", "w-rechts"] },
+        { "id": "u18-s12", "target": "Folgen Sie der Straße bis zur Post.", "source": "Follow the street as far as the post office.", "sourceAccept": ["Follow the road as far as the post office.", "Follow the street to the post office.", "Follow the road to the post office."], "words": ["w-folgen", "w-sie", "w-strasse", "w-bis", "w-zu", "w-post"] },
+        { "id": "u18-s13", "target": "Geht der Weg durch die Stadt?", "source": "Does the way go through the city?", "sourceAccept": ["Does the path go through the city?", "Does the way go through the town?"], "words": ["w-gehen", "w-weg", "w-durch", "w-stadt"] },
+        { "id": "u18-s14", "target": "Über die Straße oder nach rechts?", "source": "Across the street or to the right?", "sourceAccept": ["Across the road or to the right?", "Across the street or right?"], "words": ["w-ueber", "w-strasse", "w-oder", "w-nach", "w-rechts"] },
+        { "id": "u18-s15", "target": "Fahren Sie bis zum Hotel.", "source": "Travel as far as the hotel.", "sourceAccept": ["Travel to the hotel.", "Drive to the hotel.", "Go as far as the hotel."], "words": ["w-fahren", "w-sie", "w-bis", "w-zu", "w-hotel"], "cloze": { "answer": "zum", "distractors": ["zur", "zu", "den"] } },
+        { "id": "u18-s16", "target": "Nach der Ecke ist die Bank.", "source": "The bank is after the corner.", "targetAccept": ["Die Bank ist nach der Ecke."], "words": ["w-nach", "w-ecke", "w-sein", "w-bank"] },
+        { "id": "u18-s17", "target": "Gehen wir über die Straße?", "source": "Are we going across the street?", "sourceAccept": ["Shall we go across the street?", "Are we walking across the street?", "Are we going across the road?"], "words": ["w-gehen", "w-wir", "w-ueber", "w-strasse"], "cloze": { "answer": "über", "distractors": ["durch", "bis", "nach"] } },
+        { "id": "u18-s18", "target": "Der Weg zum Hotel geht durch die Stadt.", "source": "The way to the hotel goes through the city.", "sourceAccept": ["The path to the hotel goes through the city.", "The way to the hotel goes through the town."], "words": ["w-weg", "w-zu", "w-hotel", "w-gehen", "w-durch", "w-stadt"] }
+      ]
+    },
+    {
+      "id": "u19",
+      "title": "I can do that",
+      "canDo": "Talk about abilities and ask simple questions about permission",
+      "tip": {
+        "title": "Put the second verb at the end",
+        "body": "The modal verb **können** changes to match the subject and takes position 2. The action stays as an infinitive at the end: **Ich kann schwimmen.** English puts “can” before the action too, but German sends the action to the clause end.\n\nIn a question, the modal comes first: **Kann ich hier parken?** For one person, use **kannst du**; for several people, **könnt ihr**; and formally, **können Sie**.",
+        "examples": [
+          { "target": "Ich kann gut kochen.", "source": "I can cook well." },
+          { "target": "Kannst du tanzen?", "source": "Can you dance?" },
+          { "target": "Kann ich hier fotografieren?", "source": "Can I take photos here?" }
+        ]
+      },
+      "words": [
+        { "id": "w-koennen", "target": "können", "source": "can", "sourceAccept": ["to be able to"], "forms": ["kann", "kannst", "könnt", "können"], "pos": "verb" },
+        { "id": "w-schwimmen", "target": "schwimmen", "source": "to swim", "forms": ["schwimme", "schwimmst", "schwimmt", "schwimmen"], "pos": "verb" },
+        { "id": "w-kochen", "target": "kochen", "source": "to cook", "forms": ["koche", "kochst", "kocht", "kochen"], "pos": "verb" },
+        { "id": "w-tanzen", "target": "tanzen", "source": "to dance", "forms": ["tanze", "tanzt", "tanzen"], "pos": "verb" },
+        { "id": "w-helfen", "target": "helfen", "source": "to help", "forms": ["helfe", "hilfst", "hilft", "helft", "helfen"], "pos": "verb" },
+        { "id": "w-parken", "target": "parken", "source": "to park", "forms": ["parke", "parkst", "parkt", "parken"], "pos": "verb" },
+        { "id": "w-fotografieren", "target": "fotografieren", "source": "to take photos", "sourceAccept": ["to photograph", "to take pictures"], "forms": ["fotografiere", "fotografierst", "fotografiert", "fotografieren"], "pos": "verb" },
+        { "id": "w-gut", "target": "gut", "source": "well", "sourceAccept": ["good"], "pos": "adv" },
+        { "id": "w-schlecht", "target": "schlecht", "source": "badly", "sourceAccept": ["bad", "poorly"], "pos": "adv" },
+        { "id": "w-vielleicht", "target": "vielleicht", "source": "perhaps", "sourceAccept": ["maybe"], "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u19-s01", "target": "Ich kann schwimmen.", "source": "I can swim.", "sourceAccept": ["I am able to swim.", "I'm able to swim."], "words": ["w-ich", "w-koennen", "w-schwimmen"], "cloze": { "answer": "kann", "distractors": ["kannst", "könnt", "können"] } },
+        { "id": "u19-s02", "target": "Kannst du kochen?", "source": "Can you cook?", "targetAccept": ["Könnt ihr kochen?", "Können Sie kochen?"], "sourceAccept": ["Are you able to cook?"], "words": ["w-koennen", "w-du", "w-kochen"] },
+        { "id": "u19-s03", "target": "Wir können zusammen tanzen.", "source": "We can dance together.", "sourceAccept": ["We are able to dance together.", "We're able to dance together."], "words": ["w-wir", "w-koennen", "w-zusammen", "w-tanzen"] },
+        { "id": "u19-s04", "target": "Kann ich helfen?", "source": "Can I help?", "sourceAccept": ["May I help?"], "words": ["w-koennen", "w-ich", "w-helfen"] },
+        { "id": "u19-s05", "target": "Meine Freundin kann gut kochen.", "source": "My female friend can cook well.", "sourceAccept": ["My girlfriend can cook well.", "My friend can cook well."], "words": ["w-mein", "w-freundin", "w-koennen", "w-gut", "w-kochen"] },
+        { "id": "u19-s06", "target": "Kann ich hier parken?", "source": "Can I park here?", "sourceAccept": ["May I park here?", "Am I allowed to park here?"], "words": ["w-koennen", "w-ich", "w-hier", "w-parken"], "cloze": { "answer": "parken", "distractors": ["parke", "parkst", "parkt"] } },
+        { "id": "u19-s07", "target": "Hier können Sie fotografieren.", "source": "You can take photos here.", "targetAccept": ["Hier kannst du fotografieren.", "Hier könnt ihr fotografieren.", "Sie können hier fotografieren.", "Du kannst hier fotografieren.", "Ihr könnt hier fotografieren."], "sourceAccept": ["You can take pictures here.", "You may take photos here.", "You may take pictures here."], "words": ["w-hier", "w-koennen", "w-sie", "w-fotografieren"] },
+        { "id": "u19-s08", "target": "Das Kind schwimmt gut.", "source": "The child swims well.", "sourceAccept": ["The child is swimming well."], "words": ["w-das", "w-kind", "w-schwimmen", "w-gut"] },
+        { "id": "u19-s09", "target": "Ich tanze leider schlecht.", "source": "Unfortunately, I dance badly.", "sourceAccept": ["Sadly, I dance badly.", "Unfortunately, I am bad at dancing."], "words": ["w-ich", "w-tanzen", "w-leider", "w-schlecht"] },
+        { "id": "u19-s10", "target": "Vielleicht kann der Freund helfen.", "source": "Perhaps the male friend can help.", "targetAccept": ["Der Freund kann vielleicht helfen."], "sourceAccept": ["Maybe the male friend can help.", "Perhaps the boyfriend can help.", "Maybe the friend can help."], "words": ["w-vielleicht", "w-koennen", "w-freund", "w-helfen"], "cloze": { "answer": "helfen", "distractors": ["helfe", "hilfst", "hilft"] } },
+        { "id": "u19-s11", "target": "Wir können dort nicht parken.", "source": "We cannot park there.", "sourceAccept": ["We can't park there.", "We are not allowed to park there."], "words": ["w-wir", "w-koennen", "w-dort", "w-nicht", "w-parken"] },
+        { "id": "u19-s12", "target": "Können Sie gut fotografieren?", "source": "Are you good at taking photos?", "targetAccept": ["Kannst du gut fotografieren?", "Könnt ihr gut fotografieren?"], "sourceAccept": ["Can you take good photos?", "Are you good at taking pictures?"], "words": ["w-koennen", "w-sie", "w-gut", "w-fotografieren"] },
+        { "id": "u19-s13", "target": "Kannst du gut tanzen?", "source": "Can you dance well?", "targetAccept": ["Könnt ihr gut tanzen?", "Können Sie gut tanzen?"], "sourceAccept": ["Are you able to dance well?"], "words": ["w-koennen", "w-du", "w-gut", "w-tanzen"], "cloze": { "answer": "tanzen", "distractors": ["tanze", "tanzt"] } },
+        { "id": "u19-s14", "target": "Er kocht nicht schlecht.", "source": "He does not cook badly.", "sourceAccept": ["He doesn't cook badly."], "words": ["w-er", "w-kochen", "w-nicht", "w-schlecht"] },
+        { "id": "u19-s15", "target": "Vielleicht können wir schwimmen.", "source": "Perhaps we can swim.", "targetAccept": ["Wir können vielleicht schwimmen."], "sourceAccept": ["Maybe we can swim."], "words": ["w-vielleicht", "w-koennen", "w-wir", "w-schwimmen"] },
+        { "id": "u19-s16", "target": "Leider kann ich heute nicht helfen.", "source": "Unfortunately, I cannot help today.", "sourceAccept": ["Unfortunately, I can't help today.", "Sadly, I cannot help today."], "words": ["w-leider", "w-koennen", "w-ich", "w-heute", "w-nicht", "w-helfen"], "cloze": { "answer": "helfen", "distractors": ["helft", "hilft", "helfe"] } },
+        { "id": "u19-s17", "target": "Könnt ihr hier parken?", "source": "Can you park here?", "targetAccept": ["Kannst du hier parken?", "Können Sie hier parken?"], "sourceAccept": ["Are you allowed to park here?"], "words": ["w-koennen", "w-ihr", "w-hier", "w-parken"] },
+        { "id": "u19-s18", "target": "Hier können wir nicht fotografieren.", "source": "We cannot take photos here.", "targetAccept": ["Wir können hier nicht fotografieren."], "sourceAccept": ["We can't take photos here.", "We cannot take pictures here."], "words": ["w-hier", "w-koennen", "w-wir", "w-nicht", "w-fotografieren"] }
+      ]
+    },
+    {
+      "id": "u20",
+      "title": "Appointments",
+      "canDo": "Arrange a simple appointment and say what you want or need to do",
+      "tip": {
+        "title": "Time first still means verb second",
+        "body": "Like **können**, the modals **wollen** and **müssen** send the action infinitive to the end: **Ich will anfangen.** and **Wir müssen gehen.** English keeps the action beside “want to” or “must,” but German separates them.\n\nA time phrase can come first for emphasis. The conjugated verb must still be the second element, so the subject follows it: **Am Montag will ich anfangen.** Use **am** with days and **um** with clock times.",
+        "examples": [
+          { "target": "Am Montag will ich anfangen.", "source": "I want to start on Monday." },
+          { "target": "Wir müssen um zehn Uhr gehen.", "source": "We have to go at ten o'clock." },
+          { "target": "Der Termin endet am Dienstag.", "source": "The appointment ends on Tuesday." }
+        ]
+      },
+      "words": [
+        { "id": "w-wollen", "target": "wollen", "source": "to want", "forms": ["will", "willst", "wollt", "wollen"], "pos": "verb" },
+        { "id": "w-muessen", "target": "müssen", "source": "to have to", "sourceAccept": ["must"], "forms": ["muss", "musst", "müsst", "müssen"], "pos": "verb" },
+        { "id": "w-termin", "target": "der Termin", "source": "the appointment", "sourceAccept": ["appointment", "an appointment"], "plural": "die Termine", "emoji": "📅", "pos": "noun" },
+        { "id": "w-uhr", "target": "die Uhr", "source": "the clock", "sourceAccept": ["clock", "a clock"], "plural": "die Uhren", "emoji": "🕙", "pos": "noun" },
+        { "id": "w-montag", "target": "Montag", "source": "Monday", "pos": "other" },
+        { "id": "w-um", "target": "um", "source": "at", "note": "used with clock times", "pos": "prep" },
+        { "id": "w-dienstag", "target": "Dienstag", "source": "Tuesday", "pos": "other" },
+        { "id": "w-frei", "target": "frei", "source": "free", "sourceAccept": ["available"], "pos": "adj" },
+        { "id": "w-zeit", "target": "die Zeit", "source": "the time", "sourceAccept": ["time"], "plural": "die Zeiten", "pos": "noun" },
+        { "id": "w-anfangen", "target": "anfangen", "source": "to start", "sourceAccept": ["to begin"], "forms": ["fange", "fängst", "fängt", "fangen", "an"], "pos": "verb" },
+        { "id": "w-enden", "target": "enden", "source": "to end", "sourceAccept": ["to finish"], "forms": ["ende", "endest", "endet", "enden"], "pos": "verb" }
+      ],
+      "sentences": [
+        { "id": "u20-s01", "target": "Ich will am Montag kommen.", "source": "I want to come on Monday.", "targetAccept": ["Am Montag will ich kommen."], "words": ["w-ich", "w-wollen", "w-am", "w-montag", "w-kommen"], "cloze": { "answer": "will", "distractors": ["willst", "wollt", "wollen"] } },
+        { "id": "u20-s02", "target": "Wir müssen um zehn Uhr gehen.", "source": "We have to go at ten o'clock.", "targetAccept": ["Um zehn Uhr müssen wir gehen."], "sourceAccept": ["We must go at ten o'clock.", "We need to go at ten o'clock."], "words": ["w-wir", "w-muessen", "w-um", "w-zehn", "w-uhr", "w-gehen"] },
+        { "id": "u20-s03", "target": "Der Termin ist am Montag.", "source": "The appointment is on Monday.", "targetAccept": ["Am Montag ist der Termin."], "words": ["w-termin", "w-sein", "w-am", "w-montag"] },
+        { "id": "u20-s04", "target": "Ist der Termin um zwei Uhr?", "source": "Is the appointment at two o'clock?", "words": ["w-sein", "w-termin", "w-um", "w-zwei", "w-uhr"], "cloze": { "answer": "um", "distractors": ["am", "im", "in"] } },
+        { "id": "u20-s05", "target": "Am Dienstag will ich nicht arbeiten.", "source": "I do not want to work on Tuesday.", "targetAccept": ["Ich will am Dienstag nicht arbeiten."], "sourceAccept": ["I don't want to work on Tuesday."], "words": ["w-am", "w-dienstag", "w-wollen", "w-ich", "w-nicht", "w-arbeiten"] },
+        { "id": "u20-s06", "target": "Musst du heute arbeiten?", "source": "Do you have to work today?", "targetAccept": ["Müsst ihr heute arbeiten?", "Müssen Sie heute arbeiten?"], "sourceAccept": ["Must you work today?", "Do you need to work today?"], "words": ["w-muessen", "w-du", "w-heute", "w-arbeiten"] },
+        { "id": "u20-s07", "target": "Bist du am Dienstag frei?", "source": "Are you free on Tuesday?", "targetAccept": ["Seid ihr am Dienstag frei?", "Sind Sie am Dienstag frei?", "Am Dienstag bist du frei?", "Am Dienstag seid ihr frei?", "Am Dienstag sind Sie frei?"], "sourceAccept": ["Are you available on Tuesday?"], "words": ["w-sein", "w-du", "w-am", "w-dienstag", "w-frei"] },
+        { "id": "u20-s08", "target": "Ich habe am Montag Zeit.", "source": "I have time on Monday.", "targetAccept": ["Am Montag habe ich Zeit."], "sourceAccept": ["I am available on Monday.", "I'm available on Monday."], "words": ["w-ich", "w-haben", "w-am", "w-montag", "w-zeit"] },
+        { "id": "u20-s09", "target": "Der Termin fängt um zehn Uhr an.", "source": "The appointment starts at ten o'clock.", "targetAccept": ["Um zehn Uhr fängt der Termin an."], "sourceAccept": ["The appointment begins at ten o'clock."], "words": ["w-termin", "w-anfangen", "w-um", "w-zehn", "w-uhr"], "cloze": { "answer": "an", "distractors": ["ab", "ein", "aus"] } },
+        { "id": "u20-s10", "target": "Wann endet der Termin?", "source": "When does the appointment end?", "sourceAccept": ["When does the appointment finish?"], "words": ["w-wann", "w-enden", "w-termin"] },
+        { "id": "u20-s11", "target": "Wir wollen pünktlich anfangen.", "source": "We want to start on time.", "sourceAccept": ["We want to begin on time."], "words": ["w-wir", "w-wollen", "w-puenktlich", "w-anfangen"], "cloze": { "answer": "anfangen", "distractors": ["fange", "fängt", "fangen"] } },
+        { "id": "u20-s12", "target": "Am Dienstag muss der Termin enden.", "source": "The appointment has to end on Tuesday.", "targetAccept": ["Der Termin muss am Dienstag enden."], "sourceAccept": ["The appointment must end on Tuesday.", "The appointment has to finish on Tuesday."], "words": ["w-am", "w-dienstag", "w-muessen", "w-termin", "w-enden"] },
+        { "id": "u20-s13", "target": "Hast du morgen Zeit?", "source": "Do you have time tomorrow?", "targetAccept": ["Habt ihr morgen Zeit?", "Haben Sie morgen Zeit?"], "words": ["w-haben", "w-du", "w-morgen", "w-zeit"] },
+        { "id": "u20-s14", "target": "Um zwei Uhr bin ich frei.", "source": "I am free at two o'clock.", "targetAccept": ["Ich bin um zwei Uhr frei."], "sourceAccept": ["I am available at two o'clock.", "I'm free at two o'clock.", "I'm available at two o'clock."], "words": ["w-um", "w-zwei", "w-uhr", "w-sein", "w-ich", "w-frei"], "cloze": { "answer": "bin", "distractors": ["bist", "ist", "sind"] } },
+        { "id": "u20-s15", "target": "Willst du am Montag anfangen?", "source": "Do you want to start on Monday?", "targetAccept": ["Wollt ihr am Montag anfangen?", "Wollen Sie am Montag anfangen?", "Am Montag willst du anfangen?", "Am Montag wollt ihr anfangen?", "Am Montag wollen Sie anfangen?"], "sourceAccept": ["Do you want to begin on Monday?"], "words": ["w-wollen", "w-du", "w-am", "w-montag", "w-anfangen"] },
+        { "id": "u20-s16", "target": "Der Termin endet am Dienstag um zwei Uhr.", "source": "The appointment ends on Tuesday at two o'clock.", "sourceAccept": ["The appointment finishes on Tuesday at two o'clock."], "words": ["w-termin", "w-enden", "w-am", "w-dienstag", "w-um", "w-zwei", "w-uhr"] },
+        { "id": "u20-s17", "target": "Wir müssen jetzt gehen.", "source": "We have to go now.", "sourceAccept": ["We must go now.", "We need to go now."], "words": ["w-wir", "w-muessen", "w-jetzt", "w-gehen"], "cloze": { "answer": "gehen", "distractors": ["gehe", "gehst", "geht"] } },
+        { "id": "u20-s18", "target": "Am Dienstag bin ich leider nicht frei.", "source": "Unfortunately, I am not free on Tuesday.", "targetAccept": ["Ich bin am Dienstag leider nicht frei."], "sourceAccept": ["Unfortunately, I'm not free on Tuesday.", "Sadly, I am not available on Tuesday."], "words": ["w-am", "w-dienstag", "w-sein", "w-ich", "w-leider", "w-nicht", "w-frei"] }
+      ]
+    }
+  ]
+}

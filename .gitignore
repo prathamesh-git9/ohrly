@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+test-results/
+playwright-report/
+.venv/
+.audio-cache/
+docs/prompts/logs/
+*.report.txt

@@ -1,0 +1,241 @@
+{
+  "id": "c03",
+  "title": "Alltag und Fragen",
+  "cefr": "A1",
+  "description": "Du beschreibst deinen Tagesablauf, fragst nach Gewohnheiten und sprichst über Zeit, Arbeit und Schule.",
+  "units": [
+    {
+      "id": "u11",
+      "title": "Jeden Tag",
+      "canDo": "Du kannst einen einfachen Tagesablauf beschreiben.",
+      "tip": {
+        "title": "Die dritte Person im present simple",
+        "body": "Für Gewohnheiten verwendest du im Englischen das **present simple**. Bei **I** und **you** steht die Grundform: **I work**. Bei **he**, **she** oder einer einzelnen Person kommt meist **-s** dazu: **She works**.\n\nEinige Formen sind unregelmäßig: **go** wird zu **goes**. Anders als im Deutschen verändert sich das Verb nur in der dritten Person Singular.",
+        "examples": [
+          { "target": "I work every day.", "source": "Ich arbeite jeden Tag." },
+          { "target": "She studies in the morning.", "source": "Sie lernt morgens." },
+          { "target": "He goes to work.", "source": "Er geht zur Arbeit." }
+        ]
+      },
+      "words": [
+        { "id": "w-wake", "target": "wake up", "source": "aufwachen", "sourceAccept": ["wache auf", "wachst auf", "wacht auf"], "forms": ["wakes up", "waking up", "woke up", "woken up"], "pos": "verb" },
+        { "id": "w-eat", "target": "eat", "source": "essen", "sourceAccept": ["esse", "isst", "esst"], "forms": ["eats", "eating", "ate", "eaten"], "pos": "verb" },
+        { "id": "w-work", "target": "work", "source": "arbeiten", "sourceAccept": ["arbeite", "arbeitest", "arbeitet"], "forms": ["works", "working", "worked"], "pos": "verb" },
+        { "id": "w-study", "target": "study", "source": "lernen", "sourceAccept": ["lerne", "lernst", "lernt", "studieren"], "forms": ["studies", "studying", "studied"], "pos": "verb" },
+        { "id": "w-go", "target": "go", "source": "gehen", "sourceAccept": ["gehe", "gehst", "geht"], "forms": ["goes", "going", "went", "gone"], "pos": "verb" },
+        { "id": "w-come", "target": "come", "source": "kommen", "sourceAccept": ["komme", "kommst", "kommt"], "forms": ["comes", "coming", "came"], "pos": "verb" },
+        { "id": "w-sleep", "target": "sleep", "source": "schlafen", "sourceAccept": ["schlafe", "schläfst", "schlaft", "schläft"], "forms": ["sleeps", "sleeping", "slept"], "pos": "verb" },
+        { "id": "w-every", "target": "every", "source": "jeder", "sourceAccept": ["jede", "jedes", "jeden"], "pos": "det" },
+        { "id": "w-usually", "target": "usually", "source": "normalerweise", "sourceAccept": ["meistens"], "pos": "adv" },
+        { "id": "w-day", "target": "day", "source": "der Tag", "targetAccept": ["the day", "a day"], "sourceAccept": ["Tag", "ein Tag"], "forms": ["days"], "pos": "noun" },
+        { "id": "w-to", "target": "to", "source": "zu", "sourceAccept": ["nach", "in"], "pos": "prep" },
+        { "id": "w-home", "target": "home", "source": "zu Hause", "sourceAccept": ["nach Hause"], "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u11-s01", "target": "I wake up and go to work.", "source": "Ich wache auf und gehe zur Arbeit.", "words": ["w-i", "w-wake", "w-and", "w-go", "w-to", "w-work"], "cloze": { "answer": "go", "distractors": ["goes", "going"] } },
+        { "id": "u11-s02", "target": "You study and work.", "source": "Du lernst und arbeitest.", "sourceAccept": ["Ihr lernt und arbeitet.", "Sie lernen und arbeiten."], "words": ["w-you", "w-study", "w-and", "w-work"] },
+        { "id": "u11-s03", "target": "I eat and come home.", "source": "Ich esse und komme nach Hause.", "words": ["w-i", "w-eat", "w-and", "w-come", "w-home"] },
+        { "id": "u11-s04", "target": "My sister wakes up at ten every day.", "source": "Meine Schwester wacht jeden Tag um zehn auf.", "words": ["w-my", "w-sister", "w-wake", "w-at", "w-ten", "w-every", "w-day"], "cloze": { "answer": "wakes", "distractors": ["wake", "waking"] } },
+        { "id": "u11-s05", "target": "My brother usually eats at home.", "source": "Mein Bruder isst normalerweise zu Hause.", "sourceAccept": ["Mein Bruder isst meistens zu Hause."], "words": ["w-my", "w-brother", "w-usually", "w-eat", "w-at", "w-home"] },
+        { "id": "u11-s06", "target": "My sister works every day.", "source": "Meine Schwester arbeitet jeden Tag.", "words": ["w-my", "w-sister", "w-work", "w-every", "w-day"], "cloze": { "answer": "works", "distractors": ["work", "working"] } },
+        { "id": "u11-s07", "target": "Her brother studies English.", "source": "Ihr Bruder lernt Englisch.", "words": ["w-her", "w-brother", "w-study", "w-english"], "cloze": { "answer": "studies", "distractors": ["study", "studying"] } },
+        { "id": "u11-s08", "target": "My father goes to work.", "source": "Mein Vater geht zur Arbeit.", "words": ["w-my", "w-father", "w-go", "w-to", "w-work"], "cloze": { "answer": "goes", "distractors": ["go", "going"] } },
+        { "id": "u11-s09", "target": "My mother comes home and reads.", "source": "Meine Mutter kommt nach Hause und liest.", "words": ["w-my", "w-mother", "w-come", "w-home", "w-and", "w-read"] },
+        { "id": "u11-s10", "target": "I usually sleep well.", "source": "Ich schlafe normalerweise gut.", "sourceAccept": ["Ich schlafe meistens gut."], "words": ["w-i", "w-usually", "w-sleep", "w-well"] },
+        { "id": "u11-s11", "target": "The child sleeps well at home.", "source": "Das Kind schläft gut zu Hause.", "sourceAccept": ["Zu Hause schläft das Kind gut."], "words": ["w-child", "w-sleep", "w-well", "w-at", "w-home"] },
+        { "id": "u11-s12", "target": "You work every day.", "source": "Du arbeitest jeden Tag.", "sourceAccept": ["Ihr arbeitet jeden Tag.", "Sie arbeiten jeden Tag."], "words": ["w-you", "w-work", "w-every", "w-day"] },
+        { "id": "u11-s13", "target": "I read every day.", "source": "Ich lese jeden Tag.", "words": ["w-i", "w-read", "w-every", "w-day"] },
+        { "id": "u11-s14", "target": "My parents usually come home.", "source": "Meine Eltern kommen normalerweise nach Hause.", "sourceAccept": ["Meine Eltern kommen meistens nach Hause."], "words": ["w-my", "w-parents", "w-usually", "w-come", "w-home"] },
+        { "id": "u11-s15", "target": "Your father wakes up and reads.", "source": "Dein Vater wacht auf und liest.", "sourceAccept": ["Euer Vater wacht auf und liest.", "Ihr Vater wacht auf und liest."], "words": ["w-your", "w-father", "w-wake", "w-and", "w-read"] },
+        { "id": "u11-s16", "target": "Her mother eats at work.", "source": "Ihre Mutter isst bei der Arbeit.", "words": ["w-her", "w-mother", "w-eat", "w-at", "w-work"], "cloze": { "answer": "eats", "distractors": ["eat", "eating"] } },
+        { "id": "u11-s17", "target": "My brother can sleep well.", "source": "Mein Bruder kann gut schlafen.", "words": ["w-my", "w-brother", "w-can", "w-sleep", "w-well"] },
+        { "id": "u11-s18", "target": "My sister comes from England.", "source": "Meine Schwester kommt aus England.", "words": ["w-my", "w-sister", "w-come", "w-from", "w-england"], "cloze": { "answer": "comes", "distractors": ["come", "coming"] } }
+      ]
+    },
+    {
+      "id": "u12",
+      "title": "Machst du das?",
+      "canDo": "Du kannst nach Gewohnheiten fragen und kurz antworten.",
+      "tip": {
+        "title": "Fragen mit do und does",
+        "body": "Im **present simple** brauchst du für die meisten Fragen ein Hilfsverb: **Do you work?** Bei **he**, **she** oder einer einzelnen Person verwendest du **does**.\n\nNach **do** und **does** steht immer die Grundform: **Does she play?**, nicht *Does she plays?* Das **-s** steckt schon in **does**. Kurze Antworten lauten zum Beispiel **Yes, I do** oder **Yes, she does**.",
+        "examples": [
+          { "target": "Do you like English?", "source": "Magst du Englisch?" },
+          { "target": "Does she play?", "source": "Spielt sie?" },
+          { "target": "Yes, I do.", "source": "Ja." }
+        ]
+      },
+      "words": [
+        { "id": "w-do", "target": "do", "source": "tun", "sourceAccept": ["machen", "mache", "machst", "macht"], "forms": ["doing", "did", "done"], "pos": "verb", "note": "In Fragen ist do ein Hilfsverb." },
+        { "id": "w-does", "target": "does", "source": "tut", "sourceAccept": ["macht"], "pos": "verb", "note": "Hilfsverb für he, she und it." },
+        { "id": "w-like", "target": "like", "source": "mögen", "sourceAccept": ["mag", "magst", "mögt"], "forms": ["likes", "liking", "liked"], "pos": "verb" },
+        { "id": "w-play", "target": "play", "source": "spielen", "sourceAccept": ["spiele", "spielst", "spielt"], "forms": ["plays", "playing", "played"], "pos": "verb" },
+        { "id": "w-watch", "target": "watch", "source": "anschauen", "sourceAccept": ["schaue an", "schaust an", "schaut an"], "forms": ["watches", "watching", "watched"], "pos": "verb" },
+        { "id": "w-start", "target": "start", "source": "anfangen", "sourceAccept": ["fange an", "fängst an", "fangt an", "fängt an"], "forms": ["starts", "starting", "started"], "pos": "verb" },
+        { "id": "w-finish", "target": "finish", "source": "aufhören", "sourceAccept": ["höre auf", "hörst auf", "hört auf", "beenden"], "forms": ["finishes", "finishing", "finished"], "pos": "verb" },
+        { "id": "w-when", "target": "when", "source": "wann", "pos": "adv" },
+        { "id": "w-why", "target": "why", "source": "warum", "pos": "adv" },
+        { "id": "w-tv", "target": "TV", "source": "das Fernsehen", "targetAccept": ["the TV", "television"], "sourceAccept": ["Fernsehen", "der Fernseher", "Fernseher", "ein Fernseher"], "pos": "noun" },
+        { "id": "w-he", "target": "he", "source": "er", "pos": "pron" },
+        { "id": "w-she", "target": "she", "source": "sie", "pos": "pron" }
+      ],
+      "sentences": [
+        { "id": "u12-s01", "target": "Do you like English?", "source": "Magst du Englisch?", "sourceAccept": ["Mögt ihr Englisch?", "Mögen Sie Englisch?"], "words": ["w-do", "w-you", "w-like", "w-english"], "cloze": { "answer": "Do", "distractors": ["Does", "Is"] } },
+        { "id": "u12-s02", "target": "Do you play?", "source": "Spielst du?", "sourceAccept": ["Spielt ihr?", "Spielen Sie?"], "words": ["w-do", "w-you", "w-play"] },
+        { "id": "u12-s03", "target": "Does she watch TV?", "source": "Schaut sie fern?", "words": ["w-does", "w-she", "w-watch", "w-tv"], "cloze": { "answer": "Does", "distractors": ["Do", "Is"] } },
+        { "id": "u12-s04", "target": "Does he speak English?", "source": "Spricht er Englisch?", "words": ["w-does", "w-he", "w-speak", "w-english"] },
+        { "id": "u12-s05", "target": "When do you start work?", "source": "Wann fängst du mit der Arbeit an?", "sourceAccept": ["Wann fangt ihr mit der Arbeit an?", "Wann fangen Sie mit der Arbeit an?"], "words": ["w-when", "w-do", "w-you", "w-start", "w-work"], "cloze": { "answer": "do", "distractors": ["does", "are"] } },
+        { "id": "u12-s06", "target": "When does she finish work?", "source": "Wann hört sie mit der Arbeit auf?", "sourceAccept": ["Wann beendet sie die Arbeit?"], "words": ["w-when", "w-does", "w-she", "w-finish", "w-work"], "cloze": { "answer": "finish", "distractors": ["finishes", "finished"] } },
+        { "id": "u12-s07", "target": "Why do you study German?", "source": "Warum lernst du Deutsch?", "sourceAccept": ["Warum lernt ihr Deutsch?", "Warum lernen Sie Deutsch?"], "words": ["w-why", "w-do", "w-you", "w-study", "w-german"] },
+        { "id": "u12-s08", "target": "Why does he watch TV?", "source": "Warum schaut er fern?", "words": ["w-why", "w-does", "w-he", "w-watch", "w-tv"], "cloze": { "answer": "watch", "distractors": ["watches", "watching"] } },
+        { "id": "u12-s09", "target": "Yes, I do.", "source": "Ja.", "sourceAccept": ["Ja, das tue ich.", "Ja, mache ich."], "words": ["w-yes", "w-i", "w-do"] },
+        { "id": "u12-s10", "target": "Yes, she does.", "source": "Ja, das tut sie.", "sourceAccept": ["Ja."], "words": ["w-yes", "w-she", "w-does"] },
+        { "id": "u12-s11", "target": "Does your brother like English?", "source": "Mag dein Bruder Englisch?", "sourceAccept": ["Mag euer Bruder Englisch?", "Mag Ihr Bruder Englisch?"], "words": ["w-does", "w-your", "w-brother", "w-like", "w-english"], "cloze": { "answer": "like", "distractors": ["likes", "liked"] } },
+        { "id": "u12-s12", "target": "Do your parents work?", "source": "Arbeiten deine Eltern?", "sourceAccept": ["Arbeiten eure Eltern?", "Arbeiten Ihre Eltern?"], "words": ["w-do", "w-your", "w-parents", "w-work"] },
+        { "id": "u12-s13", "target": "When does work start?", "source": "Wann beginnt die Arbeit?", "words": ["w-when", "w-does", "w-work", "w-start"] },
+        { "id": "u12-s14", "target": "Work finishes at ten.", "source": "Die Arbeit endet um zehn.", "words": ["w-work", "w-finish", "w-at", "w-ten"] },
+        { "id": "u12-s15", "target": "I like playing and dancing.", "source": "Ich spiele und tanze gern.", "words": ["w-i", "w-like", "w-play", "w-and", "w-dance"] },
+        { "id": "u12-s16", "target": "Do you watch TV every day?", "source": "Schaust du jeden Tag fern?", "sourceAccept": ["Schaut ihr jeden Tag fern?", "Schauen Sie jeden Tag fern?"], "words": ["w-do", "w-you", "w-watch", "w-tv", "w-every", "w-day"], "cloze": { "answer": "watch", "distractors": ["watches", "watched"] } },
+        { "id": "u12-s17", "target": "Why does your sister play?", "source": "Warum spielt deine Schwester?", "sourceAccept": ["Warum spielt eure Schwester?", "Warum spielt Ihre Schwester?"], "words": ["w-why", "w-does", "w-your", "w-sister", "w-play"] },
+        { "id": "u12-s18", "target": "When do you finish work?", "source": "Wann hast du Feierabend?", "sourceAccept": ["Wann habt ihr Feierabend?", "Wann haben Sie Feierabend?", "Wann hörst du mit der Arbeit auf?", "Wann hört ihr mit der Arbeit auf?", "Wann hören Sie mit der Arbeit auf?"], "words": ["w-when", "w-do", "w-you", "w-finish", "w-work"] }
+      ]
+    },
+    {
+      "id": "u13",
+      "title": "Das mache ich nicht",
+      "canDo": "Du kannst Gewohnheiten verneinen und falsche Aussagen korrigieren.",
+      "tip": {
+        "title": "don't und doesn't",
+        "body": "Für die Verneinung im **present simple** setzt du **do not** oder kurz **don't** vor die Grundform: **I don't work**. Bei **he**, **she** oder einer einzelnen Person heißt es **does not** beziehungsweise **doesn't**.\n\nAuch hier steht danach die Grundform: **She doesn't play**, nicht *doesn't plays*. **Never** bedeutet bereits „nie“; deshalb kommt kein zusätzliches **not** dazu.",
+        "examples": [
+          { "target": "I don't work today.", "source": "Ich arbeite heute nicht." },
+          { "target": "She doesn't play.", "source": "Sie spielt nicht." },
+          { "target": "He never watches TV.", "source": "Er schaut nie fern." }
+        ]
+      },
+      "words": [
+        { "id": "w-do-not", "target": "do not", "source": "nicht tun", "targetAccept": ["don't"], "sourceAccept": ["tue nicht", "mach nicht", "mache nicht"], "pos": "verb", "note": "Verneinung mit I, you und mehreren Personen." },
+        { "id": "w-does-not", "target": "does not", "source": "tut nicht", "targetAccept": ["doesn't"], "sourceAccept": ["macht nicht"], "pos": "verb", "note": "Verneinung mit he, she und it." },
+        { "id": "w-never", "target": "never", "source": "nie", "sourceAccept": ["niemals"], "pos": "adv" },
+        { "id": "w-not", "target": "not", "source": "nicht", "pos": "adv" },
+        { "id": "w-but", "target": "but", "source": "aber", "pos": "conj" },
+        { "id": "w-also", "target": "also", "source": "auch", "pos": "adv" },
+        { "id": "w-really", "target": "really", "source": "wirklich", "pos": "adv" },
+        { "id": "w-sometimes", "target": "sometimes", "source": "manchmal", "pos": "adv" }
+      ],
+      "sentences": [
+        { "id": "u13-s01", "target": "I do not work at home.", "source": "Ich arbeite nicht zu Hause.", "targetAccept": ["I don't work at home."], "words": ["w-i", "w-do-not", "w-work", "w-at"], "cloze": { "answer": "do", "distractors": ["does", "am"] } },
+        { "id": "u13-s02", "target": "She does not play.", "source": "Sie spielt nicht.", "targetAccept": ["She doesn't play."], "words": ["w-she", "w-does-not", "w-play"], "cloze": { "answer": "play", "distractors": ["plays", "playing"] } },
+        { "id": "u13-s03", "target": "He never watches TV.", "source": "Er schaut nie fern.", "sourceAccept": ["Er schaut niemals fern."], "words": ["w-he", "w-never", "w-watch", "w-tv"], "cloze": { "answer": "watches", "distractors": ["watch", "watching"] } },
+        { "id": "u13-s04", "target": "Not again, please.", "source": "Bitte nicht noch einmal.", "words": ["w-not", "w-again", "w-please"] },
+        { "id": "u13-s05", "target": "I study English but not German.", "source": "Ich lerne Englisch, aber nicht Deutsch.", "words": ["w-i", "w-study", "w-english", "w-but", "w-not", "w-german"] },
+        { "id": "u13-s06", "target": "She also speaks English.", "source": "Sie spricht auch Englisch.", "words": ["w-she", "w-also", "w-speak", "w-english"] },
+        { "id": "u13-s07", "target": "Do you really like it?", "source": "Magst du es wirklich?", "sourceAccept": ["Mögt ihr es wirklich?", "Mögen Sie es wirklich?"], "words": ["w-do", "w-you", "w-really", "w-like", "w-it"], "cloze": { "answer": "really", "distractors": ["usually", "sometimes"] } },
+        { "id": "u13-s08", "target": "My parents sometimes work at home.", "source": "Meine Eltern arbeiten manchmal zu Hause.", "words": ["w-my", "w-parents", "w-sometimes", "w-work", "w-at"] },
+        { "id": "u13-s09", "target": "I don't watch TV.", "source": "Ich schaue nicht fern.", "targetAccept": ["I do not watch TV."], "words": ["w-i", "w-do-not", "w-watch", "w-tv"], "cloze": { "answer": "watch", "distractors": ["watches", "watched"] } },
+        { "id": "u13-s10", "target": "My brother doesn't study German.", "source": "Mein Bruder lernt kein Deutsch.", "targetAccept": ["My brother does not study German."], "words": ["w-my", "w-brother", "w-does-not", "w-study", "w-german"] },
+        { "id": "u13-s11", "target": "She never comes home.", "source": "Sie kommt nie nach Hause.", "sourceAccept": ["Sie kommt niemals nach Hause."], "words": ["w-she", "w-never", "w-come", "w-home"] },
+        { "id": "u13-s12", "target": "I can cook but cannot drive.", "source": "Ich kann kochen, aber nicht Auto fahren.", "words": ["w-i", "w-can", "w-cook", "w-but", "w-cannot", "w-drive"] },
+        { "id": "u13-s13", "target": "Her sister also works here.", "source": "Ihre Schwester arbeitet auch hier.", "words": ["w-her", "w-sister", "w-also", "w-work", "w-here"] },
+        { "id": "u13-s14", "target": "Does he really speak German?", "source": "Spricht er wirklich Deutsch?", "words": ["w-does", "w-he", "w-really", "w-speak", "w-german"], "cloze": { "answer": "speak", "distractors": ["speaks", "speaking"] } },
+        { "id": "u13-s15", "target": "Sometimes I read at home.", "source": "Manchmal lese ich zu Hause.", "words": ["w-sometimes", "w-i", "w-read", "w-at"] },
+        { "id": "u13-s16", "target": "No, I don't like it.", "source": "Nein, ich mag es nicht.", "targetAccept": ["No, I do not like it."], "words": ["w-no", "w-i", "w-do-not", "w-like", "w-it"] },
+        { "id": "u13-s17", "target": "He doesn't sleep well.", "source": "Er schläft nicht gut.", "targetAccept": ["He does not sleep well."], "words": ["w-he", "w-does-not", "w-sleep", "w-well"], "cloze": { "answer": "sleep", "distractors": ["sleeps", "sleeping"] } },
+        { "id": "u13-s18", "target": "Why not start again?", "source": "Warum nicht noch einmal anfangen?", "words": ["w-why", "w-not", "w-start", "w-again"] }
+      ]
+    },
+    {
+      "id": "u14",
+      "title": "Zeit und Häufigkeit",
+      "canDo": "Du kannst Uhrzeiten nennen und sagen, wie oft etwas passiert.",
+      "tip": {
+        "title": "Wo Häufigkeitswörter stehen",
+        "body": "**Always**, **usually** und **often** stehen normalerweise vor einem normalen Verb: **I often work**. Bei **be** stehen sie danach: **She is always happy**. Diese Stellung ist im Englischen fester als im Deutschen.\n\n**Sometimes** ist beweglicher und kann auch am Satzanfang stehen. Für volle Uhrzeiten verwendest du **o'clock**: **It is ten o'clock**.",
+        "examples": [
+          { "target": "I often work at home.", "source": "Ich arbeite oft zu Hause." },
+          { "target": "She is always friendly.", "source": "Sie ist immer freundlich." },
+          { "target": "It is ten o'clock.", "source": "Es ist zehn Uhr." }
+        ]
+      },
+      "words": [
+        { "id": "w-clock", "target": "clock", "source": "die Uhr", "targetAccept": ["the clock", "a clock"], "sourceAccept": ["Uhr", "eine Uhr"], "forms": ["clocks", "o'clock"], "pos": "noun" },
+        { "id": "w-hour", "target": "hour", "source": "die Stunde", "targetAccept": ["the hour", "an hour"], "sourceAccept": ["Stunde", "eine Stunde"], "forms": ["hours"], "pos": "noun" },
+        { "id": "w-morning", "target": "morning", "source": "der Morgen", "targetAccept": ["the morning", "a morning"], "sourceAccept": ["Morgen", "ein Morgen"], "forms": ["mornings"], "pos": "noun" },
+        { "id": "w-afternoon", "target": "afternoon", "source": "der Nachmittag", "targetAccept": ["the afternoon", "an afternoon"], "sourceAccept": ["Nachmittag", "ein Nachmittag"], "forms": ["afternoons"], "pos": "noun" },
+        { "id": "w-evening", "target": "evening", "source": "der Abend", "targetAccept": ["the evening", "an evening"], "sourceAccept": ["Abend", "ein Abend"], "forms": ["evenings"], "pos": "noun" },
+        { "id": "w-today", "target": "today", "source": "heute", "pos": "adv" },
+        { "id": "w-tomorrow", "target": "tomorrow", "source": "morgen", "pos": "adv" },
+        { "id": "w-always", "target": "always", "source": "immer", "pos": "adv" },
+        { "id": "w-often", "target": "often", "source": "oft", "pos": "adv" },
+        { "id": "w-minute", "target": "minute", "source": "die Minute", "targetAccept": ["the minute", "a minute"], "sourceAccept": ["Minute", "eine Minute"], "forms": ["minutes"], "pos": "noun" },
+        { "id": "w-for", "target": "for", "source": "für", "sourceAccept": ["lang"], "pos": "prep" }
+      ],
+      "sentences": [
+        { "id": "u14-s01", "target": "The clock is here.", "source": "Die Uhr ist hier.", "words": ["w-clock", "w-is", "w-here"] },
+        { "id": "u14-s02", "target": "It is ten o'clock.", "source": "Es ist zehn Uhr.", "words": ["w-it", "w-is", "w-ten", "w-clock"], "cloze": { "answer": "o'clock", "distractors": ["clock", "hours"] } },
+        { "id": "u14-s03", "target": "I study for one hour.", "source": "Ich lerne eine Stunde lang.", "words": ["w-i", "w-study", "w-for", "w-one", "w-hour"] },
+        { "id": "u14-s04", "target": "A minute, please.", "source": "Eine Minute, bitte.", "words": ["w-a", "w-minute", "w-please"] },
+        { "id": "u14-s05", "target": "I work every morning.", "source": "Ich arbeite jeden Morgen.", "words": ["w-i", "w-work", "w-every", "w-morning"] },
+        { "id": "u14-s06", "target": "She studies every afternoon.", "source": "Sie lernt jeden Nachmittag.", "words": ["w-she", "w-study", "w-every", "w-afternoon"] },
+        { "id": "u14-s07", "target": "My parents read every evening.", "source": "Meine Eltern lesen jeden Abend.", "words": ["w-my", "w-parents", "w-read", "w-every", "w-evening"] },
+        { "id": "u14-s08", "target": "I work today but not tomorrow.", "source": "Ich arbeite heute, aber morgen nicht.", "words": ["w-i", "w-work", "w-today", "w-but", "w-not", "w-tomorrow"] },
+        { "id": "u14-s09", "target": "He always wakes up at ten.", "source": "Er wacht immer um zehn auf.", "words": ["w-he", "w-always", "w-wake", "w-at", "w-ten"], "cloze": { "answer": "always", "distractors": ["often", "sometimes"] } },
+        { "id": "u14-s10", "target": "My sister often reads at home.", "source": "Meine Schwester liest oft zu Hause.", "words": ["w-my", "w-sister", "w-often", "w-read", "w-at"], "cloze": { "answer": "often", "distractors": ["always", "usually"] } },
+        { "id": "u14-s11", "target": "She is always friendly.", "source": "Sie ist immer freundlich.", "words": ["w-she", "w-is", "w-always", "w-friendly"], "cloze": { "answer": "always", "distractors": ["every", "never"] } },
+        { "id": "u14-s12", "target": "Do you often work here?", "source": "Arbeitest du oft hier?", "sourceAccept": ["Arbeitet ihr oft hier?", "Arbeiten Sie oft hier?"], "words": ["w-do", "w-you", "w-often", "w-work", "w-here"] },
+        { "id": "u14-s13", "target": "Can you work for one hour?", "source": "Kannst du eine Stunde lang arbeiten?", "sourceAccept": ["Könnt ihr eine Stunde lang arbeiten?", "Können Sie eine Stunde lang arbeiten?"], "words": ["w-can", "w-you", "w-work", "w-for", "w-one", "w-hour"] },
+        { "id": "u14-s14", "target": "I read for ten minutes.", "source": "Ich lese zehn Minuten lang.", "words": ["w-i", "w-read", "w-for", "w-ten", "w-minute"] },
+        { "id": "u14-s15", "target": "Good morning! Do you work today?", "source": "Guten Morgen! Arbeitest du heute?", "sourceAccept": ["Guten Morgen! Arbeitet ihr heute?", "Guten Morgen! Arbeiten Sie heute?"], "words": ["w-good-morning", "w-do", "w-you", "w-work", "w-today"] },
+        { "id": "u14-s16", "target": "Do you work this afternoon?", "source": "Arbeitest du heute Nachmittag?", "sourceAccept": ["Arbeitet ihr heute Nachmittag?", "Arbeiten Sie heute Nachmittag?"], "words": ["w-do", "w-you", "w-work", "w-this", "w-afternoon"], "cloze": { "answer": "afternoon", "distractors": ["morning", "evening"] } },
+        { "id": "u14-s17", "target": "Every evening, my parents watch TV.", "source": "Jeden Abend schauen meine Eltern fern.", "words": ["w-every", "w-evening", "w-my", "w-parents", "w-watch", "w-tv"] },
+        { "id": "u14-s18", "target": "Work starts tomorrow morning.", "source": "Die Arbeit beginnt morgen früh.", "words": ["w-work", "w-start", "w-tomorrow", "w-morning"] }
+      ]
+    },
+    {
+      "id": "u15",
+      "title": "Arbeit und Lernen",
+      "canDo": "Du kannst deinen Beruf, Arbeitsplatz oder Lernort nennen.",
+      "tip": {
+        "title": "be oder ein Tätigkeitsverb?",
+        "body": "Für einen Beruf verwendest du **be** mit **a/an**: **I am a teacher**. Sag nicht *I work a teacher*. Für die Tätigkeit nimmst du **work** oder **study**: **I work at a school**.\n\nVor konkreten Orten steht häufig **at**: **at school**, **at the office**. Das deutsche „an“, „in“ oder „bei“ kann je nach Satz also englisch **at** werden.",
+        "examples": [
+          { "target": "I am a teacher.", "source": "Ich bin Lehrer." },
+          { "target": "She works at a school.", "source": "Sie arbeitet an einer Schule." },
+          { "target": "He studies at university.", "source": "Er studiert an der Universität." }
+        ]
+      },
+      "words": [
+        { "id": "w-job", "target": "job", "source": "der Beruf", "targetAccept": ["the job", "a job"], "sourceAccept": ["Beruf", "ein Beruf", "die Arbeit", "Arbeit", "eine Arbeit"], "forms": ["jobs"], "pos": "noun" },
+        { "id": "w-teacher", "target": "teacher", "source": "der Lehrer", "targetAccept": ["the teacher", "a teacher"], "sourceAccept": ["Lehrer", "ein Lehrer", "die Lehrerin", "Lehrerin", "eine Lehrerin"], "forms": ["teachers"], "pos": "noun" },
+        { "id": "w-student", "target": "student", "source": "der Student", "targetAccept": ["the student", "a student"], "sourceAccept": ["Student", "ein Student", "die Studentin", "Studentin", "eine Studentin", "der Schüler", "Schüler", "ein Schüler", "die Schülerin", "Schülerin", "eine Schülerin"], "forms": ["students"], "pos": "noun" },
+        { "id": "w-office", "target": "office", "source": "das Büro", "targetAccept": ["the office", "an office"], "sourceAccept": ["Büro", "ein Büro"], "forms": ["offices"], "pos": "noun" },
+        { "id": "w-school", "target": "school", "source": "die Schule", "targetAccept": ["the school", "a school"], "sourceAccept": ["Schule", "eine Schule"], "forms": ["schools"], "pos": "noun" },
+        { "id": "w-shop", "target": "shop", "source": "das Geschäft", "targetAccept": ["the shop", "a shop", "store", "the store", "a store"], "sourceAccept": ["Geschäft", "ein Geschäft", "der Laden", "Laden", "ein Laden"], "forms": ["shops"], "pos": "noun" },
+        { "id": "w-hospital", "target": "hospital", "source": "das Krankenhaus", "targetAccept": ["the hospital", "a hospital"], "sourceAccept": ["Krankenhaus", "ein Krankenhaus"], "forms": ["hospitals"], "pos": "noun" },
+        { "id": "w-university", "target": "university", "source": "die Universität", "targetAccept": ["the university", "a university"], "sourceAccept": ["Universität", "eine Universität", "die Uni", "Uni", "eine Uni"], "forms": ["universities"], "pos": "noun" },
+        { "id": "w-manager", "target": "manager", "source": "der Manager", "targetAccept": ["the manager", "a manager"], "sourceAccept": ["Manager", "ein Manager", "die Managerin", "Managerin", "eine Managerin"], "forms": ["managers"], "pos": "noun" },
+        { "id": "w-colleague", "target": "colleague", "source": "der Kollege", "targetAccept": ["the colleague", "a colleague", "coworker", "the coworker", "a coworker"], "sourceAccept": ["Kollege", "ein Kollege", "die Kollegin", "Kollegin", "eine Kollegin"], "forms": ["colleagues"], "pos": "noun" }
+      ],
+      "sentences": [
+        { "id": "u15-s01", "target": "What is your job?", "source": "Was ist dein Beruf?", "sourceAccept": ["Was ist euer Beruf?", "Was ist Ihr Beruf?", "Was machst du beruflich?", "Was macht ihr beruflich?", "Was machen Sie beruflich?"], "words": ["w-what", "w-is", "w-your", "w-job"], "cloze": { "answer": "is", "distractors": ["do", "are"] } },
+        { "id": "u15-s02", "target": "I am a teacher.", "source": "Ich bin Lehrer.", "targetAccept": ["I'm a teacher."], "sourceAccept": ["Ich bin Lehrerin."], "words": ["w-i", "w-am", "w-a", "w-teacher"], "cloze": { "answer": "am", "distractors": ["are", "have"] } },
+        { "id": "u15-s03", "target": "She is a student.", "source": "Sie ist Studentin.", "targetAccept": ["She's a student."], "sourceAccept": ["Sie ist Schülerin."], "words": ["w-she", "w-is", "w-a", "w-student"] },
+        { "id": "u15-s04", "target": "He works at the office.", "source": "Er arbeitet im Büro.", "words": ["w-he", "w-work", "w-at", "w-office"], "cloze": { "answer": "at", "distractors": ["in", "on"] } },
+        { "id": "u15-s05", "target": "My mother works at a school.", "source": "Meine Mutter arbeitet an einer Schule.", "words": ["w-my", "w-mother", "w-work", "w-at", "w-a", "w-school"] },
+        { "id": "u15-s06", "target": "Her father works at a shop.", "source": "Ihr Vater arbeitet in einem Geschäft.", "sourceAccept": ["Ihr Vater arbeitet in einem Laden."], "words": ["w-her", "w-father", "w-work", "w-at", "w-a", "w-shop"] },
+        { "id": "u15-s07", "target": "My sister works at a hospital.", "source": "Meine Schwester arbeitet in einem Krankenhaus.", "words": ["w-my", "w-sister", "w-work", "w-at", "w-a", "w-hospital"] },
+        { "id": "u15-s08", "target": "He studies at university.", "source": "Er studiert an der Universität.", "sourceAccept": ["Er studiert an der Uni."], "words": ["w-he", "w-study", "w-at", "w-university"], "cloze": { "answer": "studies", "distractors": ["study", "studying"] } },
+        { "id": "u15-s09", "target": "The manager is friendly.", "source": "Der Manager ist freundlich.", "sourceAccept": ["Die Managerin ist freundlich."], "words": ["w-manager", "w-is", "w-friendly"] },
+        { "id": "u15-s10", "target": "My colleague speaks English.", "source": "Mein Kollege spricht Englisch.", "sourceAccept": ["Meine Kollegin spricht Englisch."], "words": ["w-my", "w-colleague", "w-speak", "w-english"] },
+        { "id": "u15-s11", "target": "Does the teacher work here?", "source": "Arbeitet der Lehrer hier?", "sourceAccept": ["Arbeitet die Lehrerin hier?"], "words": ["w-does", "w-teacher", "w-work", "w-here"], "cloze": { "answer": "work", "distractors": ["works", "working"] } },
+        { "id": "u15-s12", "target": "Yes, the teacher works at this school.", "source": "Ja, der Lehrer arbeitet an dieser Schule.", "sourceAccept": ["Ja, die Lehrerin arbeitet an dieser Schule."], "words": ["w-yes", "w-teacher", "w-work", "w-at", "w-this", "w-school"] },
+        { "id": "u15-s13", "target": "The students study at school.", "source": "Die Schüler lernen in der Schule.", "sourceAccept": ["Die Schülerinnen lernen in der Schule.", "Die Studierenden lernen in der Schule."], "words": ["w-student", "w-study", "w-at", "w-school"] },
+        { "id": "u15-s14", "target": "Is the office open today?", "source": "Ist das Büro heute geöffnet?", "words": ["w-is", "w-office", "w-open", "w-today"] },
+        { "id": "u15-s15", "target": "The shop opens every morning.", "source": "Das Geschäft öffnet jeden Morgen.", "sourceAccept": ["Der Laden öffnet jeden Morgen."], "words": ["w-shop", "w-open", "w-every", "w-morning"], "cloze": { "answer": "opens", "distractors": ["open", "opening"] } },
+        { "id": "u15-s16", "target": "The university has a hospital.", "source": "Die Universität hat ein Krankenhaus.", "sourceAccept": ["Die Uni hat ein Krankenhaus."], "words": ["w-university", "w-have", "w-a", "w-hospital"] },
+        { "id": "u15-s17", "target": "My colleague is the manager.", "source": "Mein Kollege ist der Manager.", "sourceAccept": ["Meine Kollegin ist die Managerin.", "Mein Kollege ist die Managerin.", "Meine Kollegin ist der Manager."], "words": ["w-my", "w-colleague", "w-is", "w-manager"] },
+        { "id": "u15-s18", "target": "Do you like your job?", "source": "Magst du deinen Beruf?", "sourceAccept": ["Mögt ihr euren Beruf?", "Mögen Sie Ihren Beruf?", "Magst du deine Arbeit?", "Mögt ihr eure Arbeit?", "Mögen Sie Ihre Arbeit?"], "words": ["w-do", "w-you", "w-like", "w-your", "w-job"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "c01",
+  "title": "Meet and identify",
+  "cefr": "A1",
+  "description": "Greet people, exchange basic personal details, use numbers, and follow simple classroom instructions.",
+  "units": [
+    {
+      "id": "u01",
+      "title": "Hello!",
+      "canDo": "Greet people, say goodbye, and say who you are",
+      "tip": {
+        "title": "German has different forms of ‘you’",
+        "body": "Use **ich bin** for “I am” and **du bist** with one person you know well. German changes the form of **sein** to match the subject; English usually changes only “am/is/are.”\n\nUse capitalised **Sie sind** in formal situations. **Sie** takes the same verb form as plural “they,” but the capital letter shows the polite meaning. With **heißen**, German literally says that someone “is called” a name.",
+        "examples": [
+          { "target": "Ich bin Mara.", "source": "I am Mara." },
+          { "target": "Bist du Leon?", "source": "Are you Leon?" },
+          { "target": "Sie heißen Mara.", "source": "Your name is Mara." }
+        ]
+      },
+      "words": [
+        { "id": "w-hallo", "target": "hallo", "source": "hello", "sourceAccept": ["hi"], "pos": "phrase" },
+        { "id": "w-guten-morgen", "target": "guten Morgen", "source": "good morning", "pos": "phrase" },
+        { "id": "w-guten-tag", "target": "guten Tag", "source": "good afternoon", "sourceAccept": ["hello", "good day"], "pos": "phrase" },
+        { "id": "w-tschuess", "target": "tschüss", "source": "bye", "sourceAccept": ["goodbye", "bye-bye"], "pos": "phrase" },
+        { "id": "w-auf-wiedersehen", "target": "auf Wiedersehen", "source": "goodbye", "pos": "phrase" },
+        { "id": "w-ich", "target": "ich", "source": "I", "pos": "pron" },
+        { "id": "w-du", "target": "du", "source": "you", "note": "informal singular", "pos": "pron" },
+        { "id": "w-sie", "target": "Sie", "source": "you", "note": "formal", "pos": "pron" },
+        { "id": "w-sein", "target": "sein", "source": "to be", "forms": ["bin", "bist", "ist", "sind", "seid"], "pos": "verb" },
+        { "id": "w-heissen", "target": "heißen", "source": "to be called", "sourceAccept": ["to be named"], "forms": ["heiße", "heißt", "heißen"], "pos": "verb" },
+        { "id": "w-und", "target": "und", "source": "and", "pos": "conj" }
+      ],
+      "sentences": [
+        { "id": "u01-s01", "target": "Hallo, Mara!", "source": "Hello, Mara!", "targetAccept": ["Guten Tag, Mara!"], "sourceAccept": ["Hi, Mara!"], "words": ["w-hallo"] },
+        { "id": "u01-s02", "target": "Hallo, ich bin Leon.", "source": "Hello, I am Leon.", "targetAccept": ["Guten Tag, ich bin Leon."], "sourceAccept": ["Hi, I am Leon.", "Hello, I'm Leon.", "Hi, I'm Leon."], "words": ["w-hallo", "w-ich", "w-sein"] },
+        { "id": "u01-s03", "target": "Guten Morgen!", "source": "Good morning!", "words": ["w-guten-morgen"] },
+        { "id": "u01-s04", "target": "Guten Morgen, Leon!", "source": "Good morning, Leon!", "words": ["w-guten-morgen"] },
+        { "id": "u01-s05", "target": "Guten Tag!", "source": "Good afternoon!", "sourceAccept": ["Hello!", "Good day!"], "words": ["w-guten-tag"] },
+        { "id": "u01-s06", "target": "Guten Tag, Mara!", "source": "Good afternoon, Mara!", "sourceAccept": ["Hello, Mara!", "Good day, Mara!"], "words": ["w-guten-tag"] },
+        { "id": "u01-s07", "target": "Tschüss, Leon!", "source": "Bye, Leon!", "sourceAccept": ["Goodbye, Leon!", "Bye-bye, Leon!"], "words": ["w-tschuess"] },
+        { "id": "u01-s08", "target": "Tschüss, Mara und Leon!", "source": "Bye, Mara and Leon!", "sourceAccept": ["Goodbye, Mara and Leon!", "Bye-bye, Mara and Leon!"], "words": ["w-tschuess", "w-und"] },
+        { "id": "u01-s09", "target": "Auf Wiedersehen!", "source": "Goodbye!", "targetAccept": ["Tschüss!"], "words": ["w-auf-wiedersehen"] },
+        { "id": "u01-s10", "target": "Auf Wiedersehen, Mara und Leon!", "source": "Goodbye, Mara and Leon!", "targetAccept": ["Tschüss, Mara und Leon!"], "words": ["w-auf-wiedersehen", "w-und"] },
+        { "id": "u01-s11", "target": "Ich bin Mara.", "source": "I am Mara.", "sourceAccept": ["I'm Mara."], "words": ["w-ich", "w-sein"], "cloze": { "answer": "bin", "distractors": ["bist", "ist", "sind"] } },
+        { "id": "u01-s12", "target": "Bin ich Leon?", "source": "Am I Leon?", "words": ["w-sein", "w-ich"], "cloze": { "answer": "ich", "distractors": ["du", "Sie"] } },
+        { "id": "u01-s13", "target": "Du bist Leon.", "source": "You are Leon.", "targetAccept": ["Sie sind Leon."], "sourceAccept": ["You're Leon."], "words": ["w-du", "w-sein"] },
+        { "id": "u01-s14", "target": "Bist du Mara?", "source": "Are you Mara?", "targetAccept": ["Sind Sie Mara?"], "words": ["w-sein", "w-du"], "cloze": { "answer": "bist", "distractors": ["bin", "sind", "seid"] } },
+        { "id": "u01-s15", "target": "Sie sind Leon.", "source": "You are Leon.", "targetAccept": ["Du bist Leon."], "sourceAccept": ["You're Leon."], "words": ["w-sie", "w-sein"], "cloze": { "answer": "sind", "distractors": ["seid", "ist", "bin"] } },
+        { "id": "u01-s16", "target": "Ich heiße Mara.", "source": "My name is Mara.", "sourceAccept": ["I am called Mara."], "words": ["w-ich", "w-heissen"], "cloze": { "answer": "heiße", "distractors": ["heißt", "heißen"] } },
+        { "id": "u01-s17", "target": "Heißt du Leon?", "source": "Is your name Leon?", "targetAccept": ["Heißen Sie Leon?"], "sourceAccept": ["Are you called Leon?"], "words": ["w-heissen", "w-du"], "cloze": { "answer": "heißt", "distractors": ["heiße", "heißen"] } },
+        { "id": "u01-s18", "target": "Sie heißen Mara.", "source": "Your name is Mara.", "targetAccept": ["Du heißt Mara."], "sourceAccept": ["You are called Mara."], "words": ["w-sie", "w-heissen"], "cloze": { "answer": "heißen", "distractors": ["heiße", "heißt"] } }
+      ]
+    },
+    {
+      "id": "u02",
+      "title": "Where are you from?",
+      "canDo": "Ask and answer questions about names, origins, and where people live",
+      "tip": {
+        "title": "Put the question word first",
+        "body": "German W-questions begin with a question word, then the conjugated verb: **Wo wohnst du?** English needs “do” in many questions, but German does not.\n\nUse **wo** for location and **woher** for origin. An answer about origin uses **aus**; an answer about where someone lives normally uses **in**.",
+        "examples": [
+          { "target": "Wo wohnst du?", "source": "Where do you live?" },
+          { "target": "Woher kommen Sie?", "source": "Where are you from?" },
+          { "target": "Ich komme aus Deutschland.", "source": "I come from Germany." }
+        ]
+      },
+      "words": [
+        { "id": "w-wo", "target": "wo", "source": "where", "note": "location", "pos": "adv" },
+        { "id": "w-woher", "target": "woher", "source": "where from", "sourceAccept": ["from where"], "pos": "adv" },
+        { "id": "w-wie", "target": "wie", "source": "how", "pos": "adv" },
+        { "id": "w-aus", "target": "aus", "source": "from", "pos": "prep" },
+        { "id": "w-kommen", "target": "kommen", "source": "to come", "forms": ["komme", "kommst", "kommt", "kommen"], "pos": "verb" },
+        { "id": "w-wohnen", "target": "wohnen", "source": "to live", "sourceAccept": ["to reside"], "forms": ["wohne", "wohnst", "wohnt", "wohnen"], "pos": "verb" },
+        { "id": "w-deutschland", "target": "Deutschland", "source": "Germany", "pos": "other" },
+        { "id": "w-england", "target": "England", "source": "England", "pos": "other" },
+        { "id": "w-name", "target": "der Name", "source": "the name", "sourceAccept": ["name", "a name"], "plural": "die Namen", "pos": "noun" },
+        { "id": "w-stadt", "target": "die Stadt", "source": "the city", "sourceAccept": ["city", "a city", "the town", "town", "a town"], "plural": "die Städte", "emoji": "🏙️", "pos": "noun" },
+        { "id": "w-in", "target": "in", "source": "in", "pos": "prep" }
+      ],
+      "sentences": [
+        { "id": "u02-s01", "target": "Wo bist du?", "source": "Where are you?", "targetAccept": ["Wo seid ihr?", "Wo sind Sie?"], "words": ["w-wo", "w-sein", "w-du"], "cloze": { "answer": "bist", "distractors": ["bin", "sind", "seid"] } },
+        { "id": "u02-s02", "target": "Wo sind Sie?", "source": "Where are you?", "targetAccept": ["Wo bist du?", "Wo seid ihr?"], "words": ["w-wo", "w-sein", "w-sie"] },
+        { "id": "u02-s03", "target": "Woher kommst du?", "source": "Where are you from?", "targetAccept": ["Woher kommt ihr?", "Woher kommen Sie?"], "words": ["w-woher", "w-kommen", "w-du"], "cloze": { "answer": "kommst", "distractors": ["komme", "kommt", "kommen"] } },
+        { "id": "u02-s04", "target": "Woher kommen Sie?", "source": "Where do you come from?", "targetAccept": ["Woher kommst du?", "Woher kommt ihr?"], "sourceAccept": ["Where are you from?"], "words": ["w-woher", "w-kommen", "w-sie"] },
+        { "id": "u02-s05", "target": "Ich komme aus Deutschland.", "source": "I come from Germany.", "sourceAccept": ["I am from Germany.", "I'm from Germany."], "words": ["w-ich", "w-kommen", "w-aus", "w-deutschland"], "cloze": { "answer": "aus", "distractors": ["in", "auf"] } },
+        { "id": "u02-s06", "target": "Leon kommt aus England.", "source": "Leon comes from England.", "sourceAccept": ["Leon is from England.", "Leon's from England."], "words": ["w-kommen", "w-aus", "w-england"] },
+        { "id": "u02-s07", "target": "Kommen Sie aus Deutschland?", "source": "Do you come from Germany?", "targetAccept": ["Kommst du aus Deutschland?", "Kommt ihr aus Deutschland?", "Sind Sie aus Deutschland?", "Bist du aus Deutschland?", "Seid ihr aus Deutschland?"], "sourceAccept": ["Are you from Germany?"], "words": ["w-kommen", "w-sie", "w-aus", "w-deutschland"], "cloze": { "answer": "kommen", "distractors": ["komme", "kommst", "kommt"] } },
+        { "id": "u02-s08", "target": "Wie heißen Sie?", "source": "What is your name?", "targetAccept": ["Wie heißt du?", "Wie heißt ihr?"], "sourceAccept": ["What's your name?", "What are you called?"], "words": ["w-wie", "w-heissen", "w-sie"] },
+        { "id": "u02-s09", "target": "Wie heißt die Stadt?", "source": "What is the city called?", "sourceAccept": ["What's the city called?", "What is the name of the city?", "What's the name of the city?"], "words": ["w-wie", "w-heissen", "w-stadt"], "cloze": { "answer": "wie", "distractors": ["wo", "woher"] } },
+        { "id": "u02-s10", "target": "Die Stadt heißt Berlin.", "source": "The city is called Berlin.", "sourceAccept": ["The city's called Berlin.", "The name of the city is Berlin.", "The city's name is Berlin."], "words": ["w-stadt", "w-heissen"] },
+        { "id": "u02-s11", "target": "Wo ist die Stadt?", "source": "Where is the city?", "sourceAccept": ["Where's the city?", "Where is the town?", "Where's the town?"], "words": ["w-wo", "w-sein", "w-stadt"] },
+        { "id": "u02-s12", "target": "Ich wohne in Deutschland.", "source": "I live in Germany.", "sourceAccept": ["I reside in Germany."], "words": ["w-ich", "w-wohnen", "w-in", "w-deutschland"], "cloze": { "answer": "wohne", "distractors": ["wohnst", "wohnt", "wohnen"] } },
+        { "id": "u02-s13", "target": "Wohnen Sie in England?", "source": "Do you live in England?", "targetAccept": ["Wohnst du in England?", "Wohnt ihr in England?"], "sourceAccept": ["Do you reside in England?"], "words": ["w-wohnen", "w-sie", "w-in", "w-england"] },
+        { "id": "u02-s14", "target": "Wo wohnst du?", "source": "Where do you live?", "targetAccept": ["Wo wohnt ihr?", "Wo wohnen Sie?"], "sourceAccept": ["Where do you reside?"], "words": ["w-wo", "w-wohnen", "w-du"], "cloze": { "answer": "wohnst", "distractors": ["wohne", "wohnt", "wohnen"] } },
+        { "id": "u02-s15", "target": "Der Name: Mara.", "source": "Name: Mara.", "sourceAccept": ["The name: Mara."], "words": ["w-name"] },
+        { "id": "u02-s16", "target": "Der Name ist Leon.", "source": "The name is Leon.", "sourceAccept": ["The name's Leon."], "words": ["w-name", "w-sein"] },
+        { "id": "u02-s17", "target": "Berlin ist in Deutschland.", "source": "Berlin is in Germany.", "sourceAccept": ["Berlin's in Germany."], "words": ["w-sein", "w-in", "w-deutschland"] },
+        { "id": "u02-s18", "target": "Wie heißt Leon?", "source": "What is Leon's name?", "sourceAccept": ["What's Leon's name?", "What is Leon called?", "What's Leon called?"], "words": ["w-wie", "w-heissen"] }
+      ]
+    },
+    {
+      "id": "u03",
+      "title": "Spell it, please",
+      "canDo": "Spell a name and ask someone to repeat or speak slowly",
+      "tip": {
+        "title": "A polite instruction keeps Sie after the verb",
+        "body": "For a polite instruction, use the verb form that goes with **Sie**, put it first, and keep **Sie** directly after it: **Sprechen Sie langsam.** English usually uses only the base verb and leaves out “you.”\n\n**Bitte** can come at the beginning or later in the instruction. **Wie bitte?** is a useful fixed question when you did not hear or understand something.",
+        "examples": [
+          { "target": "Buchstabieren Sie bitte.", "source": "Please spell it." },
+          { "target": "Bitte sprechen Sie langsam.", "source": "Please speak slowly." },
+          { "target": "Wie bitte?", "source": "Pardon?" }
+        ]
+      },
+      "words": [
+        { "id": "w-buchstabe", "target": "der Buchstabe", "source": "the letter", "sourceAccept": ["letter", "a letter"], "plural": "die Buchstaben", "pos": "noun" },
+        { "id": "w-buchstabieren", "target": "buchstabieren", "source": "to spell", "forms": ["buchstabiere", "buchstabierst", "buchstabiert", "buchstabieren"], "pos": "verb" },
+        { "id": "w-wiederholen", "target": "wiederholen", "source": "to repeat", "forms": ["wiederhole", "wiederholst", "wiederholt", "wiederholen"], "pos": "verb" },
+        { "id": "w-bitte", "target": "bitte", "source": "please", "sourceAccept": ["you're welcome", "pardon"], "pos": "phrase" },
+        { "id": "w-langsam", "target": "langsam", "source": "slowly", "sourceAccept": ["slow"], "pos": "adv" },
+        { "id": "w-verstehen", "target": "verstehen", "source": "to understand", "forms": ["verstehe", "verstehst", "versteht", "verstehen"], "pos": "verb" },
+        { "id": "w-sprechen", "target": "sprechen", "source": "to speak", "sourceAccept": ["to talk"], "forms": ["spreche", "sprichst", "spricht", "sprechen"], "pos": "verb" },
+        { "id": "w-deutsch", "target": "Deutsch", "source": "German", "pos": "other" },
+        { "id": "w-englisch", "target": "Englisch", "source": "English", "pos": "other" },
+        { "id": "w-noch-einmal", "target": "noch einmal", "source": "once more", "sourceAccept": ["again", "one more time"], "pos": "phrase" },
+        { "id": "w-a", "target": "A", "source": "A", "pos": "other" }
+      ],
+      "sentences": [
+        { "id": "u03-s01", "target": "Buchstabieren Sie bitte.", "source": "Please spell it.", "targetAccept": ["Buchstabiere bitte.", "Buchstabiert bitte."], "words": ["w-buchstabieren", "w-sie", "w-bitte"], "cloze": { "answer": "Buchstabieren", "distractors": ["Buchstabiere", "Buchstabierst", "Buchstabiert"] } },
+        { "id": "u03-s02", "target": "Buchstabieren Sie Mara, bitte.", "source": "Please spell Mara.", "targetAccept": ["Buchstabiere Mara, bitte.", "Buchstabiert Mara, bitte."], "words": ["w-buchstabieren", "w-sie", "w-bitte"] },
+        { "id": "u03-s03", "target": "Wiederholen Sie bitte.", "source": "Please repeat that.", "targetAccept": ["Wiederhole bitte.", "Wiederholt bitte."], "sourceAccept": ["Please repeat it."], "words": ["w-wiederholen", "w-sie", "w-bitte"], "cloze": { "answer": "Wiederholen", "distractors": ["Wiederhole", "Wiederholst", "Wiederholt"] } },
+        { "id": "u03-s04", "target": "Bitte wiederholen Sie langsam.", "source": "Please repeat that slowly.", "targetAccept": ["Bitte wiederhole langsam.", "Bitte wiederholt langsam."], "sourceAccept": ["Please repeat it slowly."], "words": ["w-bitte", "w-wiederholen", "w-sie", "w-langsam"] },
+        { "id": "u03-s05", "target": "Sprechen Sie bitte langsam.", "source": "Please speak slowly.", "targetAccept": ["Sprich bitte langsam.", "Sprecht bitte langsam."], "sourceAccept": ["Please talk slowly."], "words": ["w-sprechen", "w-sie", "w-bitte", "w-langsam"], "cloze": { "answer": "langsam", "distractors": ["langsamer", "langsame"] } },
+        { "id": "u03-s06", "target": "Sprechen Sie Deutsch?", "source": "Do you speak German?", "targetAccept": ["Sprichst du Deutsch?", "Sprecht ihr Deutsch?"], "words": ["w-sprechen", "w-sie", "w-deutsch"] },
+        { "id": "u03-s07", "target": "Sprichst du Englisch?", "source": "Do you speak English?", "targetAccept": ["Sprecht ihr Englisch?", "Sprechen Sie Englisch?"], "words": ["w-sprechen", "w-du", "w-englisch"], "cloze": { "answer": "Sprichst", "distractors": ["Spreche", "Spricht", "Sprechen"] } },
+        { "id": "u03-s08", "target": "Ich spreche Deutsch.", "source": "I speak German.", "words": ["w-ich", "w-sprechen", "w-deutsch"] },
+        { "id": "u03-s09", "target": "Ich verstehe Deutsch.", "source": "I understand German.", "words": ["w-ich", "w-verstehen", "w-deutsch"] },
+        { "id": "u03-s10", "target": "Verstehen Sie Englisch?", "source": "Do you understand English?", "targetAccept": ["Verstehst du Englisch?", "Versteht ihr Englisch?"], "words": ["w-verstehen", "w-sie", "w-englisch"], "cloze": { "answer": "Verstehen", "distractors": ["Verstehe", "Verstehst", "Versteht"] } },
+        { "id": "u03-s11", "target": "Verstehen Sie?", "source": "Do you understand?", "targetAccept": ["Verstehst du?", "Versteht ihr?"], "words": ["w-verstehen", "w-sie"] },
+        { "id": "u03-s12", "target": "Noch einmal, bitte.", "source": "Once more, please.", "sourceAccept": ["Again, please.", "One more time, please."], "words": ["w-noch-einmal", "w-bitte"] },
+        { "id": "u03-s13", "target": "Bitte noch einmal langsam.", "source": "Please say it again slowly.", "sourceAccept": ["Please say it once more, slowly.", "Please say it one more time, slowly."], "words": ["w-bitte", "w-noch-einmal", "w-langsam"] },
+        { "id": "u03-s14", "target": "Der Buchstabe heißt A.", "source": "The letter is called A.", "sourceAccept": ["The letter's called A.", "The letter is A.", "The letter's A."], "words": ["w-buchstabe", "w-heissen", "w-a"], "cloze": { "answer": "Buchstabe", "distractors": ["Buchstaben", "Buchstabieren"] } },
+        { "id": "u03-s15", "target": "Ist der Buchstabe A?", "source": "Is the letter A?", "words": ["w-sein", "w-buchstabe", "w-a"] },
+        { "id": "u03-s16", "target": "A, bitte.", "source": "A, please.", "words": ["w-a", "w-bitte"] },
+        { "id": "u03-s17", "target": "Wie bitte?", "source": "Pardon?", "targetAccept": ["Bitte?"], "sourceAccept": ["Sorry?", "Excuse me?"], "words": ["w-wie", "w-bitte"] },
+        { "id": "u03-s18", "target": "Noch einmal: A.", "source": "Once more: A.", "sourceAccept": ["Again: A.", "One more time: A."], "words": ["w-noch-einmal", "w-a"] }
+      ]
+    },
+    {
+      "id": "u04",
+      "title": "Numbers and age",
+      "canDo": "Give your age, a number, and simple quantities",
+      "tip": {
+        "title": "Age uses sein, but possession uses haben",
+        "body": "German asks **Wie alt bist du?** and answers **Ich bin zwanzig.** This matches English “I am twenty,” but German does not need a word for “years” in the short answer.\n\nUse **haben** for things you have: **ich habe**, **du hast**, and **Sie haben**. The question **wie viel?** asks “how much?” or “how many?” when the noun is understood.",
+        "examples": [
+          { "target": "Wie alt bist du?", "source": "How old are you?" },
+          { "target": "Ich bin zwanzig.", "source": "I am twenty." },
+          { "target": "Haben Sie die Nummer?", "source": "Do you have the number?" }
+        ]
+      },
+      "words": [
+        { "id": "w-null", "target": "null", "source": "zero", "sourceAccept": ["nil"], "pos": "num" },
+        { "id": "w-eins", "target": "eins", "source": "one", "pos": "num" },
+        { "id": "w-zwei", "target": "zwei", "source": "two", "pos": "num" },
+        { "id": "w-zehn", "target": "zehn", "source": "ten", "pos": "num" },
+        { "id": "w-zwanzig", "target": "zwanzig", "source": "twenty", "pos": "num" },
+        { "id": "w-hundert", "target": "hundert", "source": "one hundred", "sourceAccept": ["a hundred", "hundred"], "pos": "num" },
+        { "id": "w-alt", "target": "alt", "source": "old", "pos": "adj" },
+        { "id": "w-nummer", "target": "die Nummer", "source": "the number", "sourceAccept": ["number", "a number"], "plural": "die Nummern", "emoji": "🔢", "pos": "noun" },
+        { "id": "w-telefon", "target": "das Telefon", "source": "the telephone", "sourceAccept": ["telephone", "a telephone", "the phone", "phone", "a phone"], "plural": "die Telefone", "emoji": "☎️", "pos": "noun" },
+        { "id": "w-haben", "target": "haben", "source": "to have", "forms": ["habe", "hast", "hat", "haben", "habt"], "pos": "verb" },
+        { "id": "w-viel", "target": "viel", "source": "much", "sourceAccept": ["a lot"], "pos": "pron" },
+        { "id": "w-plus", "target": "plus", "source": "plus", "pos": "conj" }
+      ],
+      "sentences": [
+        { "id": "u04-s01", "target": "Null, eins, zwei.", "source": "Zero, one, two.", "sourceAccept": ["Nil, one, two."], "words": ["w-null", "w-eins", "w-zwei"] },
+        { "id": "u04-s02", "target": "Mara ist zehn.", "source": "Mara is ten.", "sourceAccept": ["Mara is ten years old."], "words": ["w-sein", "w-zehn"], "cloze": { "answer": "zehn", "distractors": ["zwei", "zwanzig"] } },
+        { "id": "u04-s03", "target": "Ich bin zwanzig.", "source": "I am twenty.", "sourceAccept": ["I'm twenty.", "I am twenty years old.", "I'm twenty years old."], "words": ["w-ich", "w-sein", "w-zwanzig"] },
+        { "id": "u04-s04", "target": "Eins plus eins ist zwei.", "source": "One plus one is two.", "words": ["w-eins", "w-plus", "w-sein", "w-zwei"] },
+        { "id": "u04-s05", "target": "Zehn plus zehn ist zwanzig.", "source": "Ten plus ten is twenty.", "words": ["w-zehn", "w-plus", "w-sein", "w-zwanzig"], "cloze": { "answer": "zwanzig", "distractors": ["zwei", "zehn"] } },
+        { "id": "u04-s06", "target": "Hundert Telefone?", "source": "A hundred phones?", "sourceAccept": ["One hundred phones?", "A hundred telephones?", "One hundred telephones?"], "words": ["w-hundert", "w-telefon"] },
+        { "id": "u04-s07", "target": "Ich habe hundert Nummern.", "source": "I have a hundred numbers.", "sourceAccept": ["I have one hundred numbers."], "words": ["w-ich", "w-haben", "w-hundert", "w-nummer"] },
+        { "id": "u04-s08", "target": "Wie alt bist du?", "source": "How old are you?", "targetAccept": ["Wie alt seid ihr?", "Wie alt sind Sie?"], "words": ["w-wie", "w-alt", "w-sein", "w-du"], "cloze": { "answer": "alt", "distractors": ["alte", "alten", "altes"] } },
+        { "id": "u04-s09", "target": "Das Telefon ist alt.", "source": "The telephone is old.", "sourceAccept": ["The phone is old.", "The telephone's old.", "The phone's old."], "words": ["w-telefon", "w-sein", "w-alt"] },
+        { "id": "u04-s10", "target": "Ich habe zwei Telefone.", "source": "I have two telephones.", "sourceAccept": ["I have two phones."], "words": ["w-ich", "w-haben", "w-zwei", "w-telefon"], "cloze": { "answer": "habe", "distractors": ["hast", "hat", "haben"] } },
+        { "id": "u04-s11", "target": "Haben Sie das Telefon?", "source": "Do you have the telephone?", "targetAccept": ["Hast du das Telefon?", "Habt ihr das Telefon?"], "sourceAccept": ["Do you have the phone?"], "words": ["w-haben", "w-sie", "w-telefon"] },
+        { "id": "u04-s12", "target": "Sie haben das Telefon.", "source": "You have the telephone.", "targetAccept": ["Du hast das Telefon.", "Ihr habt das Telefon."], "sourceAccept": ["You have the phone.", "You've got the telephone.", "You've got the phone."], "words": ["w-sie", "w-haben", "w-telefon"], "cloze": { "answer": "haben", "distractors": ["habe", "hast", "hat"] } },
+        { "id": "u04-s13", "target": "Hast du die Nummer?", "source": "Do you have the number?", "targetAccept": ["Habt ihr die Nummer?", "Haben Sie die Nummer?"], "words": ["w-haben", "w-du", "w-nummer"] },
+        { "id": "u04-s14", "target": "Ich habe die Nummer.", "source": "I have the number.", "sourceAccept": ["I've got the number."], "words": ["w-ich", "w-haben", "w-nummer"] },
+        { "id": "u04-s15", "target": "Wie viel ist zehn plus zehn?", "source": "What is ten plus ten?", "sourceAccept": ["How much is ten plus ten?"], "words": ["w-wie", "w-viel", "w-sein", "w-zehn", "w-plus"], "cloze": { "answer": "viel", "distractors": ["viele", "vielen"] } },
+        { "id": "u04-s16", "target": "Wie viel habe ich?", "source": "How much do I have?", "sourceAccept": ["How many do I have?"], "words": ["w-wie", "w-viel", "w-haben", "w-ich"] },
+        { "id": "u04-s17", "target": "Die Nummer ist null.", "source": "The number is zero.", "sourceAccept": ["The number is nil.", "The number's zero.", "The number's nil."], "words": ["w-nummer", "w-sein", "w-null"] },
+        { "id": "u04-s18", "target": "Leon hat zehn Nummern.", "source": "Leon has ten numbers.", "words": ["w-haben", "w-zehn", "w-nummer"] }
+      ]
+    },
+    {
+      "id": "u05",
+      "title": "In the classroom",
+      "canDo": "Follow simple classroom instructions and check an answer",
+      "tip": {
+        "title": "Formal instructions start with the verb",
+        "body": "A polite German instruction starts with the verb and then uses **Sie**: **Lesen Sie die Frage.** English also starts with the verb, but normally leaves “you” unspoken.\n\nThe verb keeps the same ending as in a statement with formal **Sie**. **Bitte** can soften the instruction, and it can appear before or after the main instruction.",
+        "examples": [
+          { "target": "Lesen Sie die Frage.", "source": "Read the question." },
+          { "target": "Bitte schreiben Sie langsam.", "source": "Please write slowly." },
+          { "target": "Schließen Sie bitte.", "source": "Please close it." }
+        ]
+      },
+      "words": [
+        { "id": "w-lesen", "target": "lesen", "source": "to read", "forms": ["lese", "liest", "lest", "lesen"], "pos": "verb" },
+        { "id": "w-hoeren", "target": "hören", "source": "to listen", "sourceAccept": ["to hear"], "forms": ["höre", "hörst", "hört", "hören"], "pos": "verb" },
+        { "id": "w-schreiben", "target": "schreiben", "source": "to write", "forms": ["schreibe", "schreibst", "schreibt", "schreiben"], "pos": "verb" },
+        { "id": "w-sagen", "target": "sagen", "source": "to say", "sourceAccept": ["to tell"], "forms": ["sage", "sagst", "sagt", "sagen"], "pos": "verb" },
+        { "id": "w-oeffnen", "target": "öffnen", "source": "to open", "forms": ["öffne", "öffnest", "öffnet", "öffnen"], "pos": "verb" },
+        { "id": "w-schliessen", "target": "schließen", "source": "to close", "sourceAccept": ["to shut"], "forms": ["schließe", "schließt", "schließen"], "pos": "verb" },
+        { "id": "w-richtig", "target": "richtig", "source": "correct", "sourceAccept": ["right"], "pos": "adj" },
+        { "id": "w-falsch", "target": "falsch", "source": "wrong", "sourceAccept": ["incorrect"], "pos": "adj" },
+        { "id": "w-frage", "target": "die Frage", "source": "the question", "sourceAccept": ["question", "a question"], "plural": "die Fragen", "emoji": "❓", "pos": "noun" },
+        { "id": "w-antwort", "target": "die Antwort", "source": "the answer", "sourceAccept": ["answer", "an answer"], "plural": "die Antworten", "emoji": "💬", "pos": "noun" }
+      ],
+      "sentences": [
+        { "id": "u05-s01", "target": "Lesen Sie die Frage.", "source": "Read the question.", "targetAccept": ["Lies die Frage.", "Lest die Frage."], "words": ["w-lesen", "w-sie", "w-frage"], "cloze": { "answer": "Lesen", "distractors": ["Lese", "Liest", "Lest"] } },
+        { "id": "u05-s02", "target": "Bitte lesen Sie langsam.", "source": "Please read slowly.", "targetAccept": ["Bitte lies langsam.", "Bitte lest langsam."], "words": ["w-bitte", "w-lesen", "w-sie", "w-langsam"] },
+        { "id": "u05-s03", "target": "Hören Sie die Antwort.", "source": "Listen to the answer.", "targetAccept": ["Hör die Antwort.", "Hört die Antwort."], "sourceAccept": ["Hear the answer."], "words": ["w-hoeren", "w-sie", "w-antwort"], "cloze": { "answer": "Hören", "distractors": ["Höre", "Hörst", "Hört"] } },
+        { "id": "u05-s04", "target": "Hören Sie Mara?", "source": "Can you hear Mara?", "targetAccept": ["Hörst du Mara?", "Hört ihr Mara?"], "words": ["w-hoeren", "w-sie"] },
+        { "id": "u05-s05", "target": "Schreiben Sie die Antwort.", "source": "Write the answer.", "targetAccept": ["Schreib die Antwort.", "Schreibt die Antwort."], "words": ["w-schreiben", "w-sie", "w-antwort"], "cloze": { "answer": "Schreiben", "distractors": ["Schreibe", "Schreibst", "Schreibt"] } },
+        { "id": "u05-s06", "target": "Bitte schreiben Sie langsam.", "source": "Please write slowly.", "targetAccept": ["Bitte schreib langsam.", "Bitte schreibt langsam."], "words": ["w-bitte", "w-schreiben", "w-sie", "w-langsam"] },
+        { "id": "u05-s07", "target": "Sagen Sie die Antwort.", "source": "Say the answer.", "targetAccept": ["Sag die Antwort.", "Sagt die Antwort."], "sourceAccept": ["Tell me the answer."], "words": ["w-sagen", "w-sie", "w-antwort"] },
+        { "id": "u05-s08", "target": "Sagen Sie bitte A.", "source": "Please say A.", "targetAccept": ["Sag bitte A.", "Sagt bitte A."], "words": ["w-sagen", "w-sie", "w-bitte", "w-a"] },
+        { "id": "u05-s09", "target": "Ich öffne.", "source": "I am opening it.", "sourceAccept": ["I'm opening it."], "words": ["w-ich", "w-oeffnen"], "cloze": { "answer": "öffne", "distractors": ["öffnen", "öffnest", "öffnet"] } },
+        { "id": "u05-s10", "target": "Bitte öffnen!", "source": "Please open it!", "targetAccept": ["Öffnen Sie bitte!", "Öffne bitte!", "Öffnet bitte!"], "words": ["w-bitte", "w-oeffnen"] },
+        { "id": "u05-s11", "target": "Ich schließe.", "source": "I am closing it.", "sourceAccept": ["I'm closing it.", "I am shutting it.", "I'm shutting it."], "words": ["w-ich", "w-schliessen"], "cloze": { "answer": "schließe", "distractors": ["schließen", "schließt"] } },
+        { "id": "u05-s12", "target": "Bitte schließen!", "source": "Please close it!", "targetAccept": ["Schließen Sie bitte!", "Schließe bitte!", "Schließt bitte!"], "sourceAccept": ["Please shut it!"], "words": ["w-bitte", "w-schliessen"] },
+        { "id": "u05-s13", "target": "Ist die Nummer richtig?", "source": "Is the number correct?", "sourceAccept": ["Is the number right?"], "words": ["w-sein", "w-nummer", "w-richtig"] },
+        { "id": "u05-s14", "target": "Die Antwort ist richtig.", "source": "The answer is correct.", "sourceAccept": ["The answer is right.", "The answer's correct.", "The answer's right."], "words": ["w-antwort", "w-sein", "w-richtig"], "cloze": { "answer": "richtig", "distractors": ["richtige", "richtigen", "richtiges"] } },
+        { "id": "u05-s15", "target": "Das ist falsch.", "source": "That is wrong.", "sourceAccept": ["That's wrong.", "That is incorrect.", "That's incorrect."], "words": ["w-sein", "w-falsch"] },
+        { "id": "u05-s16", "target": "Die Antwort ist falsch.", "source": "The answer is wrong.", "sourceAccept": ["The answer is incorrect.", "The answer's wrong.", "The answer's incorrect."], "words": ["w-antwort", "w-sein", "w-falsch"], "cloze": { "answer": "falsch", "distractors": ["falsche", "falschen", "falsches"] } },
+        { "id": "u05-s17", "target": "Wiederholen Sie die Frage.", "source": "Repeat the question.", "targetAccept": ["Wiederhole die Frage.", "Wiederholt die Frage."], "words": ["w-wiederholen", "w-sie", "w-frage"] },
+        { "id": "u05-s18", "target": "Lesen Sie die Antwort noch einmal.", "source": "Read the answer again.", "targetAccept": ["Lies die Antwort noch einmal.", "Lest die Antwort noch einmal."], "sourceAccept": ["Read the answer once more.", "Read the answer one more time."], "words": ["w-lesen", "w-sie", "w-antwort", "w-noch-einmal"] }
+      ]
+    }
+  ]
+}
