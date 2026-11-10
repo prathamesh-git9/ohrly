@@ -66,9 +66,10 @@ export function buildExamItems(exam: LevelExam, rng: () => number): Item[] {
 export function Exam({ course, level, t }: { course: Course; level: string; t: Translate }) {
   const exam = course.exams?.find((e) => e.level === level);
   const finishExam = useStore((s) => s.finishExam);
+  const [attempt, setAttempt] = useState(0);
   const items = useMemo(
-    () => (exam ? buildExamItems(exam, mulberry32(Date.now() & 0xffffffff)) : []),
-    [exam],
+    () => (exam ? buildExamItems(exam, mulberry32((Date.now() + attempt) & 0xffffffff)) : []),
+    [exam, attempt],
   );
   const [stage, setStage] = useState<'intro' | 'questions' | 'result'>('intro');
   const [pos, setPos] = useState(0);
@@ -123,7 +124,24 @@ export function Exam({ course, level, t }: { course: Course; level: string; t: T
   }
 
   if (stage === 'result') {
-    return <ExamResult course={course} level={level} exam={exam} items={items} answers={answers.current} t={t} />;
+    return (
+      <ExamResult
+        course={course}
+        level={level}
+        exam={exam}
+        items={items}
+        answers={answers.current}
+        t={t}
+        onRetake={() => {
+          answers.current = [];
+          setPos(0);
+          setPicked(null);
+          setAttempt((a) => a + 1);
+          setStage('intro');
+          window.scrollTo(0, 0);
+        }}
+      />
+    );
   }
 
   const item = items[pos]!;
@@ -224,6 +242,7 @@ function ExamResult({
   items,
   answers,
   t,
+  onRetake,
 }: {
   course: Course;
   level: string;
@@ -231,6 +250,7 @@ function ExamResult({
   items: readonly Item[];
   answers: readonly boolean[];
   t: Translate;
+  onRetake: () => void;
 }) {
   const scores = sectionScores(items, answers);
   const met = practiceTargetMet(scores);
@@ -275,6 +295,9 @@ function ExamResult({
       ))}
       <Btn block onClick={() => navigate('/')}>
         {t('examDone')}
+      </Btn>
+      <Btn block variant="secondary" onClick={onRetake}>
+        {t('examRetake')}
       </Btn>
       <span className="muted">{level}</span>
     </div>

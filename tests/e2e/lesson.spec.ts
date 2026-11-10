@@ -338,3 +338,74 @@ test('no console errors or sideways scroll on any screen', async ({ page }) => {
   }
   expect(errors).toEqual([]);
 });
+
+interface ExamQ { q: string; answer: string }
+
+function examAnswers(courseId: string, level: string): Map<string, string> {
+  const course = JSON.parse(readFileSync(join(COURSE_DIR, `${courseId}.json`), 'utf8')) as Course;
+  const exam = course.exams?.find((e) => e.level === level);
+  if (!exam) throw new Error(`no ${level} exam in ${courseId}`);
+  const map = new Map<string, string>();
+  for (const p of [...exam.reading, ...exam.listening]) for (const q of p.questions as ExamQ[]) map.set(q.q, q.answer);
+  for (const item of exam.language) map.set(item.text, item.answer);
+  return map;
+}
+
+async function takeExam(page: Page, answers: Map<string, string>, correctly: boolean) {
+  await page.locator('.exam-intro .btn').first().click();
+  for (let i = 0; i < 200 && !(await page.locator('.exam-result').count()); i++) {
+    const q = clean(await page.locator('.passage-q').textContent());
+    const answer = answers.get(q);
+    if (!answer) throw new Error(`no answer for "${q}"`);
+    const options = page.locator('.option-list .card-option');
+    const count = await options.count();
+    let target = -1;
+    for (let j = 0; j < count; j++) {
+      const text = clean(await options.nth(j).textContent()).replace(/^\d+\s*/, '');
+      if ((text === answer) === correctly) {
+        target = j;
+        break;
+      }
+    }
+    await options.nth(target).click();
+    // No feedback mid-exam: it is scored only at the end.
+    await expect(page.locator('.feedback')).toHaveCount(0);
+    await page.locator('.foot-row .btn').click();
+  }
+}
+
+test('the A1 practice exam scores at the end, shows the disclaimer, and opens the next level', async ({ page }) => {
+  test.setTimeout(240_000);
+  await forceBrowserVoice(page);
+  await onboard(page, /German/);
+  const answers = examAnswers('en-de', 'A1');
+
+  // A failed attempt is recorded but does not unlock anything.
+  await page.goto('./#/exam/A1');
+  await takeExam(page, answers, false);
+  await expect(page.locator('.exam-result h1')).toHaveText('Keep practising');
+  await expect(page.locator('.exam-percent')).toHaveText('0%');
+  let state = await page.evaluate(() => JSON.parse(localStorage.getItem('ohrly-v1')!).state);
+  expect(state.courses['en-de'].done['A1:exam']).toBeUndefined();
+
+  await page.getByRole('button', { name: 'Try the exam again' }).click();
+  await expect(page.locator('.exam-intro')).toBeVisible();
+  await takeExam(page, answers, true);
+  await expect(page.locator('.exam-result h1')).toHaveText('Practice target met');
+  await expect(page.locator('.exam-percent')).toHaveText('100%');
+  await expect(page.locator('.exam-disclaimer')).toContainText('not a certificate');
+  await expect(page.locator('.exam-disclaimer')).toContainText(/does not certify a CEFR level/);
+  await page.screenshot({ path: 'test-results/exam-result.png', fullPage: true });
+
+  // Writing and speaking: a model answer and checklist, never a score.
+  await page.locator('.task .btn').first().click();
+  await expect(page.locator('.task-model').first()).toBeVisible();
+
+  state = await page.evaluate(() => JSON.parse(localStorage.getItem('ohrly-v1')!).state);
+  expect(state.courses['en-de'].done['A1:exam']).toBeTruthy();
+  expect(state.courses['en-de'].examBest.A1).toBe(100);
+  expect(state.hearts.count).toBe(5); // Exams never cost hearts.
+
+  await page.getByRole('button', { name: 'Finish' }).click();
+  await expect(page.locator('.level-step').first()).toHaveClass(/is-complete/);
+});
