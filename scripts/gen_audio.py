@@ -192,7 +192,7 @@ def engine_command(lang: str, args: argparse.Namespace) -> list[str]:
         return [args.piper_python, str(here / "kokoro_worker.py"), str(kokoro / "kokoro-v1.0.onnx"),
                 str(kokoro / "voices-v1.0.bin"), args.kokoro_voice, args.kokoro_lang]
     if engine == "chatterbox":
-        return [args.chatterbox_python, str(here / "chatterbox_worker.py"), str(args.reference), lang]
+        return [args.chatterbox_python, str(here / "chatterbox_worker.py"), str(args.reference), lang, str(args.attempt)]
     voice = args.de_voice if lang == "de" else args.en_voice
     speaker = args.de_speaker if lang == "de" else args.en_speaker
     model = voice_model(args.voices_dir, voice)
@@ -249,6 +249,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--reference", type=Path, default=ROOT / ".audio-cache" / "ref" / "thorsten-0.wav",
                         help="Native-speaker reference clip for Chatterbox (CC0 Thorsten-Voice)")
     parser.add_argument("--lang", choices=("de", "en"), help="Only process one target language")
+    parser.add_argument("--redo", type=Path, help="JSON list of texts whose clips are deleted and made again")
+    parser.add_argument("--attempt", type=int, default=0, help="Seed offset for a retake; use a new number per redo")
     parser.add_argument("--limit", type=int, help="Generate at most N missing files across this run")
     parser.add_argument("--dry-run", action="store_true", help="Print planned work without changing files or running tools")
     args = parser.parse_args()
@@ -260,6 +262,13 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     spoken = collect_spoken()
+    if args.redo:
+        # A retake: remove the flagged clips so the normal run regenerates exactly those.
+        for text in json.loads(args.redo.read_text(encoding="utf-8")):
+            for lang_dir in AUDIO_DIR.iterdir():
+                clip = lang_dir / file_name(audio_key(text))
+                if clip.exists():
+                    clip.unlink()
     languages = [args.lang] if args.lang else sorted(spoken)
     remaining = args.limit
     totals = {"referenced": 0, "generated": 0, "skipped": 0, "deleted": 0}
@@ -299,6 +308,13 @@ def main() -> int:
             for start in range(0, len(selected), 60):
                 generate_batch(selected[start:start + 60], command, args.ffmpeg)
                 print(f"[{lang}] {min(start + 60, len(selected))}/{len(selected)}", flush=True)
+            # Chatterbox cannot voice very short inputs ("der", "es", "A"). Its German voice is cloned from
+            # Thorsten, so Piper's Thorsten voice, the same speaker, fills those few gaps.
+            leftover = [(key, out) for key, out in selected if not out.exists()]
+            if leftover and lang == "de" and args.engine_de == "chatterbox":
+                print(f"[{lang}] {len(leftover)} too short for Chatterbox, using Piper Thorsten")
+                fallback = argparse.Namespace(**{**vars(args), "engine_de": "piper"})
+                generate_batch(leftover, engine_command(lang, fallback), args.ffmpeg)
             totals["generated"] += len(selected)
 
         if not args.dry_run:

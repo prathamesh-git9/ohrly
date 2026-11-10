@@ -60,7 +60,7 @@ export const LEGAL: Record<'en' | 'de', LegalSection[]> = {
       title: 'Licences and credits',
       paragraphs: [
         'Code: MIT licence, at github.com/prathamesh-git9/ohrly.',
-        'English voice: Kokoro (Apache 2.0). German voice: Chatterbox Multilingual by Resemble AI (MIT), voiced from a recording in the Thorsten-Voice dataset by Thorsten Müller (CC0, public domain). All speech is synthetic. Chatterbox adds an inaudible watermark marking its audio as generated.',
+        'English voice: Kokoro (Apache 2.0). German voice: Chatterbox Multilingual by Resemble AI (MIT), voiced from a recording in the Thorsten-Voice dataset by Thorsten Müller (CC0, public domain). All speech is synthetic. Chatterbox adds an inaudible watermark marking its audio as generated. A few very short words, and clips Chatterbox could not say clearly, use Piper’s Thorsten voice (the same speaker; its dataset is CC0, and the model was fine-tuned from Piper’s lessac voice).',
         'Fonts: Nunito and Fredoka, under the SIL Open Font License 1.1. Icons: Lucide, under the ISC licence.',
         'Sound effects, the mascot, characters and scenery were made for Ohrly.',
       ],
@@ -112,7 +112,7 @@ export const LEGAL: Record<'en' | 'de', LegalSection[]> = {
       title: 'Lizenzen und Danksagungen',
       paragraphs: [
         'Code: MIT-Lizenz, auf github.com/prathamesh-git9/ohrly.',
-        'Englische Stimme: Kokoro (Apache 2.0). Deutsche Stimme: Chatterbox Multilingual von Resemble AI (MIT), nach einer Aufnahme aus dem Thorsten-Voice-Datensatz von Thorsten Müller (CC0, gemeinfrei). Alle Sprache ist synthetisch. Chatterbox fügt ein unhörbares Wasserzeichen ein, das die Aufnahmen als erzeugt kennzeichnet.',
+        'Englische Stimme: Kokoro (Apache 2.0). Deutsche Stimme: Chatterbox Multilingual von Resemble AI (MIT), nach einer Aufnahme aus dem Thorsten-Voice-Datensatz von Thorsten Müller (CC0, gemeinfrei). Alle Sprache ist synthetisch. Chatterbox fügt ein unhörbares Wasserzeichen ein, das die Aufnahmen als erzeugt kennzeichnet. Einige sehr kurze Wörter und Aufnahmen, die Chatterbox nicht deutlich sprechen konnte, nutzen Pipers Thorsten-Stimme (derselbe Sprecher; Datensatz CC0, das Modell wurde auf Basis der Stimme lessac feinabgestimmt).',
         'Schriften: Nunito und Fredoka unter der SIL Open Font License 1.1. Symbole: Lucide unter der ISC-Lizenz.',
         'Soundeffekte, Maskottchen, Figuren und Landschaften wurden für Ohrly erstellt.',
       ],

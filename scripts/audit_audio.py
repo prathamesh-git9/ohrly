@@ -40,11 +40,16 @@ def main() -> int:
     ap.add_argument("--sample", type=int, default=300, help="How many clips to check, 0 for all")
     ap.add_argument("--min-words", type=int, default=2, help="Skip clips with fewer words than this")
     ap.add_argument("--flag-below", type=float, default=0.5, help="Flag clips matching less than this")
+    ap.add_argument("--only", help="JSON list of texts: check just these")
+    ap.add_argument("--flagged-out", help="Write the flagged texts to this JSON file, for regeneration")
     args = ap.parse_args()
 
     folder = ROOT / "public" / "audio" / args.lang
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     items = [(k, v) for k, v in manifest.items() if len(words(k)) >= args.min_words]
+    if args.only:
+        wanted = set(json.loads(Path(args.only).read_text(encoding="utf-8")))
+        items = [(k, v) for k, v in manifest.items() if k in wanted]
     random.Random(7).shuffle(items)
     if args.sample:
         items = items[: args.sample]
@@ -62,6 +67,8 @@ def main() -> int:
         if score < args.flag_below:
             flagged.append((score, text, heard))
 
+    if args.flagged_out:
+        Path(args.flagged_out).write_text(json.dumps([t for _, t, _ in sorted(flagged)], ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{args.lang}: checked {len(scores)} clips, mean word match {sum(scores) / max(1, len(scores)):.3f}, flagged {len(flagged)}")
     for score, text, heard in sorted(flagged)[:40]:
         print(f"  {score:.2f}  {text}  ->  {heard}")

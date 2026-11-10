@@ -44,7 +44,7 @@ materials. Results say "Practice target met", never "passed" or "certified".
 | English voice: Kokoro | Apache 2.0 | Credit on the legal page. |
 | German voice: Chatterbox Multilingual (Resemble AI) | MIT | Adds an inaudible watermark; disclosed. |
 | German reference recording: Thorsten-Voice dataset | CC0 (public domain) | The voice is a real person's, donated to the public domain for exactly this kind of use. |
-| Earlier voices (Piper) | Various | Replaced. The Piper Thorsten model was fine-tuned from a restricted base voice, one more reason to move off it. |
+| Piper Thorsten (fallback) | Dataset CC0; model fine-tuned from the lessac voice | Used only for a few very short German words and clips Chatterbox could not say clearly. Same speaker. The lessac lineage is a residual licence question for any future commercial use. |
 | Fonts: Nunito, Fredoka | SIL Open Font License 1.1 | Credited. Bundled from @fontsource with their licence files. |
 | Icons: Lucide | ISC | Credited. |
 
