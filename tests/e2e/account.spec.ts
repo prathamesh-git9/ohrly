@@ -67,3 +67,26 @@ for (const [label, name, expected] of [
     await page.screenshot({ path: `test-results/greeting-${label.replace(/\W+/g, '-')}-${info.project.name}.png` });
   });
 }
+
+test('the name step tells visitors their name is shared, and sends it once a course is chosen', async ({ page }) => {
+  const sent: string[] = [];
+  // Intercepted, so test runs never add names to the real table.
+  await page.route('**/rest/v1/visitors*', async (route) => {
+    sent.push(route.request().postData() ?? '');
+    await route.fulfill({ status: 201, body: '' });
+  });
+  await page.goto('./');
+  await page.locator('.hero-cta').click();
+  await expect(page.locator('.name-notice')).toContainText('can see the names people enter');
+  await expect(page.locator('.name-notice')).toContainText('nickname');
+  await page.locator('.name-input').fill('Priya');
+  await page.locator('form.pick .btn-block').click();
+  expect(sent).toHaveLength(0); // Nothing is sent before the visitor has chosen a course.
+  await page.locator('.course-card').filter({ hasText: /German/ }).click();
+  await page.locator('.pick .btn-block').click();
+  await expect.poll(() => sent.length).toBe(1);
+  expect(JSON.parse(sent[0]!)).toMatchObject({ name: 'Priya', course: 'en-de' });
+  await page.reload();
+  await page.waitForTimeout(1500);
+  expect(sent).toHaveLength(1); // Once per name, not on every visit.
+});

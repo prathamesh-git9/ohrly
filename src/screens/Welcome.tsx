@@ -87,6 +87,9 @@ export function Welcome() {
                 value={name}
                 onChange={(e) => setNameDraft(e.target.value)}
               />
+              <p className="name-notice">
+                {t('nameNotice')} <a href="#/legal">{t('nameNoticeLink')}</a>
+              </p>
               <Btn block type="submit" disabled={!cleanName(name)}>
                 {t('continue')}
               </Btn>

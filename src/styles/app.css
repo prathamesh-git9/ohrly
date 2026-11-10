@@ -572,3 +572,6 @@ button { font: inherit; color: inherit; }
 .greeting.is-special { top: 30%; padding: 18px 26px 18px 16px; border-color: #d98a3a; background: linear-gradient(90deg, #ffe08a, #ffb86b, #ff8fb1); color: #4a2600; font-size: 28px; }
 .name-prompt { display: grid; gap: 10px; width: 100%; }
 .name-prompt .name-input { flex: 1; min-width: 160px; font-size: 17px; padding: 10px; }
+
+.name-notice { font-size: 13px; color: var(--ink-2); font-weight: 600; text-align: center; }
+.name-notice a { color: var(--primary); text-decoration: underline; }

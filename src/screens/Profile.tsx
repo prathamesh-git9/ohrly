@@ -17,6 +17,8 @@ import { dayKey, displayedStreak, HEART_REFILL_COST, MAX_FREEZES, MAX_HEARTS, ST
 import type { Course } from '../domain/types';
 import type { Translate } from '../i18n';
 import { navigate } from '../router';
+import { forgetVisitor } from '../sync/visitors';
+import { cloudEnabled } from '../sync/cloud';
 import { useStore } from '../state/store';
 
 const GOALS = [10, 20, 30, 50] as const;
@@ -235,6 +237,19 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
           <Btn variant="secondary" onClick={exportData}>{t('exportProgress')}</Btn>
           <Btn variant="secondary" onClick={() => importRef.current?.click()}>{t('importProgress')}</Btn>
           <input ref={importRef} className="sr-only" type="file" accept="application/json,.json" onChange={importData} aria-label={t('importProgress')} />
+          {cloudEnabled && (
+            <Btn
+              variant="secondary"
+              onClick={() =>
+                forgetVisitor().then(
+                  () => setDataError(t('nameForgotten')),
+                  () => setDataError(t('networkError')),
+                )
+              }
+            >
+              {t('forgetName')}
+            </Btn>
+          )}
           <Btn variant="bad" onClick={() => setConfirmReset(true)}>{t('resetProgress')}</Btn>
         </div>
         {dataError && <p className="data-error" role="alert">{dataError}</p>}

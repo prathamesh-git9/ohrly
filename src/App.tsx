@@ -17,6 +17,7 @@ import { Account } from './screens/Account';
 import { AchievementToasts, LevelScale, ShareButton, StreakModal } from './components/Social';
 import { useCloud, useCloudSyncEngine } from './sync/useCloudSync';
 import { cloudEnabled } from './sync/cloud';
+import { registerVisitor } from './sync/visitors';
 import { AnimatePresence } from 'motion/react';
 import { Share2, UserPlus } from 'lucide-react';
 import { Lesson, type LessonSpec } from './screens/Lesson';
@@ -211,6 +212,10 @@ export function App() {
   const refreshHearts = useStore((s) => s.refreshHearts);
   const { course, failed, retry } = useCourse(onboarded ? courseId : null);
   useCloudSyncEngine();
+  const learnerName = useStore((s) => s.name);
+  useEffect(() => {
+    if (onboarded && learnerName) void registerVisitor(learnerName, courseId).catch(() => {});
+  }, [onboarded, learnerName, courseId]);
 
   useEffect(() => setSfxEnabled(settings.sound), [settings.sound]);
   useEffect(() => setVoicesEnabled(settings.voice), [settings.voice]);

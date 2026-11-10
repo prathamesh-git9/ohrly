@@ -65,6 +65,11 @@ banner is required. With an optional account:
 - **Deletion:** self-service, on the Account page, through `delete_my_account()`, removing the account and
   (by cascade) all saved progress. Export is in Profile > Your data.
 - **Age:** accounts are for people aged 16+ (the digital age of consent in Germany and Ireland).
+- **Visitor names (added 10 Nov 2026, at the operator's request):** the name typed at the start is sent to a
+  Supabase table with the course, date and a random browser ID. Visitors are told at the name step and
+  can use a nickname; the basis is consent, withdrawable with "Remove my name" in Profile, which deletes
+  every row from that browser. The public can only insert, never read; only the owner sees the list.
+  **Risk to keep in mind:** consent must stay genuinely optional. Never make a real name a condition of use.
 - **Microphone:** speech recognition is done by the browser vendor; disclosed before use and in the policy.
 - **Contact:** GitHub issues, as the operator chose. GDPR expects an easy way to exercise rights; the
   self-service deletion and export cover the main ones. **A dedicated contact email would be stronger.**

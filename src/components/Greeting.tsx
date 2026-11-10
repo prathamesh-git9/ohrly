@@ -53,6 +53,7 @@ export function Greeting({ t }: { t: Translate }) {
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
           />
+          <p className="name-notice">{t('nameNotice')}</p>
           <Btn block type="submit" disabled={!cleanName(draft)}>{t('askNameSave')}</Btn>
         </form>
       </Modal>

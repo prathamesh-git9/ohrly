@@ -9,7 +9,7 @@ export interface LegalSection {
   paragraphs: string[];
 }
 
-export const LEGAL_UPDATED = '10 November 2026';
+export const LEGAL_UPDATED = '10 November 2026 (names of visitors)';
 export const OPERATOR = 'Prathamesh Kalamkar';
 export const CONTACT_URL = 'https://github.com/prathamesh-git9/ohrly/issues';
 
@@ -36,7 +36,8 @@ export const LEGAL: Record<'en' | 'de', LegalSection[]> = {
       id: 'privacy',
       title: 'Privacy',
       paragraphs: [
-        'Without an account, everything stays in your own browser. The name you give, your progress, settings and streak are kept in your browser’s local storage on your device. Ohrly does not send them anywhere, does not use cookies, and runs no analytics, tracking or advertising.',
+        'Without an account, your progress, settings and streak stay in your own browser. They are kept in your browser’s local storage on your device. Ohrly does not send them anywhere, does not use cookies, and runs no analytics, tracking or advertising.',
+        'Your name: the name you type at the start is sent to our database (Supabase, European Union, Paris) with the course you chose, the date and a random ID for your browser, so Ohrly\u2019s creator can see who is learning. You are told this where you type it, and you can use a nickname instead. Nobody else can read these names. The legal basis is your consent (GDPR Article 6(1)(a)); you can withdraw it at any time with Profile > Your data > Remove my name, which deletes every name your browser sent.',
         'With an account, which is optional, Ohrly stores your email address, a securely hashed password, the name you gave, and a copy of your learning progress, so you can continue on another device. This is held by Supabase, our database provider, in the European Union (Paris, France). The legal basis is providing the service you asked for (GDPR Article 6(1)(b)). The data is kept until you delete your account, which you can do yourself at any time on the Account page; deletion removes your account and your saved progress.',
         'Hosting: the website is served by GitHub Pages, which processes technical data such as your IP address to deliver the pages, under GitHub’s own privacy statement. Ohrly does not receive or store these logs.',
         'Speaking exercises: if you use the microphone, your browser (for example Chrome, Edge or Safari) may send the recording to its own speech service to turn it into text. Ohrly does not receive or keep your recording. You can turn speaking exercises off in Settings.',
@@ -87,7 +88,8 @@ export const LEGAL: Record<'en' | 'de', LegalSection[]> = {
       id: 'privacy',
       title: 'Datenschutz',
       paragraphs: [
-        'Ohne Konto bleibt alles in deinem Browser. Dein angegebener Name, Fortschritt, Einstellungen und Serie werden im lokalen Speicher deines Browsers auf deinem Gerät gespeichert. Ohrly sendet sie nirgendwohin, verwendet keine Cookies und keine Analyse-, Tracking- oder Werbedienste.',
+        'Ohne Konto bleiben Fortschritt, Einstellungen und Serie in deinem Browser. Sie werden im lokalen Speicher deines Browsers auf deinem Gerät gespeichert. Ohrly sendet sie nirgendwohin, verwendet keine Cookies und keine Analyse-, Tracking- oder Werbedienste.',
+        'Dein Name: Der Name, den du am Anfang eingibst, wird mit dem gewählten Kurs, dem Datum und einer zufälligen Kennung deines Browsers an unsere Datenbank (Supabase, Europäische Union, Paris) gesendet, damit der Ersteller von Ohrly sehen kann, wer lernt. Darauf wirst du bei der Eingabe hingewiesen, und du kannst stattdessen einen Spitznamen verwenden. Niemand sonst kann diese Namen lesen. Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); du kannst sie jederzeit über Profil > Deine Daten > Meinen Namen bei Ohrly entfernen widerrufen. Dabei werden alle Namen gelöscht, die dein Browser gesendet hat.',
         'Mit einem freiwilligen Konto speichert Ohrly deine E-Mail-Adresse, ein sicher gehashtes Passwort, deinen angegebenen Namen und eine Kopie deines Lernfortschritts, damit du auf einem anderen Gerät weitermachen kannst. Die Daten liegen bei unserem Datenbankanbieter Supabase in der Europäischen Union (Paris, Frankreich). Rechtsgrundlage ist die Bereitstellung des gewünschten Dienstes (Art. 6 Abs. 1 lit. b DSGVO). Die Daten bleiben gespeichert, bis du dein Konto löschst; das kannst du jederzeit selbst auf der Kontoseite tun. Dabei werden dein Konto und dein gespeicherter Fortschritt gelöscht.',
         'Hosting: Die Website wird über GitHub Pages ausgeliefert. GitHub verarbeitet dabei technische Daten wie deine IP-Adresse gemäß seiner eigenen Datenschutzerklärung. Ohrly erhält oder speichert diese Protokolle nicht.',
         'Sprechübungen: Wenn du das Mikrofon nutzt, kann dein Browser (zum Beispiel Chrome, Edge oder Safari) die Aufnahme an seinen eigenen Sprachdienst senden, um sie in Text umzuwandeln. Ohrly erhält und speichert deine Aufnahme nicht. Du kannst Sprechübungen in den Einstellungen ausschalten.',
