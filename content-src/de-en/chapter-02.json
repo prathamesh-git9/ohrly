@@ -19,6 +19,7 @@
       },
       "words": [
         { "id": "w-family", "target": "family", "source": "die Familie", "targetAccept": ["the family", "a family"], "sourceAccept": ["Familie", "eine Familie"], "forms": ["families"], "pos": "noun" },
+        { "id": "w-my", "target": "my", "source": "mein", "sourceAccept": ["meine", "meinen", "meinem", "meiner", "meines"], "pos": "det" },
         { "id": "w-mother", "target": "mother", "source": "die Mutter", "targetAccept": ["the mother", "a mother"], "sourceAccept": ["Mutter", "eine Mutter"], "forms": ["mothers"], "pos": "noun" },
         { "id": "w-father", "target": "father", "source": "der Vater", "targetAccept": ["the father", "a father"], "sourceAccept": ["Vater", "ein Vater"], "forms": ["fathers"], "pos": "noun" },
         { "id": "w-parents", "target": "parents", "source": "die Eltern", "targetAccept": ["the parents", "some parents"], "sourceAccept": ["Eltern"], "pos": "noun" },
@@ -27,29 +28,28 @@
         { "id": "w-child", "target": "child", "source": "das Kind", "targetAccept": ["the child", "a child"], "sourceAccept": ["Kind", "ein Kind"], "forms": ["children"], "pos": "noun" },
         { "id": "w-husband", "target": "husband", "source": "der Ehemann", "targetAccept": ["the husband", "a husband"], "sourceAccept": ["Ehemann", "ein Ehemann", "der Mann", "Mann", "ein Mann"], "forms": ["husbands"], "pos": "noun" },
         { "id": "w-wife", "target": "wife", "source": "die Ehefrau", "targetAccept": ["the wife", "a wife"], "sourceAccept": ["Ehefrau", "eine Ehefrau", "die Frau", "Frau", "eine Frau"], "forms": ["wives"], "pos": "noun" },
-        { "id": "w-my", "target": "my", "source": "mein", "sourceAccept": ["meine", "meinen", "meinem", "meiner"], "pos": "det" },
-        { "id": "w-your", "target": "your", "source": "dein", "sourceAccept": ["deine", "deinen", "deinem", "deiner", "euer", "eure", "Ihren", "Ihre", "Ihr"], "pos": "det" },
-        { "id": "w-her", "target": "her", "source": "ihr", "sourceAccept": ["ihre", "ihren", "ihrem", "ihrer"], "pos": "det" }
+        { "id": "w-your", "target": "your", "source": "dein", "sourceAccept": ["deine", "deinen", "deinem", "deiner", "deines", "euer", "eure", "euren", "eurem", "eurer", "eures", "Ihr", "Ihre", "Ihren", "Ihrem", "Ihrer", "Ihres"], "pos": "det" },
+        { "id": "w-her", "target": "her", "source": "ihr", "sourceAccept": ["ihre", "ihren", "ihrem", "ihrer", "ihres", "deren"], "pos": "det" }
       ],
       "sentences": [
-        { "id": "u06-s01", "target": "My family is English.", "source": "Meine Familie ist englisch.", "words": ["w-my", "w-family", "w-is", "w-english"], "cloze": { "answer": "My", "distractors": ["I", "am"] } },
-        { "id": "u06-s02", "target": "The mother is German.", "source": "Die Mutter ist Deutsche.", "words": ["w-mother", "w-is", "w-german"] },
-        { "id": "u06-s03", "target": "Is your father English?", "source": "Ist dein Vater Engländer?", "sourceAccept": ["Ist euer Vater Engländer?", "Ist Ihr Vater Engländer?"], "words": ["w-is", "w-your", "w-father", "w-english"], "cloze": { "answer": "your", "distractors": ["you", "are"] } },
-        { "id": "u06-s04", "target": "Her parents live in England.", "source": "Ihre Eltern leben in England.", "words": ["w-her", "w-parents", "w-live-in", "w-england"], "cloze": { "answer": "parents", "distractors": ["parent", "family"] } },
-        { "id": "u06-s05", "target": "The brother speaks English.", "source": "Der Bruder spricht Englisch.", "words": ["w-brother", "w-speak", "w-english"] },
+        { "id": "u06-s01", "target": "My family is English.", "source": "Meine Familie ist englisch.", "targetAccept": ["My family are English."], "words": ["w-my", "w-family", "w-is", "w-english"], "cloze": { "answer": "My", "distractors": ["I", "am"] } },
+        { "id": "u06-s02", "target": "My mother is German.", "source": "Meine Mutter ist Deutsche.", "sourceAccept": ["Meine Mutter ist deutsch."], "words": ["w-my", "w-mother", "w-is", "w-german"] },
+        { "id": "u06-s03", "target": "Is your father English?", "source": "Ist dein Vater Engländer?", "sourceAccept": ["Ist dein Vater englisch?", "Ist euer Vater Engländer?", "Ist euer Vater englisch?", "Ist Ihr Vater Engländer?", "Ist Ihr Vater englisch?"], "words": ["w-is", "w-your", "w-father", "w-english"], "cloze": { "answer": "your", "distractors": ["you", "are"] } },
+        { "id": "u06-s04", "target": "Her parents live in England.", "source": "Ihre Eltern leben in England.", "targetAccept": ["Her parents are living in England."], "sourceAccept": ["Ihre Eltern wohnen in England."], "words": ["w-her", "w-parents", "w-live-in", "w-england"], "cloze": { "answer": "parents", "distractors": ["parent", "family"] } },
+        { "id": "u06-s05", "target": "My brother speaks English.", "source": "Mein Bruder spricht Englisch.", "words": ["w-my", "w-brother", "w-speak", "w-english"] },
         { "id": "u06-s06", "target": "My sister is twenty.", "source": "Meine Schwester ist zwanzig.", "words": ["w-my", "w-sister", "w-is", "w-twenty"] },
-        { "id": "u06-s07", "target": "The family has one child.", "source": "Die Familie hat ein Kind.", "words": ["w-family", "w-have", "w-one", "w-child"], "cloze": { "answer": "has", "distractors": ["have", "having"] } },
-        { "id": "u06-s08", "target": "Her husband is from London.", "source": "Ihr Ehemann kommt aus London.", "sourceAccept": ["Ihr Mann kommt aus London."], "words": ["w-her", "w-husband", "w-is", "w-from"] },
+        { "id": "u06-s07", "target": "The family has one child.", "source": "Die Familie hat ein Kind.", "targetAccept": ["The family have one child."], "words": ["w-family", "w-have", "w-one", "w-child"], "cloze": { "answer": "has", "distractors": ["are", "having"] } },
+        { "id": "u06-s08", "target": "Her husband is from London.", "source": "Ihr Ehemann kommt aus London.", "targetAccept": ["Her husband comes from London."], "sourceAccept": ["Ihr Mann kommt aus London."], "words": ["w-her", "w-husband", "w-is", "w-from"] },
         { "id": "u06-s09", "target": "My brother has a wife.", "source": "Mein Bruder hat eine Ehefrau.", "sourceAccept": ["Mein Bruder hat eine Frau."], "words": ["w-my", "w-brother", "w-have", "w-wife"], "cloze": { "answer": "has", "distractors": ["have", "am"] } },
-        { "id": "u06-s10", "target": "Is your sister English?", "source": "Ist deine Schwester Engländerin?", "sourceAccept": ["Ist eure Schwester Engländerin?", "Ist Ihre Schwester Engländerin?"], "words": ["w-is", "w-your", "w-sister", "w-english"], "cloze": { "answer": "Is", "distractors": ["Are", "Am"] } },
+        { "id": "u06-s10", "target": "Is your sister English?", "source": "Ist deine Schwester Engländerin?", "sourceAccept": ["Ist deine Schwester englisch?", "Ist eure Schwester Engländerin?", "Ist eure Schwester englisch?", "Ist Ihre Schwester Engländerin?", "Ist Ihre Schwester englisch?"], "words": ["w-is", "w-your", "w-sister", "w-english"], "cloze": { "answer": "Is", "distractors": ["Are", "Am"] } },
         { "id": "u06-s11", "target": "Her child is ten.", "source": "Ihr Kind ist zehn.", "words": ["w-her", "w-child", "w-is", "w-ten"] },
         { "id": "u06-s12", "target": "Her wife speaks German.", "source": "Ihre Ehefrau spricht Deutsch.", "sourceAccept": ["Ihre Frau spricht Deutsch."], "words": ["w-her", "w-wife", "w-speak", "w-german"] },
         { "id": "u06-s13", "target": "Your husband has a brother.", "source": "Dein Ehemann hat einen Bruder.", "sourceAccept": ["Euer Ehemann hat einen Bruder.", "Ihr Ehemann hat einen Bruder.", "Dein Mann hat einen Bruder.", "Euer Mann hat einen Bruder.", "Ihr Mann hat einen Bruder."], "words": ["w-your", "w-husband", "w-have", "w-brother"] },
         { "id": "u06-s14", "target": "My parents understand English.", "source": "Meine Eltern verstehen Englisch.", "words": ["w-my", "w-parents", "w-understand", "w-english"] },
         { "id": "u06-s15", "target": "Is the child your sister?", "source": "Ist das Kind deine Schwester?", "sourceAccept": ["Ist das Kind eure Schwester?", "Ist das Kind Ihre Schwester?"], "words": ["w-is", "w-child", "w-your", "w-sister"] },
         { "id": "u06-s16", "target": "Yes, my sister speaks English.", "source": "Ja, meine Schwester spricht Englisch.", "words": ["w-yes", "w-my", "w-sister", "w-speak", "w-english"] },
-        { "id": "u06-s17", "target": "Her mother and father speak English.", "source": "Ihre Mutter und ihr Vater sprechen Englisch.", "words": ["w-her", "w-mother", "w-and", "w-father", "w-speak", "w-english"] },
-        { "id": "u06-s18", "target": "The family has children.", "source": "Die Familie hat Kinder.", "words": ["w-family", "w-have", "w-child"] }
+        { "id": "u06-s17", "target": "Her mother and father speak English.", "source": "Ihre Mutter und ihr Vater sprechen Englisch.", "targetAccept": ["Her mother and her father speak English."], "words": ["w-her", "w-mother", "w-and", "w-father", "w-speak", "w-english"] },
+        { "id": "u06-s18", "target": "The family has children.", "source": "Die Familie hat Kinder.", "targetAccept": ["The family have children."], "words": ["w-family", "w-have", "w-child"] }
       ]
     },
     {
@@ -73,28 +73,29 @@
         { "id": "w-door", "target": "door", "source": "die Tür", "targetAccept": ["the door", "a door"], "sourceAccept": ["Tür", "eine Tür"], "forms": ["doors"], "pos": "noun", "emoji": "🚪" },
         { "id": "w-window", "target": "window", "source": "das Fenster", "targetAccept": ["the window", "a window"], "sourceAccept": ["Fenster", "ein Fenster"], "forms": ["windows"], "pos": "noun" },
         { "id": "w-key", "target": "key", "source": "der Schlüssel", "targetAccept": ["the key", "a key"], "sourceAccept": ["Schlüssel", "ein Schlüssel"], "forms": ["keys"], "pos": "noun", "emoji": "🔑" },
-        { "id": "w-a", "target": "a", "source": "ein", "sourceAccept": ["eine", "einen"], "pos": "det" },
-        { "id": "w-an", "target": "an", "source": "ein", "sourceAccept": ["eine", "einen"], "pos": "det" },
-        { "id": "w-some", "target": "some", "source": "einige", "sourceAccept": ["etwas", "ein paar"], "pos": "det" }
+        { "id": "w-a", "target": "a", "source": "ein", "sourceAccept": ["eine", "einen", "einem", "einer", "eines"], "pos": "det" },
+        { "id": "w-an", "target": "an", "source": "ein", "sourceAccept": ["eine", "einen", "einem", "einer", "eines"], "pos": "det" },
+        { "id": "w-some", "target": "some", "source": "einige", "sourceAccept": ["etwas", "ein paar"], "pos": "det" },
+        { "id": "w-in", "target": "in", "source": "in", "sourceAccept": ["im", "ins"], "pos": "prep" }
       ],
       "sentences": [
-        { "id": "u07-s01", "target": "One book and one bag.", "source": "Ein Buch und eine Tasche.", "words": ["w-one", "w-book", "w-and", "w-bag"] },
+        { "id": "u07-s01", "target": "I have one book and one bag.", "source": "Ich habe ein Buch und eine Tasche.", "words": ["w-i", "w-have", "w-one", "w-book", "w-and", "w-bag"] },
         { "id": "u07-s02", "target": "The chair is at the table.", "source": "Der Stuhl steht am Tisch.", "words": ["w-chair", "w-is", "w-at", "w-table"] },
-        { "id": "u07-s03", "target": "Open the door, please.", "source": "Öffne bitte die Tür.", "sourceAccept": ["Öffnet bitte die Tür.", "Öffnen Sie bitte die Tür."], "words": ["w-open", "w-door", "w-please"] },
-        { "id": "u07-s04", "target": "The book is in the bag.", "source": "Das Buch ist in der Tasche.", "words": ["w-book", "w-is", "w-live-in", "w-bag"] },
+        { "id": "u07-s03", "target": "Open the door, please.", "source": "Öffne bitte die Tür.", "targetAccept": ["Please open the door."], "sourceAccept": ["Bitte öffne die Tür.", "Öffnet bitte die Tür.", "Bitte öffnet die Tür.", "Öffnen Sie bitte die Tür.", "Bitte öffnen Sie die Tür."], "words": ["w-open", "w-door", "w-please"] },
+        { "id": "u07-s04", "target": "The book is in the bag.", "source": "Das Buch ist in der Tasche.", "words": ["w-book", "w-is", "w-in", "w-bag"] },
         { "id": "u07-s05", "target": "Is it a chair?", "source": "Ist es ein Stuhl?", "words": ["w-is", "w-it", "w-a", "w-chair"], "cloze": { "answer": "a", "distractors": ["an", "some"] } },
         { "id": "u07-s06", "target": "Choose a book.", "source": "Wähle ein Buch aus.", "sourceAccept": ["Wählt ein Buch aus.", "Wählen Sie ein Buch aus."], "words": ["w-choose", "w-a", "w-book"], "cloze": { "answer": "a", "distractors": ["an", "are"] } },
-        { "id": "u07-s07", "target": "Close the window, please.", "source": "Schließe bitte das Fenster.", "sourceAccept": ["Schließt bitte das Fenster.", "Schließen Sie bitte das Fenster."], "words": ["w-close", "w-window", "w-please"] },
+        { "id": "u07-s07", "target": "Close the window, please.", "source": "Schließe bitte das Fenster.", "targetAccept": ["Please close the window."], "sourceAccept": ["Bitte schließe das Fenster.", "Schließt bitte das Fenster.", "Bitte schließt das Fenster.", "Schließen Sie bitte das Fenster.", "Bitte schließen Sie das Fenster."], "words": ["w-close", "w-window", "w-please"] },
         { "id": "u07-s08", "target": "I have a key.", "source": "Ich habe einen Schlüssel.", "words": ["w-i", "w-have", "w-a", "w-key"], "cloze": { "answer": "a", "distractors": ["an", "are"] } },
         { "id": "u07-s09", "target": "It is an open window.", "source": "Es ist ein offenes Fenster.", "words": ["w-it", "w-is", "w-an", "w-open", "w-window"], "cloze": { "answer": "an", "distractors": ["a", "is"] } },
         { "id": "u07-s10", "target": "I have some keys.", "source": "Ich habe einige Schlüssel.", "sourceAccept": ["Ich habe ein paar Schlüssel."], "words": ["w-i", "w-have", "w-some", "w-key"], "cloze": { "answer": "some", "distractors": ["a", "an"] } },
-        { "id": "u07-s11", "target": "Some books are in the bag.", "source": "Einige Bücher sind in der Tasche.", "sourceAccept": ["Ein paar Bücher sind in der Tasche."], "words": ["w-some", "w-book", "w-are", "w-live-in", "w-bag"] },
-        { "id": "u07-s12", "target": "Is the key in your bag?", "source": "Ist der Schlüssel in deiner Tasche?", "sourceAccept": ["Ist der Schlüssel in eurer Tasche?", "Ist der Schlüssel in Ihrer Tasche?"], "words": ["w-is", "w-key", "w-live-in", "w-your", "w-bag"] },
-        { "id": "u07-s13", "target": "Yes, the key is in it.", "source": "Ja, der Schlüssel ist darin.", "words": ["w-yes", "w-key", "w-is", "w-live-in", "w-it"] },
-        { "id": "u07-s14", "target": "Open a window and listen.", "source": "Öffne ein Fenster und hör zu.", "sourceAccept": ["Öffnet ein Fenster und hört zu.", "Öffnen Sie ein Fenster und hören Sie zu."], "words": ["w-open", "w-a", "w-window", "w-and", "w-listen"] },
+        { "id": "u07-s11", "target": "Some books are in the bag.", "source": "Einige Bücher sind in der Tasche.", "sourceAccept": ["Ein paar Bücher sind in der Tasche."], "words": ["w-some", "w-book", "w-are", "w-in", "w-bag"] },
+        { "id": "u07-s12", "target": "Is the key in your bag?", "source": "Ist der Schlüssel in deiner Tasche?", "sourceAccept": ["Ist der Schlüssel in eurer Tasche?", "Ist der Schlüssel in Ihrer Tasche?"], "words": ["w-is", "w-key", "w-in", "w-your", "w-bag"] },
+        { "id": "u07-s13", "target": "Yes, the key is in it.", "source": "Ja, der Schlüssel ist darin.", "words": ["w-yes", "w-key", "w-is", "w-in", "w-it"] },
+        { "id": "u07-s14", "target": "Open a window and listen.", "source": "Öffne ein Fenster und hör zu.", "sourceAccept": ["Öffne ein Fenster und höre zu.", "Öffnet ein Fenster und hört zu.", "Öffnen Sie ein Fenster und hören Sie zu."], "words": ["w-open", "w-a", "w-window", "w-and", "w-listen"] },
         { "id": "u07-s15", "target": "Choose ten books.", "source": "Wähle zehn Bücher aus.", "sourceAccept": ["Wählt zehn Bücher aus.", "Wählen Sie zehn Bücher aus."], "words": ["w-choose", "w-ten", "w-book"] },
         { "id": "u07-s16", "target": "The door is open.", "source": "Die Tür ist offen.", "words": ["w-door", "w-is", "w-open"] },
-        { "id": "u07-s17", "target": "Write an answer, please.", "source": "Schreib bitte eine Antwort.", "sourceAccept": ["Schreibt bitte eine Antwort.", "Schreiben Sie bitte eine Antwort."], "words": ["w-write", "w-an", "w-answer", "w-please"], "cloze": { "answer": "an", "distractors": ["a", "are"] } },
+        { "id": "u07-s17", "target": "Write an answer, please.", "source": "Schreib bitte eine Antwort.", "targetAccept": ["Please write an answer."], "sourceAccept": ["Bitte schreib eine Antwort.", "Schreibe bitte eine Antwort.", "Bitte schreibe eine Antwort.", "Schreibt bitte eine Antwort.", "Bitte schreibt eine Antwort.", "Schreiben Sie bitte eine Antwort.", "Bitte schreiben Sie eine Antwort."], "words": ["w-write", "w-an", "w-answer", "w-please"], "cloze": { "answer": "an", "distractors": ["a", "are"] } },
         { "id": "u07-s18", "target": "The chairs are at the table.", "source": "Die Stühle stehen am Tisch.", "words": ["w-chair", "w-are", "w-at", "w-table"] }
       ]
     },
@@ -112,36 +113,36 @@
         ]
       },
       "words": [
-        { "id": "w-this", "target": "this", "source": "dies", "sourceAccept": ["das hier", "dieser", "diese", "dieses"], "pos": "pron" },
-        { "id": "w-that", "target": "that", "source": "das", "sourceAccept": ["das da", "jenes", "jener", "jene"], "pos": "pron" },
-        { "id": "w-these", "target": "these", "source": "diese", "sourceAccept": ["die hier"], "pos": "pron" },
-        { "id": "w-those", "target": "those", "source": "jene", "sourceAccept": ["die da"], "pos": "pron" },
+        { "id": "w-this", "target": "this", "source": "dies", "sourceAccept": ["das hier", "dieser", "diese", "dieses", "diesen", "diesem"], "pos": "pron" },
+        { "id": "w-that", "target": "that", "source": "das", "sourceAccept": ["das da", "jenes", "jener", "jene", "jenen", "jenem"], "pos": "pron" },
+        { "id": "w-these", "target": "these", "source": "diese", "sourceAccept": ["die hier", "diesen", "dieser"], "pos": "pron" },
+        { "id": "w-those", "target": "those", "source": "jene", "sourceAccept": ["die da", "jenen", "jener"], "pos": "pron" },
         { "id": "w-here", "target": "here", "source": "hier", "pos": "adv" },
         { "id": "w-there", "target": "there", "source": "dort", "sourceAccept": ["da"], "pos": "adv" },
         { "id": "w-thing", "target": "thing", "source": "das Ding", "targetAccept": ["the thing", "a thing"], "sourceAccept": ["Ding", "ein Ding"], "forms": ["things"], "pos": "noun" },
-        { "id": "w-which", "target": "which", "source": "welcher", "sourceAccept": ["welche", "welches"], "pos": "det" },
+        { "id": "w-which", "target": "which", "source": "welcher", "sourceAccept": ["welche", "welches", "welchen", "welchem"], "pos": "det" },
         { "id": "w-whose", "target": "whose", "source": "wessen", "pos": "det" },
         { "id": "w-object", "target": "object", "source": "der Gegenstand", "targetAccept": ["the object", "an object"], "sourceAccept": ["Gegenstand", "ein Gegenstand"], "forms": ["objects"], "pos": "noun" }
       ],
       "sentences": [
         { "id": "u08-s01", "target": "This is a book.", "source": "Das hier ist ein Buch.", "sourceAccept": ["Dies ist ein Buch."], "words": ["w-this", "w-is", "w-a", "w-book"], "cloze": { "answer": "This", "distractors": ["These", "Those"] } },
         { "id": "u08-s02", "target": "That is your bag.", "source": "Das da ist deine Tasche.", "sourceAccept": ["Das da ist eure Tasche.", "Das da ist Ihre Tasche."], "words": ["w-that", "w-is", "w-your", "w-bag"] },
-        { "id": "u08-s03", "target": "These are my keys.", "source": "Das hier sind meine Schlüssel.", "sourceAccept": ["Diese hier sind meine Schlüssel."], "words": ["w-these", "w-are", "w-my", "w-key"], "cloze": { "answer": "These", "distractors": ["This", "That"] } },
+        { "id": "u08-s03", "target": "These are my keys.", "source": "Das hier sind meine Schlüssel.", "sourceAccept": ["Diese hier sind meine Schlüssel.", "Dies sind meine Schlüssel."], "words": ["w-these", "w-are", "w-my", "w-key"], "cloze": { "answer": "These", "distractors": ["This", "That"] } },
         { "id": "u08-s04", "target": "Those chairs are old.", "source": "Jene Stühle sind alt.", "sourceAccept": ["Die Stühle da sind alt."], "words": ["w-those", "w-chair", "w-are", "w-old"] },
         { "id": "u08-s05", "target": "The book is here.", "source": "Das Buch ist hier.", "words": ["w-book", "w-is", "w-here"] },
         { "id": "u08-s06", "target": "Your bag is there.", "source": "Deine Tasche ist dort.", "sourceAccept": ["Eure Tasche ist dort.", "Ihre Tasche ist dort.", "Deine Tasche ist da.", "Eure Tasche ist da.", "Ihre Tasche ist da."], "words": ["w-your", "w-bag", "w-is", "w-there"] },
         { "id": "u08-s07", "target": "What is this thing?", "source": "Was ist dieses Ding?", "words": ["w-what", "w-is", "w-this", "w-thing"], "cloze": { "answer": "this", "distractors": ["these", "those"] } },
-        { "id": "u08-s08", "target": "Which book is in your bag?", "source": "Welches Buch ist in deiner Tasche?", "sourceAccept": ["Welches Buch ist in eurer Tasche?", "Welches Buch ist in Ihrer Tasche?"], "words": ["w-which", "w-book", "w-is", "w-live-in", "w-your", "w-bag"], "cloze": { "answer": "is", "distractors": ["are", "has"] } },
-        { "id": "u08-s09", "target": "Whose key is this?", "source": "Wessen Schlüssel ist das?", "words": ["w-whose", "w-key", "w-is", "w-this"], "cloze": { "answer": "key", "distractors": ["keys", "books"] } },
+        { "id": "u08-s08", "target": "Which book is in your bag?", "source": "Welches Buch ist in deiner Tasche?", "sourceAccept": ["Welches Buch ist in eurer Tasche?", "Welches Buch ist in Ihrer Tasche?"], "words": ["w-which", "w-book", "w-is", "w-in", "w-your", "w-bag"], "cloze": { "answer": "is", "distractors": ["are", "has"] } },
+        { "id": "u08-s09", "target": "Whose key is this?", "source": "Wessen Schlüssel ist das?", "sourceAccept": ["Wem gehört dieser Schlüssel?"], "words": ["w-whose", "w-key", "w-is", "w-this"], "cloze": { "answer": "key", "distractors": ["keys", "books"] } },
         { "id": "u08-s10", "target": "Which door is open?", "source": "Welche Tür ist offen?", "words": ["w-which", "w-door", "w-is", "w-open"] },
-        { "id": "u08-s11", "target": "Whose books are those?", "source": "Wessen Bücher sind das dort?", "words": ["w-whose", "w-book", "w-are", "w-those"] },
-        { "id": "u08-s12", "target": "This object is a key.", "source": "Dieser Gegenstand ist ein Schlüssel.", "words": ["w-this", "w-object", "w-is", "w-a", "w-key"] },
-        { "id": "u08-s13", "target": "That thing is a phone.", "source": "Das Ding dort ist ein Telefon.", "words": ["w-that", "w-thing", "w-is", "w-a", "w-phone"] },
+        { "id": "u08-s11", "target": "Whose books are those?", "source": "Wem gehören die Bücher dort?", "sourceAccept": ["Wessen Bücher sind das dort?", "Wem gehören die Bücher da?"], "words": ["w-whose", "w-book", "w-are", "w-those"] },
+        { "id": "u08-s12", "target": "This object is old.", "source": "Dieser Gegenstand ist alt.", "words": ["w-this", "w-object", "w-is", "w-old"] },
+        { "id": "u08-s13", "target": "That thing is a phone.", "source": "Das Ding dort ist ein Telefon.", "sourceAccept": ["Das Ding dort ist ein Handy."], "words": ["w-that", "w-thing", "w-is", "w-a", "w-phone"] },
         { "id": "u08-s14", "target": "Are these your parents?", "source": "Sind das hier deine Eltern?", "sourceAccept": ["Sind das hier eure Eltern?", "Sind das hier Ihre Eltern?"], "words": ["w-are", "w-these", "w-your", "w-parents"] },
-        { "id": "u08-s15", "target": "No, those are my parents.", "source": "Nein, die dort sind meine Eltern.", "words": ["w-no", "w-those", "w-are", "w-my", "w-parents"] },
+        { "id": "u08-s15", "target": "No, those are my parents.", "source": "Nein, die da sind meine Eltern.", "sourceAccept": ["Nein, die dort sind meine Eltern.", "Nein, das da sind meine Eltern."], "words": ["w-no", "w-those", "w-are", "w-my", "w-parents"] },
         { "id": "u08-s16", "target": "Open this door here.", "source": "Öffne diese Tür hier.", "sourceAccept": ["Öffnet diese Tür hier.", "Öffnen Sie diese Tür hier."], "words": ["w-open", "w-this", "w-door", "w-here"] },
         { "id": "u08-s17", "target": "Close that window there.", "source": "Schließe das Fenster dort.", "sourceAccept": ["Schließt das Fenster dort.", "Schließen Sie das Fenster dort.", "Schließe das Fenster da.", "Schließt das Fenster da.", "Schließen Sie das Fenster da."], "words": ["w-close", "w-that", "w-window", "w-there"] },
-        { "id": "u08-s18", "target": "Which objects are in the bag?", "source": "Welche Gegenstände sind in der Tasche?", "words": ["w-which", "w-object", "w-are", "w-live-in", "w-bag"] }
+        { "id": "u08-s18", "target": "Which objects are in the bag?", "source": "Welche Gegenstände sind in der Tasche?", "words": ["w-which", "w-object", "w-are", "w-in", "w-bag"] }
       ]
     },
     {
@@ -150,7 +151,7 @@
       "canDo": "Du kannst Personen mit einfachen Eigenschaften beschreiben.",
       "tip": {
         "title": "Englische Adjektive bleiben gleich",
-        "body": "Vor einem Nomen steht das Adjektiv im Englischen davor: **a friendly person**. Anders als im Deutschen bekommt es keine Endung – nicht *a friendlye person*.\n\nNach **am**, **is** oder **are** bleibt das Adjektiv ebenfalls unverändert: **The child is happy.** Auch bei mehreren Personen heißt es **The parents are happy**, nicht *happies*.",
+        "body": "Im Englischen steht das Adjektiv vor dem Nomen: **a friendly person**. Anders als im Deutschen bekommt es keine Endung – nicht *a friendlye person*.\n\nNach **am**, **is** oder **are** bleibt das Adjektiv ebenfalls unverändert: **The child is happy.** Auch bei mehreren Personen heißt es **The parents are happy**, nicht *happies*.",
         "examples": [
           { "target": "This is a friendly person.", "source": "Das ist eine freundliche Person." },
           { "target": "The child is happy.", "source": "Das Kind ist glücklich." },
@@ -184,9 +185,9 @@
         { "id": "u09-s12", "target": "The young person speaks English.", "source": "Die junge Person spricht Englisch.", "words": ["w-young", "w-person", "w-speak", "w-english"] },
         { "id": "u09-s13", "target": "Are your parents tired?", "source": "Sind deine Eltern müde?", "sourceAccept": ["Sind eure Eltern müde?", "Sind Ihre Eltern müde?"], "words": ["w-are", "w-your", "w-parents", "w-tired"] },
         { "id": "u09-s14", "target": "No, my parents are happy.", "source": "Nein, meine Eltern sind glücklich.", "words": ["w-no", "w-my", "w-parents", "w-are", "w-happy"] },
-        { "id": "u09-s15", "target": "The kind person is her mother.", "source": "Die nette Person ist ihre Mutter.", "words": ["w-kind", "w-person", "w-is", "w-her", "w-mother"] },
-        { "id": "u09-s16", "target": "Please look at her hair.", "source": "Sieh dir bitte ihre Haare an.", "sourceAccept": ["Seht euch bitte ihre Haare an.", "Sehen Sie sich bitte ihre Haare an."], "words": ["w-please", "w-look", "w-at", "w-her", "w-hair"] },
-        { "id": "u09-s17", "target": "Close your eyes, please.", "source": "Schließe bitte die Augen.", "sourceAccept": ["Schließt bitte die Augen.", "Schließen Sie bitte die Augen."], "words": ["w-close", "w-your", "w-eyes", "w-please"] },
+        { "id": "u09-s15", "target": "Her mother is a kind person.", "source": "Ihre Mutter ist eine nette Person.", "sourceAccept": ["Ihre Mutter ist ein netter Mensch."], "words": ["w-her", "w-mother", "w-is", "w-a", "w-kind", "w-person"] },
+        { "id": "u09-s16", "target": "Please look at her hair.", "source": "Sieh dir bitte ihre Haare an.", "targetAccept": ["Look at her hair, please."], "sourceAccept": ["Bitte sieh dir ihre Haare an.", "Seht euch bitte ihre Haare an.", "Bitte seht euch ihre Haare an.", "Sehen Sie sich bitte ihre Haare an.", "Bitte sehen Sie sich ihre Haare an."], "words": ["w-please", "w-look", "w-at", "w-her", "w-hair"] },
+        { "id": "u09-s17", "target": "Close your eyes, please.", "source": "Schließe bitte die Augen.", "targetAccept": ["Please close your eyes."], "sourceAccept": ["Bitte schließe die Augen.", "Schließe bitte deine Augen.", "Schließt bitte die Augen.", "Bitte schließt die Augen.", "Schließt bitte eure Augen.", "Schließen Sie bitte die Augen.", "Bitte schließen Sie die Augen.", "Schließen Sie bitte Ihre Augen."], "words": ["w-close", "w-your", "w-eyes", "w-please"] },
         { "id": "u09-s18", "target": "Is that short person friendly?", "source": "Ist die kleine Person dort freundlich?", "words": ["w-is", "w-that", "w-short", "w-person", "w-friendly"] }
       ]
     },
@@ -196,20 +197,20 @@
       "canDo": "Du kannst Fähigkeiten nennen, danach fragen und einfach um Erlaubnis bitten.",
       "tip": {
         "title": "can und cannot mit Grundform",
-        "body": "Nach **can** und **cannot** steht immer die Grundform: **can swim**, **cannot drive**. Es gibt kein *to* und bei einer einzelnen Person auch kein **-s**: **My sister can cook**, nicht *can cooks*.\n\nIn Fragen rückt **can** vor die Person: **Can you help?** Das funktioniert ohne **do**. **Cannot** wird oft zu **can’t** verkürzt; beide Formen bedeuten „nicht können“.",
+        "body": "Nach **can** und **cannot** steht immer die Grundform: **can swim**, **cannot drive**. Es gibt kein *to* und bei einem Subjekt in der dritten Person Singular auch kein **-s**: **My sister can cook**, nicht *can cooks*.\n\nIn Fragen steht **can** vor dem Subjekt: **Can you help?** Das funktioniert ohne **do**. **Cannot** wird oft zu **can’t** verkürzt; beide Formen bedeuten „nicht können“.",
         "examples": [
           { "target": "I can swim.", "source": "Ich kann schwimmen." },
-          { "target": "My sister cannot drive.", "source": "Meine Schwester kann nicht Auto fahren." },
+          { "target": "My sister cannot drive.", "source": "Meine Schwester kann kein Auto fahren." },
           { "target": "Can you help?", "source": "Kannst du helfen?" }
         ]
       },
       "words": [
-        { "id": "w-cannot", "target": "cannot", "source": "nicht können", "targetAccept": ["can't"], "sourceAccept": ["kann nicht", "kannst nicht", "könnt nicht"], "pos": "verb" },
+        { "id": "w-cannot", "target": "cannot", "source": "nicht können", "targetAccept": ["can't"], "sourceAccept": ["kann nicht", "kannst nicht", "könnt nicht", "können nicht"], "pos": "verb" },
         { "id": "w-swim", "target": "swim", "source": "schwimmen", "sourceAccept": ["schwimme", "schwimmst", "schwimmt"], "forms": ["swims", "swimming", "swam", "swum"], "pos": "verb" },
         { "id": "w-cook", "target": "cook", "source": "kochen", "sourceAccept": ["koche", "kochst", "kocht"], "forms": ["cooks", "cooking", "cooked"], "pos": "verb" },
-        { "id": "w-drive", "target": "drive", "source": "Auto fahren", "sourceAccept": ["fahre Auto", "fährst Auto", "fahrt Auto", "fahren Auto"], "forms": ["drives", "driving", "drove", "driven"], "pos": "verb" },
+        { "id": "w-drive", "target": "drive", "source": "Auto fahren", "sourceAccept": ["fahren", "fahre", "fährst", "fährt", "fahrt", "fahre Auto", "fährst Auto", "fährt Auto", "fahrt Auto", "fahren Auto"], "forms": ["drives", "driving", "drove", "driven"], "pos": "verb" },
         { "id": "w-dance", "target": "dance", "source": "tanzen", "sourceAccept": ["tanze", "tanzt"], "forms": ["dances", "dancing", "danced"], "pos": "verb" },
-        { "id": "w-help", "target": "help", "source": "helfen", "sourceAccept": ["helfe", "hilfst", "helft", "helfen Sie"], "forms": ["helps", "helping", "helped"], "pos": "verb" },
+        { "id": "w-help", "target": "help", "source": "helfen", "sourceAccept": ["helfe", "hilfst", "hilft", "hilf", "helft", "helfen Sie"], "forms": ["helps", "helping", "helped"], "pos": "verb" },
         { "id": "w-use", "target": "use", "source": "benutzen", "sourceAccept": ["benutze", "benutzt", "benutzen Sie"], "forms": ["uses", "using", "used"], "pos": "verb" },
         { "id": "w-well", "target": "well", "source": "gut", "pos": "adv" },
         { "id": "w-maybe", "target": "maybe", "source": "vielleicht", "pos": "adv" },
@@ -221,19 +222,19 @@
         { "id": "u10-s03", "target": "Maybe I can drive.", "source": "Vielleicht kann ich Auto fahren.", "words": ["w-maybe", "w-i", "w-can", "w-drive"] },
         { "id": "u10-s04", "target": "My sister can dance well.", "source": "Meine Schwester kann gut tanzen.", "words": ["w-my", "w-sister", "w-can", "w-dance", "w-well"], "cloze": { "answer": "dance", "distractors": ["dances", "dancing"] } },
         { "id": "u10-s05", "target": "Can you help my mother?", "source": "Kannst du meiner Mutter helfen?", "sourceAccept": ["Könnt ihr meiner Mutter helfen?", "Können Sie meiner Mutter helfen?"], "words": ["w-can", "w-you", "w-help", "w-my", "w-mother"] },
-        { "id": "u10-s06", "target": "I can use the phone.", "source": "Ich kann das Telefon benutzen.", "words": ["w-i", "w-can", "w-use", "w-phone"], "cloze": { "answer": "use", "distractors": ["uses", "using"] } },
+        { "id": "u10-s06", "target": "I can use the phone.", "source": "Ich kann das Telefon benutzen.", "sourceAccept": ["Ich kann das Handy benutzen."], "words": ["w-i", "w-can", "w-use", "w-phone"], "cloze": { "answer": "use", "distractors": ["uses", "using"] } },
         { "id": "u10-s07", "target": "Her husband can sing well.", "source": "Ihr Ehemann kann gut singen.", "sourceAccept": ["Ihr Mann kann gut singen."], "words": ["w-her", "w-husband", "w-can", "w-sing", "w-well"] },
         { "id": "u10-s08", "target": "Can your father swim?", "source": "Kann dein Vater schwimmen?", "sourceAccept": ["Kann euer Vater schwimmen?", "Kann Ihr Vater schwimmen?"], "words": ["w-can", "w-your", "w-father", "w-swim"], "cloze": { "answer": "swim", "distractors": ["swims", "swam"] } },
         { "id": "u10-s09", "target": "Yes, my father can swim well.", "source": "Ja, mein Vater kann gut schwimmen.", "words": ["w-yes", "w-my", "w-father", "w-can", "w-swim", "w-well"] },
         { "id": "u10-s10", "target": "I can cook and dance.", "source": "Ich kann kochen und tanzen.", "words": ["w-i", "w-can", "w-cook", "w-and", "w-dance"] },
         { "id": "u10-s11", "target": "Maybe your brother can help.", "source": "Vielleicht kann dein Bruder helfen.", "sourceAccept": ["Vielleicht kann euer Bruder helfen.", "Vielleicht kann Ihr Bruder helfen."], "words": ["w-maybe", "w-your", "w-brother", "w-can", "w-help"] },
-        { "id": "u10-s12", "target": "I cannot use this phone.", "source": "Ich kann dieses Telefon nicht benutzen.", "targetAccept": ["I can't use this phone."], "words": ["w-i", "w-cannot", "w-use", "w-this", "w-phone"], "cloze": { "answer": "use", "distractors": ["uses", "using"] } },
-        { "id": "u10-s13", "target": "Can I use the phone?", "source": "Darf ich das Telefon benutzen?", "words": ["w-can", "w-i", "w-use", "w-phone"] },
-        { "id": "u10-s14", "target": "Yes, you can use it.", "source": "Ja, du darfst es benutzen.", "sourceAccept": ["Ja, ihr dürft es benutzen.", "Ja, Sie dürfen es benutzen."], "words": ["w-yes", "w-you", "w-can", "w-use", "w-it"] },
+        { "id": "u10-s12", "target": "I cannot use this phone.", "source": "Ich kann dieses Telefon nicht benutzen.", "targetAccept": ["I can't use this phone."], "sourceAccept": ["Ich kann dieses Handy nicht benutzen."], "words": ["w-i", "w-cannot", "w-use", "w-this", "w-phone"], "cloze": { "answer": "use", "distractors": ["uses", "using"] } },
+        { "id": "u10-s13", "target": "Can I use the phone?", "source": "Darf ich das Telefon benutzen?", "targetAccept": ["May I use the phone?"], "sourceAccept": ["Kann ich das Telefon benutzen?", "Darf ich das Handy benutzen?", "Kann ich das Handy benutzen?"], "words": ["w-can", "w-i", "w-use", "w-phone"] },
+        { "id": "u10-s14", "target": "Yes, you can use it.", "source": "Ja, du darfst es benutzen.", "targetAccept": ["Yes, you may use it."], "sourceAccept": ["Ja, du kannst es benutzen.", "Ja, ihr dürft es benutzen.", "Ja, ihr könnt es benutzen.", "Ja, Sie dürfen es benutzen.", "Ja, Sie können es benutzen."], "words": ["w-yes", "w-you", "w-can", "w-use", "w-it"] },
         { "id": "u10-s15", "target": "Her child can sing.", "source": "Ihr Kind kann singen.", "words": ["w-her", "w-child", "w-can", "w-sing"] },
         { "id": "u10-s16", "target": "Can your mother drive?", "source": "Kann deine Mutter Auto fahren?", "sourceAccept": ["Kann eure Mutter Auto fahren?", "Kann Ihre Mutter Auto fahren?"], "words": ["w-can", "w-your", "w-mother", "w-drive"] },
-        { "id": "u10-s17", "target": "No, my mother cannot drive.", "source": "Nein, meine Mutter kann nicht Auto fahren.", "targetAccept": ["No, my mother can't drive."], "words": ["w-no", "w-my", "w-mother", "w-cannot", "w-drive"] },
-        { "id": "u10-s18", "target": "Please help my sister cook.", "source": "Hilf meiner Schwester bitte beim Kochen.", "sourceAccept": ["Helft meiner Schwester bitte beim Kochen.", "Helfen Sie meiner Schwester bitte beim Kochen."], "words": ["w-please", "w-help", "w-my", "w-sister", "w-cook"] }
+        { "id": "u10-s17", "target": "No, my mother cannot drive.", "source": "Nein, meine Mutter kann kein Auto fahren.", "targetAccept": ["No, my mother can't drive."], "sourceAccept": ["Nein, meine Mutter kann nicht Auto fahren.", "Nein, meine Mutter kann nicht fahren."], "words": ["w-no", "w-my", "w-mother", "w-cannot", "w-drive"] },
+        { "id": "u10-s18", "target": "Please help my sister cook.", "source": "Hilf meiner Schwester bitte beim Kochen.", "targetAccept": ["Help my sister cook, please."], "sourceAccept": ["Bitte hilf meiner Schwester beim Kochen.", "Helft meiner Schwester bitte beim Kochen.", "Bitte helft meiner Schwester beim Kochen.", "Helfen Sie meiner Schwester bitte beim Kochen.", "Bitte helfen Sie meiner Schwester beim Kochen."], "words": ["w-please", "w-help", "w-my", "w-sister", "w-cook"] }
       ]
     }
   ]

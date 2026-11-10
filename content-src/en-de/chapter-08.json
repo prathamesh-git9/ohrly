@@ -1,0 +1,2917 @@
+{
+ "id": "c08",
+ "title": "Chapter 8",
+ "cefr": "A2",
+ "description": "Learn to describe locations, directions, comparisons, and detailed descriptions.",
+ "units": [
+  {
+   "id": "u036",
+   "title": "At home",
+   "canDo": "Locate objects precisely in your home",
+   "tip": {
+    "title": "Where is it?",
+    "body": "In German, when we want to say where something is located (answering the question **wo?**), we use the **dative** case after certain prepositions. These are called two-way prepositions.\n\nFor example, to say something is *on the table*, we change **der Tisch** to **dem Tisch**.",
+    "examples": [
+     {
+      "target": "Das Bild ist an der Wand.",
+      "source": "The picture is on the wall."
+     },
+     {
+      "target": "Der Tisch ist auf dem Teppich.",
+      "source": "The table is on the carpet."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-an-dat",
+     "target": "an",
+     "source": "on",
+     "pos": "prep"
+    },
+    {
+     "id": "w-auf",
+     "target": "auf",
+     "source": "on",
+     "pos": "prep"
+    },
+    {
+     "id": "w-hinter",
+     "target": "hinter",
+     "source": "behind",
+     "pos": "prep"
+    },
+    {
+     "id": "w-neben",
+     "target": "neben",
+     "source": "next to",
+     "sourceAccept": [
+      "beside"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-unter",
+     "target": "unter",
+     "source": "under",
+     "sourceAccept": [
+      "underneath",
+      "below"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-vor",
+     "target": "vor",
+     "source": "in front of",
+     "sourceAccept": [
+      "before"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-zwischen",
+     "target": "zwischen",
+     "source": "between",
+     "pos": "prep"
+    },
+    {
+     "id": "w-wand",
+     "target": "die Wand",
+     "source": "the wall",
+     "sourceAccept": [
+      "wall",
+      "a wall"
+     ],
+     "plural": "die Wände",
+     "pos": "noun"
+    },
+    {
+     "id": "w-bild",
+     "target": "das Bild",
+     "source": "the picture",
+     "sourceAccept": [
+      "picture",
+      "a picture",
+      "the image",
+      "image",
+      "an image"
+     ],
+     "plural": "die Bilder",
+     "pos": "noun"
+    },
+    {
+     "id": "w-teppich",
+     "target": "der Teppich",
+     "source": "the carpet",
+     "sourceAccept": [
+      "carpet",
+      "a carpet",
+      "the rug",
+      "rug",
+      "a rug"
+     ],
+     "plural": "die Teppiche",
+     "pos": "noun"
+    },
+    {
+     "id": "w-spiegel",
+     "target": "der Spiegel",
+     "source": "the mirror",
+     "sourceAccept": [
+      "mirror",
+      "a mirror"
+     ],
+     "plural": "die Spiegel",
+     "pos": "noun"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u036-s01",
+     "target": "Das Bild ist an der Wand.",
+     "source": "The picture is on the wall.",
+     "targetAccept": [
+      "An der Wand ist das Bild."
+     ],
+     "sourceAccept": [
+      "The image is on the wall."
+     ],
+     "words": [
+      "w-bild",
+      "w-sein",
+      "w-an-dat",
+      "w-wand"
+     ],
+     "cloze": {
+      "answer": "der",
+      "distractors": [
+       "dem",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u036-s02",
+     "target": "Der Spiegel ist an der Wand.",
+     "source": "The mirror is on the wall.",
+     "targetAccept": [
+      "An der Wand ist der Spiegel."
+     ],
+     "words": [
+      "w-spiegel",
+      "w-sein",
+      "w-an-dat",
+      "w-wand"
+     ]
+    },
+    {
+     "id": "u036-s03",
+     "target": "Der Tisch ist auf dem Teppich.",
+     "source": "The table is on the carpet.",
+     "targetAccept": [
+      "Auf dem Teppich ist der Tisch."
+     ],
+     "sourceAccept": [
+      "The table is on the rug."
+     ],
+     "words": [
+      "w-tisch",
+      "w-sein",
+      "w-auf",
+      "w-teppich"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "den",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u036-s04",
+     "target": "Der Stuhl ist hinter dem Tisch.",
+     "source": "The chair is behind the table.",
+     "targetAccept": [
+      "Hinter dem Tisch ist der Stuhl."
+     ],
+     "words": [
+      "w-stuhl",
+      "w-sein",
+      "w-hinter",
+      "w-tisch"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "den",
+       "das"
+      ]
+     }
+    },
+    {
+     "id": "u036-s05",
+     "target": "Mein Schrank ist neben der Tür.",
+     "source": "My cupboard is next to the door.",
+     "targetAccept": [
+      "Neben der Tür ist mein Schrank."
+     ],
+     "sourceAccept": [
+      "My cupboard is beside the door."
+     ],
+     "words": [
+      "w-mein",
+      "w-schrank",
+      "w-sein",
+      "w-neben",
+      "w-tuer"
+     ],
+     "cloze": {
+      "answer": "der",
+      "distractors": [
+       "die",
+       "dem"
+      ]
+     }
+    },
+    {
+     "id": "u036-s06",
+     "target": "Das Bild ist über dem Bett.",
+     "source": "The picture is above the bed.",
+     "targetAccept": [
+      "Über dem Bett ist das Bild."
+     ],
+     "words": [
+      "w-bild",
+      "w-sein",
+      "w-ueber",
+      "w-bett"
+     ]
+    },
+    {
+     "id": "u036-s07",
+     "target": "Der Koffer ist unter dem Bett.",
+     "source": "The suitcase is under the bed.",
+     "targetAccept": [
+      "Unter dem Bett ist der Koffer."
+     ],
+     "sourceAccept": [
+      "The suitcase is underneath the bed."
+     ],
+     "words": [
+      "w-koffer",
+      "w-sein",
+      "w-unter",
+      "w-bett"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "die",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u036-s08",
+     "target": "Das Kind ist vor der Tür.",
+     "source": "The child is in front of the door.",
+     "targetAccept": [
+      "Vor der Tür ist das Kind."
+     ],
+     "words": [
+      "w-kind",
+      "w-sein",
+      "w-vor",
+      "w-tuer"
+     ]
+    },
+    {
+     "id": "u036-s09",
+     "target": "Der Tisch ist zwischen dem Bett und dem Schrank.",
+     "source": "The table is between the bed and the cupboard.",
+     "words": [
+      "w-tisch",
+      "w-sein",
+      "w-zwischen",
+      "w-bett",
+      "w-und",
+      "w-schrank"
+     ]
+    },
+    {
+     "id": "u036-s10",
+     "target": "Die Tasche ist auf dem Teppich.",
+     "source": "The bag is on the carpet.",
+     "targetAccept": [
+      "Auf dem Teppich ist die Tasche."
+     ],
+     "sourceAccept": [
+      "The bag is on the rug."
+     ],
+     "words": [
+      "w-tasche",
+      "w-sein",
+      "w-auf",
+      "w-teppich"
+     ]
+    },
+    {
+     "id": "u036-s11",
+     "target": "Das Ticket ist hinter dem Spiegel.",
+     "source": "The ticket is behind the mirror.",
+     "targetAccept": [
+      "Hinter dem Spiegel ist das Ticket."
+     ],
+     "words": [
+      "w-ticket",
+      "w-sein",
+      "w-hinter",
+      "w-spiegel"
+     ]
+    },
+    {
+     "id": "u036-s12",
+     "target": "Wir essen neben dem Hotel.",
+     "source": "We are eating next to the hotel.",
+     "targetAccept": [
+      "Neben dem Hotel essen wir."
+     ],
+     "sourceAccept": [
+      "We eat next to the hotel.",
+      "We eat beside the hotel.",
+      "We are eating beside the hotel."
+     ],
+     "words": [
+      "w-wir",
+      "w-essen",
+      "w-neben",
+      "w-hotel"
+     ]
+    },
+    {
+     "id": "u036-s13",
+     "target": "Das Bild ist über dem Schrank.",
+     "source": "The picture is above the cupboard.",
+     "targetAccept": [
+      "Über dem Schrank ist das Bild."
+     ],
+     "words": [
+      "w-bild",
+      "w-sein",
+      "w-ueber",
+      "w-schrank"
+     ]
+    },
+    {
+     "id": "u036-s14",
+     "target": "Die Schuhe sind unter dem Tisch.",
+     "source": "The shoes are under the table.",
+     "targetAccept": [
+      "Unter dem Tisch sind die Schuhe."
+     ],
+     "sourceAccept": [
+      "The shoes are underneath the table."
+     ],
+     "words": [
+      "w-schuh",
+      "w-sein",
+      "w-unter",
+      "w-tisch"
+     ]
+    },
+    {
+     "id": "u036-s15",
+     "target": "Der Bus ist vor dem Hotel.",
+     "source": "The bus is in front of the hotel.",
+     "targetAccept": [
+      "Vor dem Hotel ist der Bus."
+     ],
+     "words": [
+      "w-bus",
+      "w-sein",
+      "w-vor",
+      "w-hotel"
+     ]
+    },
+    {
+     "id": "u036-s16",
+     "target": "Das Kind schläft zwischen den Eltern.",
+     "source": "The child is sleeping between the parents.",
+     "targetAccept": [
+      "Zwischen den Eltern schläft das Kind."
+     ],
+     "sourceAccept": [
+      "The child sleeps between the parents."
+     ],
+     "words": [
+      "w-kind",
+      "w-schlafen",
+      "w-zwischen",
+      "w-eltern"
+     ]
+    }
+   ],
+   "passages": [
+    {
+     "id": "u036-p01",
+     "kind": "reading",
+     "title": "Die neue Wohnung",
+     "text": "Hallo Leon, ich bin in der neuen Wohnung! Es ist sehr schön hier. Der Teppich ist groß und der Tisch steht auf dem Teppich. Der Stuhl ist hinter dem Tisch. Das Bild ist an der Wand, neben der Tür. Der Schrank ist zwischen dem Bett und der Tür. Mein Koffer ist noch unter dem Bett. Morgen kaufe ich einen Spiegel. Er kommt über das Bett. Ich bin sehr glücklich. Komm bald vorbei! Viele Grüße, Mara",
+     "questions": [
+      {
+       "q": "Where is the table?",
+       "options": [
+        "On the carpet.",
+        "Behind the chair.",
+        "Next to the door.",
+        "Under the bed."
+       ],
+       "answer": "On the carpet."
+      },
+      {
+       "q": "Where is the picture?",
+       "options": [
+        "On the wall.",
+        "On the carpet.",
+        "Above the bed.",
+        "Under the table."
+       ],
+       "answer": "On the wall."
+      },
+      {
+       "q": "What is between the bed and the door?",
+       "options": [
+        "The cupboard.",
+        "The suitcase.",
+        "The chair.",
+        "The table."
+       ],
+       "answer": "The cupboard."
+      },
+      {
+       "q": "What is under the bed?",
+       "options": [
+        "The suitcase.",
+        "The carpet.",
+        "The chair.",
+        "The mirror."
+       ],
+       "answer": "The suitcase."
+      }
+     ]
+    },
+    {
+     "id": "u036-p02",
+     "kind": "listening",
+     "title": "Wo ist mein Ticket?",
+     "text": "Hallo Mara, ich suche mein Ticket! Es ist nicht in der Tasche. Ich brauche es für den Zug. Ist es im Zimmer? Der Koffer ist auf dem Teppich. Das Ticket ist vielleicht unter dem Koffer. Oder ist es hinter dem Schrank? Warte, ich sehe etwas. Es ist hier auf dem Tisch, neben dem Buch! Zum Glück! Jetzt kann ich zum Bahnhof fahren.",
+     "questions": [
+      {
+       "q": "What is the speaker looking for?",
+       "options": [
+        "A ticket.",
+        "A bag.",
+        "A book.",
+        "A suitcase."
+       ],
+       "answer": "A ticket."
+      },
+      {
+       "q": "Where is the suitcase?",
+       "options": [
+        "On the carpet.",
+        "Under the bed.",
+        "Next to the door.",
+        "On the table."
+       ],
+       "answer": "On the carpet."
+      },
+      {
+       "q": "Where does the speaker think the ticket might be first?",
+       "options": [
+        "Under the suitcase.",
+        "On the table.",
+        "Behind the cupboard.",
+        "Next to the book."
+       ],
+       "answer": "Under the suitcase."
+      },
+      {
+       "q": "Where is the ticket actually found?",
+       "options": [
+        "Next to the book.",
+        "On the carpet.",
+        "Under the suitcase.",
+        "Behind the cupboard."
+       ],
+       "answer": "Next to the book."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u037",
+   "title": "Move it there",
+   "canDo": "Say where objects are being moved to",
+   "tip": {
+    "title": "Where is it going?",
+    "body": "When we talk about movement to a destination (answering **wohin?**), we use the **accusative** case with those same two-way prepositions.\n\nGerman also has different verbs for placing things: **stellen** is for placing upright, **legen** for laying flat, and **hängen** for hanging.",
+    "examples": [
+     {
+      "target": "Ich stelle den Stuhl in den Keller.",
+      "source": "I place the chair in the cellar."
+     },
+     {
+      "target": "Wir hängen das Bild an die Wand.",
+      "source": "We hang the picture on the wall."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-stellen",
+     "target": "stellen",
+     "source": "to place",
+     "sourceAccept": [
+      "to put",
+      "to set upright"
+     ],
+     "forms": [
+      "stelle",
+      "stellst",
+      "stellt",
+      "gestellt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-legen",
+     "target": "legen",
+     "source": "to lay",
+     "sourceAccept": [
+      "to put",
+      "to place flat"
+     ],
+     "forms": [
+      "lege",
+      "legst",
+      "legt",
+      "gelegt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-haengen",
+     "target": "hängen",
+     "source": "to hang",
+     "forms": [
+      "hänge",
+      "hängst",
+      "hängt",
+      "gehängt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-setzen",
+     "target": "setzen",
+     "source": "to set",
+     "sourceAccept": [
+      "to sit",
+      "to place"
+     ],
+     "forms": [
+      "setze",
+      "setzt",
+      "gesetzt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-regal",
+     "target": "das Regal",
+     "source": "the shelf",
+     "sourceAccept": [
+      "shelf",
+      "a shelf"
+     ],
+     "plural": "die Regale",
+     "pos": "noun"
+    },
+    {
+     "id": "w-boden",
+     "target": "der Boden",
+     "source": "the floor",
+     "sourceAccept": [
+      "floor",
+      "a floor",
+      "the ground"
+     ],
+     "plural": "die Böden",
+     "pos": "noun"
+    },
+    {
+     "id": "w-keller",
+     "target": "der Keller",
+     "source": "the cellar",
+     "sourceAccept": [
+      "cellar",
+      "a cellar",
+      "the basement",
+      "basement"
+     ],
+     "plural": "die Keller",
+     "pos": "noun"
+    },
+    {
+     "id": "w-hinein",
+     "target": "hinein",
+     "source": "inside",
+     "sourceAccept": [
+      "in"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-hinaus",
+     "target": "hinaus",
+     "source": "outside",
+     "sourceAccept": [
+      "out"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-daneben",
+     "target": "daneben",
+     "source": "next to it",
+     "sourceAccept": [
+      "beside it"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u037-s01",
+     "target": "Wir stellen das Regal in den Keller.",
+     "source": "We place the shelf in the cellar.",
+     "targetAccept": [
+      "In den Keller stellen wir das Regal."
+     ],
+     "sourceAccept": [
+      "We put the shelf in the cellar.",
+      "We place the shelf into the cellar.",
+      "We are placing the shelf in the cellar.",
+      "We are putting the shelf in the cellar.",
+      "We place the shelf in the basement."
+     ],
+     "words": [
+      "w-wir",
+      "w-stellen",
+      "w-regal",
+      "w-in",
+      "w-keller"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "der",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u037-s02",
+     "target": "Er legt mein Buch auf das Regal.",
+     "source": "He lays my book on the shelf.",
+     "targetAccept": [
+      "Auf das Regal legt er mein Buch."
+     ],
+     "sourceAccept": [
+      "He puts my book on the shelf.",
+      "He is putting my book on the shelf.",
+      "He is laying my book on the shelf."
+     ],
+     "words": [
+      "w-er",
+      "w-legen",
+      "w-mein",
+      "w-buch",
+      "w-auf",
+      "w-regal"
+     ],
+     "cloze": {
+      "answer": "das",
+      "distractors": [
+       "dem",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u037-s03",
+     "target": "Wir hängen das Bild an die Wand.",
+     "source": "We hang the picture on the wall.",
+     "targetAccept": [
+      "An die Wand hängen wir das Bild."
+     ],
+     "sourceAccept": [
+      "We are hanging the picture on the wall.",
+      "We hang the image on the wall."
+     ],
+     "words": [
+      "w-wir",
+      "w-haengen",
+      "w-bild",
+      "w-an-dat",
+      "w-wand"
+     ],
+     "cloze": {
+      "answer": "die",
+      "distractors": [
+       "den",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u037-s04",
+     "target": "Er setzt das Kind auf den Boden.",
+     "source": "He sets the child on the floor.",
+     "targetAccept": [
+      "Auf den Boden setzt er das Kind."
+     ],
+     "sourceAccept": [
+      "He sits the child on the floor.",
+      "He puts the child on the floor.",
+      "He is setting the child on the floor."
+     ],
+     "words": [
+      "w-er",
+      "w-setzen",
+      "w-kind",
+      "w-auf",
+      "w-boden"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "die",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u037-s05",
+     "target": "Wir stellen die Schuhe in das Regal.",
+     "source": "We put the shoes in the shelf.",
+     "targetAccept": [
+      "In das Regal stellen wir die Schuhe."
+     ],
+     "sourceAccept": [
+      "We are putting the shoes in the shelf.",
+      "We place the shoes in the shelf."
+     ],
+     "words": [
+      "w-wir",
+      "w-stellen",
+      "w-schuh",
+      "w-in",
+      "w-regal"
+     ]
+    },
+    {
+     "id": "u037-s06",
+     "target": "Wir legen mein Ticket auf den Tisch.",
+     "source": "We put my ticket on the table.",
+     "targetAccept": [
+      "Auf den Tisch legen wir mein Ticket."
+     ],
+     "sourceAccept": [
+      "We lay my ticket on the table.",
+      "We place my ticket on the table.",
+      "We are laying my ticket on the table."
+     ],
+     "words": [
+      "w-wir",
+      "w-legen",
+      "w-mein",
+      "w-ticket",
+      "w-auf",
+      "w-tisch"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "das",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u037-s07",
+     "target": "Wir hängen die Jacke an die Tür.",
+     "source": "We hang the jacket on the door.",
+     "targetAccept": [
+      "An die Tür hängen wir die Jacke."
+     ],
+     "sourceAccept": [
+      "We are hanging the jacket on the door."
+     ],
+     "words": [
+      "w-wir",
+      "w-haengen",
+      "w-jacke",
+      "w-an-dat",
+      "w-tuer"
+     ]
+    },
+    {
+     "id": "u037-s08",
+     "target": "Ich setze das Kind auf den Stuhl.",
+     "source": "I set the child on the chair.",
+     "targetAccept": [
+      "Auf den Stuhl setze ich das Kind."
+     ],
+     "sourceAccept": [
+      "I put the child on the chair.",
+      "I sit the child on the chair.",
+      "I am setting the child on the chair."
+     ],
+     "words": [
+      "w-ich",
+      "w-setzen",
+      "w-kind",
+      "w-auf",
+      "w-stuhl"
+     ]
+    },
+    {
+     "id": "u037-s09",
+     "target": "Wir gehen in den Keller hinein.",
+     "source": "We go inside the cellar.",
+     "targetAccept": [
+      "In den Keller gehen wir hinein."
+     ],
+     "sourceAccept": [
+      "We are going inside the cellar.",
+      "We go inside the basement."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-in",
+      "w-keller",
+      "w-hinein"
+     ]
+    },
+    {
+     "id": "u037-s10",
+     "target": "Er geht aus der Küche hinaus.",
+     "source": "He goes outside the kitchen.",
+     "targetAccept": [
+      "Aus der Küche geht er hinaus."
+     ],
+     "sourceAccept": [
+      "He is going outside the kitchen.",
+      "He goes out of the kitchen."
+     ],
+     "words": [
+      "w-er",
+      "w-gehen",
+      "w-aus",
+      "w-kueche",
+      "w-hinaus"
+     ]
+    },
+    {
+     "id": "u037-s11",
+     "target": "Wir stellen das Bett in die Ecke.",
+     "source": "We put the bed in the corner.",
+     "targetAccept": [
+      "In die Ecke stellen wir das Bett."
+     ],
+     "sourceAccept": [
+      "We place the bed in the corner.",
+      "We are putting the bed in the corner."
+     ],
+     "words": [
+      "w-wir",
+      "w-stellen",
+      "w-bett",
+      "w-in",
+      "w-ecke"
+     ]
+    },
+    {
+     "id": "u037-s12",
+     "target": "Ich lege die Tasche daneben.",
+     "source": "I lay the bag next to it.",
+     "targetAccept": [
+      "Daneben lege ich die Tasche."
+     ],
+     "sourceAccept": [
+      "I put the bag next to it.",
+      "I place the bag next to it."
+     ],
+     "words": [
+      "w-ich",
+      "w-legen",
+      "w-tasche",
+      "w-daneben"
+     ]
+    },
+    {
+     "id": "u037-s13",
+     "target": "Sie legen das Buch auf den Boden.",
+     "source": "You lay the book on the floor.",
+     "targetAccept": [
+      "Auf den Boden legen Sie das Buch."
+     ],
+     "sourceAccept": [
+      "They lay the book on the floor.",
+      "You put the book on the floor.",
+      "They put the book on the floor."
+     ],
+     "words": [
+      "w-sie",
+      "w-legen",
+      "w-buch",
+      "w-auf",
+      "w-boden"
+     ]
+    },
+    {
+     "id": "u037-s14",
+     "target": "Wir stellen den Schrank neben die Tür.",
+     "source": "We place the cupboard next to the door.",
+     "targetAccept": [
+      "Neben die Tür stellen wir den Schrank."
+     ],
+     "sourceAccept": [
+      "We put the cupboard next to the door."
+     ],
+     "words": [
+      "w-wir",
+      "w-stellen",
+      "w-schrank",
+      "w-neben",
+      "w-tuer"
+     ]
+    },
+    {
+     "id": "u037-s15",
+     "target": "Wir hängen das Bild über das Bett.",
+     "source": "We hang the picture above the bed.",
+     "targetAccept": [
+      "Über das Bett hängen wir das Bild."
+     ],
+     "sourceAccept": [
+      "We hang the picture over the bed.",
+      "We are hanging the picture above the bed."
+     ],
+     "words": [
+      "w-wir",
+      "w-haengen",
+      "w-bild",
+      "w-ueber",
+      "w-bett"
+     ]
+    },
+    {
+     "id": "u037-s16",
+     "target": "Wir setzen das Kind zwischen die Eltern.",
+     "source": "We set the child between the parents.",
+     "targetAccept": [
+      "Zwischen die Eltern setzen wir das Kind."
+     ],
+     "sourceAccept": [
+      "We put the child between the parents.",
+      "We sit the child between the parents."
+     ],
+     "words": [
+      "w-wir",
+      "w-setzen",
+      "w-kind",
+      "w-zwischen",
+      "w-eltern"
+     ]
+    },
+    {
+     "id": "u037-s17",
+     "target": "Sie legen das Ticket hinein.",
+     "source": "They lay the ticket inside.",
+     "targetAccept": [
+      "Hinein legen sie das Ticket."
+     ],
+     "sourceAccept": [
+      "They put the ticket inside.",
+      "You lay the ticket inside.",
+      "You put the ticket inside."
+     ],
+     "words": [
+      "w-sie",
+      "w-legen",
+      "w-ticket",
+      "w-hinein"
+     ]
+    },
+    {
+     "id": "u037-s18",
+     "target": "Wir stellen das Regal hinaus.",
+     "source": "We put the shelf outside.",
+     "targetAccept": [
+      "Hinaus stellen wir das Regal."
+     ],
+     "sourceAccept": [
+      "We place the shelf outside.",
+      "We are putting the shelf outside."
+     ],
+     "words": [
+      "w-wir",
+      "w-stellen",
+      "w-regal",
+      "w-hinaus"
+     ]
+    },
+    {
+     "id": "u037-s19",
+     "target": "Er stellt den Stuhl daneben.",
+     "source": "He places the chair next to it.",
+     "targetAccept": [
+      "Daneben stellt er den Stuhl."
+     ],
+     "sourceAccept": [
+      "He puts the chair next to it.",
+      "He is placing the chair next to it."
+     ],
+     "words": [
+      "w-er",
+      "w-stellen",
+      "w-stuhl",
+      "w-daneben"
+     ]
+    }
+   ],
+   "passages": [
+    {
+     "id": "u037-p01",
+     "kind": "reading",
+     "title": "Der Umzug",
+     "text": "Hallo Leon, danke für deine Hilfe heute! Die Möbel sind jetzt hier. Bitte stell den Tisch in die Küche. Leg den Teppich auf den Boden im Wohnzimmer. Stell den Schrank neben die Tür. Häng das Bild an die Wand, über das Sofa. Stell das Bett in die Ecke im Schlafzimmer. Leg die Bücher in das Regal. Wir können später zusammen essen. Ich kaufe Pizza. Bis bald, Mara",
+     "questions": [
+      {
+       "q": "What is Leon helping with?",
+       "options": [
+        "Moving furniture.",
+        "Buying a pizza.",
+        "Painting the wall.",
+        "Cleaning the kitchen."
+       ],
+       "answer": "Moving furniture."
+      },
+      {
+       "q": "Where should the table go?",
+       "options": [
+        "In the kitchen.",
+        "In the bedroom.",
+        "Next to the door.",
+        "On the carpet."
+       ],
+       "answer": "In the kitchen."
+      },
+      {
+       "q": "Where should the picture be hung?",
+       "options": [
+        "Above the sofa.",
+        "Next to the door.",
+        "In the kitchen.",
+        "Over the bed."
+       ],
+       "answer": "Above the sofa."
+      },
+      {
+       "q": "Where should the books go?",
+       "options": [
+        "On the shelf.",
+        "On the floor.",
+        "In the cupboard.",
+        "On the table."
+       ],
+       "answer": "On the shelf."
+      }
+     ]
+    },
+    {
+     "id": "u037-p02",
+     "kind": "listening",
+     "title": "Neue Möbel",
+     "text": "Okay, wir haben viele Möbel. Zuerst stellen wir den Tisch in das Zimmer. Gut. Jetzt nehmen wir den Stuhl. Ich setze den Stuhl neben den Tisch. Wo ist das Bild? Ach, hier. Wir hängen das Bild an die Wand. Es sieht toll aus! Leg die Tasche auf den Boden. Wir stellen das Regal in die Ecke. Sehr gut, das Zimmer ist jetzt fertig.",
+     "questions": [
+      {
+       "q": "What is placed in the room first?",
+       "options": [
+        "The table.",
+        "The chair.",
+        "The shelf.",
+        "The picture."
+       ],
+       "answer": "The table."
+      },
+      {
+       "q": "Where is the chair placed?",
+       "options": [
+        "Next to the table.",
+        "In the corner.",
+        "On the floor.",
+        "Near the door."
+       ],
+       "answer": "Next to the table."
+      },
+      {
+       "q": "Where does the picture go?",
+       "options": [
+        "On the wall.",
+        "On the shelf.",
+        "Next to the table.",
+        "In the corner."
+       ],
+       "answer": "On the wall."
+      },
+      {
+       "q": "Where does the bag go?",
+       "options": [
+        "On the floor.",
+        "On the table.",
+        "On the chair.",
+        "In the corner."
+       ],
+       "answer": "On the floor."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u038",
+   "title": "Around the region",
+   "canDo": "Describe routes and sources with prepositions",
+   "tip": {
+    "title": "Always dative",
+    "body": "Some prepositions in German always take the **dative** case, no matter if there is movement or not. Some common ones are **mit**, **von**, **bei**, and **seit**.\n\nAfter these words, masculine and neuter nouns take **dem**, and feminine nouns take **der**.",
+    "examples": [
+     {
+      "target": "Wir fahren mit dem Zug.",
+      "source": "We travel with the train."
+     },
+     {
+      "target": "Ich komme von dem Arzt.",
+      "source": "I come from the doctor."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-bei",
+     "target": "bei",
+     "source": "at",
+     "sourceAccept": [
+      "near",
+      "with",
+      "at the home of"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-mit",
+     "target": "mit",
+     "source": "with",
+     "sourceAccept": [
+      "by"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-seit",
+     "target": "seit",
+     "source": "since",
+     "sourceAccept": [
+      "for"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-von",
+     "target": "von",
+     "source": "from",
+     "sourceAccept": [
+      "of"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-richtung",
+     "target": "die Richtung",
+     "source": "the direction",
+     "sourceAccept": [
+      "direction",
+      "a direction"
+     ],
+     "plural": "die Richtungen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-entlang",
+     "target": "entlang",
+     "source": "along",
+     "pos": "prep"
+    },
+    {
+     "id": "w-bruecke",
+     "target": "die Brücke",
+     "source": "the bridge",
+     "sourceAccept": [
+      "bridge",
+      "a bridge"
+     ],
+     "plural": "die Brücken",
+     "pos": "noun"
+    },
+    {
+     "id": "w-ampel",
+     "target": "die Ampel",
+     "source": "the traffic light",
+     "sourceAccept": [
+      "traffic light",
+      "a traffic light",
+      "the stoplight"
+     ],
+     "plural": "die Ampeln",
+     "pos": "noun"
+    },
+    {
+     "id": "w-kreuzung",
+     "target": "die Kreuzung",
+     "source": "the intersection",
+     "sourceAccept": [
+      "intersection",
+      "an intersection",
+      "the crossroad"
+     ],
+     "plural": "die Kreuzungen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-vorbei",
+     "target": "vorbei",
+     "source": "past",
+     "sourceAccept": [
+      "by"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u038-s01",
+     "target": "Ich wohne bei den Eltern.",
+     "source": "I live at the parents' home.",
+     "targetAccept": [
+      "Bei den Eltern wohne ich."
+     ],
+     "sourceAccept": [
+      "I live with the parents.",
+      "I live at the parents."
+     ],
+     "words": [
+      "w-ich",
+      "w-wohnen",
+      "w-bei",
+      "w-eltern"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "die",
+       "der"
+      ]
+     }
+    },
+    {
+     "id": "u038-s02",
+     "target": "Wir fahren mit dem Zug.",
+     "source": "We travel by train.",
+     "targetAccept": [
+      "Mit dem Zug fahren wir."
+     ],
+     "sourceAccept": [
+      "We are travelling by train.",
+      "We are travelling with the train.",
+      "We travel with the train."
+     ],
+     "words": [
+      "w-wir",
+      "w-fahren",
+      "w-mit",
+      "w-zug"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "das",
+       "die"
+      ]
+     }
+    },
+    {
+     "id": "u038-s03",
+     "target": "Er arbeitet seit dem Wochenende hier.",
+     "source": "He has been working here since the weekend.",
+     "targetAccept": [
+      "Seit dem Wochenende arbeitet er hier."
+     ],
+     "sourceAccept": [
+      "He has worked here since the weekend.",
+      "He works here since the weekend."
+     ],
+     "words": [
+      "w-er",
+      "w-arbeiten",
+      "w-seit",
+      "w-dem",
+      "w-wochenende",
+      "w-hier"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "das",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u038-s04",
+     "target": "Ich komme von dem Arzt.",
+     "source": "I come from the doctor.",
+     "targetAccept": [
+      "Von dem Arzt komme ich."
+     ],
+     "sourceAccept": [
+      "I am coming from the doctor."
+     ],
+     "words": [
+      "w-ich",
+      "w-kommen",
+      "w-von",
+      "w-arzt"
+     ],
+     "cloze": {
+      "answer": "dem",
+      "distractors": [
+       "die",
+       "ein"
+      ]
+     }
+    },
+    {
+     "id": "u038-s05",
+     "target": "Wir gehen in diese Richtung.",
+     "source": "We go in this direction.",
+     "targetAccept": [
+      "In diese Richtung gehen wir."
+     ],
+     "sourceAccept": [
+      "We are going in this direction."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-in",
+      "w-dieser",
+      "w-richtung"
+     ]
+    },
+    {
+     "id": "u038-s06",
+     "target": "Wir gehen die Straße entlang.",
+     "source": "We go along the street.",
+     "targetAccept": [
+      "Die Straße entlang gehen wir."
+     ],
+     "sourceAccept": [
+      "We are walking along the street.",
+      "We walk along the street.",
+      "We go down the street."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-strasse",
+      "w-entlang"
+     ]
+    },
+    {
+     "id": "u038-s07",
+     "target": "Wir fahren über die Brücke.",
+     "source": "We drive over the bridge.",
+     "targetAccept": [
+      "Über die Brücke fahren wir."
+     ],
+     "sourceAccept": [
+      "We travel over the bridge.",
+      "We cross the bridge.",
+      "We are driving over the bridge."
+     ],
+     "words": [
+      "w-wir",
+      "w-fahren",
+      "w-ueber",
+      "w-bruecke"
+     ]
+    },
+    {
+     "id": "u038-s08",
+     "target": "Der Bus ist an der Ampel.",
+     "source": "The bus is at the traffic light.",
+     "targetAccept": [
+      "An der Ampel ist der Bus."
+     ],
+     "words": [
+      "w-bus",
+      "w-sein",
+      "w-an-dat",
+      "w-ampel"
+     ]
+    },
+    {
+     "id": "u038-s09",
+     "target": "Wir gehen bis zur Kreuzung.",
+     "source": "We go as far as the intersection.",
+     "targetAccept": [
+      "Bis zur Kreuzung gehen wir."
+     ],
+     "sourceAccept": [
+      "We go up to the intersection.",
+      "We go to the intersection.",
+      "We walk as far as the intersection."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-bis",
+      "w-zu",
+      "w-kreuzung"
+     ]
+    },
+    {
+     "id": "u038-s10",
+     "target": "Wir gehen an der Post vorbei.",
+     "source": "We walk past the post office.",
+     "targetAccept": [
+      "An der Post vorbei gehen wir."
+     ],
+     "sourceAccept": [
+      "We go past the post office.",
+      "We are walking past the post office."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-an-dat",
+      "w-post",
+      "w-vorbei"
+     ],
+     "cloze": {
+      "answer": "der",
+      "distractors": [
+       "dem",
+       "das"
+      ]
+     }
+    },
+    {
+     "id": "u038-s11",
+     "target": "Sie lernt mit dem Freund.",
+     "source": "She studies with the friend.",
+     "targetAccept": [
+      "Mit dem Freund lernt sie."
+     ],
+     "sourceAccept": [
+      "She is studying with the friend."
+     ],
+     "words": [
+      "w-sie-she",
+      "w-lernen",
+      "w-mit",
+      "w-freund"
+     ]
+    },
+    {
+     "id": "u038-s12",
+     "target": "Wir arbeiten seit gestern hier.",
+     "source": "We have been working here since yesterday.",
+     "targetAccept": [
+      "Seit gestern arbeiten wir hier."
+     ],
+     "sourceAccept": [
+      "We work here since yesterday."
+     ],
+     "words": [
+      "w-wir",
+      "w-arbeiten",
+      "w-seit",
+      "w-gestern",
+      "w-hier"
+     ]
+    },
+    {
+     "id": "u038-s13",
+     "target": "Das Ticket ist von dem Vater.",
+     "source": "The ticket is from the father.",
+     "targetAccept": [
+      "Von dem Vater ist das Ticket."
+     ],
+     "words": [
+      "w-ticket",
+      "w-sein",
+      "w-von",
+      "w-vater"
+     ]
+    },
+    {
+     "id": "u038-s14",
+     "target": "Die Bank ist in Richtung Bahnhof.",
+     "source": "The bank is in the direction of the train station.",
+     "targetAccept": [
+      "In Richtung Bahnhof ist die Bank."
+     ],
+     "sourceAccept": [
+      "The bank is towards the train station."
+     ],
+     "words": [
+      "w-bank",
+      "w-sein",
+      "w-in",
+      "w-richtung",
+      "w-bahnhof"
+     ]
+    },
+    {
+     "id": "u038-s15",
+     "target": "Er geht an der Bank vorbei.",
+     "source": "He walks past the bank.",
+     "targetAccept": [
+      "An der Bank vorbei geht er."
+     ],
+     "sourceAccept": [
+      "He goes past the bank.",
+      "He is walking past the bank."
+     ],
+     "words": [
+      "w-er",
+      "w-gehen",
+      "w-an-dat",
+      "w-bank",
+      "w-vorbei"
+     ]
+    },
+    {
+     "id": "u038-s16",
+     "target": "Die Haltestelle ist an der Kreuzung.",
+     "source": "The stop is at the intersection.",
+     "targetAccept": [
+      "An der Kreuzung ist die Haltestelle."
+     ],
+     "words": [
+      "w-haltestelle",
+      "w-sein",
+      "w-an-dat",
+      "w-kreuzung"
+     ]
+    },
+    {
+     "id": "u038-s17",
+     "target": "Das Hotel ist bei dem Bahnhof.",
+     "source": "The hotel is at the train station.",
+     "targetAccept": [
+      "Bei dem Bahnhof ist das Hotel."
+     ],
+     "sourceAccept": [
+      "The hotel is near the train station."
+     ],
+     "words": [
+      "w-hotel",
+      "w-sein",
+      "w-bei",
+      "w-dem",
+      "w-bahnhof"
+     ]
+    },
+    {
+     "id": "u038-s18",
+     "target": "Wir gehen den Weg entlang.",
+     "source": "We go along the way.",
+     "targetAccept": [
+      "Den Weg entlang gehen wir."
+     ],
+     "sourceAccept": [
+      "We are walking along the way.",
+      "We go along the path."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-den",
+      "w-weg",
+      "w-entlang"
+     ]
+    },
+    {
+     "id": "u038-s19",
+     "target": "Die Brücke ist groß.",
+     "source": "The bridge is big.",
+     "targetAccept": [
+      "Groß ist die Brücke."
+     ],
+     "sourceAccept": [
+      "The bridge is large."
+     ],
+     "words": [
+      "w-bruecke",
+      "w-sein",
+      "w-gross"
+     ]
+    },
+    {
+     "id": "u038-s20",
+     "target": "Wir sind an der Ampel.",
+     "source": "We are at the traffic light.",
+     "targetAccept": [
+      "An der Ampel sind wir."
+     ],
+     "sourceAccept": [
+      "We are at the stoplight."
+     ],
+     "words": [
+      "w-wir",
+      "w-sein",
+      "w-an-dat",
+      "w-ampel"
+     ]
+    }
+   ],
+   "passages": [
+    {
+     "id": "u038-p01",
+     "kind": "reading",
+     "title": "Der Weg zur Party",
+     "text": "Hallo Leon, die Party ist heute Abend bei mir. Hier ist der Weg: Du kommst von dem Bahnhof. Geh in Richtung Zentrum. Fahr mit dem Bus Nummer vier. Steig an der Kreuzung aus. Geh die Straße entlang. Geh an der Post vorbei. Nach der Post ist eine Ampel. Geh über die Brücke. Mein Haus ist direkt nach der Brücke auf der linken Seite. Bis später! Mara",
+     "questions": [
+      {
+       "q": "Where does the route start?",
+       "options": [
+        "From the train station.",
+        "From the post office.",
+        "From the bridge.",
+        "From the traffic light."
+       ],
+       "answer": "From the train station."
+      },
+      {
+       "q": "Which bus should Leon take?",
+       "options": [
+        "Number four.",
+        "Number three.",
+        "Number five.",
+        "Number two."
+       ],
+       "answer": "Number four."
+      },
+      {
+       "q": "What building should he walk past?",
+       "options": [
+        "The post office.",
+        "The bank.",
+        "The hospital.",
+        "The supermarket."
+       ],
+       "answer": "The post office."
+      },
+      {
+       "q": "Where is Mara's house?",
+       "options": [
+        "After the bridge.",
+        "Before the traffic light.",
+        "Next to the post office.",
+        "At the intersection."
+       ],
+       "answer": "After the bridge."
+      }
+     ]
+    },
+    {
+     "id": "u038-p02",
+     "kind": "listening",
+     "title": "Nach dem Weg fragen",
+     "text": "Entschuldigung, ich suche das Hotel. Können Sie mir helfen? Ja, natürlich. Sie gehen in diese Richtung. Gehen Sie die Straße entlang, bis zur Ampel. An der Ampel gehen Sie rechts. Dann gehen Sie an der Bank vorbei. Gehen Sie über die kleine Brücke. Das Hotel ist auf der rechten Seite, neben dem Supermarkt. Es ist nicht weit, vielleicht fünf Minuten zu Fuß. Viel Erfolg!",
+     "questions": [
+      {
+       "q": "What is the person looking for?",
+       "options": [
+        "The hotel.",
+        "The bank.",
+        "The supermarket.",
+        "The bridge."
+       ],
+       "answer": "The hotel."
+      },
+      {
+       "q": "What should they do at the traffic light?",
+       "options": [
+        "Turn right.",
+        "Turn left.",
+        "Go straight.",
+        "Stop."
+       ],
+       "answer": "Turn right."
+      },
+      {
+       "q": "What do they walk past after the traffic light?",
+       "options": [
+        "The bank.",
+        "The post office.",
+        "The supermarket.",
+        "The bridge."
+       ],
+       "answer": "The bank."
+      },
+      {
+       "q": "Where is the hotel located?",
+       "options": [
+        "Next to the supermarket.",
+        "Next to the bank.",
+        "Before the bridge.",
+        "At the traffic light."
+       ],
+       "answer": "Next to the supermarket."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u039",
+   "title": "Better and best",
+   "canDo": "Compare choices and describe preferences",
+   "tip": {
+    "title": "Better and best",
+    "body": "To compare things in German, we use the comparative and superlative forms. Just like in English, we often add **-er** for the comparative and use **am -sten** for the superlative.\n\nWhen comparing two things directly, use the word **als** (than).",
+    "examples": [
+     {
+      "target": "Mein Zimmer ist größer als dein Zimmer.",
+      "source": "My room is bigger than your room."
+     },
+     {
+      "target": "Dieser Film ist am besten.",
+      "source": "This film is the best."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-groesser",
+     "target": "größer",
+     "source": "bigger",
+     "sourceAccept": [
+      "larger",
+      "taller"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-guenstiger",
+     "target": "günstiger",
+     "source": "cheaper",
+     "sourceAccept": [
+      "more favorable",
+      "more affordable"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-schoener",
+     "target": "schöner",
+     "source": "more beautiful",
+     "sourceAccept": [
+      "nicer",
+      "prettier"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-teurer",
+     "target": "teurer",
+     "source": "more expensive",
+     "pos": "adj"
+    },
+    {
+     "id": "w-am-besten",
+     "target": "am besten",
+     "source": "best",
+     "sourceAccept": [
+      "the best"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-am-liebsten",
+     "target": "am liebsten",
+     "source": "most preferably",
+     "sourceAccept": [
+      "favorite",
+      "most of all"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-als",
+     "target": "als",
+     "source": "than",
+     "pos": "conj"
+    },
+    {
+     "id": "w-vergleichen",
+     "target": "vergleichen",
+     "source": "to compare",
+     "forms": [
+      "vergleiche",
+      "vergleichst",
+      "vergleicht",
+      "verglichen"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-vorteil",
+     "target": "der Vorteil",
+     "source": "the advantage",
+     "sourceAccept": [
+      "advantage",
+      "an advantage",
+      "the benefit"
+     ],
+     "plural": "die Vorteile",
+     "pos": "noun"
+    },
+    {
+     "id": "w-nachteil",
+     "target": "der Nachteil",
+     "source": "the disadvantage",
+     "sourceAccept": [
+      "disadvantage",
+      "a disadvantage",
+      "the drawback"
+     ],
+     "plural": "die Nachteile",
+     "pos": "noun"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u039-s01",
+     "target": "Mein Zimmer ist größer als dein Zimmer.",
+     "source": "My room is bigger than your room.",
+     "targetAccept": [
+      "Größer als dein Zimmer ist mein Zimmer."
+     ],
+     "sourceAccept": [
+      "My room is larger than your room."
+     ],
+     "words": [
+      "w-mein",
+      "w-zimmer",
+      "w-sein",
+      "w-groesser",
+      "w-als",
+      "w-dein"
+     ],
+     "cloze": {
+      "answer": "als",
+      "distractors": [
+       "wie",
+       "von"
+      ]
+     }
+    },
+    {
+     "id": "u039-s02",
+     "target": "Das Hotel ist günstiger als die Wohnung.",
+     "source": "The hotel is cheaper than the apartment.",
+     "targetAccept": [
+      "Günstiger als die Wohnung ist das Hotel."
+     ],
+     "sourceAccept": [
+      "The hotel is more affordable than the apartment."
+     ],
+     "words": [
+      "w-hotel",
+      "w-sein",
+      "w-guenstiger",
+      "w-als",
+      "w-wohnung"
+     ]
+    },
+    {
+     "id": "u039-s03",
+     "target": "Die Tasche ist schöner als der Koffer.",
+     "source": "The bag is more beautiful than the suitcase.",
+     "targetAccept": [
+      "Schöner als der Koffer ist die Tasche."
+     ],
+     "sourceAccept": [
+      "The bag is nicer than the suitcase.",
+      "The bag is prettier than the suitcase."
+     ],
+     "words": [
+      "w-tasche",
+      "w-sein",
+      "w-schoener",
+      "w-als",
+      "w-koffer"
+     ]
+    },
+    {
+     "id": "u039-s04",
+     "target": "Das Ticket ist teurer als das Buch.",
+     "source": "The ticket is more expensive than the book.",
+     "targetAccept": [
+      "Teurer als das Buch ist das Ticket."
+     ],
+     "words": [
+      "w-ticket",
+      "w-sein",
+      "w-teurer",
+      "w-als",
+      "w-buch"
+     ],
+     "cloze": {
+      "answer": "als",
+      "distractors": [
+       "wie",
+       "und"
+      ]
+     }
+    },
+    {
+     "id": "u039-s05",
+     "target": "Dieser Film ist am besten.",
+     "source": "This film is the best.",
+     "targetAccept": [
+      "Am besten ist dieser Film."
+     ],
+     "words": [
+      "w-dieser",
+      "w-film",
+      "w-sein",
+      "w-am-besten"
+     ],
+     "cloze": {
+      "answer": "besten",
+      "distractors": [
+       "besser",
+       "gut"
+      ]
+     }
+    },
+    {
+     "id": "u039-s06",
+     "target": "Ich trinke am liebsten Kaffee.",
+     "source": "I prefer drinking coffee most of all.",
+     "targetAccept": [
+      "Am liebsten trinke ich Kaffee."
+     ],
+     "sourceAccept": [
+      "I like drinking coffee best."
+     ],
+     "words": [
+      "w-ich",
+      "w-trinken",
+      "w-am-liebsten",
+      "w-kaffee"
+     ],
+     "cloze": {
+      "answer": "liebsten",
+      "distractors": [
+       "lieber",
+       "gern"
+      ]
+     }
+    },
+    {
+     "id": "u039-s07",
+     "target": "Wir können die Hotels vergleichen.",
+     "source": "We can compare the hotels.",
+     "targetAccept": [
+      "Die Hotels können wir vergleichen."
+     ],
+     "words": [
+      "w-wir",
+      "w-koennen",
+      "w-hotel",
+      "w-vergleichen"
+     ]
+    },
+    {
+     "id": "u039-s08",
+     "target": "Was ist der Vorteil?",
+     "source": "What is the advantage?",
+     "sourceAccept": [
+      "What is the benefit?"
+     ],
+     "words": [
+      "w-was",
+      "w-sein",
+      "w-vorteil"
+     ]
+    },
+    {
+     "id": "u039-s09",
+     "target": "Das hat einen Nachteil.",
+     "source": "That has a disadvantage.",
+     "targetAccept": [
+      "Einen Nachteil hat das."
+     ],
+     "sourceAccept": [
+      "That has one disadvantage.",
+      "That has a drawback."
+     ],
+     "words": [
+      "w-das",
+      "w-haben",
+      "w-einen",
+      "w-nachteil"
+     ]
+    },
+    {
+     "id": "u039-s10",
+     "target": "Sie ist größer als ich.",
+     "source": "She is taller than me.",
+     "targetAccept": [
+      "Größer als ich ist sie."
+     ],
+     "sourceAccept": [
+      "She is taller than I.",
+      "She is bigger than me."
+     ],
+     "words": [
+      "w-sie-she",
+      "w-sein",
+      "w-groesser",
+      "w-als",
+      "w-ich"
+     ],
+     "cloze": {
+      "answer": "als",
+      "distractors": [
+       "wie",
+       "denn"
+      ]
+     }
+    },
+    {
+     "id": "u039-s11",
+     "target": "Ein Einzelzimmer ist günstiger.",
+     "source": "A single room is cheaper.",
+     "targetAccept": [
+      "Günstiger ist ein Einzelzimmer."
+     ],
+     "sourceAccept": [
+      "A single room is more affordable."
+     ],
+     "words": [
+      "w-ein",
+      "w-einzelzimmer",
+      "w-sein",
+      "w-guenstiger"
+     ]
+    },
+    {
+     "id": "u039-s12",
+     "target": "Diese Jacke ist schöner.",
+     "source": "This jacket is more beautiful.",
+     "targetAccept": [
+      "Schöner ist diese Jacke."
+     ],
+     "sourceAccept": [
+      "This jacket is prettier.",
+      "This jacket is nicer."
+     ],
+     "words": [
+      "w-dieser",
+      "w-jacke",
+      "w-sein",
+      "w-schoener"
+     ]
+    },
+    {
+     "id": "u039-s13",
+     "target": "Der Kaffee ist teurer als der Tee.",
+     "source": "The coffee is more expensive than the tea.",
+     "targetAccept": [
+      "Teurer als der Tee ist der Kaffee."
+     ],
+     "words": [
+      "w-kaffee",
+      "w-sein",
+      "w-teurer",
+      "w-als",
+      "w-tee"
+     ]
+    },
+    {
+     "id": "u039-s14",
+     "target": "Wir schlafen am besten hier.",
+     "source": "We sleep best here.",
+     "targetAccept": [
+      "Am besten schlafen wir hier.",
+      "Hier schlafen wir am besten."
+     ],
+     "words": [
+      "w-wir",
+      "w-schlafen",
+      "w-am-besten",
+      "w-hier"
+     ]
+    },
+    {
+     "id": "u039-s15",
+     "target": "Er isst am liebsten Käse.",
+     "source": "He prefers eating cheese most of all.",
+     "targetAccept": [
+      "Am liebsten isst er Käse."
+     ],
+     "sourceAccept": [
+      "He likes eating cheese best."
+     ],
+     "words": [
+      "w-er",
+      "w-essen",
+      "w-am-liebsten",
+      "w-kaese"
+     ]
+    },
+    {
+     "id": "u039-s16",
+     "target": "Wir vergleichen die Zimmer.",
+     "source": "We compare the rooms.",
+     "targetAccept": [
+      "Die Zimmer vergleichen wir."
+     ],
+     "sourceAccept": [
+      "We are comparing the rooms."
+     ],
+     "words": [
+      "w-wir",
+      "w-vergleichen",
+      "w-zimmer"
+     ]
+    },
+    {
+     "id": "u039-s17",
+     "target": "Ein Hotel hat einen Vorteil.",
+     "source": "A hotel has an advantage.",
+     "targetAccept": [
+      "Einen Vorteil hat ein Hotel."
+     ],
+     "sourceAccept": [
+      "A hotel has a benefit."
+     ],
+     "words": [
+      "w-ein",
+      "w-hotel",
+      "w-haben",
+      "w-einen",
+      "w-vorteil"
+     ]
+    },
+    {
+     "id": "u039-s18",
+     "target": "Ist das ein Nachteil?",
+     "source": "Is that a disadvantage?",
+     "sourceAccept": [
+      "Is that a drawback?"
+     ],
+     "words": [
+      "w-sein",
+      "w-das",
+      "w-ein",
+      "w-nachteil"
+     ]
+    }
+   ],
+   "passages": [
+    {
+     "id": "u039-p01",
+     "kind": "reading",
+     "title": "Zwei Hotels",
+     "text": "Wir vergleichen heute zwei Hotels für den Urlaub. Das erste Hotel heißt \"Sonne\". Es ist günstig, aber die Zimmer sind klein. Das zweite Hotel heißt \"Meer\". Es ist viel größer und schöner als das erste Hotel. Die Zimmer haben einen tollen Balkon. Ein großer Vorteil ist das Essen. Das Frühstück ist hier am besten. Aber das Hotel \"Meer\" ist auch viel teurer. Welches Hotel ist besser für dich? Ich buche am liebsten das Hotel \"Meer\".",
+     "questions": [
+      {
+       "q": "What is the main topic of the text?",
+       "options": [
+        "Comparing two hotels.",
+        "Buying a new house.",
+        "Planning a city tour.",
+        "Working in a hotel."
+       ],
+       "answer": "Comparing two hotels."
+      },
+      {
+       "q": "How is Hotel \"Sonne\" described?",
+       "options": [
+        "Cheap but with small rooms.",
+        "Expensive and very beautiful.",
+        "Very large with big rooms.",
+        "Close to the sea."
+       ],
+       "answer": "Cheap but with small rooms."
+      },
+      {
+       "q": "What is a big advantage of Hotel \"Meer\"?",
+       "options": [
+        "The food.",
+        "The price.",
+        "The location.",
+        "The free parking."
+       ],
+       "answer": "The food."
+      },
+      {
+       "q": "Which hotel does the writer prefer to book?",
+       "options": [
+        "Hotel \"Meer\".",
+        "Hotel \"Sonne\".",
+        "The cheapest one.",
+        "Neither of them."
+       ],
+       "answer": "Hotel \"Meer\"."
+      }
+     ]
+    },
+    {
+     "id": "u039-p02",
+     "kind": "listening",
+     "title": "Wohnungen vergleichen",
+     "text": "Wir haben zwei Wohnungen gesehen. Die erste Wohnung ist im Zentrum. Sie ist praktisch, aber leider sehr teuer. Die zweite Wohnung ist günstiger. Sie ist auch größer als die erste Wohnung. Aber sie hat einen Nachteil: Sie ist weit weg vom Bahnhof. Die Küche in der zweiten Wohnung ist schöner. Ich glaube, die zweite Wohnung ist am besten für uns. Wir haben dort mehr Platz und es kostet weniger.",
+     "questions": [
+      {
+       "q": "Where is the first apartment located?",
+       "options": [
+        "In the center.",
+        "Near the station.",
+        "Outside the city.",
+        "Next to a park."
+       ],
+       "answer": "In the center."
+      },
+      {
+       "q": "What is a disadvantage of the second apartment?",
+       "options": [
+        "It is far from the train station.",
+        "It is very expensive.",
+        "It is too small.",
+        "The kitchen is bad."
+       ],
+       "answer": "It is far from the train station."
+      },
+      {
+       "q": "Which kitchen is more beautiful?",
+       "options": [
+        "The kitchen in the second apartment.",
+        "The kitchen in the first apartment.",
+        "Both are the same.",
+        "Neither is good."
+       ],
+       "answer": "The kitchen in the second apartment."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u040",
+   "title": "The right one",
+   "canDo": "Describe and select the right items",
+   "tip": {
+    "title": "Describing things",
+    "body": "When an adjective comes before a noun, its ending changes depending on the gender and case of the noun. After **ein** or **eine**, we add endings to show the gender.\n\nFor example, a masculine noun gets **-er** (ein bequemer Stuhl), and a neuter noun gets **-es** (ein helles Zimmer).",
+    "examples": [
+     {
+      "target": "Das ist ein bequemer Stuhl.",
+      "source": "That is a comfortable chair."
+     },
+     {
+      "target": "Sie hat eine moderne Wohnung.",
+      "source": "She has a modern apartment."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-bequem",
+     "target": "bequem",
+     "source": "comfortable",
+     "sourceAccept": [
+      "comfy"
+     ],
+     "forms": [
+      "bequemer",
+      "bequemes",
+      "bequemen",
+      "bequeme"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-modern",
+     "target": "modern",
+     "source": "modern",
+     "forms": [
+      "moderner",
+      "modernes",
+      "modernen",
+      "moderne"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-praktisch",
+     "target": "praktisch",
+     "source": "practical",
+     "sourceAccept": [
+      "handy"
+     ],
+     "forms": [
+      "praktischer",
+      "praktisches",
+      "praktischen",
+      "praktische"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-hell",
+     "target": "hell",
+     "source": "bright",
+     "sourceAccept": [
+      "light"
+     ],
+     "forms": [
+      "heller",
+      "helles",
+      "hellen",
+      "helle"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-dunkel",
+     "target": "dunkel",
+     "source": "dark",
+     "forms": [
+      "dunkler",
+      "dunkles",
+      "dunklen",
+      "dunkle"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-guenstig",
+     "target": "günstig",
+     "source": "cheap",
+     "sourceAccept": [
+      "favorable",
+      "affordable"
+     ],
+     "forms": [
+      "günstiger",
+      "günstiges",
+      "günstigen",
+      "günstige"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-teuer",
+     "target": "teuer",
+     "source": "expensive",
+     "forms": [
+      "teurer",
+      "teures",
+      "teuren",
+      "teure"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-mantel",
+     "target": "der Mantel",
+     "source": "the coat",
+     "sourceAccept": [
+      "coat",
+      "a coat"
+     ],
+     "plural": "die Mäntel",
+     "pos": "noun"
+    },
+    {
+     "id": "w-moebelstueck",
+     "target": "das Möbelstück",
+     "source": "the piece of furniture",
+     "sourceAccept": [
+      "piece of furniture",
+      "a piece of furniture"
+     ],
+     "plural": "die Möbelstücke",
+     "pos": "noun"
+    },
+    {
+     "id": "w-auswaehlen",
+     "target": "auswählen",
+     "source": "to select",
+     "sourceAccept": [
+      "to choose",
+      "to pick"
+     ],
+     "forms": [
+      "wähle",
+      "wählst",
+      "wählt",
+      "wählen",
+      "aus",
+      "ausgewählt"
+     ],
+     "pos": "verb"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u040-s01",
+     "target": "Das ist ein bequemer Stuhl.",
+     "source": "That is a comfortable chair.",
+     "targetAccept": [
+      "Ein bequemer Stuhl ist das."
+     ],
+     "sourceAccept": [
+      "This is a comfortable chair."
+     ],
+     "words": [
+      "w-das",
+      "w-sein",
+      "w-ein",
+      "w-bequem",
+      "w-stuhl"
+     ],
+     "cloze": {
+      "answer": "bequemer",
+      "distractors": [
+       "bequemes",
+       "bequemen"
+      ]
+     }
+    },
+    {
+     "id": "u040-s02",
+     "target": "Sie hat eine moderne Wohnung.",
+     "source": "She has a modern apartment.",
+     "targetAccept": [
+      "Eine moderne Wohnung hat sie."
+     ],
+     "sourceAccept": [
+      "She has got a modern apartment."
+     ],
+     "words": [
+      "w-sie-she",
+      "w-haben",
+      "w-eine",
+      "w-modern",
+      "w-wohnung"
+     ],
+     "cloze": {
+      "answer": "moderne",
+      "distractors": [
+       "modernes",
+       "modernen"
+      ]
+     }
+    },
+    {
+     "id": "u040-s03",
+     "target": "Ein praktisches Zimmer ist gut.",
+     "source": "A practical room is good.",
+     "targetAccept": [
+      "Gut ist ein praktisches Zimmer."
+     ],
+     "sourceAccept": [
+      "A handy room is good."
+     ],
+     "words": [
+      "w-ein",
+      "w-praktisch",
+      "w-zimmer",
+      "w-sein",
+      "w-gut"
+     ]
+    },
+    {
+     "id": "u040-s04",
+     "target": "Das helle Zimmer ist groß.",
+     "source": "The bright room is big.",
+     "targetAccept": [
+      "Groß ist das helle Zimmer."
+     ],
+     "sourceAccept": [
+      "The light room is big.",
+      "The bright room is large."
+     ],
+     "words": [
+      "w-das",
+      "w-hell",
+      "w-zimmer",
+      "w-sein",
+      "w-gross"
+     ],
+     "cloze": {
+      "answer": "helle",
+      "distractors": [
+       "helles",
+       "hellen"
+      ]
+     }
+    },
+    {
+     "id": "u040-s05",
+     "target": "Die dunkle Jacke ist klein.",
+     "source": "The dark jacket is small.",
+     "targetAccept": [
+      "Klein ist die dunkle Jacke."
+     ],
+     "words": [
+      "w-dunkel",
+      "w-jacke",
+      "w-sein",
+      "w-klein"
+     ]
+    },
+    {
+     "id": "u040-s06",
+     "target": "Ich kaufe den günstigen Mantel.",
+     "source": "I buy the cheap coat.",
+     "targetAccept": [
+      "Den günstigen Mantel kaufe ich."
+     ],
+     "sourceAccept": [
+      "I am buying the cheap coat.",
+      "I am buying the affordable coat."
+     ],
+     "words": [
+      "w-ich",
+      "w-kaufen",
+      "w-den",
+      "w-guenstig",
+      "w-mantel"
+     ],
+     "cloze": {
+      "answer": "günstigen",
+      "distractors": [
+       "günstiger",
+       "günstige"
+      ]
+     }
+    },
+    {
+     "id": "u040-s07",
+     "target": "Wir nehmen das teure Möbelstück.",
+     "source": "We take the expensive piece of furniture.",
+     "targetAccept": [
+      "Das teure Möbelstück nehmen wir."
+     ],
+     "sourceAccept": [
+      "We are taking the expensive piece of furniture."
+     ],
+     "words": [
+      "w-wir",
+      "w-nehmen",
+      "w-das",
+      "w-teuer",
+      "w-moebelstueck"
+     ]
+    },
+    {
+     "id": "u040-s08",
+     "target": "Wir müssen den Mantel auswählen.",
+     "source": "We must select the coat.",
+     "targetAccept": [
+      "Den Mantel müssen wir auswählen."
+     ],
+     "sourceAccept": [
+      "We have to select the coat.",
+      "We have to choose the coat."
+     ],
+     "words": [
+      "w-wir",
+      "w-muessen",
+      "w-den",
+      "w-mantel",
+      "w-auswaehlen"
+     ]
+    },
+    {
+     "id": "u040-s09",
+     "target": "Er trägt einen dunklen Mantel.",
+     "source": "He wears a dark coat.",
+     "targetAccept": [
+      "Einen dunklen Mantel trägt er."
+     ],
+     "sourceAccept": [
+      "He is wearing a dark coat."
+     ],
+     "words": [
+      "w-er",
+      "w-tragen",
+      "w-einen",
+      "w-dunkel",
+      "w-mantel"
+     ],
+     "cloze": {
+      "answer": "dunklen",
+      "distractors": [
+       "dunkler",
+       "dunkles"
+      ]
+     }
+    },
+    {
+     "id": "u040-s10",
+     "target": "Ich suche ein bequemes Bett.",
+     "source": "I am looking for a comfortable bed.",
+     "targetAccept": [
+      "Ein bequemes Bett suche ich."
+     ],
+     "sourceAccept": [
+      "I look for a comfortable bed."
+     ],
+     "words": [
+      "w-ich",
+      "w-suchen",
+      "w-ein",
+      "w-bequem",
+      "w-bett"
+     ]
+    },
+    {
+     "id": "u040-s11",
+     "target": "Wir finden die moderne Küche toll.",
+     "source": "We find the modern kitchen great.",
+     "targetAccept": [
+      "Die moderne Küche finden wir toll."
+     ],
+     "sourceAccept": [
+      "We think the modern kitchen is great."
+     ],
+     "words": [
+      "w-wir",
+      "w-finden",
+      "w-modern",
+      "w-kueche",
+      "w-toll"
+     ]
+    },
+    {
+     "id": "u040-s12",
+     "target": "Das ist ein praktischer Tisch.",
+     "source": "That is a practical table.",
+     "targetAccept": [
+      "Ein praktischer Tisch ist das."
+     ],
+     "sourceAccept": [
+      "This is a practical table."
+     ],
+     "words": [
+      "w-das",
+      "w-sein",
+      "w-ein",
+      "w-praktisch",
+      "w-tisch"
+     ]
+    },
+    {
+     "id": "u040-s13",
+     "target": "Die Wohnung hat ein helles Bad.",
+     "source": "The apartment has a bright bathroom.",
+     "targetAccept": [
+      "Ein helles Bad hat die Wohnung."
+     ],
+     "sourceAccept": [
+      "The apartment has got a bright bathroom."
+     ],
+     "words": [
+      "w-wohnung",
+      "w-haben",
+      "w-ein",
+      "w-hell",
+      "w-bad"
+     ]
+    },
+    {
+     "id": "u040-s14",
+     "target": "Das dunkle Zimmer ist kalt.",
+     "source": "The dark room is cold.",
+     "targetAccept": [
+      "Kalt ist das dunkle Zimmer."
+     ],
+     "words": [
+      "w-das",
+      "w-dunkel",
+      "w-zimmer",
+      "w-sein",
+      "w-kalt"
+     ]
+    },
+    {
+     "id": "u040-s15",
+     "target": "Ein günstiges Hotel ist gut.",
+     "source": "A cheap hotel is good.",
+     "targetAccept": [
+      "Gut ist ein günstiges Hotel."
+     ],
+     "sourceAccept": [
+      "An affordable hotel is good."
+     ],
+     "words": [
+      "w-ein",
+      "w-guenstig",
+      "w-hotel",
+      "w-sein",
+      "w-gut"
+     ]
+    },
+    {
+     "id": "u040-s16",
+     "target": "Wir wählen den Stuhl aus.",
+     "source": "We select the chair.",
+     "targetAccept": [
+      "Den Stuhl wählen wir aus."
+     ],
+     "sourceAccept": [
+      "We are selecting the chair.",
+      "We choose the chair."
+     ],
+     "words": [
+      "w-wir",
+      "w-auswaehlen",
+      "w-den",
+      "w-stuhl"
+     ]
+    },
+    {
+     "id": "u040-s17",
+     "target": "Sie wählen das helle Zimmer aus.",
+     "source": "They select the bright room.",
+     "targetAccept": [
+      "Das helle Zimmer wählen sie aus."
+     ],
+     "sourceAccept": [
+      "You select the bright room.",
+      "They choose the bright room."
+     ],
+     "words": [
+      "w-sie",
+      "w-auswaehlen",
+      "w-das",
+      "w-hell",
+      "w-zimmer"
+     ]
+    },
+    {
+     "id": "u040-s18",
+     "target": "Ist das Möbelstück teuer?",
+     "source": "Is the piece of furniture expensive?",
+     "targetAccept": [
+      "Ist teuer das Möbelstück?"
+     ],
+     "words": [
+      "w-sein",
+      "w-das",
+      "w-moebelstueck",
+      "w-teuer"
+     ]
+    }
+   ],
+   "passages": [
+    {
+     "id": "u040-p01",
+     "kind": "reading",
+     "title": "Ein neuer Mantel",
+     "text": "Ich war gestern einkaufen. Ich brauche einen neuen Mantel für den Winter. Ich habe viele Mäntel gesehen. Zuerst habe ich einen hellen Mantel probiert. Er war sehr modern und schick, aber nicht warm. Dann habe ich einen dunklen Mantel gesehen. Er ist sehr bequem und warm. Ein dunkler Mantel ist auch sehr praktisch für jeden Tag. Er war ein bisschen teuer, aber ich habe den teuren Mantel gekauft. Ich bin sehr glücklich damit.",
+     "questions": [
+      {
+       "q": "What was the writer looking for?",
+       "options": [
+        "A new coat.",
+        "New furniture.",
+        "Winter shoes.",
+        "A bright sweater."
+       ],
+       "answer": "A new coat."
+      },
+      {
+       "q": "What was the problem with the bright coat?",
+       "options": [
+        "It was not warm.",
+        "It was too expensive.",
+        "It was not modern.",
+        "It was too big."
+       ],
+       "answer": "It was not warm."
+      },
+      {
+       "q": "How is the dark coat described?",
+       "options": [
+        "Comfortable and warm.",
+        "Cheap and modern.",
+        "Cold and small.",
+        "Bright and practical."
+       ],
+       "answer": "Comfortable and warm."
+      },
+      {
+       "q": "Which coat did the writer buy?",
+       "options": [
+        "The expensive dark coat.",
+        "The cheap dark coat.",
+        "The bright modern coat.",
+        "The cheap bright coat."
+       ],
+       "answer": "The expensive dark coat."
+      }
+     ]
+    },
+    {
+     "id": "u040-p02",
+     "kind": "listening",
+     "title": "Möbel einkaufen",
+     "text": "Hallo Leon! Ich bin im Möbelgeschäft. Ich muss ein Bett und einen Schrank auswählen. Ich habe ein helles Bett gefunden. Es ist sehr bequem und auch ziemlich günstig. Der günstige Preis ist toll. Jetzt suche ich einen Schrank. Es gibt hier einen sehr modernen Schrank. Er ist dunkel und sehr groß. Er ist perfekt für meine Kleidung, aber das moderne Möbelstück ist leider sehr teuer. Was soll ich machen? Ruf mich bitte an!",
+     "questions": [
+      {
+       "q": "Where is the speaker?",
+       "options": [
+        "In a furniture store.",
+        "In a supermarket.",
+        "In a clothing store.",
+        "At home."
+       ],
+       "answer": "In a furniture store."
+      },
+      {
+       "q": "What does the speaker say about the bright bed?",
+       "options": [
+        "It is comfortable and quite cheap.",
+        "It is uncomfortable and expensive.",
+        "It is too small.",
+        "It is very dark."
+       ],
+       "answer": "It is comfortable and quite cheap."
+      },
+      {
+       "q": "How is the cupboard described?",
+       "options": [
+        "Modern, dark, and large.",
+        "Old, bright, and small.",
+        "Cheap and practical.",
+        "Small but expensive."
+       ],
+       "answer": "Modern, dark, and large."
+      },
+      {
+       "q": "What is the problem with the cupboard?",
+       "options": [
+        "It is very expensive.",
+        "It is too small.",
+        "It is not modern.",
+        "It is too bright."
+       ],
+       "answer": "It is very expensive."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

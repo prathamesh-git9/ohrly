@@ -193,7 +193,10 @@ def generate_batch(
         worker = Path(__file__).with_name("piper_worker.py")
         command = [python, str(worker), str(model), "none" if speaker is None else str(speaker)]
         run_checked(command, input_text=json.dumps(jobs, ensure_ascii=False))
-        for wav, (_, output) in zip(wavs, items, strict=True):
+        for wav, (key, output) in zip(wavs, items, strict=True):
+            if not wav.exists():
+                print(f"  skipped, nothing to say: {key!r}")
+                continue
             ffmpeg_convert(ffmpeg, wav, output)
 
 

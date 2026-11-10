@@ -361,12 +361,14 @@ async function takeExam(page: Page, answers: Map<string, string>, correctly: boo
     const count = await options.count();
     let target = -1;
     for (let j = 0; j < count; j++) {
-      const text = clean(await options.nth(j).textContent()).replace(/^\d+\s*/, '');
+      // The label is the option's last span; the first holds the keyboard hint digit.
+      const text = clean(await options.nth(j).locator('span').last().textContent());
       if ((text === answer) === correctly) {
         target = j;
         break;
       }
     }
+    if (target < 0) throw new Error(`no option for "${answer}"`);
     await options.nth(target).click();
     // No feedback mid-exam: it is scored only at the end.
     await expect(page.locator('.feedback')).toHaveCount(0);
