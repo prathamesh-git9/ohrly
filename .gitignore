@@ -10,3 +10,4 @@ docs/prompts/logs/
 *.report.txt
 __pycache__/
 *.pyc
+.venv-cb/

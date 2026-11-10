@@ -405,7 +405,6 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
           {verdict ? (
             <Btn
               block
-              quiet
               variant={verdict.result !== 'wrong' ? 'good' : 'bad'}
               onClick={advance}
             >
