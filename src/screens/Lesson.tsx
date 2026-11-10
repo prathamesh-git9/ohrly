@@ -15,7 +15,7 @@ import {
   unitsThrough,
 } from '../domain/course';
 import { HEART_REFILL_COST, msUntilNextHeart } from '../domain/gamify';
-import { generateLesson, generatePractice, mulberry32, wordsTested } from '../domain/generator';
+import { generateLesson, generatePractice, mulberry32, scaffold, wordsTested } from '../domain/generator';
 import { dueWords, weakWords } from '../domain/srs';
 import type { Course, Exercise } from '../domain/types';
 import { ExerciseView, type ExerciseContext } from '../exercises/Exercises';
@@ -47,7 +47,8 @@ function buildExercises(
   const rng = mulberry32(Date.now() & 0xffffffff);
   if (spec.type === 'node') {
     const node = buildPath(course).find((n) => n.id === spec.nodeId);
-    return node ? generateLesson(course, node, rng, opts) : [];
+    const dueWordIds = dueWords(cards, Date.now(), 20);
+    return node ? generateLesson(course, node, rng, { ...opts, dueWordIds }) : [];
   }
   const now = Date.now();
   let ids =
@@ -188,7 +189,8 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
       loseHeartAndCheck();
       if (slot.requeues < MAX_REQUEUES) {
         const again: Slot = {
-          ex: slot.ex,
+          // It comes back one step easier: a missed typing task returns as word tiles.
+          ex: scaffold(slot.ex, course, mulberry32(pos + 1)),
           id: `${slot.ex.key}-r${slot.requeues + 1}`,
           requeues: slot.requeues + 1,
         };

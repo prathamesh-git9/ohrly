@@ -46,6 +46,11 @@ export interface GenerateOptions {
   speakAvailable: boolean;
   /** Listening exercises need sound. Off when the learner says they can't listen right now. */
   listenAvailable: boolean;
+  /**
+   * Words from earlier units that spaced repetition says are due. A lesson opens with a short warm-up
+   * on them, so old words keep coming back without a separate review session.
+   */
+  dueWordIds?: readonly string[];
 }
 
 interface Ctx {
@@ -257,11 +262,12 @@ function wordsLesson(unit: Unit, index: 0 | 1, ctx: Ctx): Exercise[] {
   const known = new Set(
     [...fresh, ...priorInUnit, ...earlier].map((w) => w.id),
   );
-  const sentences = pick(usable(unit.sentences, known), 3, ctx.rng);
+  const sentences = pick(usable(unit.sentences, known), 2, ctx.rng);
   sentences.forEach((s, i) => out.push(bank(s, i % 2 === 0 ? 'toSource' : 'toTarget', ctx)));
 
-  const recall = pick(fresh, 2, ctx.rng);
-  for (const word of recall) out.push(listenChoice(word, pool, ctx));
+  // Hearing every new word once more at the end makes four meetings per word: introduced,
+  // recognised, matched and heard. Fewer, and some words are seen only twice in their lesson.
+  for (const word of shuffled(fresh, ctx.rng)) out.push(listenChoice(word, pool, ctx));
   return compact(out);
 }
 
@@ -333,7 +339,31 @@ function passagesLesson(unit: Unit, ctx: Ctx): Exercise[] {
   );
 }
 
+/** Up to two quick recall exercises on due words the learner has already been taught. */
+function warmUp(ctx: Ctx, currentUnit: Unit | null): Exercise[] {
+  const ids = new Set(ctx.opts.dueWordIds ?? []);
+  if (ids.size === 0) return [];
+  const earlier = ctx.taughtUnits.filter((u) => u.id !== currentUnit?.id).flatMap((u) => u.words);
+  const due = earlier.filter((w) => ids.has(w.id));
+  const pool = ctx.taughtUnits.flatMap((u) => u.words);
+  return compact(pick(due, 2, ctx.rng).map((w, i) => (i === 0 ? listenChoice(w, pool, ctx) : wordCheck(w, pool, ctx))));
+}
+
 export function generateLesson(
+  course: Course,
+  node: PathNode,
+  rng: Rng,
+  opts: GenerateOptions,
+): Exercise[] {
+  const body = lessonBody(course, node, rng, opts);
+  if (body.length === 0 || node.kind === 'checkpoint' || node.kind === 'passages') return body;
+  const found = node.unitId ? findUnit(course, node.unitId) : null;
+  const ctx = makeCtx(course, found ? unitsThrough(course, found.unit.id) : [], rng, opts);
+  // Keys must stay unique across the warm-up and the body.
+  return [...warmUp(ctx, found?.unit ?? null).map((e) => ({ ...e, key: `w${e.key}` })), ...body];
+}
+
+function lessonBody(
   course: Course,
   node: PathNode,
   rng: Rng,
@@ -422,4 +452,21 @@ export function wordsTested(ex: Exercise): string[] {
     default:
       return ex.sentence.words;
   }
+}
+
+/**
+ * The easier form of an exercise, for when it comes back after a mistake: typing becomes building
+ * from tiles, and listening with typing becomes listening with tiles. Others come back as they were.
+ */
+export function scaffold(ex: Exercise, course: Course, rng: Rng): Exercise {
+  if (ex.kind !== 'type' && ex.kind !== 'listenType') return ex;
+  const found = course.sections.flatMap((s) => s.units).find((u) => u.sentences.some((x) => x.id === ex.sentence.id));
+  const ctx = makeCtx(course, found ? unitsThrough(course, found.id) : [], rng, {
+    speakAvailable: false,
+    listenAvailable: true,
+  });
+  const easier = ex.kind === 'listenType'
+    ? listenBank(ex.sentence, ctx)
+    : bank(ex.sentence, ex.direction, ctx);
+  return { ...easier, key: `${ex.key}-s` };
 }

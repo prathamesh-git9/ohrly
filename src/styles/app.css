@@ -469,6 +469,17 @@ button { font: inherit; color: inherit; }
 .scenery .twinkle { position: absolute; }
 @media (max-width: 520px) { .scenery .far { display: none; } }
 
+/* ------------------------------- legal ------------------------------- */
+.legal-page { max-width: 720px; margin: 0 auto; padding: 24px 16px 60px; }
+.legal-back { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); font-weight: 800; margin-bottom: 12px; }
+.legal-toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.legal-toc a { padding: 6px 12px; border: 2px solid var(--line-strong); border-radius: 999px; font-size: 14px; font-weight: 800; }
+.legal-section { display: grid; gap: 10px; padding: 16px 0; border-top: 2px solid var(--line); scroll-margin-top: 16px; }
+.legal-section h2 { font-size: 22px; }
+.legal-section p { font-weight: 500; line-height: 1.6; overflow-wrap: anywhere; }
+.legal-section a { color: var(--primary); text-decoration: underline; }
+.legal-link { color: var(--ink-2); font-size: 14px; text-decoration: underline; margin-top: 8px; }
+
 /* ------------------------------ credit ------------------------------ */
 .made-by { display: inline-flex; align-items: center; gap: 5px; padding: 4px 11px; border: 2px solid var(--line-strong); border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 13px; font-weight: 800; white-space: nowrap; transition: color var(--release), border-color var(--release); }
 .made-by svg { color: var(--coral); flex: none; }

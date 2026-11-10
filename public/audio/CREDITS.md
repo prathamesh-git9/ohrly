@@ -2,7 +2,10 @@
 
 All speech on this site is synthetic, generated ahead of time and served as static files.
 
-- German voice: Piper `de_DE-thorsten-high`, by Thorsten Müller and the Piper contributors. Dataset licence: CC0. The model card says the voice was fine-tuned from Piper's U.S. English `lessac` voice. [Model card](https://huggingface.co/rhasspy/piper-voices/blob/main/de/de_DE/thorsten/high/MODEL_CARD), [Thorsten-Voice](https://github.com/thorstenMueller/Thorsten-Voice).
-- English voice: Piper `en_GB-cori-high`, by Bryce Beattie. Dataset: public domain (LibriVox). Trained from scratch. [Model card](https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_GB/cori/high/MODEL_CARD).
+- English voice: [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) (Apache 2.0), voice `af_heart`, via
+  kokoro-onnx.
+- German voice: [Chatterbox Multilingual](https://github.com/resemble-ai/chatterbox) by Resemble AI (MIT),
+  voiced from a recording in the [Thorsten-Voice dataset](https://huggingface.co/datasets/Thorsten-Voice/TV-44kHz-Full)
+  by Thorsten Müller (CC0, public domain). Chatterbox embeds an inaudible watermark marking its output as generated.
 
-Piper is used only as an offline build tool and is not distributed with the site.
+The speech engines run only as offline build tools and are not distributed with the site.

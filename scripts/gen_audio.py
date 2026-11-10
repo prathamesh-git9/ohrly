@@ -178,11 +178,32 @@ def piper_output_dir_flag(python: str) -> str | None:
     return None
 
 
+def engine_command(lang: str, args: argparse.Namespace) -> list[str]:
+    """The worker that speaks this language. Each reads [text, wav] pairs and writes named files.
+
+    English: Kokoro (Apache 2.0), American voice af_heart.
+    German: Chatterbox Multilingual (MIT), voiced from a CC0 Thorsten-Voice native-speaker reference.
+    Piper stays available with --engine-<lang> piper.
+    """
+    here = Path(__file__).parent
+    engine = args.engine_de if lang == "de" else args.engine_en
+    if engine == "kokoro":
+        kokoro = args.voices_dir / "kokoro"
+        return [args.piper_python, str(here / "kokoro_worker.py"), str(kokoro / "kokoro-v1.0.onnx"),
+                str(kokoro / "voices-v1.0.bin"), args.kokoro_voice, args.kokoro_lang]
+    if engine == "chatterbox":
+        return [args.chatterbox_python, str(here / "chatterbox_worker.py"), str(args.reference), lang]
+    voice = args.de_voice if lang == "de" else args.en_voice
+    speaker = args.de_speaker if lang == "de" else args.en_speaker
+    model = voice_model(args.voices_dir, voice)
+    if not model.is_file():
+        raise FileNotFoundError(f"Piper model not found: {model}")
+    return [args.piper_python, str(here / "piper_worker.py"), str(model), "none" if speaker is None else str(speaker)]
+
+
 def generate_batch(
     items: list[tuple[str, Path]],
-    python: str,
-    model: Path,
-    speaker: int | None,
+    command: list[str],
     ffmpeg: str,
 ) -> None:
     """Generate all items with one model load, each to its own named file."""
@@ -190,8 +211,6 @@ def generate_batch(
         temp = Path(temp_name)
         wavs = [temp / f"{index}.wav" for index in range(len(items))]
         jobs = [[key, str(wav)] for (key, _), wav in zip(items, wavs, strict=True)]
-        worker = Path(__file__).with_name("piper_worker.py")
-        command = [python, str(worker), str(model), "none" if speaker is None else str(speaker)]
         run_checked(command, input_text=json.dumps(jobs, ensure_ascii=False))
         for wav, (key, output) in zip(wavs, items, strict=True):
             if not wav.exists():
@@ -222,6 +241,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--de-speaker", type=int, default=None, help="Speaker number, for multi-speaker voices only")
     parser.add_argument("--en-voice", default="en_GB-cori-high")
     parser.add_argument("--en-speaker", type=int, default=None)
+    parser.add_argument("--engine-de", choices=("chatterbox", "piper"), default="chatterbox")
+    parser.add_argument("--engine-en", choices=("kokoro", "piper"), default="kokoro")
+    parser.add_argument("--kokoro-voice", default="af_heart")
+    parser.add_argument("--kokoro-lang", default="en-us")
+    parser.add_argument("--chatterbox-python", default=str(ROOT / ".venv-cb" / "Scripts" / "python.exe"))
+    parser.add_argument("--reference", type=Path, default=ROOT / ".audio-cache" / "ref" / "thorsten-0.wav",
+                        help="Native-speaker reference clip for Chatterbox (CC0 Thorsten-Voice)")
     parser.add_argument("--lang", choices=("de", "en"), help="Only process one target language")
     parser.add_argument("--limit", type=int, help="Generate at most N missing files across this run")
     parser.add_argument("--dry-run", action="store_true", help="Print planned work without changing files or running tools")
@@ -267,13 +293,12 @@ def main() -> int:
             totals["generated"] += len(selected)
         elif selected:
             lang_dir.mkdir(parents=True, exist_ok=True)
-            voice = args.de_voice if lang == "de" else args.en_voice
-            speaker = args.de_speaker if lang == "de" else args.en_speaker
-            model = voice_model(args.voices_dir, voice)
-            if not model.is_file():
-                raise FileNotFoundError(f"Piper model not found: {model}")
-            print(f"[{lang}] loading {voice} once for {len(selected)} files")
-            generate_batch(selected, args.piper_python, model, speaker, args.ffmpeg)
+            command = engine_command(lang, args)
+            print(f"[{lang}] {args.engine_de if lang == 'de' else args.engine_en} for {len(selected)} files")
+            # Batches keep a crash or a stop from losing more than a little work.
+            for start in range(0, len(selected), 60):
+                generate_batch(selected[start:start + 60], command, args.ffmpeg)
+                print(f"[{lang}] {min(start + 60, len(selected))}/{len(selected)}", flush=True)
             totals["generated"] += len(selected)
 
         if not args.dry_run:

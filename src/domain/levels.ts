@@ -82,3 +82,24 @@ export function practiceTargetMet(scores: {
     scores.listening.correct >= Math.ceil(scores.listening.total * 0.5)
   );
 }
+
+/** The full CEFR scale. The course teaches up to B2; C1 and C2 are shown so the scale is honest. */
+export const CEFR_SCALE = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
+
+/**
+ * Where a learner sits on the scale, from 0 (starting A1) to 6 (finished C2): whole levels completed
+ * in order, plus the part done of the next one. Progress in a later level does not count while an
+ * earlier one is unfinished, since levels build on each other.
+ */
+export function cefrPosition(statuses: readonly LevelStatus[]): number {
+  let position = 0;
+  for (const s of statuses) {
+    if (s.complete) {
+      position += 1;
+      continue;
+    }
+    position += s.progress;
+    break;
+  }
+  return position;
+}

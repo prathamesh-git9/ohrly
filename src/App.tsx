@@ -1,4 +1,4 @@
-import { BookOpen, Dumbbell, Flame, Gem, Heart, Home as HomeIcon, Target, User, Zap } from 'lucide-react';
+import { BookOpen, Dumbbell, Flame, Sparkle, Heart, Home as HomeIcon, Target, User, Zap } from 'lucide-react';
 import { MotionConfig } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { setSfxEnabled } from './audio/sfx';
@@ -8,10 +8,11 @@ import { Btn, Flag, MadeBy, ProgressBar } from './components/ui';
 import { courseInfo, loadCourse } from './content';
 import { dayKey, displayedStreak } from './domain/gamify';
 import type { Course } from './domain/types';
-import { translator, type Translate } from './i18n';
+import { browserLang, translator, type Translate } from './i18n';
 import { navigate, useRoute } from './router';
 import { Exam } from './screens/Exam';
 import { Home } from './screens/Home';
+import { Legal } from './screens/Legal';
 import { Lesson, type LessonSpec } from './screens/Lesson';
 import { Practice } from './screens/Practice';
 import { Profile } from './screens/Profile';
@@ -53,8 +54,8 @@ function Stats({ t }: { t: Translate }) {
         <Flame fill={count > 0 ? 'currentColor' : 'none'} strokeWidth={2.4} />
         <span>{count}</span>
       </span>
-      <span className="stat stat-gems" title="Gems">
-        <Gem strokeWidth={2.4} />
+      <span className="stat stat-gems" title="Sparks">
+        <Sparkle strokeWidth={2.4} />
         <span>{gems}</span>
       </span>
       <span className="stat stat-hearts" title="Hearts">
@@ -176,7 +177,9 @@ export function App() {
   }, [lang]);
 
   let view: React.ReactNode;
-  if (!onboarded || !courseId) {
+  if (route === '/legal') {
+    view = <Legal lang={lang ?? browserLang()} />;
+  } else if (!onboarded || !courseId) {
     view = <Welcome />;
   } else if (!course) {
     const t = translator(courseInfo(courseId).from);

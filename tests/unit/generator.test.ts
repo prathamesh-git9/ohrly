@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { buildPath, buildGlossary } from '../../src/domain/course';
-import { generateLesson, mulberry32, wordsTested } from '../../src/domain/generator';
+import { generateLesson, mulberry32, scaffold, wordsTested } from '../../src/domain/generator';
 import { normalize, tokenize } from '../../src/domain/check';
 import type { Course, Exercise, Sentence, Word } from '../../src/domain/types';
 import { validateCourse } from '../../src/domain/validate';
@@ -218,5 +218,46 @@ describe('glossary', () => {
     expect(g.target.get('hund')).toBe('the dog');
     expect(g.target.has('geht')).toBe(false);
     expect(g.source.has('you')).toBe(false);
+  });
+});
+
+describe('lesson quality', () => {
+  it('gives every new word several meetings in its first lesson', () => {
+    const fresh = words.slice(0, 4).map((x) => x.id);
+    for (let seed = 1; seed < 20; seed++) {
+      const lesson = generateLesson(course, buildPath(course)[0]!, mulberry32(seed), opts);
+      for (const id of fresh) {
+        const meetings = lesson.filter((ex) =>
+          ex.kind === 'intro' ? ex.word.id === id : wordsTested(ex).includes(id),
+        ).length;
+        expect(meetings, `word ${id}`).toBeGreaterThanOrEqual(3);
+      }
+    }
+  });
+
+  it('opens with a warm-up on due words, but only words already taught', () => {
+    const two: Course = JSON.parse(JSON.stringify(course));
+    const unit2 = JSON.parse(JSON.stringify(two.sections[0]!.units[0]!));
+    unit2.id = 'u2';
+    unit2.words = unit2.words.map((w: { id: string }) => ({ ...w, id: `${w.id}2` }));
+    unit2.sentences = unit2.sentences.map((s: { id: string; words: string[] }) => ({
+      ...s, id: `${s.id}b`, words: s.words.map((id) => `${id}2`),
+    }));
+    two.sections[0]!.units.push(unit2);
+    const node = buildPath(two).find((n) => n.id === 'u2:2')!;
+    const lesson = generateLesson(two, node, mulberry32(3), { ...opts, dueWordIds: ['hund', 'nope'] });
+    expect(lesson[0]!.key.startsWith('w')).toBe(true);
+    expect(wordsTested(lesson[0]!)).toEqual(['hund']);
+    const plain = generateLesson(two, node, mulberry32(3), opts);
+    expect(plain[0]!.key.startsWith('w')).toBe(false);
+  });
+
+  it('brings a missed typing task back as tiles of the same sentence', () => {
+    const sentence = course.sections[0]!.units[0]!.sentences[0]!;
+    const easier = scaffold({ kind: 'type', key: 'k', direction: 'toTarget', sentence }, course, mulberry32(1));
+    expect(easier.kind).toBe('bank');
+    expect('sentence' in easier && easier.sentence.id).toBe(sentence.id);
+    const heard = scaffold({ kind: 'listenType', key: 'k', sentence }, course, mulberry32(1));
+    expect(heard.kind).toBe('listenBank');
   });
 });

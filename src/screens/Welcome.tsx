@@ -55,6 +55,9 @@ export function Welcome() {
               <Btn onClick={() => setStep(1)} className="hero-cta">
                 {t('getStarted')}
               </Btn>
+              <a className="legal-link" href="#/legal">
+                {t('legalLink')}
+              </a>
             </div>
           )}
 

@@ -3,7 +3,7 @@ import {
   BookOpen,
   Check,
   Flame,
-  Gem,
+  Sparkle as Gem,
   Heart,
   Medal,
   Shield,
@@ -265,16 +265,8 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
         <h2 id="about">{t('about')}</h2>
         <p><strong>{t('ohrlyIsFree')}</strong></p>
         <p><a href="https://github.com/prathamesh-git9/ohrly" target="_blank" rel="noreferrer">{t('sourceCode')}</a></p>
-        <h3>{t('audioCredits')}</h3>
-        <p>
-          {t('germanVoiceCredit')}{' '}
-          <a href="https://huggingface.co/rhasspy/piper-voices/blob/main/de/de_DE/thorsten/high/MODEL_CARD" target="_blank" rel="noreferrer">{t('modelCard')}</a>
-        </p>
-        <p>
-          {t('englishVoiceCredit')}{' '}
-          <a href="https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_GB/cori/high/MODEL_CARD" target="_blank" rel="noreferrer">{t('modelCard')}</a>
-        </p>
-        <p>{t('piperBuildCredit')}</p>
+        <p><a href="#/legal">{t('legalLink')}</a></p>
+
       </section>
 
       <AnimatePresence>

@@ -1,4 +1,4 @@
-import { Clock, Flame, Gem, Heart, Target, Zap } from 'lucide-react';
+import { Clock, Flame, Heart, Sparkle, Target, Zap } from 'lucide-react';
 import { animate, motion, useReducedMotion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { sfx } from '../audio/sfx';
@@ -145,7 +145,7 @@ export function Complete({
           <StatCard tone="time" label={t('time')} icon={<Clock size={20} />} delay={0.35}>
             {mins}:{secs}
           </StatCard>
-          <StatCard tone="gem" label={t('gemsEarned')} icon={<Gem size={20} />} delay={0.45}>
+          <StatCard tone="gem" label={t('gemsEarned')} icon={<Sparkle size={20} />} delay={0.45}>
             <CountUp to={summary.gems} />
           </StatCard>
         </div>
