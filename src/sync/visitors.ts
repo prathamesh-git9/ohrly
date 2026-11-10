@@ -32,6 +32,9 @@ export async function registerVisitor(name: string, course: string | null): Prom
   const c = cloud();
   const s = storage();
   if (!c || !name) return;
+  // Automated browsers (test runs, crawlers) are not visitors. Tests that check this flow opt in.
+  const optIn = (window as unknown as { __ohrlyCountAutomation?: boolean }).__ohrlyCountAutomation;
+  if (navigator.webdriver && !optIn) return;
   const marker = `${name}|${course ?? ''}`;
   if (s?.getItem(SENT_KEY) === marker) return;
   // A plain insert: "ignore duplicates" would need read access, which the public deliberately lacks.

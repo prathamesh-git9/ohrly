@@ -68,8 +68,26 @@ for (const [label, name, expected] of [
   });
 }
 
+test('automated browsers are not counted as visitors', async ({ page }) => {
+  const sent: string[] = [];
+  await page.route('**/rest/v1/visitors*', async (route) => {
+    sent.push(route.request().postData() ?? '');
+    await route.fulfill({ status: 201, body: '' });
+  });
+  await page.goto('./');
+  await page.locator('.hero-cta').click();
+  await page.locator('.name-input').fill('Bot');
+  await page.locator('form.pick .btn-block').click();
+  await page.locator('.course-card').filter({ hasText: /German/ }).click();
+  await page.locator('.pick .btn-block').click();
+  await page.waitForTimeout(2000);
+  expect(sent).toHaveLength(0);
+});
+
 test('the name step tells visitors their name is shared, and sends it once a course is chosen', async ({ page }) => {
   const sent: string[] = [];
+  // Automated browsers are skipped unless they opt in; this test opts in to check the flow.
+  await page.addInitScript(() => { (window as unknown as { __ohrlyCountAutomation: boolean }).__ohrlyCountAutomation = true; });
   // Intercepted, so test runs never add names to the real table.
   await page.route('**/rest/v1/visitors*', async (route) => {
     sent.push(route.request().postData() ?? '');

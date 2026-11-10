@@ -14,6 +14,7 @@ import { Exam } from './screens/Exam';
 import { Home } from './screens/Home';
 import { Legal } from './screens/Legal';
 import { Account } from './screens/Account';
+import { Admin } from './screens/Admin';
 import { AchievementToasts, LevelScale, ShareButton, StreakModal } from './components/Social';
 import { useCloud, useCloudSyncEngine } from './sync/useCloudSync';
 import { cloudEnabled } from './sync/cloud';
@@ -260,6 +261,8 @@ export function App() {
           <WordList course={course} t={t} />
         ) : route === '/account' ? (
           <Account t={t} />
+        ) : route === '/admin' ? (
+          <Admin />
         ) : route === '/profile' ? (
           <Profile course={course} t={t} />
         ) : (
