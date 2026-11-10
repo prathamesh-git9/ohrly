@@ -8,3 +8,5 @@ playwright-report/
 .audio-cache/
 docs/prompts/logs/
 *.report.txt
+__pycache__/
+*.pyc
