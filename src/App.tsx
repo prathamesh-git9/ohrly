@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { setSfxEnabled } from './audio/sfx';
 import { setVoicesEnabled } from './audio/speech';
 import { Fenn } from './components/Fenn';
-import { Btn, Flag, MadeBy, ProgressBar } from './components/ui';
+import { Btn, Flag, MadeBy, Modal, ProgressBar } from './components/ui';
 import { courseInfo, loadCourse } from './content';
 import { dayKey, displayedStreak } from './domain/gamify';
 import type { Course } from './domain/types';
@@ -13,6 +13,12 @@ import { navigate, useRoute } from './router';
 import { Exam } from './screens/Exam';
 import { Home } from './screens/Home';
 import { Legal } from './screens/Legal';
+import { Account } from './screens/Account';
+import { AchievementToasts, LevelScale, ShareButton, StreakModal } from './components/Social';
+import { useCloud, useCloudSyncEngine } from './sync/useCloudSync';
+import { cloudEnabled } from './sync/cloud';
+import { AnimatePresence } from 'motion/react';
+import { Share2, UserPlus } from 'lucide-react';
 import { Lesson, type LessonSpec } from './screens/Lesson';
 import { Practice } from './screens/Practice';
 import { Profile } from './screens/Profile';
@@ -43,17 +49,26 @@ function useCourse(id: string | null) {
   };
 }
 
-function Stats({ t }: { t: Translate }) {
+function Stats({ t, lang }: { t: Translate; lang?: string }) {
+  const [streakOpen, setStreakOpen] = useState(false);
   const hearts = useStore((s) => s.hearts.count);
   const gems = useStore((s) => s.gems);
   const streak = useStore((s) => s.streak);
   const count = displayedStreak(streak, dayKey(new Date()));
   return (
     <div className="stats" aria-label={t('navProfile')}>
-      <span className={`stat stat-streak${count > 0 ? ' is-lit' : ''}`} title="Streak">
+      <button
+        type="button"
+        className={`stat stat-streak stat-button${count > 0 ? ' is-lit' : ''}`}
+        aria-label={t('streakDaysTitle', { n: count })}
+        onClick={() => setStreakOpen(true)}
+      >
         <Flame fill={count > 0 ? 'currentColor' : 'none'} strokeWidth={2.4} />
         <span>{count}</span>
-      </span>
+      </button>
+      <AnimatePresence>
+        {streakOpen && <StreakModal t={t} lang={lang ?? 'en'} onClose={() => setStreakOpen(false)} />}
+      </AnimatePresence>
       <span className="stat stat-gems" title="Sparks">
         <Sparkle strokeWidth={2.4} />
         <span>{gems}</span>
@@ -72,6 +87,34 @@ const NAV = [
   { path: '/words', Icon: BookOpen, key: 'navWords' },
   { path: '/profile', Icon: User, key: 'navProfile' },
 ] as const;
+
+
+function TopActions({ t }: { t: Translate }) {
+  const { session } = useCloud();
+  const [shareOpen, setShareOpen] = useState(false);
+  const streak = useStore((s) => s.streak);
+  return (
+    <div className="top-actions">
+      <button type="button" className="icon-btn" aria-label={t('share')} onClick={() => setShareOpen(true)}>
+        <Share2 strokeWidth={2.6} />
+      </button>
+      {cloudEnabled && !session && (
+        <a className="signup-pill" href="#/account">
+          <UserPlus size={16} /> {t('signUp')}
+        </a>
+      )}
+      <AnimatePresence>
+        {shareOpen && (
+          <Modal onClose={() => setShareOpen(false)}>
+            <h3>{t('shareTitle')}</h3>
+            <ShareButton t={t} kind="streak" value={displayedStreak(streak, dayKey(new Date()))} />
+            <Btn block variant="ghost" onClick={() => setShareOpen(false)}>{t('notNow')}</Btn>
+          </Modal>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 function Shell({
   route,
@@ -111,13 +154,18 @@ function Shell({
             <Flag lang={course.to} size={32} />
           </button>
           <MadeBy label={t('madeBy', { name: 'Prathamesh' })} className="made-by-top" />
-          <Stats t={t} />
+          <TopActions t={t} />
+          <Stats t={t} lang={course.from} />
         </header>
         <main className="content">{children}</main>
       </div>
 
       <aside className="side-panel">
-        <Stats t={t} />
+        <div className="side-top">
+          <TopActions t={t} />
+          <Stats t={t} lang={course.from} />
+        </div>
+        <LevelScale course={course} t={t} />
         <div className="panel-card">
           <h4>
             <Target size={18} /> {t('dailyGoal')}
@@ -162,6 +210,7 @@ export function App() {
   const settings = useStore((s) => s.settings);
   const refreshHearts = useStore((s) => s.refreshHearts);
   const { course, failed, retry } = useCourse(onboarded ? courseId : null);
+  useCloudSyncEngine();
 
   useEffect(() => setSfxEnabled(settings.sound), [settings.sound]);
   useEffect(() => setVoicesEnabled(settings.voice), [settings.voice]);
@@ -204,6 +253,8 @@ export function App() {
           <Practice course={course} t={t} />
         ) : route === '/words' ? (
           <WordList course={course} t={t} />
+        ) : route === '/account' ? (
+          <Account t={t} />
         ) : route === '/profile' ? (
           <Profile course={course} t={t} />
         ) : (
@@ -220,6 +271,7 @@ export function App() {
   return (
     <MotionConfig reducedMotion="user">
       {view}
+      {course && <AchievementToasts t={translator(course.from)} />}
     </MotionConfig>
   );
 }

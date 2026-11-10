@@ -10,7 +10,7 @@
       "canDo": "Identify close family members and say who belongs to whom",
       "tip": {
         "title": "Possessives match the family noun",
-        "body": "German **mein** and **dein** change before some nouns. Use **mein Vater** and **mein Kind**, but **meine Mutter** and **meine Eltern**. English “my” and “your” never change this way.\n\nUse **er** for a male person and **sie** for a female person. Do not confuse lowercase **sie** (“she”) with capitalised **Sie** (“you” in formal situations).",
+        "body": "German possessives change to match the gender, number, and case of the noun. In the nominative, use **mein Vater** and **mein Kind**, but **meine Mutter** and **meine Eltern**. **Dein** changes in the same way. English “my” and “your” never change this way.\n\nUse **er** for a male person and **sie** for a female person. Do not confuse lowercase **sie** (“she”) with capitalised **Sie** (“you” in formal situations).",
         "examples": [
           { "target": "Das ist mein Vater.", "source": "That is my father." },
           { "target": "Meine Eltern sind verheiratet.", "source": "My parents are married." },
@@ -32,24 +32,24 @@
         { "id": "w-sie-she", "target": "sie", "source": "she", "pos": "pron" }
       ],
       "sentences": [
-        { "id": "u06-s01", "target": "Das ist meine Familie.", "source": "That is my family.", "sourceAccept": ["That's my family."], "words": ["w-sein", "w-mein", "w-familie"] },
+        { "id": "u06-s01", "target": "Das ist meine Familie.", "source": "That is my family.", "sourceAccept": ["That's my family.", "This is my family."], "words": ["w-sein", "w-mein", "w-familie"] },
         { "id": "u06-s02", "target": "Sie ist meine Mutter.", "source": "She is my mother.", "sourceAccept": ["She's my mother.", "She is my mum.", "She's my mum.", "She is my mom.", "She's my mom."], "words": ["w-sie-she", "w-sein", "w-mein", "w-mutter"], "cloze": { "answer": "meine", "distractors": ["mein", "meinen", "meinem"] } },
         { "id": "u06-s03", "target": "Er ist mein Vater.", "source": "He is my father.", "sourceAccept": ["He's my father.", "He is my dad.", "He's my dad."], "words": ["w-er", "w-sein", "w-mein", "w-vater"], "cloze": { "answer": "mein", "distractors": ["meine", "meinen", "meinem"] } },
-        { "id": "u06-s04", "target": "Meine Eltern wohnen in Berlin.", "source": "My parents live in Berlin.", "sourceAccept": ["My parents reside in Berlin."], "words": ["w-mein", "w-eltern", "w-wohnen", "w-in"] },
+        { "id": "u06-s04", "target": "Meine Eltern wohnen in Berlin.", "source": "My parents live in Berlin.", "targetAccept": ["In Berlin wohnen meine Eltern."], "sourceAccept": ["My parents are living in Berlin."], "words": ["w-mein", "w-eltern", "w-wohnen", "w-in"] },
         { "id": "u06-s05", "target": "Mein Bruder heißt Leon.", "source": "My brother is called Leon.", "sourceAccept": ["My brother's called Leon.", "My brother is named Leon.", "My brother's name is Leon."], "words": ["w-mein", "w-bruder", "w-heissen"] },
         { "id": "u06-s06", "target": "Meine Schwester heißt Mara.", "source": "My sister is called Mara.", "sourceAccept": ["My sister's called Mara.", "My sister is named Mara.", "My sister's name is Mara."], "words": ["w-mein", "w-schwester", "w-heissen"] },
-        { "id": "u06-s07", "target": "Mein Kind spricht Deutsch.", "source": "My child speaks German.", "sourceAccept": ["My kid speaks German."], "words": ["w-mein", "w-kind", "w-sprechen", "w-deutsch"] },
+        { "id": "u06-s07", "target": "Mein Kind spricht Deutsch.", "source": "My child speaks German.", "sourceAccept": ["My child is speaking German.", "My kid speaks German.", "My kid is speaking German."], "words": ["w-mein", "w-kind", "w-sprechen", "w-deutsch"] },
         { "id": "u06-s08", "target": "Er ist verheiratet.", "source": "He is married.", "sourceAccept": ["He's married."], "words": ["w-er", "w-sein", "w-verheiratet"], "cloze": { "answer": "ist", "distractors": ["bin", "bist", "sind"] } },
         { "id": "u06-s09", "target": "Ist sie verheiratet?", "source": "Is she married?", "words": ["w-sein", "w-sie-she", "w-verheiratet"] },
         { "id": "u06-s10", "target": "Meine Eltern sind verheiratet.", "source": "My parents are married.", "sourceAccept": ["My parents are married to each other."], "words": ["w-mein", "w-eltern", "w-sein", "w-verheiratet"], "cloze": { "answer": "sind", "distractors": ["ist", "bist", "seid"] } },
         { "id": "u06-s11", "target": "Ist das deine Familie?", "source": "Is that your family?", "targetAccept": ["Ist das eure Familie?", "Ist das Ihre Familie?"], "words": ["w-sein", "w-dein", "w-familie"] },
         { "id": "u06-s12", "target": "Wie heißt deine Mutter?", "source": "What is your mother's name?", "targetAccept": ["Wie heißt eure Mutter?", "Wie heißt Ihre Mutter?"], "sourceAccept": ["What's your mother's name?", "What is your mother called?", "What's your mother called?"], "words": ["w-wie", "w-heissen", "w-dein", "w-mutter"], "cloze": { "answer": "deine", "distractors": ["dein", "deinen", "deiner"] } },
         { "id": "u06-s13", "target": "Dein Vater kommt aus England.", "source": "Your father comes from England.", "targetAccept": ["Euer Vater kommt aus England.", "Ihr Vater kommt aus England."], "sourceAccept": ["Your father is from England.", "Your father's from England."], "words": ["w-dein", "w-vater", "w-kommen", "w-aus", "w-england"] },
-        { "id": "u06-s14", "target": "Wo wohnen deine Eltern?", "source": "Where do your parents live?", "targetAccept": ["Wo wohnen eure Eltern?", "Wo wohnen Ihre Eltern?"], "sourceAccept": ["Where do your parents reside?"], "words": ["w-wo", "w-wohnen", "w-dein", "w-eltern"], "cloze": { "answer": "deine", "distractors": ["dein", "deinen", "deinem"] } },
+        { "id": "u06-s14", "target": "Wo wohnen deine Eltern?", "source": "Where do your parents live?", "targetAccept": ["Wo wohnen eure Eltern?", "Wo wohnen Ihre Eltern?"], "words": ["w-wo", "w-wohnen", "w-dein", "w-eltern"], "cloze": { "answer": "deine", "distractors": ["dein", "deinen", "deinem"] } },
         { "id": "u06-s15", "target": "Er ist dein Bruder.", "source": "He is your brother.", "targetAccept": ["Er ist euer Bruder.", "Er ist Ihr Bruder."], "sourceAccept": ["He's your brother."], "words": ["w-er", "w-sein", "w-dein", "w-bruder"] },
         { "id": "u06-s16", "target": "Sie ist deine Schwester.", "source": "She is your sister.", "targetAccept": ["Sie ist eure Schwester.", "Sie ist Ihre Schwester."], "sourceAccept": ["She's your sister."], "words": ["w-sie-she", "w-sein", "w-dein", "w-schwester"], "cloze": { "answer": "deine", "distractors": ["dein", "deinen", "deinem"] } },
         { "id": "u06-s17", "target": "Das Kind ist zehn.", "source": "The child is ten.", "sourceAccept": ["The child is ten years old.", "The kid is ten.", "The kid is ten years old."], "words": ["w-kind", "w-sein", "w-zehn"] },
-        { "id": "u06-s18", "target": "Die Familie spricht Englisch.", "source": "The family speaks English.", "words": ["w-familie", "w-sprechen", "w-englisch"] }
+        { "id": "u06-s18", "target": "Die Familie spricht Englisch.", "source": "The family speaks English.", "sourceAccept": ["The family is speaking English.", "The family speak English.", "The family are speaking English."], "words": ["w-familie", "w-sprechen", "w-englisch"] }
       ]
     },
     {
@@ -86,16 +86,16 @@
         { "id": "u07-s06", "target": "Das ist ein Fenster.", "source": "That is a window.", "sourceAccept": ["That's a window.", "This is a window."], "words": ["w-das", "w-sein", "w-ein", "w-fenster"] },
         { "id": "u07-s07", "target": "Das Buch ist alt.", "source": "The book is old.", "sourceAccept": ["The book's old."], "words": ["w-das", "w-buch", "w-sein", "w-alt"], "cloze": { "answer": "das", "distractors": ["der", "die"] } },
         { "id": "u07-s08", "target": "Was ist das?", "source": "What is that?", "sourceAccept": ["What's that?", "What is this?", "What's this?"], "words": ["w-was", "w-sein", "w-das"] },
-        { "id": "u07-s09", "target": "Das Buch ist die Antwort.", "source": "The book is the answer.", "sourceAccept": ["The book's the answer."], "words": ["w-das", "w-buch", "w-sein", "w-antwort"] },
-        { "id": "u07-s10", "target": "Was ist eine Tasche?", "source": "What is a bag?", "words": ["w-was", "w-sein", "w-eine", "w-tasche"], "cloze": { "answer": "eine", "distractors": ["ein", "einen"] } },
+        { "id": "u07-s09", "target": "Ist das ein Buch?", "source": "Is that a book?", "sourceAccept": ["Is this a book?"], "words": ["w-sein", "w-das", "w-ein", "w-buch"] },
+        { "id": "u07-s10", "target": "Was ist das? Ist das eine Tasche?", "source": "What is that? Is it a bag?", "sourceAccept": ["What's that? Is it a bag?", "What is this? Is it a bag?", "What's this? Is it a bag?"], "words": ["w-was", "w-sein", "w-das", "w-eine", "w-tasche"], "cloze": { "answer": "eine", "distractors": ["ein", "einen"] } },
         { "id": "u07-s11", "target": "Der Tisch ist alt.", "source": "The table is old.", "sourceAccept": ["The table's old."], "words": ["w-tisch", "w-sein", "w-alt"] },
         { "id": "u07-s12", "target": "Ist der Stuhl alt?", "source": "Is the chair old?", "words": ["w-sein", "w-stuhl", "w-alt"] },
-        { "id": "u07-s13", "target": "Die Tasche ist in Berlin.", "source": "The bag is in Berlin.", "sourceAccept": ["The bag's in Berlin."], "words": ["w-tasche", "w-sein", "w-in"] },
+        { "id": "u07-s13", "target": "Ist die Tasche alt?", "source": "Is the bag old?", "words": ["w-sein", "w-tasche", "w-alt"] },
         { "id": "u07-s14", "target": "Die Tür ist alt.", "source": "The door is old.", "sourceAccept": ["The door's old."], "words": ["w-tuer", "w-sein", "w-alt"] },
-        { "id": "u07-s15", "target": "Bitte öffnen Sie das Buch.", "source": "Please open the book.", "targetAccept": ["Bitte öffne das Buch.", "Bitte öffnet das Buch."], "words": ["w-bitte", "w-oeffnen", "w-sie", "w-das", "w-buch"] },
-        { "id": "u07-s16", "target": "Bitte schließen Sie das Fenster.", "source": "Please close the window.", "targetAccept": ["Bitte schließe das Fenster.", "Bitte schließt das Fenster."], "sourceAccept": ["Please shut the window."], "words": ["w-bitte", "w-schliessen", "w-sie", "w-das", "w-fenster"], "cloze": { "answer": "Fenster", "distractors": ["Fenstern", "Fensters"] } },
+        { "id": "u07-s15", "target": "Bitte öffnen Sie das Buch.", "source": "Please open the book.", "targetAccept": ["Öffnen Sie bitte das Buch.", "Öffnen Sie das Buch bitte.", "Bitte öffne das Buch.", "Öffne bitte das Buch.", "Öffne das Buch bitte.", "Bitte öffnet das Buch.", "Öffnet bitte das Buch.", "Öffnet das Buch bitte."], "sourceAccept": ["Open the book, please."], "words": ["w-bitte", "w-oeffnen", "w-sie", "w-das", "w-buch"] },
+        { "id": "u07-s16", "target": "Bitte schließen Sie das Fenster.", "source": "Please close the window.", "targetAccept": ["Schließen Sie bitte das Fenster.", "Schließen Sie das Fenster bitte.", "Bitte schließe das Fenster.", "Schließe bitte das Fenster.", "Schließe das Fenster bitte.", "Bitte schließt das Fenster.", "Schließt bitte das Fenster.", "Schließt das Fenster bitte."], "sourceAccept": ["Close the window, please.", "Please shut the window.", "Shut the window, please."], "words": ["w-bitte", "w-schliessen", "w-sie", "w-das", "w-fenster"], "cloze": { "answer": "Fenster", "distractors": ["Fenstern", "Fensters"] } },
         { "id": "u07-s17", "target": "Zwei Tische, bitte.", "source": "Two tables, please.", "words": ["w-zwei", "w-tisch", "w-bitte"] },
-        { "id": "u07-s18", "target": "Eine Tür und ein Stuhl.", "source": "A door and a chair.", "words": ["w-eine", "w-tuer", "w-und", "w-ein", "w-stuhl"] }
+        { "id": "u07-s18", "target": "Das ist eine Tür und das ist ein Stuhl.", "source": "That is a door, and that is a chair.", "sourceAccept": ["That's a door, and that's a chair.", "This is a door, and this is a chair."], "words": ["w-das", "w-sein", "w-eine", "w-tuer", "w-und", "w-ein", "w-stuhl"] }
       ]
     },
     {
@@ -114,10 +114,10 @@
       "words": [
         { "id": "w-brot", "target": "das Brot", "source": "the bread", "sourceAccept": ["bread", "a loaf"], "plural": "die Brote", "emoji": "🍞", "pos": "noun" },
         { "id": "w-kaese", "target": "der Käse", "source": "the cheese", "sourceAccept": ["cheese"], "plural": "die Käse", "emoji": "🧀", "pos": "noun" },
-        { "id": "w-milch", "target": "die Milch", "source": "the milk", "sourceAccept": ["milk"], "plural": "die Milchsorten", "emoji": "🥛", "pos": "noun" },
+        { "id": "w-milch", "target": "die Milch", "source": "the milk", "sourceAccept": ["milk"], "plural": "die Milche", "emoji": "🥛", "pos": "noun", "note": "The technical plural for different kinds of milk; normally used in the singular." },
         { "id": "w-kaffee", "target": "der Kaffee", "source": "the coffee", "sourceAccept": ["coffee", "a coffee"], "plural": "die Kaffees", "emoji": "☕", "pos": "noun" },
         { "id": "w-tee", "target": "der Tee", "source": "the tea", "sourceAccept": ["tea", "a tea"], "plural": "die Tees", "pos": "noun" },
-        { "id": "w-wasser", "target": "das Wasser", "source": "the water", "sourceAccept": ["water"], "plural": "die Wasser", "emoji": "💧", "pos": "noun" },
+        { "id": "w-wasser", "target": "das Wasser", "source": "the water", "sourceAccept": ["water"], "plural": "die Wässer", "emoji": "💧", "pos": "noun" },
         { "id": "w-essen", "target": "essen", "source": "to eat", "forms": ["esse", "isst", "esst", "essen"], "pos": "verb" },
         { "id": "w-trinken", "target": "trinken", "source": "to drink", "forms": ["trinke", "trinkst", "trinkt", "trinken"], "pos": "verb" },
         { "id": "w-gern", "target": "gern", "source": "gladly", "sourceAccept": ["like to"], "pos": "adv" },
@@ -125,11 +125,11 @@
       ],
       "sentences": [
         { "id": "u08-s01", "target": "Das Brot schmeckt.", "source": "The bread tastes good.", "sourceAccept": ["The bread is tasty."], "words": ["w-das", "w-brot", "w-schmecken"], "cloze": { "answer": "schmeckt", "distractors": ["schmecken", "schmecke"] } },
-        { "id": "u08-s02", "target": "Der Käse ist alt.", "source": "The cheese is old.", "sourceAccept": ["The cheese is aged.", "The cheese's old."], "words": ["w-kaese", "w-sein", "w-alt"] },
-        { "id": "u08-s03", "target": "Ist die Milch alt?", "source": "Is the milk old?", "words": ["w-sein", "w-milch", "w-alt"] },
-        { "id": "u08-s04", "target": "Wie schmeckt der Kaffee?", "source": "How does the coffee taste?", "words": ["w-wie", "w-schmecken", "w-kaffee"], "cloze": { "answer": "schmeckt", "distractors": ["schmecken", "schmecke"] } },
+        { "id": "u08-s02", "target": "Das ist Käse.", "source": "That is cheese.", "sourceAccept": ["That's cheese.", "This is cheese."], "words": ["w-das", "w-sein", "w-kaese"] },
+        { "id": "u08-s03", "target": "Ist das Milch?", "source": "Is that milk?", "sourceAccept": ["Is this milk?"], "words": ["w-sein", "w-das", "w-milch"] },
+        { "id": "u08-s04", "target": "Wie schmeckt der Kaffee?", "source": "How does the coffee taste?", "sourceAccept": ["What does the coffee taste like?"], "words": ["w-wie", "w-schmecken", "w-kaffee"], "cloze": { "answer": "schmeckt", "distractors": ["schmecken", "schmecke"] } },
         { "id": "u08-s05", "target": "Trinkst du Tee?", "source": "Do you drink tea?", "targetAccept": ["Trinkt ihr Tee?", "Trinken Sie Tee?"], "sourceAccept": ["Are you drinking tea?"], "words": ["w-trinken", "w-du", "w-tee"] },
-        { "id": "u08-s06", "target": "Ich habe Wasser.", "source": "I have water.", "sourceAccept": ["I've got water."], "words": ["w-ich", "w-haben", "w-wasser"] },
+        { "id": "u08-s06", "target": "Ich habe Wasser.", "source": "I have water.", "sourceAccept": ["I have got water.", "I've got water."], "words": ["w-ich", "w-haben", "w-wasser"] },
         { "id": "u08-s07", "target": "Ich esse gern.", "source": "I like eating.", "sourceAccept": ["I like to eat."], "words": ["w-ich", "w-essen", "w-gern"], "cloze": { "answer": "esse", "distractors": ["isst", "esst", "essen"] } },
         { "id": "u08-s08", "target": "Isst du gern Käse?", "source": "Do you like eating cheese?", "targetAccept": ["Esst ihr gern Käse?", "Essen Sie gern Käse?"], "sourceAccept": ["Do you like to eat cheese?"], "words": ["w-essen", "w-du", "w-gern", "w-kaese"] },
         { "id": "u08-s09", "target": "Ich trinke gern Tee.", "source": "I like drinking tea.", "sourceAccept": ["I like to drink tea."], "words": ["w-ich", "w-trinken", "w-gern", "w-tee"], "cloze": { "answer": "trinke", "distractors": ["trinkst", "trinkt", "trinken"] } },
@@ -150,9 +150,9 @@
       "canDo": "Describe simple present actions for different people",
       "tip": {
         "title": "The verb ending shows who acts",
-        "body": "For most German verbs, remove **-en** and add an ending: **ich lerne**, **du lernst**, **er lernt**, **wir lernen**, **ihr lernt**, and **Sie lernen**. English changes far less, so the German subject and ending must agree.\n\nIn a basic statement, put the conjugated verb after the subject. In a yes-or-no question, put it first: **Arbeitet ihr heute?**",
+        "body": "For most German verbs, remove **-en** and add an ending: **ich lerne**, **du lernst**, **er lernt**, **wir lernen**, **ihr lernt**, and **Sie lernen**. English changes far less, so the German subject and ending must agree. With stems ending in **-d** or **-t**, add an extra **e** where needed: **du arbeitest** and **ihr arbeitet**.\n\nIn a basic statement, put the conjugated verb in the second position. In a yes-or-no question, put it first: **Arbeitet ihr heute?**",
         "examples": [
-          { "target": "Ich lerne Deutsch.", "source": "I learn German." },
+          { "target": "Ich lerne Deutsch.", "source": "I am learning German." },
           { "target": "Wir arbeiten heute.", "source": "We are working today." },
           { "target": "Spielt ihr oft?", "source": "Do you often play?" }
         ]
@@ -170,24 +170,24 @@
         { "id": "w-ihr", "target": "ihr", "source": "you", "note": "informal plural", "pos": "pron" }
       ],
       "sentences": [
-        { "id": "u09-s01", "target": "Ich mache das heute.", "source": "I am doing that today.", "sourceAccept": ["I do that today.", "I'm doing that today."], "words": ["w-ich", "w-machen", "w-das", "w-heute"], "cloze": { "answer": "mache", "distractors": ["machst", "macht", "machen"] } },
+        { "id": "u09-s01", "target": "Ich mache das heute.", "source": "I am doing that today.", "targetAccept": ["Heute mache ich das."], "sourceAccept": ["I do that today.", "I'm doing that today."], "words": ["w-ich", "w-machen", "w-das", "w-heute"], "cloze": { "answer": "mache", "distractors": ["machst", "macht", "machen"] } },
         { "id": "u09-s02", "target": "Lernen Sie Deutsch?", "source": "Are you learning German?", "targetAccept": ["Lernst du Deutsch?", "Lernt ihr Deutsch?"], "sourceAccept": ["Do you learn German?", "Do you study German?", "Are you studying German?"], "words": ["w-lernen", "w-sie", "w-deutsch"] },
-        { "id": "u09-s03", "target": "Wir arbeiten heute.", "source": "We are working today.", "sourceAccept": ["We work today.", "We're working today."], "words": ["w-wir", "w-arbeiten", "w-heute"], "cloze": { "answer": "arbeiten", "distractors": ["arbeite", "arbeitest", "arbeitet"] } },
+        { "id": "u09-s03", "target": "Wir arbeiten heute.", "source": "We are working today.", "targetAccept": ["Heute arbeiten wir."], "sourceAccept": ["We work today.", "We're working today."], "words": ["w-wir", "w-arbeiten", "w-heute"], "cloze": { "answer": "arbeiten", "distractors": ["arbeite", "arbeitest", "arbeitet"] } },
         { "id": "u09-s04", "target": "Spielt ihr oft?", "source": "Do you often play?", "targetAccept": ["Spielst du oft?", "Spielen Sie oft?"], "words": ["w-spielen", "w-ihr", "w-oft"], "cloze": { "answer": "Spielt", "distractors": ["Spiele", "Spielst", "Spielen"] } },
-        { "id": "u09-s05", "target": "Ich kaufe heute Brot.", "source": "I am buying bread today.", "sourceAccept": ["I buy bread today.", "I'm buying bread today."], "words": ["w-ich", "w-kaufen", "w-heute", "w-brot"] },
+        { "id": "u09-s05", "target": "Ich kaufe heute Brot.", "source": "I am buying bread today.", "targetAccept": ["Heute kaufe ich Brot."], "sourceAccept": ["I'm buying bread today."], "words": ["w-ich", "w-kaufen", "w-heute", "w-brot"] },
         { "id": "u09-s06", "target": "Wir brauchen Wasser.", "source": "We need water.", "words": ["w-wir", "w-brauchen", "w-wasser"] },
         { "id": "u09-s07", "target": "Ihr lernt Englisch.", "source": "You are learning English.", "targetAccept": ["Du lernst Englisch.", "Sie lernen Englisch."], "sourceAccept": ["You learn English."], "words": ["w-ihr", "w-lernen", "w-englisch"], "cloze": { "answer": "lernt", "distractors": ["lerne", "lernst", "lernen"] } },
         { "id": "u09-s08", "target": "Arbeitet ihr heute?", "source": "Are you working today?", "targetAccept": ["Arbeitest du heute?", "Arbeiten Sie heute?"], "sourceAccept": ["Do you work today?"], "words": ["w-arbeiten", "w-ihr", "w-heute"] },
         { "id": "u09-s09", "target": "Wir spielen oft.", "source": "We often play.", "words": ["w-wir", "w-spielen", "w-oft"] },
         { "id": "u09-s10", "target": "Kaufen Sie oft Käse?", "source": "Do you often buy cheese?", "targetAccept": ["Kaufst du oft Käse?", "Kauft ihr oft Käse?"], "words": ["w-kaufen", "w-sie", "w-oft", "w-kaese"], "cloze": { "answer": "Kaufen", "distractors": ["Kaufe", "Kaufst", "Kauft"] } },
         { "id": "u09-s11", "target": "Was macht ihr?", "source": "What are you doing?", "targetAccept": ["Was machst du?", "Was machen Sie?"], "sourceAccept": ["What do you do?"], "words": ["w-was", "w-machen", "w-ihr"] },
-        { "id": "u09-s12", "target": "Wir lernen heute Deutsch.", "source": "We are learning German today.", "sourceAccept": ["We learn German today.", "We're learning German today."], "words": ["w-wir", "w-lernen", "w-heute", "w-deutsch"] },
+        { "id": "u09-s12", "target": "Wir lernen heute Deutsch.", "source": "We are learning German today.", "targetAccept": ["Heute lernen wir Deutsch."], "sourceAccept": ["We're learning German today."], "words": ["w-wir", "w-lernen", "w-heute", "w-deutsch"] },
         { "id": "u09-s13", "target": "Mein Vater arbeitet oft.", "source": "My father often works.", "sourceAccept": ["My dad often works."], "words": ["w-mein", "w-vater", "w-arbeiten", "w-oft"] },
-        { "id": "u09-s14", "target": "Das Kind spielt heute.", "source": "The child is playing today.", "sourceAccept": ["The child plays today.", "The kid is playing today.", "The kid plays today."], "words": ["w-das", "w-kind", "w-spielen", "w-heute"] },
+        { "id": "u09-s14", "target": "Das Kind spielt heute.", "source": "The child is playing today.", "targetAccept": ["Heute spielt das Kind."], "sourceAccept": ["The child plays today.", "The kid is playing today.", "The kid plays today."], "words": ["w-das", "w-kind", "w-spielen", "w-heute"] },
         { "id": "u09-s15", "target": "Ihr kauft zwei Bücher.", "source": "You are buying two books.", "targetAccept": ["Du kaufst zwei Bücher.", "Sie kaufen zwei Bücher."], "sourceAccept": ["You buy two books."], "words": ["w-ihr", "w-kaufen", "w-zwei", "w-buch"] },
         { "id": "u09-s16", "target": "Braucht ihr die Nummer?", "source": "Do you need the number?", "targetAccept": ["Brauchst du die Nummer?", "Brauchen Sie die Nummer?"], "words": ["w-brauchen", "w-ihr", "w-nummer"] },
         { "id": "u09-s17", "target": "Wir machen das oft.", "source": "We often do that.", "words": ["w-wir", "w-machen", "w-das", "w-oft"], "cloze": { "answer": "machen", "distractors": ["mache", "machst", "macht"] } },
-        { "id": "u09-s18", "target": "Ich brauche heute Kaffee.", "source": "I need coffee today.", "words": ["w-ich", "w-brauchen", "w-heute", "w-kaffee"] }
+        { "id": "u09-s18", "target": "Ich brauche heute Kaffee.", "source": "I need coffee today.", "targetAccept": ["Heute brauche ich Kaffee."], "words": ["w-ich", "w-brauchen", "w-heute", "w-kaffee"] }
       ]
     },
     {
@@ -196,7 +196,7 @@
       "canDo": "Deny, contrast, and correct simple information",
       "tip": {
         "title": "Use nicht for actions and kein for nouns",
-        "body": "Use **nicht** to negate an action or description: **Ich arbeite nicht** and **Das ist nicht richtig**. English usually uses “not” with an auxiliary verb, but German can place **nicht** later in the clause.\n\nUse **kein** before a masculine or neuter noun and **keine** before a feminine or plural noun: **kein Kaffee**, **kein Wasser**, but **keine Milch**. These combine the ideas of English “not a” or “no.”",
+        "body": "Use **nicht** to negate an action or description: **Ich arbeite nicht** and **Das ist nicht richtig**. English usually uses “not” with an auxiliary verb, but German can place **nicht** later in the clause.\n\nForms of **kein** change for gender, number, and case. In the nominative, use **kein** with masculine and neuter nouns and **keine** with feminine and plural nouns: **Das ist kein Kaffee** and **Das ist keine Milch**. In the accusative, neuter **kein Wasser** and feminine **keine Milch** stay the same, while a masculine noun takes **keinen**, as in **Ich trinke keinen Kaffee**. These forms express English “not a,” “not any,” or “no.”",
         "examples": [
           { "target": "Ich arbeite heute nicht.", "source": "I am not working today." },
           { "target": "Das ist kein Kaffee.", "source": "That is not coffee." },
@@ -216,23 +216,23 @@
         { "id": "w-natuerlich", "target": "natürlich", "source": "of course", "sourceAccept": ["naturally"], "pos": "adv" }
       ],
       "sentences": [
-        { "id": "u10-s01", "target": "Ich arbeite heute nicht.", "source": "I am not working today.", "sourceAccept": ["I'm not working today.", "I do not work today.", "I don't work today."], "words": ["w-ich", "w-arbeiten", "w-heute", "w-nicht"], "cloze": { "answer": "nicht", "distractors": ["kein", "keine"] } },
-        { "id": "u10-s02", "target": "Das ist nicht richtig.", "source": "That is not correct.", "sourceAccept": ["That's not correct.", "That is not right.", "That's not right.", "This is not correct.", "This isn't correct."], "words": ["w-das", "w-sein", "w-nicht", "w-richtig"] },
-        { "id": "u10-s03", "target": "Das ist kein Kaffee.", "source": "That is not coffee.", "sourceAccept": ["That's not coffee.", "This is not coffee.", "This isn't coffee."], "words": ["w-das", "w-sein", "w-kein", "w-kaffee"], "cloze": { "answer": "kein", "distractors": ["keine", "keinen"] } },
-        { "id": "u10-s04", "target": "Ich habe kein Wasser.", "source": "I have no water.", "sourceAccept": ["I do not have any water.", "I don't have any water."], "words": ["w-ich", "w-haben", "w-kein", "w-wasser"] },
+        { "id": "u10-s01", "target": "Ich arbeite heute nicht.", "source": "I am not working today.", "targetAccept": ["Heute arbeite ich nicht."], "sourceAccept": ["I'm not working today.", "I do not work today.", "I don't work today."], "words": ["w-ich", "w-arbeiten", "w-heute", "w-nicht"], "cloze": { "answer": "nicht", "distractors": ["kein", "keine"] } },
+        { "id": "u10-s02", "target": "Das ist nicht richtig.", "source": "That is not correct.", "sourceAccept": ["That isn't correct.", "That's not correct.", "That is not right.", "That isn't right.", "That's not right.", "This is not correct.", "This isn't correct.", "This is not right.", "This isn't right."], "words": ["w-das", "w-sein", "w-nicht", "w-richtig"] },
+        { "id": "u10-s03", "target": "Das ist kein Kaffee.", "source": "That is not coffee.", "sourceAccept": ["That isn't coffee.", "That's not coffee.", "This is not coffee.", "This isn't coffee."], "words": ["w-das", "w-sein", "w-kein", "w-kaffee"], "cloze": { "answer": "kein", "distractors": ["keine", "keinen"] } },
+        { "id": "u10-s04", "target": "Ich habe kein Wasser.", "source": "I have no water.", "sourceAccept": ["I do not have any water.", "I don't have any water.", "I have not got any water.", "I haven't got any water."], "words": ["w-ich", "w-haben", "w-kein", "w-wasser"] },
         { "id": "u10-s05", "target": "Ich trinke keine Milch.", "source": "I do not drink milk.", "sourceAccept": ["I don't drink milk.", "I am not drinking milk.", "I'm not drinking milk."], "words": ["w-ich", "w-trinken", "w-keine", "w-milch"], "cloze": { "answer": "keine", "distractors": ["kein", "keinen"] } },
-        { "id": "u10-s06", "target": "Keine Tasche, bitte.", "source": "No bag, please.", "sourceAccept": ["Not a bag, please."], "words": ["w-keine", "w-tasche", "w-bitte"] },
+        { "id": "u10-s06", "target": "Bitte keine Tasche.", "source": "No bag, please.", "targetAccept": ["Keine Tasche, bitte."], "sourceAccept": ["Not a bag, please."], "words": ["w-bitte", "w-keine", "w-tasche"] },
         { "id": "u10-s07", "target": "Ja, das ist mein Buch.", "source": "Yes, that is my book.", "sourceAccept": ["Yes, that's my book.", "Yes, this is my book."], "words": ["w-ja", "w-das", "w-sein", "w-mein", "w-buch"] },
         { "id": "u10-s08", "target": "Ja, ich spreche Deutsch.", "source": "Yes, I speak German.", "words": ["w-ja", "w-ich", "w-sprechen", "w-deutsch"] },
         { "id": "u10-s09", "target": "Nein, ich trinke kein Wasser.", "source": "No, I do not drink water.", "sourceAccept": ["No, I don't drink water.", "No, I am not drinking water.", "No, I'm not drinking water."], "words": ["w-nein", "w-ich", "w-trinken", "w-kein", "w-wasser"], "cloze": { "answer": "kein", "distractors": ["keine", "keinen"] } },
         { "id": "u10-s10", "target": "Nein, das ist falsch.", "source": "No, that is wrong.", "sourceAccept": ["No, that's wrong.", "No, this is wrong.", "No, that is incorrect.", "No, that's incorrect."], "words": ["w-nein", "w-das", "w-sein", "w-falsch"] },
         { "id": "u10-s11", "target": "Ich trinke auch Tee.", "source": "I also drink tea.", "sourceAccept": ["I drink tea too.", "I drink tea as well.", "I am also drinking tea.", "I'm also drinking tea."], "words": ["w-ich", "w-trinken", "w-auch", "w-tee"] },
-        { "id": "u10-s12", "target": "Mara lernt auch Deutsch.", "source": "Mara is also learning German.", "sourceAccept": ["Mara also learns German.", "Mara learns German too.", "Mara learns German as well."], "words": ["w-lernen", "w-auch", "w-deutsch"] },
-        { "id": "u10-s13", "target": "Ich lerne, aber nicht heute.", "source": "I study, but not today.", "sourceAccept": ["I learn, but not today."], "words": ["w-ich", "w-lernen", "w-aber", "w-nicht", "w-heute"] },
+        { "id": "u10-s12", "target": "Mara lernt auch Deutsch.", "source": "Mara is also learning German.", "sourceAccept": ["Mara also learns German.", "Mara is learning German too.", "Mara is learning German as well.", "Mara learns German too.", "Mara learns German as well."], "words": ["w-lernen", "w-auch", "w-deutsch"] },
+        { "id": "u10-s13", "target": "Ich lerne Deutsch, aber nicht heute.", "source": "I study German, but not today.", "sourceAccept": ["I am learning German, but not today."], "words": ["w-ich", "w-lernen", "w-deutsch", "w-aber", "w-nicht", "w-heute"] },
         { "id": "u10-s14", "target": "Die Antwort ist leider falsch, aber die Nummer ist richtig.", "source": "Unfortunately, the answer is wrong, but the number is correct.", "sourceAccept": ["Sadly, the answer is wrong, but the number is correct.", "Unfortunately, the answer is incorrect, but the number is right."], "words": ["w-antwort", "w-sein", "w-leider", "w-falsch", "w-aber", "w-nummer", "w-richtig"] },
         { "id": "u10-s15", "target": "Kaffee oder Tee?", "source": "Coffee or tea?", "words": ["w-kaffee", "w-oder", "w-tee"], "cloze": { "answer": "oder", "distractors": ["aber", "und"] } },
-        { "id": "u10-s16", "target": "Brot oder Käse, bitte?", "source": "Bread or cheese, please?", "words": ["w-brot", "w-oder", "w-kaese", "w-bitte"] },
-        { "id": "u10-s17", "target": "Ich habe leider keine Nummer.", "source": "Unfortunately, I do not have a number.", "sourceAccept": ["Unfortunately, I don't have a number.", "Sadly, I do not have a number.", "Sadly, I don't have a number."], "words": ["w-ich", "w-haben", "w-leider", "w-keine", "w-nummer"] },
+        { "id": "u10-s16", "target": "Brot oder Käse?", "source": "Bread or cheese?", "words": ["w-brot", "w-oder", "w-kaese"] },
+        { "id": "u10-s17", "target": "Ich habe leider keine Nummer.", "source": "Unfortunately, I do not have a number.", "sourceAccept": ["Unfortunately, I don't have a number.", "Unfortunately, I have no number.", "Sadly, I do not have a number.", "Sadly, I don't have a number.", "Sadly, I have no number."], "words": ["w-ich", "w-haben", "w-leider", "w-keine", "w-nummer"] },
         { "id": "u10-s18", "target": "Ja, natürlich!", "source": "Yes, of course!", "words": ["w-ja", "w-natuerlich"] },
         { "id": "u10-s19", "target": "Natürlich nicht.", "source": "Of course not.", "words": ["w-natuerlich", "w-nicht"] }
       ]

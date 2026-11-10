@@ -54,7 +54,10 @@ interface State {
   streak: StreakState;
   hearts: HeartState;
   courses: Record<string, CourseProgress>;
+  /** Achievements already celebrated, so each pops up once. */
+  seenAchievements: string[];
 
+  markAchievementsSeen(ids: readonly string[]): void;
   finishOnboarding(courseId: string, dailyGoal: number): void;
   switchCourse(courseId: string): void;
   setDailyGoal(goal: number): void;
@@ -91,6 +94,7 @@ const initial = {
   streak: { count: 0, best: 0, lastDay: null, freezes: 0 } as StreakState,
   hearts: { count: MAX_HEARTS, regenFrom: null } as HeartState,
   courses: {} as Record<string, CourseProgress>,
+  seenAchievements: [] as string[],
 };
 
 const safeStorage = createJSONStorage(() => {
@@ -142,6 +146,9 @@ export const useStore = create<State>()(
 
       return {
         ...initial,
+
+        markAchievementsSeen: (ids) =>
+          set((s) => ({ seenAchievements: [...new Set([...s.seenAchievements, ...ids])] })),
 
         finishOnboarding: (courseId, dailyGoal) =>
           set((s) => ({
@@ -293,6 +300,7 @@ export const useStore = create<State>()(
         streak: s.streak,
         hearts: s.hearts,
         courses: s.courses,
+        seenAchievements: s.seenAchievements,
       }),
     },
   ),

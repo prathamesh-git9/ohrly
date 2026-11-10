@@ -1,0 +1,326 @@
+{
+  "level": "A1",
+  "reading": [
+    {
+      "id": "A1-de-en-r01",
+      "kind": "reading",
+      "title": "A message for Noah",
+      "text": "Hi Noah, I am going to visit London next week. Can you meet at the station tomorrow morning? Please have your ticket and map ready. Thanks, Mia",
+      "questions": [
+        {
+          "q": "Was plant Mia für nächste Woche?",
+          "options": ["Sie besucht London.", "Sie arbeitet in Berlin.", "Sie bleibt zu Hause."],
+          "answer": "Sie besucht London."
+        },
+        {
+          "q": "Wo möchte Mia Noah treffen?",
+          "options": ["Am Bahnhof.", "Im Museum.", "Im Hotel."],
+          "answer": "Am Bahnhof."
+        },
+        {
+          "q": "Was soll Noah bereithalten?",
+          "options": ["Fahrkarte und Karte.", "Tasche und Schlüssel.", "Mantel und Schuhe."],
+          "answer": "Fahrkarte und Karte."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-r02",
+      "kind": "reading",
+      "title": "Park Café",
+      "text": "PARK CAFÉ. Breakfast is at ten today. Bread, cheese, tea and coffee are on the menu. Please pay in cash. The café is closed this afternoon.",
+      "questions": [
+        {
+          "q": "Wann gibt es Frühstück?",
+          "options": ["Um zehn Uhr.", "Um zwölf Uhr.", "Am Nachmittag."],
+          "answer": "Um zehn Uhr."
+        },
+        {
+          "q": "Wie soll man bezahlen?",
+          "options": ["Mit Bargeld.", "Mit einer Fahrkarte.", "Mit einer Karte."],
+          "answer": "Mit Bargeld."
+        },
+        {
+          "q": "Wann ist das Café geschlossen?",
+          "options": ["Heute Nachmittag.", "Heute Morgen.", "Morgen früh."],
+          "answer": "Heute Nachmittag."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-r03",
+      "kind": "reading",
+      "title": "At the station",
+      "text": "Train to London: platform two, ten o'clock. The train from Berlin is late and arrives at ten twenty. The station entrance is opposite the hotel.",
+      "questions": [
+        {
+          "q": "Von welchem Gleis fährt der Zug nach London?",
+          "options": ["Von Gleis zwei.", "Von Gleis zehn.", "Von Gleis zwanzig."],
+          "answer": "Von Gleis zwei."
+        },
+        {
+          "q": "Welcher Zug ist verspätet?",
+          "options": ["Der Zug aus Berlin.", "Der Zug nach London.", "Der Zug um zehn Uhr."],
+          "answer": "Der Zug aus Berlin."
+        },
+        {
+          "q": "Wo ist der Eingang?",
+          "options": ["Gegenüber dem Hotel.", "Links vom Museum.", "Im Stadtzentrum."],
+          "answer": "Gegenüber dem Hotel."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-r04",
+      "kind": "reading",
+      "title": "Mia's day",
+      "text": "Mia usually wakes up at ten. She has breakfast and then walks to the office. She works for two hours. In the evening, she sometimes watches a film with her sister.",
+      "questions": [
+        {
+          "q": "Wann wacht Mia normalerweise auf?",
+          "options": ["Um zehn Uhr.", "Um acht Uhr.", "Um vier Uhr."],
+          "answer": "Um zehn Uhr."
+        },
+        {
+          "q": "Wie kommt Mia zum Büro?",
+          "options": ["Sie geht zu Fuß.", "Sie fährt mit dem Bus.", "Sie fährt mit dem Zug."],
+          "answer": "Sie geht zu Fuß."
+        },
+        {
+          "q": "Was macht Mia manchmal am Abend?",
+          "options": ["Sie sieht einen Film.", "Sie besucht ein Museum.", "Sie lernt Englisch."],
+          "answer": "Sie sieht einen Film."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-r05",
+      "kind": "reading",
+      "title": "Today in the park",
+      "text": "It is sunny but windy today. The park is open. Please wear a coat. The café near the entrance is open, but the restaurant is closed.",
+      "questions": [
+        {
+          "q": "Wie ist das Wetter?",
+          "options": ["Sonnig und windig.", "Kalt und regnerisch.", "Heiß und regnerisch."],
+          "answer": "Sonnig und windig."
+        },
+        {
+          "q": "Was soll man anziehen?",
+          "options": ["Einen Mantel.", "Ein Hemd.", "Eine Hose."],
+          "answer": "Einen Mantel."
+        },
+        {
+          "q": "Was ist geöffnet?",
+          "options": ["Das Café.", "Das Restaurant.", "Das Museum."],
+          "answer": "Das Café."
+        }
+      ]
+    }
+  ],
+  "listening": [
+    {
+      "id": "A1-de-en-l01",
+      "kind": "listening",
+      "title": "A phone message",
+      "text": "Hello Noah, this is Mia. I am at the supermarket now. I need bread, milk and two apples. Please wait outside at two o'clock.",
+      "questions": [
+        {
+          "q": "Wer spricht die Nachricht?",
+          "options": ["Mia.", "Noah.", "Ein Kollege."],
+          "answer": "Mia."
+        },
+        {
+          "q": "Wo ist Mia jetzt?",
+          "options": ["Im Supermarkt.", "Im Café.", "Im Krankenhaus."],
+          "answer": "Im Supermarkt."
+        },
+        {
+          "q": "Wann soll Noah draußen warten?",
+          "options": ["Um zwei Uhr.", "Um fünf Uhr.", "Um zehn Uhr."],
+          "answer": "Um zwei Uhr."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-l02",
+      "kind": "listening",
+      "title": "Station announcement",
+      "text": "The bus to the city centre leaves at ten from the station entrance. The bus is ready. A ticket costs two pounds. Please have cash ready.",
+      "questions": [
+        {
+          "q": "Wohin fährt der Bus?",
+          "options": ["Ins Stadtzentrum.", "Zum Flughafen.", "Zum Krankenhaus."],
+          "answer": "Ins Stadtzentrum."
+        },
+        {
+          "q": "Wann fährt der Bus ab?",
+          "options": ["Um zehn Uhr.", "Um elf Uhr.", "Um zwölf Uhr."],
+          "answer": "Um zehn Uhr."
+        },
+        {
+          "q": "Was kostet eine Fahrkarte?",
+          "options": ["Zwei Pfund.", "Zehn Pfund.", "Zwanzig Pfund."],
+          "answer": "Zwei Pfund."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-l03",
+      "kind": "listening",
+      "title": "My weekend",
+      "text": "I usually work in an office, but today I am free. I am visiting the museum this morning. Later, I am going to meet my friend in the park.",
+      "questions": [
+        {
+          "q": "Wo arbeitet die Person normalerweise?",
+          "options": ["In einem Büro.", "In einer Schule.", "In einem Geschäft."],
+          "answer": "In einem Büro."
+        },
+        {
+          "q": "Was macht die Person heute Morgen?",
+          "options": ["Sie besucht das Museum.", "Sie arbeitet im Büro.", "Sie putzt die Wohnung."],
+          "answer": "Sie besucht das Museum."
+        },
+        {
+          "q": "Wen trifft die Person später?",
+          "options": ["Einen Freund.", "Einen Arzt.", "Einen Lehrer."],
+          "answer": "Einen Freund."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-l04",
+      "kind": "listening",
+      "title": "At the café",
+      "text": "Good morning. Breakfast is ready. Today, there is bread, cheese and some apples. Tea is one pound and coffee is two pounds. Please order at the table and pay later.",
+      "questions": [
+        {
+          "q": "Welche Mahlzeit ist fertig?",
+          "options": ["Das Frühstück.", "Das Mittagessen.", "Das Abendessen."],
+          "answer": "Das Frühstück."
+        },
+        {
+          "q": "Was kostet ein Pfund?",
+          "options": ["Der Tee.", "Der Kaffee.", "Der Käse."],
+          "answer": "Der Tee."
+        },
+        {
+          "q": "Wann soll man bezahlen?",
+          "options": ["Später.", "Jetzt.", "Morgen."],
+          "answer": "Später."
+        }
+      ]
+    },
+    {
+      "id": "A1-de-en-l05",
+      "kind": "listening",
+      "title": "A plan for tomorrow",
+      "text": "It is going to rain tomorrow. I am going to stay inside. First, I am going to clean the kitchen. Then I am going to watch a film with my family.",
+      "questions": [
+        {
+          "q": "Wie wird das Wetter morgen?",
+          "options": ["Es regnet.", "Es ist sonnig.", "Es ist windig."],
+          "answer": "Es regnet."
+        },
+        {
+          "q": "Was macht die Person zuerst?",
+          "options": ["Sie putzt die Küche.", "Sie sieht einen Film.", "Sie geht in den Park."],
+          "answer": "Sie putzt die Küche."
+        },
+        {
+          "q": "Mit wem sieht die Person einen Film?",
+          "options": ["Mit ihrer Familie.", "Mit ihrem Kollegen.", "Mit ihrem Arzt."],
+          "answer": "Mit ihrer Familie."
+        }
+      ]
+    }
+  ],
+  "language": [
+    {
+      "id": "A1-de-en-lang01",
+      "text": "I ___ from Germany.",
+      "options": ["am", "is", "are"],
+      "answer": "am"
+    },
+    {
+      "id": "A1-de-en-lang02",
+      "text": "This is ___ apple.",
+      "options": ["an", "a", "some"],
+      "answer": "an"
+    },
+    {
+      "id": "A1-de-en-lang03",
+      "text": "She ___ in an office every day.",
+      "options": ["works", "work", "working"],
+      "answer": "works"
+    },
+    {
+      "id": "A1-de-en-lang04",
+      "text": "___ you like coffee?",
+      "options": ["Do", "Does", "Are"],
+      "answer": "Do"
+    },
+    {
+      "id": "A1-de-en-lang05",
+      "text": "He does not ___ TV in the morning.",
+      "options": ["watch", "watches", "watching"],
+      "answer": "watch"
+    },
+    {
+      "id": "A1-de-en-lang06",
+      "text": "Mia ___ walks to work.",
+      "options": ["usually", "now", "yesterday"],
+      "answer": "usually"
+    },
+    {
+      "id": "A1-de-en-lang07",
+      "text": "Look! Noah is ___ outside.",
+      "options": ["waiting", "wait", "waits"],
+      "answer": "waiting"
+    },
+    {
+      "id": "A1-de-en-lang08",
+      "text": "How ___ apples do you need?",
+      "options": ["many", "much", "any"],
+      "answer": "many"
+    },
+    {
+      "id": "A1-de-en-lang09",
+      "text": "There ___ two chairs in the kitchen.",
+      "options": ["are", "is", "am"],
+      "answer": "are"
+    },
+    {
+      "id": "A1-de-en-lang10",
+      "text": "Yesterday, you ___ at the museum.",
+      "options": ["were", "was", "are"],
+      "answer": "were"
+    }
+  ],
+  "production": [
+    {
+      "id": "A1-de-en-prod01",
+      "kind": "writing",
+      "prompt": "Schreibe Noah eine Nachricht mit etwa 30 Wörtern. Stell dich kurz vor, nenne deinen Wohnort und deinen Plan für nächste Woche. Bitte ihn um ein Treffen und nenne Zeit und Ort.",
+      "model": "Hi Noah, I am Mia. I live in Berlin. I am going to visit London next week. Can you meet at the station tomorrow morning? Please call today. Goodbye! Thanks!",
+      "checklist": [
+        "Ich habe alle geforderten Informationen genannt.",
+        "Meine Nachricht hat eine klare Begrüßung und einen passenden Abschluss.",
+        "Ich habe einfache Verbindungen und verschiedene bekannte Wörter verwendet.",
+        "Ich habe Wortstellung, Verbformen und Rechtschreibung geprüft."
+      ]
+    },
+    {
+      "id": "A1-de-en-prod02",
+      "kind": "speaking",
+      "prompt": "Sprich etwa eine Minute. Stell dich mit Name, Wohnort, Arbeit oder Lernen und einer Freizeitaktivität vor. Bearbeite danach zwei Karten: 1. Bitte jemanden, seinen Namen langsam zu wiederholen. 2. Jemand bittet dich um Hilfe mit einer Karte; antworte passend.",
+      "model": "Hello, I am Mia. I live in Berlin and I study English. I usually listen to music in the evening. At the weekend, I enjoy walking in the park. Can you repeat your name slowly, please? Yes, I can help with the map. The station is on the left.",
+      "checklist": [
+        "Ich habe mich mit allen geforderten Angaben vorgestellt.",
+        "Ich habe beide Karten vollständig und passend bearbeitet.",
+        "Meine Aussagen waren verständlich und sinnvoll geordnet.",
+        "Ich habe mehrere bekannte Wörter und Satzmuster verwendet.",
+        "Ich habe auf Verbformen und klare Aussprache geachtet."
+      ]
+    }
+  ]
+}

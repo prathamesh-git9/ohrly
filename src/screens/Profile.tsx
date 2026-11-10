@@ -1,5 +1,4 @@
 import {
-  Award,
   BookOpen,
   Check,
   Flame,
@@ -7,18 +6,16 @@ import {
   Heart,
   Medal,
   Shield,
-  Sparkles,
-  Star,
-  Trophy,
   Zap,
 } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
 import { useMemo, useRef, useState, type ChangeEvent } from 'react';
+import { AchievementGrid, LevelScale } from '../components/Social';
 import { Btn, Flag, Modal } from '../components/ui';
 import { COURSES } from '../content';
 import { dayKey, displayedStreak, HEART_REFILL_COST, MAX_FREEZES, MAX_HEARTS, STREAK_FREEZE_COST } from '../domain/gamify';
 import type { Course } from '../domain/types';
-import type { Translate, UiKey } from '../i18n';
+import type { Translate } from '../i18n';
 import { navigate } from '../router';
 import { useStore } from '../state/store';
 
@@ -48,18 +45,6 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
     return { days, max: Math.max(1, ...days.map((day) => day.xp)) };
   }, [course.from, state.xpByDay]);
 
-  const achievements: { key: UiKey; unlocked: boolean; Icon: typeof Award }[] = [
-    { key: 'achievementFirstLesson', unlocked: lessonsDone >= 1, Icon: Star },
-    { key: 'achievementStreak7', unlocked: state.streak.best >= 7, Icon: Flame },
-    { key: 'achievementWords100', unlocked: wordsMet >= 100, Icon: BookOpen },
-    { key: 'achievementXp1000', unlocked: state.xp >= 1000, Icon: Zap },
-    { key: 'achievementPerfect10', unlocked: state.perfectLessons >= 10, Icon: Sparkles },
-    {
-      key: 'achievementFirstTest',
-      unlocked: progress.some((item) => Object.keys(item.done).some((id) => id.endsWith(':checkpoint'))),
-      Icon: Trophy,
-    },
-  ];
 
   const exportData = () => {
     const raw = window.localStorage.getItem('ohrly-v1');
@@ -110,6 +95,8 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
   return (
     <div className="page profile-page">
       <h1 className="page-title">{t('navProfile')}</h1>
+      <LevelScale course={course} t={t} />
+      <a className="account-row" href="#/account">{t('account')}</a>
 
       <section className="profile-section" aria-labelledby="profile-stats">
         <h2 id="profile-stats">{t('yourStats')}</h2>
@@ -141,15 +128,7 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
 
       <section className="profile-section" aria-labelledby="achievements">
         <h2 id="achievements">{t('achievements')}</h2>
-        <div className="achievement-grid">
-          {achievements.map(({ key, unlocked, Icon }) => (
-            <div className={`achievement${unlocked ? '' : ' is-locked'}`} key={key}>
-              <Icon aria-hidden="true" />
-              <strong>{t(key)}</strong>
-              <span>{unlocked ? t('unlocked') : t('locked')}</span>
-            </div>
-          ))}
-        </div>
+        <AchievementGrid t={t} />
       </section>
 
       <section className="profile-section" aria-labelledby="courses">

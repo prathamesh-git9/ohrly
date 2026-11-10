@@ -10,7 +10,7 @@
    "canDo": "understand a basic weather report",
    "tip": {
     "title": "Talking about the weather",
-    "body": "In German, to talk about the weather, we use **es** (it) just like in English. We can say **es regnet** (it is raining) or **es ist kalt** (it is cold). \n\nRemember that the verb always stays in the second position in a statement, so if you start with **heute** (today), the verb comes next, followed by **es** or the subject.",
+    "body": "In German, to talk about the weather, we use **es** (it) just like in English. We can say **es regnet** (it is raining) or **es ist kalt** (it is cold). \n\nIn a German main clause, the conjugated verb is in the second position. If you start with **heute** (today), the verb comes next, followed by **es** or another subject.",
     "examples": [
      {
       "target": "Es ist warm.",
@@ -324,10 +324,10 @@
     },
     {
      "id": "u21-s13",
-     "target": "Es ist nicht warm, es ist bewölkt.",
-     "source": "It is not warm, it is cloudy.",
+     "target": "Es ist nicht warm. Es ist bewölkt.",
+     "source": "It is not warm. It is cloudy.",
      "sourceAccept": [
-      "It's not warm, it's cloudy."
+      "It's not warm. It's cloudy."
      ],
      "words": [
       "w-es",
@@ -371,36 +371,39 @@
     },
     {
      "id": "u21-s16",
-     "target": "Wir fahren, das Wetter ist warm!",
-     "source": "We are driving, the weather is warm!",
+     "target": "Wir fahren heute durch den Regen.",
+     "source": "We are driving through the rain today.",
      "sourceAccept": [
-      "We drive, the weather is warm!",
-      "We're driving, the weather's warm!"
+      "We drive through the rain today.",
+      "We're driving through the rain today.",
+      "We are travelling through the rain today.",
+      "We are traveling through the rain today."
      ],
      "words": [
       "w-wir",
       "w-fahren",
-      "w-wetter",
-      "w-sein",
-      "w-warm"
+      "w-heute",
+      "w-durch",
+      "w-den",
+      "w-regen"
      ]
     },
     {
      "id": "u21-s17",
-     "target": "Morgen kommt der Regen.",
-     "source": "The rain is coming tomorrow.",
+     "target": "Morgen regnet es.",
+     "source": "It will rain tomorrow.",
      "targetAccept": [
-      "Der Regen kommt morgen."
+      "Es regnet morgen."
      ],
      "sourceAccept": [
-      "Tomorrow the rain is coming.",
-      "The rain comes tomorrow.",
-      "Tomorrow the rain comes."
+      "Tomorrow it will rain.",
+      "It is going to rain tomorrow.",
+      "It's going to rain tomorrow."
      ],
      "words": [
       "w-morgen",
-      "w-kommen",
-      "w-regen"
+      "w-regnen",
+      "w-es"
      ]
     }
    ]
@@ -504,9 +507,6 @@
      "id": "w-dieser",
      "target": "dieser",
      "source": "this",
-     "sourceAccept": [
-      "these"
-     ],
      "forms": [
       "diese",
       "dieses"
@@ -602,9 +602,6 @@
      "id": "u22-s05",
      "target": "Passt dieses Hemd?",
      "source": "Does this shirt fit?",
-     "sourceAccept": [
-      "Is this shirt fitting?"
-     ],
      "words": [
       "w-passen",
       "w-dieser",
@@ -637,6 +634,10 @@
      "id": "u22-s07",
      "target": "Trägst du das Hemd?",
      "source": "Are you wearing the shirt?",
+     "targetAccept": [
+      "Tragt ihr das Hemd?",
+      "Tragen Sie das Hemd?"
+     ],
      "sourceAccept": [
       "Do you wear the shirt?"
      ],
@@ -738,13 +739,20 @@
     },
     {
      "id": "u22-s14",
-     "target": "Tragt ihr diese Hosen?",
+     "target": "Tragt ihr diese Hose?",
      "source": "Are you wearing these trousers?",
+     "targetAccept": [
+      "Trägst du diese Hose?",
+      "Tragen Sie diese Hose?"
+     ],
      "sourceAccept": [
       "Do you wear these trousers?",
       "Are you wearing these pants?",
       "Do you wear these pants?",
-      "Are you all wearing these pants?"
+      "Are you all wearing these trousers?",
+      "Do you all wear these trousers?",
+      "Are you all wearing these pants?",
+      "Do you all wear these pants?"
      ],
      "words": [
       "w-tragen",
@@ -933,6 +941,10 @@
      "id": "u23-s03",
      "target": "Bist du gesund?",
      "source": "Are you healthy?",
+     "targetAccept": [
+      "Seid ihr gesund?",
+      "Sind Sie gesund?"
+     ],
      "sourceAccept": [
       "Are you well?"
      ],
@@ -991,12 +1003,13 @@
     },
     {
      "id": "u23-s06",
-     "target": "Der Bauch tut weh.",
-     "source": "The stomach hurts.",
+     "target": "Mein Bauch tut weh.",
+     "source": "My stomach hurts.",
      "sourceAccept": [
-      "The belly hurts."
+      "My belly hurts."
      ],
      "words": [
+      "w-mein",
       "w-bauch",
       "w-wehtun"
      ],
@@ -1010,26 +1023,31 @@
     },
     {
      "id": "u23-s07",
-     "target": "Ich suche eine Apotheke, ich bin krank.",
-     "source": "I am looking for a pharmacy, I am sick.",
+     "target": "Ich bin krank und suche eine Apotheke.",
+     "source": "I am sick and looking for a pharmacy.",
      "sourceAccept": [
-      "I'm looking for a pharmacy, I'm ill.",
-      "I'm looking for a pharmacy, I'm sick.",
-      "I am looking for a pharmacy, I am ill."
+      "I'm sick and looking for a pharmacy.",
+      "I am ill and looking for a pharmacy.",
+      "I'm ill and looking for a pharmacy."
      ],
      "words": [
       "w-ich",
+      "w-sein",
+      "w-krank",
+      "w-und",
       "w-suchen",
       "w-eine",
-      "w-apotheke",
-      "w-sein",
-      "w-krank"
+      "w-apotheke"
      ]
     },
     {
      "id": "u23-s08",
      "target": "Gehst du zum Arzt?",
      "source": "Are you going to the doctor?",
+     "targetAccept": [
+      "Geht ihr zum Arzt?",
+      "Gehen Sie zum Arzt?"
+     ],
      "sourceAccept": [
       "Do you go to the doctor?"
      ],
@@ -1044,6 +1062,10 @@
      "id": "u23-s09",
      "target": "Bist du müde?",
      "source": "Are you tired?",
+     "targetAccept": [
+      "Seid ihr müde?",
+      "Sind Sie müde?"
+     ],
      "words": [
       "w-sein",
       "w-du",
@@ -1128,20 +1150,22 @@
     },
     {
      "id": "u23-s14",
-     "target": "Es geht mir besser, ich bin gesund.",
-     "source": "I am better, I am healthy.",
+     "target": "Es geht mir besser und ich bin gesund.",
+     "source": "I feel better and I am healthy.",
      "targetAccept": [
-      "Mir geht es besser, ich bin gesund."
+      "Mir geht es besser und ich bin gesund."
      ],
      "sourceAccept": [
-      "I'm better, I'm healthy.",
-      "I am doing better, I am healthy."
+      "I feel better and I'm healthy.",
+      "I am doing better and I am healthy.",
+      "I'm doing better and I'm healthy."
      ],
      "words": [
       "w-es",
       "w-gehen",
       "w-mir",
       "w-besser",
+      "w-und",
       "w-ich",
       "w-sein",
       "w-gesund"
@@ -1181,6 +1205,10 @@
      "id": "u23-s17",
      "target": "Brauchst du den Arzt?",
      "source": "Do you need the doctor?",
+     "targetAccept": [
+      "Braucht ihr den Arzt?",
+      "Brauchen Sie den Arzt?"
+     ],
      "words": [
       "w-brauchen",
       "w-du",
@@ -1195,8 +1223,8 @@
    "title": "Free time",
    "canDo": "say what I enjoy and invite someone",
    "tip": {
-    "title": "Gern vs Lieber",
-    "body": "We learned that adding **gern** after a verb means you like doing that activity.\n\nTo say you prefer an activity, use the word **lieber** (rather) instead. Just like **gern**, it usually goes right after the verb.",
+    "title": "Gern vs. lieber",
+    "body": "We learned that using **gern** with a verb means you like doing that activity.\n\nTo say that you prefer an activity, use **lieber** (rather) instead. **Gern** and **lieber** often follow the conjugated verb, but other sentence elements can come between them and the verb.",
     "examples": [
      {
       "target": "Ich laufe gern.",
@@ -1283,6 +1311,9 @@
      "id": "w-laufen",
      "target": "laufen",
      "source": "to run",
+     "sourceAccept": [
+      "to walk"
+     ],
      "forms": [
       "laufe",
       "läufst",
@@ -1315,12 +1346,19 @@
      "pos": "noun"
     },
     {
+     "id": "w-ins",
+     "target": "ins",
+     "source": "into the",
+     "sourceAccept": [
+      "to the"
+     ],
+     "pos": "prep",
+     "note": "Contraction of in das."
+    },
+    {
      "id": "w-lieber",
      "target": "lieber",
      "source": "rather",
-     "sourceAccept": [
-      "prefer"
-     ],
      "pos": "adv"
     }
    ],
@@ -1341,8 +1379,7 @@
      "target": "Ich höre gern Musik.",
      "source": "I like listening to music.",
      "sourceAccept": [
-      "I like to listen to music.",
-      "I gladly listen to music."
+      "I like to listen to music."
      ],
      "words": [
       "w-ich",
@@ -1355,6 +1392,10 @@
      "id": "u24-s03",
      "target": "Siehst du den Film?",
      "source": "Are you watching the film?",
+     "targetAccept": [
+      "Seht ihr den Film?",
+      "Sehen Sie den Film?"
+     ],
      "sourceAccept": [
       "Do you see the movie?",
       "Are you watching the movie?",
@@ -1378,21 +1419,25 @@
     },
     {
      "id": "u24-s04",
-     "target": "Wir gehen in das Kino.",
+     "target": "Wir gehen ins Kino.",
      "source": "We are going to the cinema.",
+     "targetAccept": [
+      "Wir gehen in das Kino."
+     ],
      "sourceAccept": [
       "We go to the cinema.",
       "We're going to the cinema.",
-      "We are going to the movie theater."
+      "We are going to the movie theater.",
+      "We're going to the movie theater."
      ],
      "words": [
       "w-wir",
       "w-gehen",
-      "w-in",
+      "w-ins",
       "w-kino"
      ],
      "cloze": {
-      "answer": "das",
+      "answer": "ins",
       "distractors": [
        "der",
        "den"
@@ -1429,6 +1474,10 @@
      "id": "u24-s06",
      "target": "Singst du gern?",
      "source": "Do you like singing?",
+     "targetAccept": [
+      "Singt ihr gern?",
+      "Singen Sie gern?"
+     ],
      "sourceAccept": [
       "Do you like to sing?"
      ],
@@ -1459,7 +1508,9 @@
       "Heute läuft sie."
      ],
      "sourceAccept": [
-      "She runs today."
+      "She runs today.",
+      "She is walking today.",
+      "She walks today."
      ],
      "words": [
       "w-sie-she",
@@ -1488,6 +1539,10 @@
      "id": "u24-s10",
      "target": "Hörst du lieber Musik?",
      "source": "Do you prefer listening to music?",
+     "targetAccept": [
+      "Hört ihr lieber Musik?",
+      "Hören Sie lieber Musik?"
+     ],
      "sourceAccept": [
       "Do you prefer to listen to music?"
      ],
@@ -1524,7 +1579,11 @@
      "target": "Sie singen heute.",
      "source": "You are singing today.",
      "targetAccept": [
-      "Heute singen Sie."
+      "Heute singen Sie.",
+      "Du singst heute.",
+      "Heute singst du.",
+      "Ihr singt heute.",
+      "Heute singt ihr."
      ],
      "sourceAccept": [
       "They are singing today.",
@@ -1543,7 +1602,12 @@
      "source": "I prefer watching the film alone.",
      "sourceAccept": [
       "I prefer watching the movie alone.",
-      "I prefer to watch the film alone."
+      "I prefer to watch the film alone.",
+      "I prefer to watch the movie alone.",
+      "I would rather watch the film alone.",
+      "I'd rather watch the film alone.",
+      "I would rather watch the movie alone.",
+      "I'd rather watch the movie alone."
      ],
      "words": [
       "w-ich",
@@ -1560,7 +1624,10 @@
      "source": "We run and we sing.",
      "sourceAccept": [
       "We are running and we are singing.",
-      "We're running and we're singing."
+      "We're running and we're singing.",
+      "We walk and we sing.",
+      "We are walking and we are singing.",
+      "We're walking and we're singing."
      ],
      "words": [
       "w-wir",
@@ -1571,8 +1638,15 @@
     },
     {
      "id": "u24-s15",
-     "target": "Geht ihr in das Kino oder in das Konzert?",
+     "target": "Geht ihr ins Kino oder zum Konzert?",
      "source": "Are you going to the cinema or to the concert?",
+     "targetAccept": [
+      "Geht ihr in das Kino oder zum Konzert?",
+      "Gehst du ins Kino oder zum Konzert?",
+      "Gehst du in das Kino oder zum Konzert?",
+      "Gehen Sie ins Kino oder zum Konzert?",
+      "Gehen Sie in das Kino oder zum Konzert?"
+     ],
      "sourceAccept": [
       "Do you go to the cinema or to the concert?",
       "Are you all going to the cinema or to the concert?"
@@ -1580,9 +1654,10 @@
      "words": [
       "w-gehen",
       "w-ihr",
-      "w-in",
+      "w-ins",
       "w-kino",
       "w-oder",
+      "w-zu",
       "w-konzert"
      ],
      "cloze": {
@@ -1599,7 +1674,8 @@
      "source": "My brother plays sports.",
      "sourceAccept": [
       "My brother does sports.",
-      "My brother is doing sports."
+      "My brother is doing sports.",
+      "My brother exercises."
      ],
      "words": [
       "w-mein",
@@ -1616,7 +1692,7 @@
    "canDo": "understand a few common past statements",
    "tip": {
     "title": "Talking about the past",
-    "body": "To talk about the past, German uses a helping verb (usually **haben**) in the second position of the sentence.\n\nThe real action goes to the very end of the sentence and usually starts with **ge-** (like **gemacht** or **gekauft**).\n\nIf the action involves moving from A to B (like travelling or coming), use **sein** (to be) as the helping verb instead of **haben**.",
+    "body": "The German present perfect uses a conjugated auxiliary verb—**haben** or **sein**—and a past participle. In a main clause, the auxiliary is in the second position and the participle usually comes at the end.\n\nMany past participles begin with **ge-**, such as **gemacht** and **gekauft**, but not all do.\n\nMany verbs of movement from one place to another, including **fahren** and **kommen**, form the present perfect with **sein**. Learn the correct auxiliary with each verb.",
     "examples": [
      {
       "target": "Er hat gestern viel gemacht.",
@@ -1652,8 +1728,7 @@
      "target": "gemacht",
      "source": "done",
      "sourceAccept": [
-      "made",
-      "did"
+      "made"
      ],
      "pos": "verb"
     },
@@ -1677,6 +1752,7 @@
      "target": "gefahren",
      "source": "travelled",
      "sourceAccept": [
+      "traveled",
       "driven"
      ],
      "pos": "verb"
@@ -1712,11 +1788,12 @@
      "target": "Ich bin gestern in Berlin gewesen.",
      "source": "I was in Berlin yesterday.",
      "targetAccept": [
-      "Gestern bin ich in Berlin gewesen."
+      "Gestern bin ich in Berlin gewesen.",
+      "Ich war gestern in Berlin.",
+      "Gestern war ich in Berlin."
      ],
      "sourceAccept": [
-      "Yesterday I was in Berlin.",
-      "I have been in Berlin yesterday."
+      "Yesterday I was in Berlin."
      ],
      "words": [
       "w-ich",
@@ -1737,6 +1814,10 @@
      "id": "u25-s02",
      "target": "Hast du das Buch schon gekauft?",
      "source": "Have you already bought the book?",
+     "targetAccept": [
+      "Habt ihr das Buch schon gekauft?",
+      "Haben Sie das Buch schon gekauft?"
+     ],
      "sourceAccept": [
       "Did you already buy the book?",
       "Have you bought the book already?"
@@ -1765,7 +1846,8 @@
      ],
      "sourceAccept": [
       "Yesterday we learned German.",
-      "We have learned German yesterday."
+      "We studied German yesterday.",
+      "Yesterday we studied German."
      ],
      "words": [
       "w-wir",
@@ -1787,8 +1869,7 @@
      "target": "Er ist schon gekommen.",
      "source": "He has already come.",
      "sourceAccept": [
-      "He already came.",
-      "He is already here."
+      "He already came."
      ],
      "words": [
       "w-er",
@@ -1808,6 +1889,10 @@
      "id": "u25-s05",
      "target": "Bist du nach England gefahren?",
      "source": "Did you travel to England?",
+     "targetAccept": [
+      "Seid ihr nach England gefahren?",
+      "Sind Sie nach England gefahren?"
+     ],
      "sourceAccept": [
       "Have you travelled to England?",
       "Did you drive to England?",
@@ -1832,8 +1917,9 @@
      "id": "u25-s06",
      "target": "Was hast du gestern gemacht?",
      "source": "What did you do yesterday?",
-     "sourceAccept": [
-      "What have you done yesterday?"
+     "targetAccept": [
+      "Was habt ihr gestern gemacht?",
+      "Was haben Sie gestern gemacht?"
      ],
      "words": [
       "w-was",
@@ -1849,7 +1935,9 @@
      "source": "I have not bought a newspaper yet.",
      "sourceAccept": [
       "I haven't bought a newspaper yet.",
-      "I still haven't bought a newspaper."
+      "I still haven't bought a newspaper.",
+      "I did not buy a newspaper yet.",
+      "I didn't buy a newspaper yet."
      ],
      "words": [
       "w-ich",
@@ -1865,12 +1953,13 @@
      "target": "Sie hat gestern frei gehabt.",
      "source": "She had time off yesterday.",
      "targetAccept": [
-      "Gestern hat sie frei gehabt."
+      "Gestern hat sie frei gehabt.",
+      "Sie hatte gestern frei.",
+      "Gestern hatte sie frei."
      ],
      "sourceAccept": [
       "She was free yesterday.",
-      "Yesterday she was free.",
-      "She had yesterday off."
+      "Yesterday she was free."
      ],
      "words": [
       "w-sie-she",
@@ -1886,7 +1975,8 @@
      "source": "We arrived on time.",
      "sourceAccept": [
       "We came on time.",
-      "We have come on time."
+      "We have arrived on time.",
+      "We've arrived on time."
      ],
      "words": [
       "w-wir",
@@ -1898,11 +1988,18 @@
     {
      "id": "u25-s10",
      "target": "Habt ihr schon gelernt?",
-     "source": "Have you already learned?",
+     "source": "Have you studied yet?",
+     "targetAccept": [
+      "Hast du schon gelernt?",
+      "Haben Sie schon gelernt?"
+     ],
      "sourceAccept": [
       "Have you already studied?",
+      "Have you studied already?",
       "Did you already study?",
-      "Did you all already study?"
+      "Did you study yet?",
+      "Did you all already study?",
+      "Have you all studied yet?"
      ],
      "words": [
       "w-haben",
@@ -1920,7 +2017,8 @@
      ],
      "sourceAccept": [
       "I didn't drive yesterday.",
-      "I did not travel yesterday."
+      "I did not travel yesterday.",
+      "I didn't travel yesterday."
      ],
      "words": [
       "w-ich",
@@ -1937,9 +2035,6 @@
      "targetAccept": [
       "Gestern hat er viel gemacht."
      ],
-     "sourceAccept": [
-      "He has done a lot yesterday."
-     ],
      "words": [
       "w-er",
       "w-haben",
@@ -1951,8 +2046,16 @@
     {
      "id": "u25-s13",
      "target": "Wir sind schon in Berlin gewesen.",
-     "source": "We have already been in Berlin.",
+     "source": "We have been to Berlin before.",
+     "targetAccept": [
+      "Wir waren schon in Berlin."
+     ],
      "sourceAccept": [
+      "We've been to Berlin before.",
+      "We have already been to Berlin.",
+      "We've already been to Berlin.",
+      "We have already been in Berlin.",
+      "We've already been in Berlin.",
       "We were already in Berlin."
      ],
      "words": [
@@ -1966,9 +2069,13 @@
     {
      "id": "u25-s14",
      "target": "Ist Leon schon gekommen?",
-     "source": "Has Leon already come?",
+     "source": "Has Leon arrived yet?",
      "sourceAccept": [
+      "Has Leon already arrived?",
+      "Has Leon already come?",
+      "Has Leon come yet?",
       "Did Leon already come?",
+      "Did Leon arrive yet?",
       "Is Leon already here?"
      ],
      "words": [
@@ -1981,8 +2088,8 @@
      "id": "u25-s15",
      "target": "Ich habe noch Zeit gehabt.",
      "source": "I still had time.",
-     "sourceAccept": [
-      "I have still had time."
+     "targetAccept": [
+      "Ich hatte noch Zeit."
      ],
      "words": [
       "w-ich",
@@ -1996,8 +2103,9 @@
      "id": "u25-s16",
      "target": "Was haben Sie gestern gemacht?",
      "source": "What did you do yesterday?",
-     "sourceAccept": [
-      "What have you done yesterday?"
+     "targetAccept": [
+      "Was hast du gestern gemacht?",
+      "Was habt ihr gestern gemacht?"
      ],
      "words": [
       "w-was",
@@ -2011,6 +2119,10 @@
      "id": "u25-s17",
      "target": "Hast du das Ticket schon gekauft?",
      "source": "Have you already bought the ticket?",
+     "targetAccept": [
+      "Habt ihr das Ticket schon gekauft?",
+      "Haben Sie das Ticket schon gekauft?"
+     ],
      "sourceAccept": [
       "Did you already buy the ticket?"
      ],

@@ -497,3 +497,61 @@ button { font: inherit; color: inherit; }
 
 .twinkle { animation: twinkle 2.6s ease-in-out infinite; }
 @keyframes twinkle { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }
+
+/* ------------------------------ social ------------------------------ */
+.stat-button { appearance: none; border: 0; background: none; padding: 4px; border-radius: 10px; cursor: pointer; }
+.stat-button:hover { background: var(--bg-2); }
+.top-actions { display: flex; align-items: center; gap: 4px; }
+.top-bar { gap: 8px; }
+.signup-pill { display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 999px; background: var(--primary); color: #fff; font-size: 13px; font-weight: 800; white-space: nowrap; }
+.side-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.streak-hero { position: relative; display: grid; place-items: center; color: var(--locked-ink); }
+.streak-hero.is-lit { color: var(--flame); }
+.streak-hero strong { position: absolute; bottom: 6px; color: #fff; font-family: var(--font-head); font-size: 20px; }
+.streak-calendar { width: 100%; display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.cal-head { font-size: 12px; font-weight: 800; color: var(--ink-2); text-align: center; }
+.cal-day { aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; font-size: 13px; font-weight: 700; color: var(--ink-2); background: var(--bg-2); }
+.cal-day.is-active { background: var(--flame); color: #fff; }
+.cal-day.is-today { box-shadow: 0 0 0 2px var(--primary); }
+.cal-day.is-future { opacity: 0.35; }
+.streak-facts { display: flex; gap: 16px; justify-content: center; color: var(--ink-2); }
+.share-btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; padding: 0 14px; font-size: 15px; }
+.level-scale { display: grid; gap: 8px; padding: 14px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--card); margin-bottom: 14px; }
+.level-scale-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.level-scale-head strong { font-family: var(--font-head); font-size: 20px; font-weight: 600; display: block; }
+.level-scale-kicker { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); }
+.scale-track { position: relative; height: 14px; border-radius: 999px; background: linear-gradient(90deg, var(--locked) 0 66.66%, repeating-linear-gradient(45deg, var(--locked) 0 6px, var(--bg-2) 6px 12px) 66.66% 100%); }
+.scale-fill { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: linear-gradient(90deg, var(--good), var(--primary)); }
+.scale-marker { position: absolute; top: 50%; width: 22px; height: 22px; margin-left: -11px; transform: translateY(-50%); border-radius: 50%; background: #fff; border: 4px solid var(--primary); }
+.scale-labels { display: grid; grid-template-columns: repeat(6, 1fr); font-family: var(--font-head); font-weight: 600; text-align: center; color: var(--ink-2); }
+.scale-labels .is-done { color: var(--good-edge); }
+.scale-labels .is-beyond { opacity: .45; }
+.scale-note { font-size: 13px; color: var(--ink-2); }
+.achievement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.achievement { display: grid; justify-items: center; gap: 6px; padding: 14px 10px; text-align: center; border: 2px solid var(--line-strong); border-radius: var(--radius); background: var(--card); }
+.achievement.is-locked { opacity: .7; filter: grayscale(.6); }
+.ach-icon { position: relative; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 16px; background: var(--gold); color: #fff; box-shadow: 0 4px 0 var(--gold-edge); }
+.ach-tier { position: absolute; right: -8px; bottom: -6px; padding: 1px 6px; border-radius: 999px; background: var(--primary); color: #fff; font-size: 11px; font-weight: 800; }
+.ach-bar { width: 100%; height: 8px; border-radius: 999px; background: var(--locked); overflow: hidden; }
+.ach-bar span { display: block; height: 100%; background: var(--gold); }
+.ach-count { font-size: 12px; color: var(--ink-2); font-weight: 800; }
+.ach-toast { position: fixed; z-index: 120; top: 12px; left: 50%; display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: var(--card); border: 2px solid var(--gold); border-bottom-width: 5px; border-radius: 18px; max-width: calc(100vw - 24px); }
+.ach-toast small { display: block; color: var(--gold-edge); font-weight: 800; }
+.account-row { display: block; padding: 12px 14px; margin-bottom: 14px; border: 2px solid var(--line-strong); border-radius: var(--radius); font-weight: 800; color: var(--primary); }
+.account-page { max-width: 460px; margin: 0 auto; }
+.account-form { display: grid; gap: 14px; margin: 16px 0; }
+.account-form label { display: grid; gap: 6px; font-weight: 800; }
+.account-form input { font: inherit; padding: 12px 14px; border: 2px solid var(--line-strong); border-radius: 12px; background: var(--card); color: var(--ink); }
+.account-form input:focus { outline: 0; border-color: var(--primary); }
+.account-form small, .age-note { color: var(--ink-2); font-size: 13px; font-weight: 600; }
+.age-note a { color: var(--primary); text-decoration: underline; }
+.account-switch { display: grid; gap: 8px; justify-items: center; }
+.account-switch button, .danger-link { appearance: none; border: 0; background: none; color: var(--primary); font-weight: 800; cursor: pointer; text-decoration: underline; }
+.danger-link { color: var(--bad-ink); }
+.account-card { display: grid; gap: 10px; justify-items: center; text-align: center; padding: 20px; border: 2px solid var(--line-strong); border-radius: var(--radius); background: var(--card); }
+.sync-status { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; }
+.sync-status.is-error { color: var(--bad-ink); }
+.sync-status.is-synced { color: var(--good-ink); }
+.form-msg { padding: 10px 12px; border-radius: 12px; font-weight: 700; }
+.form-msg.is-error { background: var(--bad-soft); color: var(--bad-ink); }
+.form-msg.is-info { background: var(--primary-soft); color: var(--primary); }

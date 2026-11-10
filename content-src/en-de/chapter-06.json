@@ -10,7 +10,7 @@
    "canDo": "Check in and ask about a room",
    "tip": {
     "title": "Who is it for?",
-    "body": "When you use **für** (for), the next word is the direct object (accusative). So masculine words change their article to **den** or **einen**.\n\nFeminine and neuter words don't change. You can say **für das Einzelzimmer** or **für den Vater**.",
+    "body": "The preposition **für** (for) always takes the accusative case. With a masculine noun, **der** becomes **den** and **ein** becomes **einen**.\n\nThe feminine, neuter, and plural articles keep the same form in the accusative. You can say **für das Einzelzimmer** or **für den Vater**.",
     "examples": [
      {
       "target": "Das ist für den Vater.",
@@ -487,6 +487,9 @@
      "id": "w-fahrkarte",
      "target": "die Fahrkarte",
      "source": "the ticket",
+     "targetAccept": [
+      "das Ticket"
+     ],
      "sourceAccept": [
       "ticket"
      ],
@@ -498,6 +501,10 @@
      "id": "w-schalter",
      "target": "der Schalter",
      "source": "the ticket counter",
+     "targetAccept": [
+      "der Fahrkartenschalter",
+      "der Ticketschalter"
+     ],
      "sourceAccept": [
       "ticket counter",
       "the counter",
@@ -514,7 +521,10 @@
       "simple",
       "single"
      ],
-     "pos": "adv"
+     "forms": [
+      "einfache"
+     ],
+     "pos": "adj"
     },
     {
      "id": "w-hin",
@@ -544,6 +554,9 @@
      "id": "w-gleis",
      "target": "das Gleis",
      "source": "the platform",
+     "targetAccept": [
+      "der Bahnsteig"
+     ],
      "sourceAccept": [
       "platform",
       "the track",
@@ -625,30 +638,30 @@
     },
     {
      "id": "u27-s02",
-     "target": "Die Fahrkarte ist einfach.",
-     "source": "The ticket is one-way.",
-     "targetAccept": [
-      "Einfach ist die Fahrkarte."
-     ],
+     "target": "Ich möchte eine einfache Fahrkarte.",
+     "source": "I would like a one-way ticket.",
      "sourceAccept": [
-      "The ticket is a single."
+      "I'd like a one-way ticket.",
+      "I would like a single ticket.",
+      "I'd like a single ticket."
      ],
      "words": [
+      "w-ich",
+      "w-moechten",
+      "w-eine",
       "w-fahrkarte",
-      "w-sein",
       "w-einfach"
      ]
     },
     {
      "id": "u27-s03",
-     "target": "Bitte eine Fahrkarte, einfach.",
-     "source": "A ticket please, one-way.",
+     "target": "Eine einfache Fahrkarte, bitte.",
+     "source": "A one-way ticket, please.",
      "targetAccept": [
-      "Eine Fahrkarte, einfach bitte."
+      "Eine Fahrkarte, einfach, bitte."
      ],
      "sourceAccept": [
-      "A ticket, single, please.",
-      "Please a one-way ticket."
+      "A single ticket, please."
      ],
      "words": [
       "w-bitte",
@@ -666,8 +679,9 @@
       "Wohin fahrt ihr?"
      ],
      "sourceAccept": [
-      "Where are you going to?",
-      "Where do you travel?"
+      "Where are you going?",
+      "Where are you travelling?",
+      "Where are you traveling?"
      ],
      "words": [
       "w-wohin",
@@ -688,11 +702,12 @@
      "source": "Where are you going tomorrow?",
      "targetAccept": [
       "Wohin fahren Sie morgen?",
-      "Wohin fahrt ihr morgen?",
-      "Morgen fährst du wohin?"
+      "Wohin fahrt ihr morgen?"
      ],
      "sourceAccept": [
       "Where are you traveling to tomorrow?",
+      "Where are you travelling tomorrow?",
+      "Where are you travelling to tomorrow?",
       "Where will you go tomorrow?"
      ],
      "words": [
@@ -733,7 +748,8 @@
      "target": "Der Zug fährt ab Gleis zwei.",
      "source": "The train departs from platform two.",
      "targetAccept": [
-      "Ab Gleis zwei fährt der Zug."
+      "Ab Gleis zwei fährt der Zug.",
+      "Der Zug fährt von Gleis zwei ab."
      ],
      "sourceAccept": [
       "The train leaves from platform two.",
@@ -756,16 +772,16 @@
     },
     {
      "id": "u27-s08",
-     "target": "Fährt der Bus ab Gleis zehn?",
-     "source": "Does the bus depart from platform ten?",
+     "target": "Fährt der Zug ab Gleis zehn?",
+     "source": "Does the train depart from platform ten?",
      "targetAccept": [
-      "Fährt der Bus von Gleis zehn ab?"
+      "Fährt der Zug von Gleis zehn ab?"
      ],
      "sourceAccept": [
-      "Is the bus leaving from platform ten?"
+      "Is the train leaving from platform ten?"
      ],
      "words": [
-      "w-bus",
+      "w-zug",
       "w-fahren",
       "w-ab",
       "w-gleis",
@@ -803,12 +819,10 @@
      "id": "u27-s10",
      "target": "Müssen wir umsteigen?",
      "source": "Do we have to change trains?",
-     "targetAccept": [
-      "Müssen wir transferieren?"
-     ],
      "sourceAccept": [
       "Do we need to transfer?",
-      "Must we change?"
+      "Do we need to change trains?",
+      "Must we change trains?"
      ],
      "words": [
       "w-muessen",
@@ -892,19 +906,19 @@
     },
     {
      "id": "u27-s15",
-     "target": "Wir fahren einfach nach Berlin.",
-     "source": "We are traveling one-way to Berlin.",
-     "targetAccept": [
-      "Einfach nach Berlin fahren wir."
-     ],
+     "target": "Wir fahren hin und nicht zurück.",
+     "source": "We are going one way and not coming back.",
      "sourceAccept": [
-      "We travel single to Berlin."
+      "We are traveling one way and not coming back.",
+      "We are travelling one way and not coming back."
      ],
      "words": [
       "w-wir",
       "w-fahren",
-      "w-einfach",
-      "w-nach"
+      "w-hin",
+      "w-und",
+      "w-nicht",
+      "w-zurueck"
      ]
     },
     {
@@ -1089,9 +1103,9 @@
     {
      "id": "w-denn",
      "target": "denn",
-     "source": "then",
+     "source": "so (in questions)",
      "sourceAccept": [
-      "so"
+      "then (in questions)"
      ],
      "pos": "adv"
     }
@@ -1123,7 +1137,7 @@
       "Am Wochenende ist die Party."
      ],
      "sourceAccept": [
-      "The party is this weekend."
+      "The party is at the weekend."
      ],
      "words": [
       "w-party",
@@ -1169,13 +1183,14 @@
     {
      "id": "u28-s04",
      "target": "Kommst du am Wochenende mit?",
-     "source": "Are you coming along on the weekend?",
+     "source": "Are you coming along this weekend?",
      "targetAccept": [
       "Kommen Sie am Wochenende mit?",
       "Kommt ihr am Wochenende mit?"
      ],
      "sourceAccept": [
-      "Do you come along on the weekend?"
+      "Are you coming along on the weekend?",
+      "Are you coming along at the weekend?"
      ],
      "words": [
       "w-mitkommen",
@@ -1187,14 +1202,15 @@
     {
      "id": "u28-s05",
      "target": "Ja, ich komme gern mit!",
-     "source": "Yes, I am gladly coming along!",
+     "source": "Yes, I'd love to come along!",
      "targetAccept": [
-      "Ja, ich komme gerne mit!",
-      "Ich komme gern mit, ja!"
+      "Ja, ich komme gerne mit!"
      ],
      "sourceAccept": [
       "Yes, I would love to come along!",
-      "Yes, I like to come along."
+      "Yes, I'd be happy to come along!",
+      "Yes, I would be happy to come along!",
+      "Yes, I'll gladly come along!"
      ],
      "words": [
       "w-ja",
@@ -1212,7 +1228,7 @@
       "Bringt ihr Brot mit?"
      ],
      "sourceAccept": [
-      "Do you bring bread along?"
+      "Are you bringing bread?"
      ],
      "words": [
       "w-mitbringen",
@@ -1235,7 +1251,8 @@
       "Kaffee bringe ich mit."
      ],
      "sourceAccept": [
-      "I bring coffee along."
+      "I'm bringing coffee.",
+      "I am bringing coffee."
      ],
      "words": [
       "w-ich",
@@ -1263,13 +1280,14 @@
     {
      "id": "u28-s09",
      "target": "Toll, wir feiern heute.",
-     "source": "Great, we are celebrating today.",
+     "source": "Great, we're celebrating today.",
      "targetAccept": [
       "Toll, heute feiern wir."
      ],
      "sourceAccept": [
-      "Brilliant, we party today.",
-      "Great, we celebrate today."
+      "Great, we are celebrating today.",
+      "Great, we're partying today.",
+      "Great, we are partying today."
      ],
      "words": [
       "w-toll",
@@ -1281,14 +1299,13 @@
     {
      "id": "u28-s10",
      "target": "Ich habe leider keine Lust.",
-     "source": "Unfortunately I have no desire.",
+     "source": "Unfortunately, I don't feel like it.",
      "targetAccept": [
       "Leider habe ich keine Lust."
      ],
      "sourceAccept": [
-      "I don't feel like it unfortunately.",
       "Unfortunately I don't feel like it.",
-      "I have no desire unfortunately."
+      "I don't feel like it, unfortunately."
      ],
      "words": [
       "w-ich",
@@ -1314,7 +1331,7 @@
       "Habt ihr Lust?"
      ],
      "sourceAccept": [
-      "Do you have desire?"
+      "Do you want to?"
      ],
      "words": [
       "w-haben",
@@ -1325,13 +1342,14 @@
     {
      "id": "u28-s12",
      "target": "Schade, ich arbeite am Wochenende.",
-     "source": "Too bad, I work on the weekend.",
+     "source": "That's a shame. I'm working this weekend.",
      "targetAccept": [
       "Schade, am Wochenende arbeite ich."
      ],
      "sourceAccept": [
-      "A pity, I am working on the weekend.",
-      "It is a shame, I work on the weekend."
+      "That's a shame. I am working this weekend.",
+      "Too bad, I'm working this weekend.",
+      "Too bad, I am working this weekend."
      ],
      "words": [
       "w-schade",
@@ -1362,12 +1380,11 @@
      "id": "u28-s14",
      "target": "Wo feiern wir denn?",
      "source": "So, where are we celebrating?",
-     "targetAccept": [
-      "Wo feiern wir?"
-     ],
      "sourceAccept": [
       "Where do we celebrate then?",
-      "Where are we partying then?"
+      "Where are we celebrating, then?",
+      "Where are we partying then?",
+      "So, where are we partying?"
      ],
      "words": [
       "w-wo",
@@ -1378,7 +1395,7 @@
      "cloze": {
       "answer": "denn",
       "distractors": [
-       "dann",
+       "nicht",
        "den"
       ]
      }
@@ -1386,14 +1403,15 @@
     {
      "id": "u28-s15",
      "target": "Kommst du denn nicht mit?",
-     "source": "Are you not coming along then?",
+     "source": "So, aren't you coming along?",
      "targetAccept": [
       "Kommen Sie denn nicht mit?",
       "Kommt ihr denn nicht mit?"
      ],
      "sourceAccept": [
-      "So are you not coming along?",
-      "Do you not come along then?"
+      "So, are you not coming along?",
+      "Aren't you coming along, then?",
+      "Are you not coming along, then?"
      ],
      "words": [
       "w-mitkommen",
@@ -1586,8 +1604,11 @@
      "target": "Wie ist dein Vorname?",
      "source": "What is your first name?",
      "targetAccept": [
+      "Was ist dein Vorname?",
       "Wie ist Ihr Vorname?",
-      "Wie ist euer Vorname?"
+      "Was ist Ihr Vorname?",
+      "Wie ist euer Vorname?",
+      "Was ist euer Vorname?"
      ],
      "sourceAccept": [
       "What's your first name?",
@@ -1605,8 +1626,11 @@
      "target": "Wie ist dein Familienname?",
      "source": "What is your surname?",
      "targetAccept": [
+      "Was ist dein Familienname?",
       "Wie ist Ihr Familienname?",
-      "Wie ist euer Familienname?"
+      "Was ist Ihr Familienname?",
+      "Wie ist euer Familienname?",
+      "Was ist euer Familienname?"
      ],
      "sourceAccept": [
       "What's your last name?",
@@ -1626,7 +1650,9 @@
      "targetAccept": [
       "Schreib die Adresse hier.",
       "Schreibt die Adresse hier.",
-      "Die Adresse schreiben Sie hier."
+      "Schreiben Sie hier die Adresse.",
+      "Schreib hier die Adresse.",
+      "Schreibt hier die Adresse."
      ],
      "sourceAccept": [
       "Write the address down here."
@@ -1670,9 +1696,6 @@
      "targetAccept": [
       "Zehn ist die Hausnummer."
      ],
-     "sourceAccept": [
-      "The number of the house is ten."
-     ],
      "words": [
       "w-hausnummer",
       "w-sein",
@@ -1688,6 +1711,7 @@
      ],
      "sourceAccept": [
       "What is the postcode?",
+      "What's the postal code?",
       "What's the zip code?"
      ],
      "words": [
@@ -1707,12 +1731,6 @@
      "id": "u29-s08",
      "target": "Das Land ist Deutschland.",
      "source": "The country is Germany.",
-     "targetAccept": [
-      "Deutschland ist das Land."
-     ],
-     "sourceAccept": [
-      "Germany is the country."
-     ],
      "words": [
       "w-land",
       "w-sein",
@@ -1726,9 +1744,6 @@
      "targetAccept": [
       "Wo sind Sie geboren?",
       "Wo seid ihr geboren?"
-     ],
-     "sourceAccept": [
-      "Where are you born?"
      ],
      "words": [
       "w-wo",
@@ -1750,9 +1765,6 @@
      "source": "I was born in Berlin.",
      "targetAccept": [
       "In Berlin bin ich geboren."
-     ],
-     "sourceAccept": [
-      "I am born in Berlin."
      ],
      "words": [
       "w-ich",
@@ -1872,7 +1884,7 @@
       "Für Leon ist die Nachricht."
      ],
      "sourceAccept": [
-      "The message is to Leon."
+      "The message is intended for Leon."
      ],
      "words": [
       "w-nachricht",
@@ -1925,9 +1937,6 @@
      "id": "u29-s20",
      "target": "Deutschland ist ein Land.",
      "source": "Germany is a country.",
-     "targetAccept": [
-      "Ein Land ist Deutschland."
-     ],
      "words": [
       "w-deutschland",
       "w-sein",
@@ -1943,7 +1952,7 @@
    "canDo": "Handle a short meet-and-travel scenario",
    "tip": {
     "title": "First this, then that",
-    "body": "When you put a time word like **zuerst** (first) or **dann** (then) at the start of your sentence, the verb must stay in position two.\n\nThat means the person doing the action moves to position three, directly after the verb!",
+    "body": "When you put a time word like **zuerst** (first) or **dann** (then) at the start of your sentence, the finite verb must stay in position two.\n\nIn these basic sentences, the subject therefore comes after the verb: **Zuerst kaufe ich ...**",
     "examples": [
      {
       "target": "Zuerst kaufe ich das Ticket.",
@@ -2058,14 +2067,15 @@
     {
      "id": "u30-s01",
      "target": "Zuerst kaufe ich das Ticket.",
-     "source": "First I am buying the ticket.",
+     "source": "First, I buy the ticket.",
      "targetAccept": [
-      "Ich kaufe das Ticket zuerst.",
-      "Zuerst kaufe ich das Ticket ein."
+      "Ich kaufe zuerst das Ticket.",
+      "Ich kaufe das Ticket zuerst."
      ],
      "sourceAccept": [
       "First I buy the ticket.",
-      "At first I buy the ticket."
+      "First, I'm buying the ticket.",
+      "First, I am buying the ticket."
      ],
      "words": [
       "w-zuerst",
@@ -2096,14 +2106,17 @@
     {
      "id": "u30-s03",
      "target": "Später essen wir Frühstück.",
-     "source": "Later we are eating breakfast.",
+     "source": "Later, we have breakfast.",
      "targetAccept": [
       "Wir essen später Frühstück.",
       "Später frühstücken wir."
      ],
      "sourceAccept": [
+      "Later we have breakfast.",
+      "Later, we eat breakfast.",
       "Later we eat breakfast.",
-      "We eat breakfast later."
+      "We eat breakfast later.",
+      "We have breakfast later."
      ],
      "words": [
       "w-spaeter",
@@ -2131,12 +2144,14 @@
     {
      "id": "u30-s05",
      "target": "Endlich sind wir in Berlin!",
-     "source": "Finally we are in Berlin!",
+     "source": "Finally, we are in Berlin!",
      "targetAccept": [
       "Wir sind endlich in Berlin!"
      ],
      "sourceAccept": [
+      "Finally we are in Berlin!",
       "We are finally in Berlin!",
+      "At last, we are in Berlin!",
       "At last we are in Berlin!"
      ],
      "words": [
@@ -2185,9 +2200,6 @@
       "Wissen Sie die Nummer?",
       "Wisst ihr die Nummer?"
      ],
-     "sourceAccept": [
-      "Are you aware of the number?"
-     ],
      "words": [
       "w-wissen",
       "w-du",
@@ -2201,9 +2213,6 @@
      "targetAccept": [
       "Was weißt du?",
       "Was wisst ihr?"
-     ],
-     "sourceAccept": [
-      "What do you know about it?"
      ],
      "words": [
       "w-was",
@@ -2287,9 +2296,6 @@
      "id": "u30-s12",
      "target": "Ich antworte nicht.",
      "source": "I am not answering.",
-     "targetAccept": [
-      "Ich antworte dir nicht."
-     ],
      "sourceAccept": [
       "I do not answer.",
       "I don't reply.",
@@ -2354,7 +2360,9 @@
       "Wir arbeiten zuerst, dann feiern wir."
      ],
      "sourceAccept": [
-      "At first we work, then we party."
+      "First we work, then we party.",
+      "First, we work, then we celebrate.",
+      "First, we work, then we party."
      ],
      "words": [
       "w-zuerst",
@@ -2374,14 +2382,14 @@
     {
      "id": "u30-s16",
      "target": "Weißt du das genau?",
-     "source": "Do you know that exactly?",
+     "source": "Do you know that for sure?",
      "targetAccept": [
       "Wissen Sie das genau?",
       "Wisst ihr das genau?"
      ],
      "sourceAccept": [
-      "Are you exactly sure?",
-      "Do you know that for sure?"
+      "Are you sure about that?",
+      "Are you certain about that?"
      ],
      "words": [
       "w-wissen",
@@ -2393,14 +2401,13 @@
     {
      "id": "u30-s17",
      "target": "Geben Sie mir das später?",
-     "source": "Are you giving me that later?",
+     "source": "Will you give me that later?",
      "targetAccept": [
       "Gibst du mir das später?",
       "Gebt ihr mir das später?"
      ],
      "sourceAccept": [
-      "Do you give me that later?",
-      "Will you give me that later?",
+      "Are you giving me that later?",
       "Are you giving that to me later?"
      ],
      "words": [
@@ -2414,14 +2421,15 @@
     {
      "id": "u30-s18",
      "target": "Endlich essen wir!",
-     "source": "Finally we are eating!",
+     "source": "Finally, we're eating!",
      "targetAccept": [
       "Wir essen endlich!"
      ],
      "sourceAccept": [
-      "Finally we eat!",
+      "Finally, we are eating!",
+      "Finally we are eating!",
       "We are finally eating!",
-      "We finally eat!"
+      "At last, we're eating!"
      ],
      "words": [
       "w-endlich",
