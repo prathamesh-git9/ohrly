@@ -1,0 +1,165 @@
+{
+  "level": "A1",
+  "reading": [
+    {
+      "id": "en-de-A1-r1",
+      "kind": "reading",
+      "title": "Eine E-Mail von Mara",
+      "text": "Hallo Leon,\n\nich bin jetzt in Berlin. Die Wohnung ist klein, aber die Küche ist groß. Morgens arbeite ich, und abends lerne ich Deutsch.\n\nAm Wochenende feiern wir eine Party. Kommst du mit? Du kannst auch einen Freund mitbringen. Die Party fängt um zehn Uhr an.\n\nBitte antworte bald!\nMara",
+      "questions": [
+        { "q": "Where is Mara now?", "options": ["In Berlin", "In England", "At the station"], "answer": "In Berlin" },
+        { "q": "What is big in Mara's flat?", "options": ["The kitchen", "The bedroom", "The bathroom"], "answer": "The kitchen" },
+        { "q": "What does Mara do in the evenings?", "options": ["She learns German", "She works", "She goes running"], "answer": "She learns German" },
+        { "q": "When is the party?", "options": ["At the weekend", "On Monday", "This evening"], "answer": "At the weekend" },
+        { "q": "What can Leon do?", "options": ["Bring a friend", "Cook the food", "Sleep at Mara's flat"], "answer": "Bring a friend" }
+      ]
+    },
+    {
+      "id": "en-de-A1-r2",
+      "kind": "reading",
+      "title": "Am Bahnhof",
+      "text": "Der Zug nach Berlin fährt heute nicht von Gleis zwei ab. Bitte gehen Sie zu Gleis zehn. Der Zug fährt pünktlich ab.",
+      "questions": [
+        { "q": "Which platform does the Berlin train leave from today?", "options": ["Platform 10", "Platform 2", "Platform 12"], "answer": "Platform 10" },
+        { "q": "What does the notice say about the time?", "options": ["The train leaves on time", "The train is one hour late", "The train does not run today"], "answer": "The train leaves on time" }
+      ]
+    },
+    {
+      "id": "en-de-A1-r3",
+      "kind": "reading",
+      "title": "Im Hotel",
+      "text": "Frühstück gibt es jeden Tag bis zehn Uhr im Restaurant. Das Bad ist im Zimmer. Sie können hier leider nicht parken.",
+      "questions": [
+        { "q": "Until when can you have breakfast?", "options": ["Until 10 o'clock", "Until 2 o'clock", "Until 12 o'clock"], "answer": "Until 10 o'clock" },
+        { "q": "What can you not do at this hotel?", "options": ["Park a car", "Eat breakfast", "Use a bathroom"], "answer": "Park a car" }
+      ]
+    },
+    {
+      "id": "en-de-A1-r4",
+      "kind": "reading",
+      "title": "Heute im Supermarkt",
+      "text": "Heute im Supermarkt: Äpfel, Bananen und Brot kosten zwei Euro. Der Saft kostet einen Euro. Milch gibt es heute leider nicht.",
+      "questions": [
+        { "q": "How much is the juice today?", "options": ["One euro", "Two euros", "Ten euros"], "answer": "One euro" },
+        { "q": "What can you not buy today?", "options": ["Milk", "Bread", "Bananas"], "answer": "Milk" }
+      ]
+    },
+    {
+      "id": "en-de-A1-r5",
+      "kind": "reading",
+      "title": "Eine Nachricht vom Arzt",
+      "text": "Der Termin ist am Dienstag um zehn Uhr, nicht am Montag. Bitte kommen Sie pünktlich und bringen Sie den Pass mit.",
+      "questions": [
+        { "q": "When is the appointment?", "options": ["Tuesday at 10 o'clock", "Monday at 10 o'clock", "Tuesday at 2 o'clock"], "answer": "Tuesday at 10 o'clock" },
+        { "q": "What must you bring?", "options": ["Your passport", "Your key", "Your ticket"], "answer": "Your passport" }
+      ]
+    },
+    {
+      "id": "en-de-A1-r6",
+      "kind": "reading",
+      "title": "Wohnung in Berlin",
+      "text": "Wohnung in Berlin: zwei Zimmer, eine Küche und ein Bad. Die Wohnung ist nahe am Bahnhof, und die Haltestelle ist auch nahe. Telefon: null zwei zwei zehn.",
+      "questions": [
+        { "q": "How many rooms does the flat have?", "options": ["Two", "One", "Ten"], "answer": "Two" },
+        { "q": "What is near the flat?", "options": ["The station", "The cinema", "The bank"], "answer": "The station" }
+      ]
+    }
+  ],
+  "listening": [
+    {
+      "id": "en-de-A1-l1",
+      "kind": "listening",
+      "title": "Eine Nachricht von Leon",
+      "text": "Hallo Mara, hier ist Leon. Ich bin jetzt am Bahnhof. Mein Zug ist leider nicht pünktlich. Ich komme heute abends um zehn Uhr an. Morgen gehen wir zusammen zum Konzert. Ich habe schon zwei Tickets gekauft. Bis morgen!",
+      "questions": [
+        { "q": "Where is Leon?", "options": ["At the station", "At home", "At the hotel"], "answer": "At the station" },
+        { "q": "What is the problem?", "options": ["His train is late", "He has no ticket", "He is ill"], "answer": "His train is late" },
+        { "q": "When does Leon arrive?", "options": ["This evening at 10", "This morning at 10", "Tomorrow at 2"], "answer": "This evening at 10" },
+        { "q": "What will they do tomorrow?", "options": ["Go to a concert", "Go to the cinema", "Go swimming"], "answer": "Go to a concert" },
+        { "q": "What has Leon already done?", "options": ["Bought two tickets", "Booked a hotel", "Called the doctor"], "answer": "Bought two tickets" }
+      ]
+    },
+    {
+      "id": "en-de-A1-l2",
+      "kind": "listening",
+      "title": "Eine Durchsage am Bahnhof",
+      "text": "Der Zug nach Berlin fährt heute von Gleis zwei ab, nicht von Gleis zehn. Der Zug fährt pünktlich. Bitte steigen Sie jetzt ein. Es dauert zwei Stunden bis Berlin.",
+      "questions": [
+        { "q": "Which platform does the train leave from?", "options": ["Platform 2", "Platform 10", "Platform 12"], "answer": "Platform 2" },
+        { "q": "How long is the journey to Berlin?", "options": ["Two hours", "Ten hours", "One hour"], "answer": "Two hours" },
+        { "q": "What should passengers do now?", "options": ["Get on the train", "Buy a ticket", "Wait at the counter"], "answer": "Get on the train" }
+      ]
+    },
+    {
+      "id": "en-de-A1-l3",
+      "kind": "listening",
+      "title": "Ein Anruf vom Hotel",
+      "text": "Guten Tag, hier ist das Hotel am Bahnhof. Sie haben ein Einzelzimmer für zwei Nächte reserviert. Leider haben wir heute kein Einzelzimmer frei. Sie bekommen ein Doppelzimmer. Das Doppelzimmer kostet auch hundert Euro.",
+      "questions": [
+        { "q": "How many nights is the booking for?", "options": ["Two", "One", "Ten"], "answer": "Two" },
+        { "q": "Which room does the guest get?", "options": ["A double room", "A single room", "A flat"], "answer": "A double room" },
+        { "q": "How much does the room cost?", "options": ["100 euros", "20 euros", "200 euros"], "answer": "100 euros" }
+      ]
+    },
+    {
+      "id": "en-de-A1-l4",
+      "kind": "listening",
+      "title": "Das Wetter",
+      "text": "Und jetzt das Wetter für Berlin. Heute ist es kalt und bewölkt. Abends regnet es. Morgen scheint die Sonne, und es ist warm.",
+      "questions": [
+        { "q": "What is the weather like today?", "options": ["Cold and cloudy", "Warm and sunny", "Warm and rainy"], "answer": "Cold and cloudy" },
+        { "q": "What is the weather like tomorrow?", "options": ["Sunny and warm", "Rainy and cold", "Cloudy and cold"], "answer": "Sunny and warm" }
+      ]
+    },
+    {
+      "id": "en-de-A1-l5",
+      "kind": "listening",
+      "title": "Mara ist krank",
+      "text": "Hallo, hier ist Mara. Ich bin leider krank. Mein Kopf tut weh, und ich bin müde. Ich kann heute nicht zur Party kommen. Morgen gehe ich zum Arzt. Schade!",
+      "questions": [
+        { "q": "What is wrong with Mara?", "options": ["She has a headache", "She has stomach ache", "She has hurt her foot"], "answer": "She has a headache" },
+        { "q": "What will Mara do tomorrow?", "options": ["Go to the doctor", "Go to the party", "Go to work"], "answer": "Go to the doctor" }
+      ]
+    }
+  ],
+  "language": [
+    { "id": "en-de-A1-lang01", "text": "Ich ___ aus England.", "options": ["komme", "kommst", "kommt"], "answer": "komme" },
+    { "id": "en-de-A1-lang02", "text": "Wie ___ du?", "options": ["heißt", "heiße", "heißen"], "answer": "heißt" },
+    { "id": "en-de-A1-lang03", "text": "Ich möchte ___ Apfel, bitte.", "options": ["einen", "ein", "eine"], "answer": "einen" },
+    { "id": "en-de-A1-lang04", "text": "Das ist ___ Tasche.", "options": ["meine", "mein", "meinen"], "answer": "meine" },
+    { "id": "en-de-A1-lang05", "text": "Wir ___ heute arbeiten.", "options": ["müssen", "muss", "musst"], "answer": "müssen" },
+    { "id": "en-de-A1-lang06", "text": "Am Montag ___ ich nach Berlin.", "options": ["fahre", "fährst", "fahren"], "answer": "fahre" },
+    { "id": "en-de-A1-lang07", "text": "Der Zug ___ um zehn Uhr ab.", "options": ["fährt", "fahre", "fahren"], "answer": "fährt" },
+    { "id": "en-de-A1-lang08", "text": "Ich habe heute ___ Zeit.", "options": ["keine", "nicht", "kein"], "answer": "keine" },
+    { "id": "en-de-A1-lang09", "text": "Gestern ___ ich in Berlin gewesen.", "options": ["bin", "habe", "hat"], "answer": "bin" },
+    { "id": "en-de-A1-lang10", "text": "Kannst du gut ___?", "options": ["schwimmen", "schwimmst", "schwimmt"], "answer": "schwimmen" }
+  ],
+  "production": [
+    {
+      "id": "en-de-A1-write",
+      "kind": "writing",
+      "prompt": "Write a message of about 30 words to your friend Leon. Say that you are ill, that you cannot come to the party, and when you have time.",
+      "model": "Hallo Leon,\nleider bin ich krank. Mein Kopf tut weh. Ich kann heute nicht zur Party kommen. Hast du am Montag Zeit? Dann trinken wir zusammen Kaffee.\nViele Grüße\nMara",
+      "checklist": [
+        "I said that I am ill.",
+        "I said that I cannot come to the party.",
+        "I suggested a day when I have time.",
+        "I started with a greeting and ended with my name.",
+        "The verb is the second idea in each sentence, as in \"Hast du am Montag Zeit?\" or \"Dann trinken wir...\"."
+      ]
+    },
+    {
+      "id": "en-de-A1-speak",
+      "kind": "speaking",
+      "prompt": "Introduce yourself out loud for about a minute: your name, where you come from, where you live, which languages you speak, and a hobby.",
+      "model": "Ich heiße Mara. Ich komme aus England, aber ich wohne jetzt in Berlin. Ich spreche Englisch und ein bisschen Deutsch. Mein Hobby ist Musik. Ich singe gern, und am Wochenende höre ich Musik.",
+      "checklist": [
+        "I gave my name and where I come from.",
+        "I said where I live.",
+        "I named the languages I speak.",
+        "I talked about a hobby with \"gern\".",
+        "I spoke in full sentences, without long pauses."
+      ]
+    }
+  ]
+}

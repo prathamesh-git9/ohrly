@@ -20,7 +20,8 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
 
   // A lesson that generates too few exercises is a content bug the schema alone can't see.
   if (errors.length === 0) {
-    for (const node of buildPath(course)) {
+    // Exams are not generated lessons; the validator checks their content directly.
+    for (const node of buildPath(course).filter((n) => n.kind !== 'exam')) {
       for (const seed of [1, 2, 3]) {
         for (const opts of [
           { speakAvailable: true, listenAvailable: true },
