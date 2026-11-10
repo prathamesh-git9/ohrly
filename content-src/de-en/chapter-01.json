@@ -164,7 +164,7 @@
       },
       "words": [
         { "id": "w-letter", "target": "letter", "source": "der Buchstabe", "targetAccept": ["the letter", "a letter"], "sourceAccept": ["Buchstabe", "ein Buchstabe"], "forms": ["letters"], "pos": "noun" },
-        { "id": "w-spell", "target": "spell", "source": "buchstabieren", "sourceAccept": ["buchstabiere", "buchstabiert", "buchstabieren Sie"], "forms": ["spells", "spelling", "spelled", "spelt"], "pos": "verb" },
+        { "id": "w-spell", "target": "spell", "source": "buchstabieren", "targetAccept": ["spelt"], "sourceAccept": ["buchstabiere", "buchstabiert", "buchstabieren Sie"], "forms": ["spells", "spelling", "spelled"], "pos": "verb" },
         { "id": "w-repeat", "target": "repeat", "source": "wiederholen", "sourceAccept": ["wiederhole", "wiederholt", "wiederholen Sie"], "forms": ["repeats", "repeating", "repeated"], "pos": "verb" },
         { "id": "w-say", "target": "say", "source": "sagen", "sourceAccept": ["sage", "sag", "sagt", "sagen Sie"], "forms": ["says", "saying", "said"], "pos": "verb" },
         { "id": "w-slowly", "target": "slowly", "source": "langsam", "pos": "adv" },

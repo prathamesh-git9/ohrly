@@ -14,7 +14,7 @@
         "examples": [
           { "target": "I was busy yesterday.", "source": "Ich war gestern beschäftigt." },
           { "target": "Were you at home?", "source": "Warst du zu Hause?" },
-          { "target": "My parents were at the cinema.", "source": "Meine Eltern waren im Kino." }
+          { "target": "My parents were at the movie theater.", "source": "Meine Eltern waren im Kino." }
         ]
       },
       "words": [
@@ -25,7 +25,7 @@
         { "id": "w-busy", "target": "busy", "source": "beschäftigt", "pos": "adj" },
         { "id": "w-free", "target": "free", "source": "frei", "sourceAccept": ["kostenlos"], "pos": "adj" },
         { "id": "w-museum", "target": "museum", "source": "das Museum", "targetAccept": ["the museum", "a museum"], "sourceAccept": ["Museum", "ein Museum"], "forms": ["museums"], "pos": "noun", "emoji": "🏛️" },
-        { "id": "w-cinema", "target": "cinema", "source": "das Kino", "targetAccept": ["the cinema", "a cinema", "movie theater", "the movie theater", "a movie theater"], "sourceAccept": ["Kino", "ein Kino"], "forms": ["cinemas", "movie theaters"], "pos": "noun", "emoji": "🍿" },
+        { "id": "w-cinema", "target": "movie theater", "source": "das Kino", "targetAccept": ["the movie theater", "a movie theater", "cinema", "the cinema", "a cinema"], "sourceAccept": ["Kino", "ein Kino"], "forms": ["movie theaters", "cinemas"], "pos": "noun", "emoji": "🍿" },
         { "id": "w-party", "target": "party", "source": "die Party", "targetAccept": ["the party", "a party"], "sourceAccept": ["Party", "eine Party"], "forms": ["parties"], "pos": "noun", "emoji": "🎉" },
         { "id": "w-late", "target": "late", "source": "spät", "sourceAccept": ["zu spät"], "pos": "adj" }
       ],
@@ -33,10 +33,10 @@
         { "id": "u26-s01", "target": "I was busy yesterday.", "source": "Ich war gestern beschäftigt.", "sourceAccept": ["Gestern war ich beschäftigt."], "words": ["w-i", "w-was", "w-busy", "w-yesterday"], "cloze": { "answer": "was", "distractors": ["were", "am"] } },
         { "id": "u26-s02", "target": "Were you at home last night?", "source": "Warst du gestern Abend zu Hause?", "sourceAccept": ["Wart ihr gestern Abend zu Hause?", "Waren Sie gestern Abend zu Hause?", "Warst du letzte Nacht zu Hause?", "Wart ihr letzte Nacht zu Hause?", "Waren Sie letzte Nacht zu Hause?"], "words": ["w-were", "w-you", "w-at", "w-home", "w-last-night"], "cloze": { "answer": "Were", "distractors": ["Was", "Are"] } },
         { "id": "u26-s03", "target": "No, I was at work.", "source": "Nein, ich war bei der Arbeit.", "words": ["w-no", "w-i", "w-was", "w-at", "w-work"] },
-        { "id": "u26-s04", "target": "My parents were at the cinema.", "source": "Meine Eltern waren im Kino.", "targetAccept": ["My parents were at the movie theater."], "words": ["w-my", "w-parents", "w-were", "w-at", "w-cinema"] },
+        { "id": "u26-s04", "target": "My parents were at the movie theater.", "source": "Meine Eltern waren im Kino.", "targetAccept": ["My parents were at the cinema."], "words": ["w-my", "w-parents", "w-were", "w-at", "w-cinema"] },
         { "id": "u26-s05", "target": "The museum was free yesterday.", "source": "Das Museum war gestern kostenlos.", "sourceAccept": ["Gestern war das Museum kostenlos."], "words": ["w-museum", "w-was", "w-free", "w-yesterday"], "cloze": { "answer": "free", "distractors": ["busy", "late"] } },
         { "id": "u26-s06", "target": "The party was at the hotel.", "source": "Die Party war im Hotel.", "words": ["w-party", "w-was", "w-at", "w-hotel"] },
-        { "id": "u26-s07", "target": "Was the cinema busy last night?", "source": "War das Kino gestern Abend gut besucht?", "sourceAccept": ["War das Kino gestern Abend voll?", "War das Kino letzte Nacht gut besucht?", "War das Kino letzte Nacht voll?"], "targetAccept": ["Was the movie theater busy last night?"], "words": ["w-was", "w-cinema", "w-busy", "w-last-night"], "cloze": { "answer": "busy", "distractors": ["free", "friendly"] } },
+        { "id": "u26-s07", "target": "Was the movie theater busy last night?", "source": "War das Kino gestern Abend gut besucht?", "sourceAccept": ["War das Kino gestern Abend voll?", "War das Kino letzte Nacht gut besucht?", "War das Kino letzte Nacht voll?"], "targetAccept": ["Was the cinema busy last night?"], "words": ["w-was", "w-cinema", "w-busy", "w-last-night"], "cloze": { "answer": "busy", "distractors": ["free", "friendly"] } },
         { "id": "u26-s08", "target": "Yes, it was really busy.", "source": "Ja, es war wirklich gut besucht.", "sourceAccept": ["Ja, es war wirklich voll."], "words": ["w-yes", "w-it", "w-was", "w-really", "w-busy"] },
         { "id": "u26-s09", "target": "I was late for school.", "source": "Ich kam zu spät zur Schule.", "sourceAccept": ["Ich war zu spät für die Schule."], "words": ["w-i", "w-was", "w-late", "w-for", "w-school"], "cloze": { "answer": "late", "distractors": ["free", "tired"] } },
         { "id": "u26-s10", "target": "My friend was at the museum.", "source": "Mein Freund war im Museum.", "sourceAccept": ["Meine Freundin war im Museum."], "words": ["w-my", "w-friend", "w-was", "w-at", "w-museum"] },
@@ -47,7 +47,7 @@
         { "id": "u26-s15", "target": "The party was last night.", "source": "Die Party war gestern Abend.", "sourceAccept": ["Die Party war letzte Nacht."], "words": ["w-party", "w-was", "w-last-night"] },
         { "id": "u26-s16", "target": "My sister was late for work.", "source": "Meine Schwester kam zu spät zur Arbeit.", "sourceAccept": ["Meine Schwester war zu spät für die Arbeit."], "words": ["w-my", "w-sister", "w-was", "w-late", "w-for", "w-work"] },
         { "id": "u26-s17", "target": "Were you free last night?", "source": "Hattest du gestern Abend frei?", "sourceAccept": ["Hattet ihr gestern Abend frei?", "Hatten Sie gestern Abend frei?", "Hattest du letzte Nacht frei?", "Hattet ihr letzte Nacht frei?", "Hatten Sie letzte Nacht frei?"], "words": ["w-were", "w-you", "w-free", "w-last-night"] },
-        { "id": "u26-s18", "target": "Yes, I was at the cinema.", "source": "Ja, ich war im Kino.", "targetAccept": ["Yes, I was at the movie theater."], "words": ["w-yes", "w-i", "w-was", "w-at", "w-cinema"] }
+        { "id": "u26-s18", "target": "Yes, I was at the movie theater.", "source": "Ja, ich war im Kino.", "targetAccept": ["Yes, I was at the cinema."], "words": ["w-yes", "w-i", "w-was", "w-at", "w-cinema"] }
       ]
     },
     {
@@ -65,7 +65,7 @@
       },
       "words": [
         { "id": "w-visit", "target": "visit", "source": "besuchen", "sourceAccept": ["besuche", "besuchst", "besucht"], "forms": ["visits", "visiting", "visited"], "pos": "verb" },
-        { "id": "w-travel", "target": "travel", "source": "reisen", "sourceAccept": ["reise", "reist"], "forms": ["travels", "travelling", "travelled", "traveling", "traveled"], "pos": "verb" },
+        { "id": "w-travel", "target": "travel", "source": "reisen", "sourceAccept": ["reise", "reist"], "forms": ["travels", "traveling", "traveled", "travelling", "travelled"], "pos": "verb" },
         { "id": "w-clean", "target": "clean", "source": "putzen", "sourceAccept": ["saubermachen", "putze", "putzt"], "forms": ["cleans", "cleaning", "cleaned"], "pos": "verb" },
         { "id": "w-call", "target": "call", "source": "anrufen", "sourceAccept": ["rufe an", "rufst an", "ruft an"], "forms": ["calls", "calling", "called"], "pos": "verb" },
         { "id": "w-meet", "target": "meet", "source": "treffen", "sourceAccept": ["treffe", "triffst", "trifft"], "forms": ["meets", "meeting", "met"], "pos": "verb" },
@@ -75,23 +75,23 @@
       ],
       "sentences": [
         { "id": "u27-s01", "target": "I visited the museum yesterday.", "source": "Ich habe gestern das Museum besucht.", "sourceAccept": ["Gestern habe ich das Museum besucht."], "words": ["w-i", "w-visit", "w-museum", "w-yesterday"], "cloze": { "answer": "visited", "distractors": ["visit", "visiting"] } },
-        { "id": "u27-s02", "target": "Did you travel to London?", "source": "Bist du nach London gereist?", "sourceAccept": ["Seid ihr nach London gereist?", "Sind Sie nach London gereist?"], "words": ["w-do", "w-you", "w-travel", "w-to"], "cloze": { "answer": "travel", "distractors": ["travelled", "travelling"] } },
-        { "id": "u27-s03", "target": "No, I travelled to Berlin.", "source": "Nein, ich bin nach Berlin gereist.", "targetAccept": ["No, I traveled to Berlin."], "words": ["w-no", "w-i", "w-travel", "w-to"] },
+        { "id": "u27-s02", "target": "Did you travel to London?", "source": "Bist du nach London gereist?", "sourceAccept": ["Seid ihr nach London gereist?", "Sind Sie nach London gereist?"], "words": ["w-do", "w-you", "w-travel", "w-to"], "cloze": { "answer": "travel", "distractors": ["traveled", "traveling"] } },
+        { "id": "u27-s03", "target": "No, I traveled to Berlin.", "source": "Nein, ich bin nach Berlin gereist.", "targetAccept": ["No, I travelled to Berlin."], "words": ["w-no", "w-i", "w-travel", "w-to"] },
         { "id": "u27-s04", "target": "I cleaned the kitchen last night.", "source": "Ich habe gestern Abend die Küche geputzt.", "sourceAccept": ["Ich habe letzte Nacht die Küche geputzt.", "Gestern Abend habe ich die Küche geputzt.", "Letzte Nacht habe ich die Küche geputzt."], "words": ["w-i", "w-clean", "w-kitchen", "w-last-night"], "cloze": { "answer": "cleaned", "distractors": ["clean", "cleans"] } },
         { "id": "u27-s05", "target": "Did you clean the bathroom?", "source": "Hast du das Badezimmer geputzt?", "sourceAccept": ["Habt ihr das Badezimmer geputzt?", "Haben Sie das Badezimmer geputzt?"], "words": ["w-do", "w-you", "w-clean", "w-bathroom"] },
         { "id": "u27-s06", "target": "She called my sister yesterday.", "source": "Sie hat gestern meine Schwester angerufen.", "sourceAccept": ["Gestern hat sie meine Schwester angerufen."], "words": ["w-she", "w-call", "w-my", "w-sister", "w-yesterday"] },
         { "id": "u27-s07", "target": "I called the hotel an hour ago.", "source": "Ich habe vor einer Stunde das Hotel angerufen.", "sourceAccept": ["Vor einer Stunde habe ich das Hotel angerufen.", "Ich habe vor einer Stunde beim Hotel angerufen.", "Vor einer Stunde habe ich beim Hotel angerufen."], "words": ["w-i", "w-call", "w-hotel", "w-an", "w-hour", "w-ago"], "cloze": { "answer": "called", "distractors": ["call", "calling"] } },
-        { "id": "u27-s08", "target": "I met my friend at the cinema.", "source": "Ich habe meinen Freund im Kino getroffen.", "sourceAccept": ["Ich habe meine Freundin im Kino getroffen."], "targetAccept": ["I met my friend at the movie theater."], "words": ["w-i", "w-meet", "w-my", "w-friend", "w-at", "w-cinema"] },
+        { "id": "u27-s08", "target": "I met my friend at the movie theater.", "source": "Ich habe meinen Freund im Kino getroffen.", "sourceAccept": ["Ich habe meine Freundin im Kino getroffen."], "targetAccept": ["I met my friend at the cinema."], "words": ["w-i", "w-meet", "w-my", "w-friend", "w-at", "w-cinema"] },
         { "id": "u27-s09", "target": "Did you meet the manager?", "source": "Hast du den Manager getroffen?", "sourceAccept": ["Habt ihr den Manager getroffen?", "Haben Sie den Manager getroffen?"], "words": ["w-do", "w-you", "w-meet", "w-manager"], "cloze": { "answer": "meet", "distractors": ["met", "meets"] } },
         { "id": "u27-s10", "target": "I saw my teacher at the station.", "source": "Ich habe meinen Lehrer am Bahnhof gesehen.", "sourceAccept": ["Ich habe meine Lehrerin am Bahnhof gesehen."], "words": ["w-i", "w-see", "w-my", "w-teacher", "w-at", "w-station"] },
-        { "id": "u27-s11", "target": "Did he see the film?", "source": "Hat er den Film gesehen?", "targetAccept": ["Did he see the movie?"], "words": ["w-do", "w-he", "w-see", "w-film"] },
+        { "id": "u27-s11", "target": "Did he see the movie?", "source": "Hat er den Film gesehen?", "targetAccept": ["Did he see the film?"], "words": ["w-do", "w-he", "w-see", "w-film"] },
         { "id": "u27-s12", "target": "I had lunch at the restaurant.", "source": "Ich habe im Restaurant zu Mittag gegessen.", "words": ["w-i", "w-had", "w-lunch", "w-at", "w-restaurant"], "cloze": { "answer": "had", "distractors": ["have", "has"] } },
         { "id": "u27-s13", "target": "My sister had a headache yesterday.", "source": "Meine Schwester hatte gestern Kopfschmerzen.", "words": ["w-my", "w-sister", "w-had", "w-a", "w-headache", "w-yesterday"] },
         { "id": "u27-s14", "target": "Ten minutes ago, I was at home.", "source": "Vor zehn Minuten war ich zu Hause.", "words": ["w-ten", "w-minute", "w-ago", "w-i", "w-was", "w-at", "w-home"] },
         { "id": "u27-s15", "target": "Did you visit the museum yesterday?", "source": "Hast du gestern das Museum besucht?", "sourceAccept": ["Habt ihr gestern das Museum besucht?", "Haben Sie gestern das Museum besucht?"], "words": ["w-do", "w-you", "w-visit", "w-museum", "w-yesterday"] },
         { "id": "u27-s16", "target": "Yes, I visited it yesterday.", "source": "Ja, ich habe es gestern besucht.", "sourceAccept": ["Ja, gestern habe ich es besucht."], "words": ["w-yes", "w-i", "w-visit", "w-it", "w-yesterday"] },
         { "id": "u27-s17", "target": "What did you do an hour ago?", "source": "Was hast du vor einer Stunde gemacht?", "sourceAccept": ["Was habt ihr vor einer Stunde gemacht?", "Was haben Sie vor einer Stunde gemacht?"], "words": ["w-what", "w-do", "w-you", "w-an", "w-hour", "w-ago"] },
-        { "id": "u27-s18", "target": "I saw a film an hour ago.", "source": "Ich habe vor einer Stunde einen Film gesehen.", "targetAccept": ["I saw a movie an hour ago."], "words": ["w-i", "w-see", "w-a", "w-film", "w-an", "w-hour", "w-ago"] }
+        { "id": "u27-s18", "target": "I saw a movie an hour ago.", "source": "Ich habe vor einer Stunde einen Film gesehen.", "targetAccept": ["I saw a film an hour ago."], "words": ["w-i", "w-see", "w-a", "w-film", "w-an", "w-hour", "w-ago"] }
       ]
     },
     {
@@ -112,8 +112,8 @@
         { "id": "w-train", "target": "train", "source": "der Zug", "targetAccept": ["the train", "a train"], "sourceAccept": ["Zug", "ein Zug"], "forms": ["trains"], "pos": "noun", "emoji": "🚆" },
         { "id": "w-bus", "target": "bus", "source": "der Bus", "targetAccept": ["the bus", "a bus"], "sourceAccept": ["Bus", "ein Bus"], "forms": ["buses"], "pos": "noun", "emoji": "🚌" },
         { "id": "w-platform", "target": "platform", "source": "das Gleis", "targetAccept": ["the platform", "a platform"], "sourceAccept": ["Gleis", "ein Gleis", "der Bahnsteig", "Bahnsteig", "ein Bahnsteig"], "forms": ["platforms"], "pos": "noun" },
-        { "id": "w-single", "target": "single", "source": "einfach", "targetAccept": ["one-way"], "sourceAccept": ["einfache Fahrt"], "pos": "adj" },
-        { "id": "w-return", "target": "return", "source": "Hin- und Rückfahrt", "targetAccept": ["round-trip"], "sourceAccept": ["Rückfahrt"], "pos": "adj" },
+        { "id": "w-single", "target": "one-way", "source": "einfach", "targetAccept": ["single"], "sourceAccept": ["einfache Fahrt"], "pos": "adj" },
+        { "id": "w-return", "target": "round-trip", "source": "Hin- und Rückfahrt", "targetAccept": ["return"], "sourceAccept": ["Rückfahrt"], "pos": "adj" },
         { "id": "w-leave", "target": "leave", "source": "abfahren", "sourceAccept": ["fahre ab", "fährst ab", "fährt ab"], "forms": ["leaves", "leaving", "left"], "pos": "verb" },
         { "id": "w-arrive", "target": "arrive", "source": "ankommen", "sourceAccept": ["komme an", "kommst an", "kommt an"], "forms": ["arrives", "arriving", "arrived"], "pos": "verb" },
         { "id": "w-journey", "target": "journey", "source": "die Reise", "targetAccept": ["the journey", "a journey"], "sourceAccept": ["Reise", "eine Reise", "die Fahrt", "Fahrt", "eine Fahrt"], "forms": ["journeys"], "pos": "noun" },
@@ -121,12 +121,12 @@
         { "id": "w-long", "target": "long", "source": "lang", "pos": "adj" }
       ],
       "sentences": [
-        { "id": "u28-s01", "target": "A single ticket to London, please.", "source": "Eine einfache Fahrkarte nach London, bitte.", "targetAccept": ["A single to London, please.", "A one-way ticket to London, please."], "sourceAccept": ["Ein einfaches Ticket nach London, bitte."], "words": ["w-a", "w-single", "w-ticket", "w-to", "w-please"], "cloze": { "answer": "to", "distractors": ["from", "at"] } },
+        { "id": "u28-s01", "target": "A one-way ticket to London, please.", "source": "Eine einfache Fahrkarte nach London, bitte.", "targetAccept": ["A single ticket to London, please.", "A single to London, please."], "sourceAccept": ["Ein einfaches Ticket nach London, bitte."], "words": ["w-a", "w-single", "w-ticket", "w-to", "w-please"], "cloze": { "answer": "to", "distractors": ["from", "at"] } },
         { "id": "u28-s02", "target": "The train is at platform ten.", "source": "Der Zug steht auf Gleis zehn.", "sourceAccept": ["Der Zug ist auf Gleis zehn.", "Der Zug steht am Bahnsteig zehn."], "words": ["w-train", "w-is", "w-at", "w-platform", "w-ten"] },
         { "id": "u28-s03", "target": "Does this bus go to the station?", "source": "Fährt dieser Bus zum Bahnhof?", "words": ["w-does", "w-this", "w-bus", "w-go", "w-to", "w-station"], "cloze": { "answer": "Does", "distractors": ["Do", "Is"] } },
         { "id": "u28-s04", "target": "Where is platform two?", "source": "Wo ist Gleis zwei?", "sourceAccept": ["Wo ist Bahnsteig zwei?"], "words": ["w-where", "w-is", "w-platform", "w-two"] },
-        { "id": "u28-s05", "target": "I need a return ticket.", "source": "Ich brauche eine Fahrkarte für die Hin- und Rückfahrt.", "targetAccept": ["I need a round-trip ticket."], "sourceAccept": ["Ich brauche ein Ticket für die Hin- und Rückfahrt.", "Ich brauche eine Rückfahrkarte."], "words": ["w-i", "w-need", "w-a", "w-return", "w-ticket"] },
-        { "id": "u28-s06", "target": "This is a return, not a single.", "source": "Das ist eine Hin- und Rückfahrt, keine einfache Fahrt.", "targetAccept": ["This is a round-trip ticket, not a one-way ticket."], "sourceAccept": ["Das ist eine Rückfahrkarte, keine einfache Fahrkarte."], "words": ["w-this", "w-is", "w-a", "w-return", "w-not", "w-single"], "cloze": { "answer": "return", "distractors": ["single", "ticket"] } },
+        { "id": "u28-s05", "target": "I need a round-trip ticket.", "source": "Ich brauche eine Fahrkarte für die Hin- und Rückfahrt.", "targetAccept": ["I need a return ticket."], "sourceAccept": ["Ich brauche ein Ticket für die Hin- und Rückfahrt.", "Ich brauche eine Rückfahrkarte."], "words": ["w-i", "w-need", "w-a", "w-return", "w-ticket"] },
+        { "id": "u28-s06", "target": "This ticket is round-trip, not one-way.", "source": "Das ist eine Hin- und Rückfahrt, keine einfache Fahrt.", "targetAccept": ["This is a return, not a single."], "sourceAccept": ["Das ist eine Rückfahrkarte, keine einfache Fahrkarte."], "words": ["w-this", "w-ticket", "w-is", "w-return", "w-not", "w-single"], "cloze": { "answer": "ticket", "distractors": ["train", "bus"] } },
         { "id": "u28-s07", "target": "The train leaves at ten.", "source": "Der Zug fährt um zehn ab.", "words": ["w-train", "w-leave", "w-at", "w-ten"], "cloze": { "answer": "leaves", "distractors": ["leave", "leaving"] } },
         { "id": "u28-s08", "target": "When does the bus leave?", "source": "Wann fährt der Bus ab?", "words": ["w-when", "w-does", "w-bus", "w-leave"], "cloze": { "answer": "leave", "distractors": ["leaves", "left"] } },
         { "id": "u28-s09", "target": "The bus arrives at the station at ten.", "source": "Der Bus kommt um zehn am Bahnhof an.", "words": ["w-bus", "w-arrive", "w-at", "w-station", "w-ten"] },
@@ -159,7 +159,7 @@
         { "id": "w-going-to", "target": "going to", "source": "werden", "sourceAccept": ["werde", "wirst", "wird", "werdet"], "pos": "phrase", "note": "Zukunftsform: be going to + Grundform" },
         { "id": "w-next", "target": "next", "source": "nächste", "sourceAccept": ["nächster", "nächstes", "nächsten", "nächstem"], "pos": "adj" },
         { "id": "w-week", "target": "week", "source": "die Woche", "targetAccept": ["the week", "a week"], "sourceAccept": ["Woche", "eine Woche"], "forms": ["weeks"], "pos": "noun" },
-        { "id": "w-holiday", "target": "holiday", "source": "der Urlaub", "targetAccept": ["the holiday", "a holiday", "vacation", "the vacation", "a vacation"], "sourceAccept": ["Urlaub", "ein Urlaub"], "forms": ["holidays", "vacations"], "pos": "noun", "emoji": "🏖️" },
+        { "id": "w-holiday", "target": "vacation", "source": "der Urlaub", "targetAccept": ["the vacation", "a vacation", "holiday", "the holiday", "a holiday"], "sourceAccept": ["Urlaub", "ein Urlaub"], "forms": ["vacations", "holidays"], "pos": "noun", "emoji": "🏖️" },
         { "id": "w-together", "target": "together", "source": "zusammen", "pos": "adv" },
         { "id": "w-trip", "target": "trip", "source": "der Ausflug", "targetAccept": ["the trip", "a trip"], "sourceAccept": ["Ausflug", "ein Ausflug", "die Reise", "Reise", "eine Reise"], "forms": ["trips"], "pos": "noun" },
         { "id": "w-soon", "target": "soon", "source": "bald", "pos": "adv" }
@@ -172,17 +172,17 @@
         { "id": "u29-s05", "target": "My friend is going to stay here.", "source": "Mein Freund wird hierbleiben.", "sourceAccept": ["Meine Freundin wird hierbleiben."], "words": ["w-my", "w-friend", "w-is", "w-going-to", "w-stay", "w-here"] },
         { "id": "u29-s06", "target": "Are you going to meet your friend?", "source": "Wirst du deinen Freund treffen?", "sourceAccept": ["Werdet ihr euren Freund treffen?", "Werden Sie Ihren Freund treffen?", "Wirst du deine Freundin treffen?", "Werdet ihr eure Freundin treffen?", "Werden Sie Ihre Freundin treffen?"], "words": ["w-are", "w-you", "w-going-to", "w-meet", "w-your", "w-friend"], "cloze": { "answer": "meet", "distractors": ["met", "meeting"] } },
         { "id": "u29-s07", "target": "No, I am going to work next week.", "source": "Nein, ich werde nächste Woche arbeiten.", "words": ["w-no", "w-i", "w-am", "w-going-to", "w-work", "w-next", "w-week"] },
-        { "id": "u29-s08", "target": "My parents are going on holiday.", "source": "Meine Eltern fahren in den Urlaub.", "targetAccept": ["My parents are going on vacation."], "words": ["w-my", "w-parents", "w-are", "w-go", "w-on", "w-holiday"] },
-        { "id": "u29-s09", "target": "Does your holiday start next week?", "source": "Beginnt dein Urlaub nächste Woche?", "sourceAccept": ["Beginnt euer Urlaub nächste Woche?", "Beginnt Ihr Urlaub nächste Woche?"], "targetAccept": ["Does your vacation start next week?"], "words": ["w-does", "w-your", "w-holiday", "w-start", "w-next", "w-week"] },
-        { "id": "u29-s10", "target": "Let's travel together.", "source": "Lass uns zusammen reisen.", "sourceAccept": ["Lasst uns zusammen reisen.", "Lassen Sie uns zusammen reisen."], "words": ["w-lets", "w-travel", "w-together"], "cloze": { "answer": "travel", "distractors": ["travelled", "travelling"] } },
+        { "id": "u29-s08", "target": "My parents are going on vacation.", "source": "Meine Eltern fahren in den Urlaub.", "targetAccept": ["My parents are going on holiday."], "words": ["w-my", "w-parents", "w-are", "w-go", "w-on", "w-holiday"] },
+        { "id": "u29-s09", "target": "Does your vacation start next week?", "source": "Beginnt dein Urlaub nächste Woche?", "sourceAccept": ["Beginnt euer Urlaub nächste Woche?", "Beginnt Ihr Urlaub nächste Woche?"], "targetAccept": ["Does your holiday start next week?"], "words": ["w-does", "w-your", "w-holiday", "w-start", "w-next", "w-week"] },
+        { "id": "u29-s10", "target": "Let's travel together.", "source": "Lass uns zusammen reisen.", "sourceAccept": ["Lasst uns zusammen reisen.", "Lassen Sie uns zusammen reisen."], "words": ["w-lets", "w-travel", "w-together"], "cloze": { "answer": "travel", "distractors": ["traveled", "traveling"] } },
         { "id": "u29-s11", "target": "My parents are going to travel together.", "source": "Meine Eltern werden zusammen verreisen.", "sourceAccept": ["Meine Eltern werden zusammen reisen."], "words": ["w-my", "w-parents", "w-are", "w-going-to", "w-travel", "w-together"] },
         { "id": "u29-s12", "target": "The trip is next week.", "source": "Der Ausflug ist nächste Woche.", "sourceAccept": ["Die Reise ist nächste Woche."], "words": ["w-trip", "w-is", "w-next", "w-week"] },
         { "id": "u29-s13", "target": "The trip starts in London.", "source": "Der Ausflug beginnt in London.", "sourceAccept": ["Die Reise beginnt in London."], "words": ["w-trip", "w-start", "w-live-in"] },
-        { "id": "u29-s14", "target": "I am going on holiday soon.", "source": "Ich fahre bald in den Urlaub.", "targetAccept": ["I am going on vacation soon."], "words": ["w-i", "w-am", "w-go", "w-on", "w-holiday", "w-soon"] },
+        { "id": "u29-s14", "target": "I am going on vacation soon.", "source": "Ich fahre bald in den Urlaub.", "targetAccept": ["I am going on holiday soon."], "words": ["w-i", "w-am", "w-go", "w-on", "w-holiday", "w-soon"] },
         { "id": "u29-s15", "target": "The train is leaving soon.", "source": "Der Zug fährt bald ab.", "words": ["w-train", "w-is", "w-leave", "w-soon"] },
         { "id": "u29-s16", "target": "Are you going to visit your friend soon?", "source": "Wirst du bald deinen Freund besuchen?", "sourceAccept": ["Werdet ihr bald euren Freund besuchen?", "Werden Sie bald Ihren Freund besuchen?", "Wirst du bald deine Freundin besuchen?", "Werdet ihr bald eure Freundin besuchen?", "Werden Sie bald Ihre Freundin besuchen?"], "words": ["w-are", "w-you", "w-going-to", "w-visit", "w-your", "w-friend", "w-soon"], "cloze": { "answer": "going", "distractors": ["go", "gone"] } },
         { "id": "u29-s17", "target": "My sister is going to meet my friend.", "source": "Meine Schwester wird meinen Freund treffen.", "sourceAccept": ["Meine Schwester wird meine Freundin treffen."], "words": ["w-my", "w-sister", "w-is", "w-going-to", "w-meet", "w-friend"] },
-        { "id": "u29-s18", "target": "My holiday starts next week.", "source": "Mein Urlaub beginnt nächste Woche.", "targetAccept": ["My vacation starts next week."], "words": ["w-my", "w-holiday", "w-start", "w-next", "w-week"] }
+        { "id": "u29-s18", "target": "My vacation starts next week.", "source": "Mein Urlaub beginnt nächste Woche.", "targetAccept": ["My holiday starts next week."], "words": ["w-my", "w-holiday", "w-start", "w-next", "w-week"] }
       ]
     },
     {
@@ -204,7 +204,7 @@
         { "id": "w-later", "target": "later", "source": "später", "pos": "adv" },
         { "id": "w-ready", "target": "ready", "source": "fertig", "sourceAccept": ["bereit"], "pos": "adj" },
         { "id": "w-map", "target": "map", "source": "die Karte", "targetAccept": ["the map", "a map"], "sourceAccept": ["Karte", "eine Karte", "der Stadtplan", "Stadtplan", "ein Stadtplan"], "forms": ["maps"], "pos": "noun", "emoji": "🗺️" },
-        { "id": "w-centre", "target": "centre", "source": "das Zentrum", "targetAccept": ["the centre", "a centre", "center", "the center", "a center"], "sourceAccept": ["Zentrum", "ein Zentrum"], "forms": ["centres", "centers"], "pos": "noun" },
+        { "id": "w-centre", "target": "center", "source": "das Zentrum", "targetAccept": ["the center", "a center", "centre", "the centre", "a centre"], "sourceAccept": ["Zentrum", "ein Zentrum"], "forms": ["centers", "centres"], "pos": "noun" },
         { "id": "w-entrance", "target": "entrance", "source": "der Eingang", "targetAccept": ["the entrance", "an entrance"], "sourceAccept": ["Eingang", "ein Eingang"], "forms": ["entrances"], "pos": "noun" },
         { "id": "w-exit", "target": "exit", "source": "der Ausgang", "targetAccept": ["the exit", "an exit"], "sourceAccept": ["Ausgang", "ein Ausgang"], "forms": ["exits"], "pos": "noun" }
       ],
@@ -216,14 +216,14 @@
         { "id": "u30-s05", "target": "Ready? Let's go.", "source": "Fertig? Los geht's.", "sourceAccept": ["Bereit? Los geht's."], "words": ["w-ready", "w-lets", "w-go"] },
         { "id": "u30-s06", "target": "The map is in my bag.", "source": "Die Karte ist in meiner Tasche.", "sourceAccept": ["Der Stadtplan ist in meiner Tasche."], "words": ["w-map", "w-is", "w-live-in", "w-my", "w-bag"] },
         { "id": "u30-s07", "target": "Do you need a map?", "source": "Brauchst du eine Karte?", "sourceAccept": ["Braucht ihr eine Karte?", "Brauchen Sie eine Karte?", "Brauchst du einen Stadtplan?", "Braucht ihr einen Stadtplan?", "Brauchen Sie einen Stadtplan?"], "words": ["w-do", "w-you", "w-need", "w-a", "w-map"], "cloze": { "answer": "Do", "distractors": ["Does", "Are"] } },
-        { "id": "u30-s08", "target": "The hotel is in the city centre.", "source": "Das Hotel ist im Stadtzentrum.", "targetAccept": ["The hotel is in the city center."], "words": ["w-hotel", "w-is", "w-live-in", "w-city", "w-centre"] },
-        { "id": "u30-s09", "target": "Let's meet in the centre later.", "source": "Treffen wir uns später im Zentrum.", "targetAccept": ["Let's meet in the center later."], "words": ["w-lets", "w-meet", "w-live-in", "w-centre", "w-later"] },
+        { "id": "u30-s08", "target": "The hotel is in the city center.", "source": "Das Hotel ist im Stadtzentrum.", "targetAccept": ["The hotel is in the city centre."], "words": ["w-hotel", "w-is", "w-live-in", "w-city", "w-centre"] },
+        { "id": "u30-s09", "target": "Let's meet in the center later.", "source": "Treffen wir uns später im Zentrum.", "targetAccept": ["Let's meet in the centre later."], "words": ["w-lets", "w-meet", "w-live-in", "w-centre", "w-later"] },
         { "id": "u30-s10", "target": "Where is the museum entrance?", "source": "Wo ist der Museumseingang?", "words": ["w-where", "w-is", "w-museum", "w-entrance"] },
         { "id": "u30-s11", "target": "The entrance is opposite the bank.", "source": "Der Eingang ist gegenüber der Bank.", "words": ["w-entrance", "w-is", "w-opposite", "w-bank"] },
         { "id": "u30-s12", "target": "The exit is on the left.", "source": "Der Ausgang ist links.", "words": ["w-exit", "w-is", "w-on", "w-left"], "cloze": { "answer": "left", "distractors": ["right", "straight"] } },
         { "id": "u30-s13", "target": "Go straight to the exit.", "source": "Geh geradeaus zum Ausgang.", "sourceAccept": ["Geht geradeaus zum Ausgang.", "Gehen Sie geradeaus zum Ausgang."], "words": ["w-go", "w-straight", "w-to", "w-exit"] },
         { "id": "u30-s14", "target": "First, I'd like some water.", "source": "Zuerst hätte ich gern etwas Wasser.", "words": ["w-first", "w-i", "w-would-like", "w-some", "w-water"] },
-        { "id": "u30-s15", "target": "Then, can I have the bill?", "source": "Kann ich dann die Rechnung haben?", "targetAccept": ["Can I have the bill then?"], "sourceAccept": ["Dann hätte ich gern die Rechnung."], "words": ["w-then", "w-can", "w-i", "w-have", "w-bill"] },
+        { "id": "u30-s15", "target": "Then, can I have the check?", "source": "Kann ich dann die Rechnung haben?", "targetAccept": ["Can I have the check then?", "Then, can I have the bill?", "Can I have the bill then?"], "sourceAccept": ["Dann hätte ich gern die Rechnung."], "words": ["w-then", "w-can", "w-i", "w-have", "w-bill"] },
         { "id": "u30-s16", "target": "Can you help later?", "source": "Kannst du später helfen?", "sourceAccept": ["Könnt ihr später helfen?", "Können Sie später helfen?"], "words": ["w-can", "w-you", "w-help", "w-later"] },
         { "id": "u30-s17", "target": "I need to pay for the ticket later.", "source": "Ich muss die Fahrkarte später bezahlen.", "sourceAccept": ["Ich muss später die Fahrkarte bezahlen.", "Ich muss später für die Fahrkarte bezahlen.", "Ich muss das Ticket später bezahlen.", "Ich muss später das Ticket bezahlen.", "Ich muss später für das Ticket bezahlen."], "words": ["w-i", "w-need", "w-to", "w-pay", "w-for", "w-ticket", "w-later"] },
         { "id": "u30-s18", "target": "Later, I am going to visit the museum.", "source": "Später werde ich das Museum besuchen.", "words": ["w-later", "w-i", "w-am", "w-going-to", "w-visit", "w-museum"] }

@@ -74,7 +74,7 @@
       "id": "A1-de-en-r04",
       "kind": "reading",
       "title": "Mia's day",
-      "text": "Mia usually wakes up at ten. She has breakfast and then walks to the office. She works for two hours. In the evening, she sometimes watches a film with her sister.",
+      "text": "Mia usually wakes up at ten. She has breakfast and then walks to the office. She works for two hours. In the evening, she sometimes watches a movie with her sister.",
       "questions": [
         {
           "q": "Wann wacht Mia normalerweise auf?",
@@ -145,7 +145,7 @@
       "id": "A1-de-en-l02",
       "kind": "listening",
       "title": "Station announcement",
-      "text": "The bus to the city centre leaves at ten from the station entrance. The bus is ready. A ticket costs two pounds. Please have cash ready.",
+      "text": "The bus to the city center leaves at ten from the station entrance. The bus is ready. A ticket costs two pounds. Please have cash ready.",
       "questions": [
         {
           "q": "Wohin fährt der Bus?",
@@ -214,7 +214,7 @@
       "id": "A1-de-en-l05",
       "kind": "listening",
       "title": "A plan for tomorrow",
-      "text": "It is going to rain tomorrow. I am going to stay inside. First, I am going to clean the kitchen. Then I am going to watch a film with my family.",
+      "text": "It is going to rain tomorrow. I am going to stay inside. First, I am going to clean the kitchen. Then I am going to watch a movie with my family.",
       "questions": [
         {
           "q": "Wie wird das Wetter morgen?",
@@ -313,7 +313,7 @@
       "id": "A1-de-en-prod02",
       "kind": "speaking",
       "prompt": "Sprich etwa eine Minute. Stell dich mit Name, Wohnort, Arbeit oder Lernen und einer Freizeitaktivität vor. Bearbeite danach zwei Karten: 1. Bitte jemanden, seinen Namen langsam zu wiederholen. 2. Jemand bittet dich um Hilfe mit einer Karte; antworte passend.",
-      "model": "Hello, I am Mia. I live in Berlin and I study English. I usually listen to music in the evening. At the weekend, I enjoy walking in the park. Can you repeat your name slowly, please? Yes, I can help with the map. The station is on the left.",
+      "model": "Hello, I am Mia. I live in Berlin and I study English. I usually listen to music in the evening. On the weekend, I enjoy walking in the park. Can you repeat your name slowly, please? Yes, I can help with the map. The station is on the left.",
       "checklist": [
         "Ich habe mich mit allen geforderten Angaben vorgestellt.",
         "Ich habe beide Karten vollständig und passend bearbeitet.",
