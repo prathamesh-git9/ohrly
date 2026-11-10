@@ -160,7 +160,7 @@ button { font: inherit; color: inherit; }
 /* ------------------------------ shell ------------------------------ */
 .shell { display: grid; min-height: 100dvh; grid-template-columns: minmax(0, 1fr); }
 .side-nav, .side-panel { display: none; }
-.shell-main { min-width: 0; padding-bottom: 84px; }
+.shell-main { min-width: 0; padding-bottom: 84px; overflow-x: clip; }
 .top-bar { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: var(--bg); border-bottom: 2px solid var(--line); }
 .top-flag { appearance: none; border: 0; background: none; padding: 4px; cursor: pointer; display: grid; }
 .content { max-width: 620px; margin: 0 auto; padding: 16px; }
@@ -455,6 +455,20 @@ button { font: inherit; color: inherit; }
 .task label { display: flex; gap: 8px; align-items: flex-start; font-size: 15px; }
 .task input[type='checkbox'] { width: 20px; height: 20px; flex: none; accent-color: var(--primary); }
 
+/* ------------------------------ cartoon ------------------------------ */
+.character { flex: none; overflow: visible; }
+@media (min-width: 620px) { .bubble-row .character { width: 132px; height: 173px; } .bubble-row svg[aria-label="Fenn the fennec fox"] { width: 120px; height: 120px; } }
+.bubble-row { align-items: flex-end; }
+.combo { position: fixed; top: 64px; left: 50%; z-index: 40; display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px; background: var(--flame); color: #fff; font-family: var(--font-head); font-size: 22px; font-weight: 600; box-shadow: 0 5px 0 #b8530f; white-space: nowrap; }
+.combo-flame { display: grid; color: #ffe08a; }
+.heart-slot { position: relative; display: grid; }
+.heart-break { position: absolute; left: 0; top: 0; color: var(--heart); pointer-events: none; }
+.heart-break svg { width: 26px; height: 26px; }
+.scenery { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.scenery svg { display: block; }
+.scenery .twinkle { position: absolute; }
+@media (max-width: 520px) { .scenery .far { display: none; } }
+
 /* ------------------------------ credit ------------------------------ */
 .made-by { display: inline-flex; align-items: center; gap: 5px; padding: 4px 11px; border: 2px solid var(--line-strong); border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 13px; font-weight: 800; white-space: nowrap; transition: color var(--release), border-color var(--release); }
 .made-by svg { color: var(--coral); flex: none; }
@@ -469,3 +483,6 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: 1ms !important; }
 }
+
+.twinkle { animation: twinkle 2.6s ease-in-out infinite; }
+@keyframes twinkle { 0%, 100% { opacity: .25; transform: scale(.8); } 50% { opacity: 1; transform: scale(1.15); } }

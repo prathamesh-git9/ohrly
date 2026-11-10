@@ -2,6 +2,7 @@ import { BookOpen, Check, Dumbbell, FileText, GraduationCap, Headphones, Lock, M
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Fenn } from '../components/Fenn';
+import { Scenery } from '../components/Scenery';
 import { Btn, SpeakerButton, Modal } from '../components/ui';
 import { buildPath, UNIT_LESSONS } from '../domain/course';
 import { examFor } from '../content/exams';
@@ -272,6 +273,7 @@ export function Home({ course, t }: { course: Course; t: Translate }) {
                     </button>
                   </header>
                   <div className="unit-track">
+                    <Scenery seed={unitCounter} />
                     {unitNodes.map((n) => renderNode(n, hue, label))}
                   </div>
                 </div>

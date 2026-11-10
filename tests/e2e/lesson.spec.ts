@@ -129,9 +129,14 @@ async function playPerfectly(page: Page, courseId: string) {
       const said = await page.evaluate(() => (window as unknown as { __said?: string }).__said ?? '');
       if (await bubble.count()) {
         seen.add('bank');
-        const s = bySentenceText(clean(await bubble.textContent()))!;
-        const isSourcePrompt = clean(s.source) === clean(await bubble.textContent());
-        await clickTiles(page, isSourcePrompt ? s.target : s.source);
+        const prompt = clean(await bubble.textContent());
+        // Several sentences can share a prompt ("You are Ben" is Du bist Ben or Sie sind Ben):
+        // the one asked is the one whose words are all on the tiles.
+        const tiles = (await page.locator('.tile-live').allTextContents()).map((x) => x.trim().toLowerCase());
+        const answers = sentences
+          .flatMap((x) => (clean(x.source) === prompt ? [x.target] : clean(x.target) === prompt ? [x.source] : []));
+        const fits = (a: string) => tokenize(a).every((tok) => tiles.includes(tok.toLowerCase()));
+        await clickTiles(page, answers.find(fits) ?? answers[0]!);
       } else {
         seen.add('listenBank');
         await clickTiles(page, said);

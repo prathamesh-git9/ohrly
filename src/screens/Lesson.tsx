@@ -1,4 +1,4 @@
-import { Check, Flag as FlagIcon, Heart, X } from 'lucide-react';
+import { Check, Flag as FlagIcon, Flame, Heart, HeartCrack, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { buzz, sfx } from '../audio/sfx';
@@ -84,6 +84,11 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
   const [outOfHearts, setOutOfHearts] = useState(!isPractice && hearts.count <= 0);
   const [summary, setSummary] = useState<LessonSummary | null>(null);
   const [praise, setPraise] = useState('');
+  /** Correct answers in a row, for the combo banner. */
+  const [, setCombo] = useState(0);
+  const [comboShown, setComboShown] = useState<number | null>(null);
+  /** Bumped on each lost heart, to replay the breaking animation. */
+  const [heartBreaks, setHeartBreaks] = useState(0);
 
   const submitRef = useRef<(() => Verdict) | null>(null);
   const mistakes = useRef(0);
@@ -156,6 +161,7 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
 
   const loseHeartAndCheck = useCallback(() => {
     if (isPractice) return;
+    setHeartBreaks((n) => n + 1);
     const s = store.getState();
     s.mistake();
     if (store.getState().hearts.count <= 0) setOutOfHearts(true);
@@ -175,6 +181,7 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
     const ids = wordsTested(slot.ex);
     const s = store.getState();
     if (v.result === 'wrong') {
+      setCombo(0);
       sfx.wrong();
       mistakes.current++;
       s.gradeWords(course.id, ids, false);
@@ -196,6 +203,15 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
     } else {
       sfx.correct();
       buzz(10);
+      setCombo((c) => {
+        const next = c + 1;
+        if (next === 3 || next === 5 || next === 10 || (next > 10 && next % 5 === 0)) {
+          setComboShown(next);
+          window.setTimeout(() => setComboShown(null), 1600);
+          window.setTimeout(() => sfx.streak(), 250);
+        }
+        return next;
+      });
       const lines = t('praise').split('|');
       setPraise(lines[Math.floor(Math.random() * lines.length)]!);
       s.gradeWords(course.id, ids, true);
@@ -302,18 +318,58 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
         </button>
         <ProgressBar value={Math.min(1, done / Math.max(1, total))} />
         {!isPractice && (
-          <motion.div
-            className="stat stat-hearts"
-            key={hearts.count}
-            initial={{ scale: 1.35 }}
-            animate={{ scale: 1 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 18 }}
-          >
-            <Heart fill="currentColor" strokeWidth={2} />
-            <span>{hearts.count}</span>
-          </motion.div>
+          <div className="heart-slot">
+            <motion.div
+              className="stat stat-hearts"
+              key={hearts.count}
+              initial={heartBreaks ? { x: 0, rotate: 0 } : false}
+              animate={heartBreaks ? { x: [0, -5, 5, -3, 3, 0], rotate: [0, -8, 8, 0] } : {}}
+              transition={{ duration: 0.45 }}
+            >
+              <Heart fill="currentColor" strokeWidth={2} />
+              <span>{hearts.count}</span>
+            </motion.div>
+            <AnimatePresence>
+              {heartBreaks > 0 && (
+                <motion.span
+                  key={heartBreaks}
+                  className="heart-break"
+                  initial={{ y: 0, opacity: 1, scale: 1 }}
+                  animate={{ y: 46, opacity: 0, scale: 1.5, rotate: 18 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.9, ease: 'easeOut' }}
+                  aria-hidden="true"
+                >
+                  <HeartCrack fill="currentColor" strokeWidth={1.6} />
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </div>
         )}
       </header>
+
+      <AnimatePresence>
+        {comboShown && (
+          <motion.div
+            className="combo"
+            key={comboShown}
+            initial={{ y: -30, scale: 0.5, opacity: 0, x: '-50%' }}
+            animate={{ y: 0, scale: 1, opacity: 1, x: '-50%' }}
+            exit={{ y: -20, opacity: 0, x: '-50%' }}
+            transition={{ type: 'spring', stiffness: 520, damping: 18 }}
+            role="status"
+          >
+            <motion.span
+              animate={{ rotate: [-10, 10, -10], scale: [1, 1.2, 1] }}
+              transition={{ repeat: Infinity, duration: 0.5 }}
+              className="combo-flame"
+            >
+              <Flame fill="currentColor" />
+            </motion.span>
+            {t('combo', { n: comboShown })}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <main className="lesson-body">
         <AnimatePresence mode="wait" initial={false}>

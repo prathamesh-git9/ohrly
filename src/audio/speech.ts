@@ -21,6 +21,19 @@ let current: HTMLAudioElement | null = null;
 let voicesEnabled = true;
 let playToken = 0;
 
+type SpeakingListener = (text: string | null) => void;
+const speakingListeners = new Set<SpeakingListener>();
+
+/** Subscribe to what is being said right now; null when quiet. Returns an unsubscribe function. */
+export function onSpeaking(listener: SpeakingListener): () => void {
+  speakingListeners.add(listener);
+  return () => speakingListeners.delete(listener);
+}
+
+function announce(text: string | null): void {
+  for (const listener of speakingListeners) listener(text);
+}
+
 export function setVoicesEnabled(on: boolean): void {
   voicesEnabled = on;
   if (!on) stopSpeech();
@@ -91,6 +104,19 @@ function speakWithBrowser(text: string, lang: LangCode, slow: boolean): Promise<
 /** Resolves when playback ends. Never rejects: missing audio must not break a lesson. */
 export async function speak(text: string, lang: LangCode, slow = false): Promise<void> {
   if (!voicesEnabled) return;
+  const token = ++speakSerial;
+  announce(text);
+  try {
+    await play(text, lang, slow);
+  } finally {
+    // A newer line may have started meanwhile; only the latest one may announce silence.
+    if (token === speakSerial) announce(null);
+  }
+}
+
+let speakSerial = 0;
+
+async function play(text: string, lang: LangCode, slow: boolean): Promise<void> {
   stopSpeech();
   // A newer request may arrive while the manifest loads; only the latest one may play.
   const token = ++playToken;

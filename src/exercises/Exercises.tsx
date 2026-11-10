@@ -3,6 +3,7 @@ import { LayoutGroup, motion } from 'motion/react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { buzz, sfx } from '../audio/sfx';
 import { canRecognizeSpeech, listen, speak, type Listening } from '../audio/speech';
+import { Character, speakerFor } from '../components/Cast';
 import { Fenn } from '../components/Fenn';
 import { Btn, HintText, SpeakerButton } from '../components/ui';
 import { checkAnswer, speechScore, tokenize, type Verdict } from '../domain/check';
@@ -47,11 +48,32 @@ function Prompt({ title, children }: { title: string; children?: React.ReactNode
 }
 
 /** Speech bubble beside Fenn: the mascot gives the sentence, not a text box. */
-function Bubble({ children, mood }: { children: React.ReactNode; mood?: 'idle' | 'think' }) {
+function Bubble({
+  children,
+  mood,
+  sentence,
+}: {
+  children: React.ReactNode;
+  mood?: 'idle' | 'think';
+  /** When set, a member of the cast says it instead of Fenn, mouth moving while it plays. */
+  sentence?: Sentence;
+}) {
   return (
     <div className="bubble-row">
-      <Fenn size={92} mood={mood ?? 'idle'} />
-      <div className="bubble">{children}</div>
+      {sentence ? (
+        <Character id={speakerFor(sentence.id, sentence.target)} size={96} line={sentence.target} />
+      ) : (
+        <Fenn size={92} mood={mood ?? 'idle'} />
+      )}
+      <motion.div
+        className="bubble"
+        initial={{ scale: 0.6, opacity: 0, x: -14 }}
+        animate={{ scale: 1, opacity: 1, x: 0 }}
+        transition={{ type: 'spring', stiffness: 520, damping: 26, delay: 0.08 }}
+        style={{ transformOrigin: '0% 80%' }}
+      >
+        {children}
+      </motion.div>
     </div>
   );
 }
@@ -455,7 +477,7 @@ export function BankEx({ ex, ctx }: Props<'bank'>) {
   return (
     <div>
       <Prompt title={ctx.t('translateSentence')} />
-      <Bubble>
+      <Bubble sentence={sentence}>
         {toTarget ? (
           <HintText text={sentence.source} gloss={ctx.glossary.source} />
         ) : (
@@ -603,7 +625,7 @@ export function TypeEx({ ex, ctx }: Props<'type'>) {
   return (
     <div>
       <Prompt title={ctx.t('typeTranslation')} />
-      <Bubble>
+      <Bubble sentence={sentence}>
         {toTarget ? (
           <HintText text={sentence.source} gloss={ctx.glossary.source} />
         ) : (
@@ -815,7 +837,7 @@ export function SpeakEx({ ex, ctx }: Props<'speak'>) {
   return (
     <div>
       <Prompt title={t('speakThis')} />
-      <Bubble>
+      <Bubble sentence={sentence}>
         <span className="bubble-speak">
           <SpeakerButton text={sentence.target} lang={course.to} size="sm" />
           <HintText text={sentence.target} gloss={ctx.glossary.target} speakLang={course.to} />
