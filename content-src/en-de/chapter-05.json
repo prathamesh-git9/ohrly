@@ -1,0 +1,2028 @@
+{
+ "id": "c05",
+ "title": "Describe life",
+ "cefr": "A1",
+ "description": "Talk about the weather, your clothes, how you feel, your free time, and what you did yesterday.",
+ "units": [
+  {
+   "id": "u21",
+   "title": "Weather today",
+   "canDo": "understand a basic weather report",
+   "tip": {
+    "title": "Talking about the weather",
+    "body": "In German, to talk about the weather, we use **es** (it) just like in English. We can say **es regnet** (it is raining) or **es ist kalt** (it is cold). \n\nRemember that the verb always stays in the second position in a statement, so if you start with **heute** (today), the verb comes next, followed by **es** or the subject.",
+    "examples": [
+     {
+      "target": "Es ist warm.",
+      "source": "It is warm."
+     },
+     {
+      "target": "Heute regnet es.",
+      "source": "Today it is raining."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-wetter",
+     "target": "das Wetter",
+     "source": "the weather",
+     "sourceAccept": [
+      "weather"
+     ],
+     "pos": "noun"
+    },
+    {
+     "id": "w-es",
+     "target": "es",
+     "source": "it",
+     "pos": "pron"
+    },
+    {
+     "id": "w-sonne",
+     "target": "die Sonne",
+     "source": "the sun",
+     "sourceAccept": [
+      "sun"
+     ],
+     "plural": "die Sonnen",
+     "emoji": "☀️",
+     "pos": "noun"
+    },
+    {
+     "id": "w-regen",
+     "target": "der Regen",
+     "source": "the rain",
+     "sourceAccept": [
+      "rain"
+     ],
+     "emoji": "🌧️",
+     "pos": "noun"
+    },
+    {
+     "id": "w-wind",
+     "target": "der Wind",
+     "source": "the wind",
+     "sourceAccept": [
+      "wind"
+     ],
+     "plural": "die Winde",
+     "emoji": "🌬️",
+     "pos": "noun"
+    },
+    {
+     "id": "w-warm",
+     "target": "warm",
+     "source": "warm",
+     "pos": "adj"
+    },
+    {
+     "id": "w-kalt",
+     "target": "kalt",
+     "source": "cold",
+     "pos": "adj"
+    },
+    {
+     "id": "w-bewoelkt",
+     "target": "bewölkt",
+     "source": "cloudy",
+     "pos": "adj"
+    },
+    {
+     "id": "w-regnen",
+     "target": "regnen",
+     "source": "to rain",
+     "forms": [
+      "regnet"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-scheinen",
+     "target": "scheinen",
+     "source": "to shine",
+     "forms": [
+      "scheint"
+     ],
+     "pos": "verb"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u21-s01",
+     "target": "Das Wetter ist heute warm.",
+     "source": "The weather is warm today.",
+     "targetAccept": [
+      "Heute ist das Wetter warm."
+     ],
+     "sourceAccept": [
+      "Today the weather is warm."
+     ],
+     "words": [
+      "w-wetter",
+      "w-sein",
+      "w-heute",
+      "w-warm"
+     ],
+     "cloze": {
+      "answer": "ist",
+      "distractors": [
+       "bist",
+       "sind"
+      ]
+     }
+    },
+    {
+     "id": "u21-s02",
+     "target": "Es ist kalt und bewölkt.",
+     "source": "It is cold and cloudy.",
+     "sourceAccept": [
+      "It's cold and cloudy."
+     ],
+     "words": [
+      "w-es",
+      "w-sein",
+      "w-kalt",
+      "w-und",
+      "w-bewoelkt"
+     ]
+    },
+    {
+     "id": "u21-s03",
+     "target": "Regnet es in Berlin?",
+     "source": "Is it raining in Berlin?",
+     "sourceAccept": [
+      "Does it rain in Berlin?"
+     ],
+     "words": [
+      "w-regnen",
+      "w-es",
+      "w-in"
+     ]
+    },
+    {
+     "id": "u21-s04",
+     "target": "Die Sonne scheint.",
+     "source": "The sun is shining.",
+     "sourceAccept": [
+      "The sun shines."
+     ],
+     "words": [
+      "w-sonne",
+      "w-scheinen"
+     ]
+    },
+    {
+     "id": "u21-s05",
+     "target": "Der Wind ist kalt.",
+     "source": "The wind is cold.",
+     "words": [
+      "w-wind",
+      "w-sein",
+      "w-kalt"
+     ]
+    },
+    {
+     "id": "u21-s06",
+     "target": "Es regnet und der Wind ist kalt.",
+     "source": "It is raining and the wind is cold.",
+     "sourceAccept": [
+      "It's raining and the wind is cold.",
+      "It rains and the wind is cold."
+     ],
+     "words": [
+      "w-es",
+      "w-regnen",
+      "w-und",
+      "w-wind",
+      "w-sein",
+      "w-kalt"
+     ],
+     "cloze": {
+      "answer": "Es",
+      "distractors": [
+       "Er",
+       "Sie"
+      ]
+     }
+    },
+    {
+     "id": "u21-s07",
+     "target": "Das Wetter ist heute bewölkt.",
+     "source": "The weather is cloudy today.",
+     "targetAccept": [
+      "Heute ist das Wetter bewölkt."
+     ],
+     "sourceAccept": [
+      "Today the weather is cloudy."
+     ],
+     "words": [
+      "w-wetter",
+      "w-sein",
+      "w-heute",
+      "w-bewoelkt"
+     ]
+    },
+    {
+     "id": "u21-s08",
+     "target": "Ist es heute warm?",
+     "source": "Is it warm today?",
+     "targetAccept": [
+      "Ist es warm heute?"
+     ],
+     "sourceAccept": [
+      "Is it warm out today?"
+     ],
+     "words": [
+      "w-sein",
+      "w-es",
+      "w-heute",
+      "w-warm"
+     ],
+     "cloze": {
+      "answer": "warm",
+      "distractors": [
+       "regnet",
+       "Regen"
+      ]
+     }
+    },
+    {
+     "id": "u21-s09",
+     "target": "Die Sonne scheint, aber es ist kalt.",
+     "source": "The sun is shining, but it is cold.",
+     "sourceAccept": [
+      "The sun shines but it is cold.",
+      "The sun is shining but it's cold."
+     ],
+     "words": [
+      "w-sonne",
+      "w-scheinen",
+      "w-aber",
+      "w-es",
+      "w-sein",
+      "w-kalt"
+     ],
+     "cloze": {
+      "answer": "scheint",
+      "distractors": [
+       "scheine",
+       "scheinen"
+      ]
+     }
+    },
+    {
+     "id": "u21-s10",
+     "target": "Morgen ist es warm.",
+     "source": "Tomorrow it will be warm.",
+     "targetAccept": [
+      "Es ist morgen warm."
+     ],
+     "sourceAccept": [
+      "Tomorrow it is warm.",
+      "It will be warm tomorrow.",
+      "It is warm tomorrow."
+     ],
+     "words": [
+      "w-morgen",
+      "w-sein",
+      "w-es",
+      "w-warm"
+     ]
+    },
+    {
+     "id": "u21-s11",
+     "target": "Der Regen ist kalt.",
+     "source": "The rain is cold.",
+     "words": [
+      "w-regen",
+      "w-sein",
+      "w-kalt"
+     ],
+     "cloze": {
+      "answer": "ist",
+      "distractors": [
+       "bin",
+       "sind"
+      ]
+     }
+    },
+    {
+     "id": "u21-s12",
+     "target": "Ist das Wetter in Deutschland warm?",
+     "source": "Is the weather in Germany warm?",
+     "sourceAccept": [
+      "Is the weather warm in Germany?"
+     ],
+     "words": [
+      "w-sein",
+      "w-wetter",
+      "w-in",
+      "w-deutschland",
+      "w-warm"
+     ]
+    },
+    {
+     "id": "u21-s13",
+     "target": "Es ist nicht warm, es ist bewölkt.",
+     "source": "It is not warm, it is cloudy.",
+     "sourceAccept": [
+      "It's not warm, it's cloudy."
+     ],
+     "words": [
+      "w-es",
+      "w-sein",
+      "w-nicht",
+      "w-warm",
+      "w-bewoelkt"
+     ]
+    },
+    {
+     "id": "u21-s14",
+     "target": "Regnet es morgen?",
+     "source": "Will it rain tomorrow?",
+     "sourceAccept": [
+      "Is it raining tomorrow?",
+      "Does it rain tomorrow?"
+     ],
+     "words": [
+      "w-regnen",
+      "w-es",
+      "w-morgen"
+     ]
+    },
+    {
+     "id": "u21-s15",
+     "target": "Heute scheint die Sonne.",
+     "source": "The sun is shining today.",
+     "targetAccept": [
+      "Die Sonne scheint heute."
+     ],
+     "sourceAccept": [
+      "Today the sun is shining.",
+      "The sun shines today.",
+      "Today the sun shines."
+     ],
+     "words": [
+      "w-heute",
+      "w-scheinen",
+      "w-sonne"
+     ]
+    },
+    {
+     "id": "u21-s16",
+     "target": "Wir fahren, das Wetter ist warm!",
+     "source": "We are driving, the weather is warm!",
+     "sourceAccept": [
+      "We drive, the weather is warm!",
+      "We're driving, the weather's warm!"
+     ],
+     "words": [
+      "w-wir",
+      "w-fahren",
+      "w-wetter",
+      "w-sein",
+      "w-warm"
+     ]
+    },
+    {
+     "id": "u21-s17",
+     "target": "Morgen kommt der Regen.",
+     "source": "The rain is coming tomorrow.",
+     "targetAccept": [
+      "Der Regen kommt morgen."
+     ],
+     "sourceAccept": [
+      "Tomorrow the rain is coming.",
+      "The rain comes tomorrow.",
+      "Tomorrow the rain comes."
+     ],
+     "words": [
+      "w-morgen",
+      "w-kommen",
+      "w-regen"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u22",
+   "title": "Clothes and colours",
+   "canDo": "identify and choose clothing",
+   "tip": {
+    "title": "Pointing things out with dieser",
+    "body": "When pointing something out, use **dieser** (this) instead of the normal article **der**. \n\nThe ending changes to match the gender of the noun you are pointing at: **dieser Schuh** (der), **diese Jacke** (die), **dieses Hemd** (das). For plural words, also use **diese**.",
+    "examples": [
+     {
+      "target": "Diese Jacke ist rot.",
+      "source": "This jacket is red."
+     },
+     {
+      "target": "Passt dieses Hemd?",
+      "source": "Does this shirt fit?"
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-jacke",
+     "target": "die Jacke",
+     "source": "the jacket",
+     "sourceAccept": [
+      "jacket"
+     ],
+     "plural": "die Jacken",
+     "emoji": "🧥",
+     "pos": "noun"
+    },
+    {
+     "id": "w-hose",
+     "target": "die Hose",
+     "source": "the trousers",
+     "sourceAccept": [
+      "trousers",
+      "the pants",
+      "pants"
+     ],
+     "plural": "die Hosen",
+     "emoji": "👖",
+     "pos": "noun"
+    },
+    {
+     "id": "w-hemd",
+     "target": "das Hemd",
+     "source": "the shirt",
+     "sourceAccept": [
+      "shirt"
+     ],
+     "plural": "die Hemden",
+     "emoji": "👔",
+     "pos": "noun"
+    },
+    {
+     "id": "w-schuh",
+     "target": "der Schuh",
+     "source": "the shoe",
+     "sourceAccept": [
+      "shoe"
+     ],
+     "plural": "die Schuhe",
+     "emoji": "👞",
+     "pos": "noun"
+    },
+    {
+     "id": "w-rot",
+     "target": "rot",
+     "source": "red",
+     "pos": "adj"
+    },
+    {
+     "id": "w-blau",
+     "target": "blau",
+     "source": "blue",
+     "pos": "adj"
+    },
+    {
+     "id": "w-schwarz",
+     "target": "schwarz",
+     "source": "black",
+     "pos": "adj"
+    },
+    {
+     "id": "w-tragen",
+     "target": "tragen",
+     "source": "to wear",
+     "forms": [
+      "trage",
+      "trägst",
+      "trägt",
+      "tragt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-dieser",
+     "target": "dieser",
+     "source": "this",
+     "sourceAccept": [
+      "these"
+     ],
+     "forms": [
+      "diese",
+      "dieses"
+     ],
+     "pos": "det"
+    },
+    {
+     "id": "w-passen",
+     "target": "passen",
+     "source": "to fit",
+     "forms": [
+      "passe",
+      "passt"
+     ],
+     "pos": "verb"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u22-s01",
+     "target": "Ich trage eine Jacke.",
+     "source": "I am wearing a jacket.",
+     "sourceAccept": [
+      "I wear a jacket.",
+      "I'm wearing a jacket."
+     ],
+     "words": [
+      "w-ich",
+      "w-tragen",
+      "w-eine",
+      "w-jacke"
+     ],
+     "cloze": {
+      "answer": "Jacke",
+      "distractors": [
+       "Hemd",
+       "Schuh"
+      ]
+     }
+    },
+    {
+     "id": "u22-s02",
+     "target": "Diese Hose ist blau.",
+     "source": "These trousers are blue.",
+     "sourceAccept": [
+      "This pair of trousers is blue.",
+      "These pants are blue.",
+      "This pair of pants is blue."
+     ],
+     "words": [
+      "w-dieser",
+      "w-hose",
+      "w-sein",
+      "w-blau"
+     ],
+     "cloze": {
+      "answer": "Diese",
+      "distractors": [
+       "Dieser",
+       "Dieses"
+      ]
+     }
+    },
+    {
+     "id": "u22-s03",
+     "target": "Die Jacke ist rot.",
+     "source": "The jacket is red.",
+     "words": [
+      "w-jacke",
+      "w-sein",
+      "w-rot"
+     ]
+    },
+    {
+     "id": "u22-s04",
+     "target": "Diese Schuhe sind schwarz.",
+     "source": "These shoes are black.",
+     "words": [
+      "w-dieser",
+      "w-schuh",
+      "w-sein",
+      "w-schwarz"
+     ],
+     "cloze": {
+      "answer": "Schuhe",
+      "distractors": [
+       "Jacke",
+       "Schuh"
+      ]
+     }
+    },
+    {
+     "id": "u22-s05",
+     "target": "Passt dieses Hemd?",
+     "source": "Does this shirt fit?",
+     "sourceAccept": [
+      "Is this shirt fitting?"
+     ],
+     "words": [
+      "w-passen",
+      "w-dieser",
+      "w-hemd"
+     ],
+     "cloze": {
+      "answer": "Passt",
+      "distractors": [
+       "Passen",
+       "Passe"
+      ]
+     }
+    },
+    {
+     "id": "u22-s06",
+     "target": "Die Hose passt nicht.",
+     "source": "The trousers do not fit.",
+     "sourceAccept": [
+      "The pants don't fit.",
+      "The pants do not fit.",
+      "The trousers don't fit."
+     ],
+     "words": [
+      "w-hose",
+      "w-passen",
+      "w-nicht"
+     ]
+    },
+    {
+     "id": "u22-s07",
+     "target": "Trägst du das Hemd?",
+     "source": "Are you wearing the shirt?",
+     "sourceAccept": [
+      "Do you wear the shirt?"
+     ],
+     "words": [
+      "w-tragen",
+      "w-du",
+      "w-hemd"
+     ]
+    },
+    {
+     "id": "u22-s08",
+     "target": "Diese Schuhe passen gut.",
+     "source": "These shoes fit well.",
+     "words": [
+      "w-dieser",
+      "w-schuh",
+      "w-passen",
+      "w-gut"
+     ]
+    },
+    {
+     "id": "u22-s09",
+     "target": "Dieser Schuh ist blau und diese Jacke ist schwarz.",
+     "source": "This shoe is blue and this jacket is black.",
+     "words": [
+      "w-dieser",
+      "w-schuh",
+      "w-sein",
+      "w-blau",
+      "w-und",
+      "w-jacke",
+      "w-schwarz"
+     ]
+    },
+    {
+     "id": "u22-s10",
+     "target": "Ich brauche eine Hose.",
+     "source": "I need a pair of trousers.",
+     "sourceAccept": [
+      "I need a pair of pants.",
+      "I need trousers.",
+      "I need pants."
+     ],
+     "words": [
+      "w-ich",
+      "w-brauchen",
+      "w-eine",
+      "w-hose"
+     ]
+    },
+    {
+     "id": "u22-s11",
+     "target": "Die Jacke ist rot, aber das Hemd ist blau.",
+     "source": "The jacket is red, but the shirt is blue.",
+     "sourceAccept": [
+      "The jacket is red but the shirt is blue."
+     ],
+     "words": [
+      "w-jacke",
+      "w-sein",
+      "w-rot",
+      "w-aber",
+      "w-hemd",
+      "w-blau"
+     ]
+    },
+    {
+     "id": "u22-s12",
+     "target": "Dieser Tisch ist rot.",
+     "source": "This table is red.",
+     "words": [
+      "w-dieser",
+      "w-tisch",
+      "w-sein",
+      "w-rot"
+     ],
+     "cloze": {
+      "answer": "ist",
+      "distractors": [
+       "bist",
+       "sind"
+      ]
+     }
+    },
+    {
+     "id": "u22-s13",
+     "target": "Ich kaufe diese Schuhe.",
+     "source": "I am buying these shoes.",
+     "sourceAccept": [
+      "I buy these shoes.",
+      "I'm buying these shoes."
+     ],
+     "words": [
+      "w-ich",
+      "w-kaufen",
+      "w-dieser",
+      "w-schuh"
+     ]
+    },
+    {
+     "id": "u22-s14",
+     "target": "Tragt ihr diese Hosen?",
+     "source": "Are you wearing these trousers?",
+     "sourceAccept": [
+      "Do you wear these trousers?",
+      "Are you wearing these pants?",
+      "Do you wear these pants?",
+      "Are you all wearing these pants?"
+     ],
+     "words": [
+      "w-tragen",
+      "w-ihr",
+      "w-dieser",
+      "w-hose"
+     ]
+    },
+    {
+     "id": "u22-s15",
+     "target": "Das Hemd passt.",
+     "source": "The shirt fits.",
+     "words": [
+      "w-hemd",
+      "w-passen"
+     ]
+    },
+    {
+     "id": "u22-s16",
+     "target": "Diese Hose ist nicht schwarz.",
+     "source": "These trousers are not black.",
+     "sourceAccept": [
+      "These pants are not black."
+     ],
+     "words": [
+      "w-dieser",
+      "w-hose",
+      "w-sein",
+      "w-nicht",
+      "w-schwarz"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u23",
+   "title": "How do you feel?",
+   "canDo": "state a simple health problem",
+   "tip": {
+    "title": "Mir geht es...",
+    "body": "To say how you are doing, Germans literally say \"it goes to me...\". The word **mir** means \"to me\".\n\nIf you want to say you feel well, say **mir geht es gut** or **es geht mir gut**.",
+    "examples": [
+     {
+      "target": "Mir geht es gut.",
+      "source": "I am fine."
+     },
+     {
+      "target": "Mir geht es schlecht.",
+      "source": "I am doing badly."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-krank",
+     "target": "krank",
+     "source": "sick",
+     "sourceAccept": [
+      "ill"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-gesund",
+     "target": "gesund",
+     "source": "healthy",
+     "sourceAccept": [
+      "well"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-muede",
+     "target": "müde",
+     "source": "tired",
+     "pos": "adj"
+    },
+    {
+     "id": "w-kopf",
+     "target": "der Kopf",
+     "source": "the head",
+     "sourceAccept": [
+      "head"
+     ],
+     "plural": "die Köpfe",
+     "pos": "noun"
+    },
+    {
+     "id": "w-bauch",
+     "target": "der Bauch",
+     "source": "the stomach",
+     "sourceAccept": [
+      "stomach",
+      "the belly",
+      "belly"
+     ],
+     "plural": "die Bäuche",
+     "pos": "noun"
+    },
+    {
+     "id": "w-arzt",
+     "target": "der Arzt",
+     "source": "the doctor",
+     "sourceAccept": [
+      "doctor"
+     ],
+     "plural": "die Ärzte",
+     "pos": "noun"
+    },
+    {
+     "id": "w-apotheke",
+     "target": "die Apotheke",
+     "source": "the pharmacy",
+     "sourceAccept": [
+      "pharmacy"
+     ],
+     "plural": "die Apotheken",
+     "pos": "noun"
+    },
+    {
+     "id": "w-wehtun",
+     "target": "wehtun",
+     "source": "to hurt",
+     "forms": [
+      "tue",
+      "tust",
+      "tut",
+      "tun",
+      "weh"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-mir",
+     "target": "mir",
+     "source": "to me",
+     "sourceAccept": [
+      "me"
+     ],
+     "pos": "pron"
+    },
+    {
+     "id": "w-besser",
+     "target": "besser",
+     "source": "better",
+     "pos": "adj"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u23-s01",
+     "target": "Ich bin krank.",
+     "source": "I am sick.",
+     "sourceAccept": [
+      "I am ill.",
+      "I'm sick.",
+      "I'm ill."
+     ],
+     "words": [
+      "w-ich",
+      "w-sein",
+      "w-krank"
+     ]
+    },
+    {
+     "id": "u23-s02",
+     "target": "Mein Kopf tut weh.",
+     "source": "My head hurts.",
+     "sourceAccept": [
+      "My head is hurting."
+     ],
+     "words": [
+      "w-mein",
+      "w-kopf",
+      "w-wehtun"
+     ],
+     "cloze": {
+      "answer": "tut",
+      "distractors": [
+       "tun",
+       "tue"
+      ]
+     }
+    },
+    {
+     "id": "u23-s03",
+     "target": "Bist du gesund?",
+     "source": "Are you healthy?",
+     "sourceAccept": [
+      "Are you well?"
+     ],
+     "words": [
+      "w-sein",
+      "w-du",
+      "w-gesund"
+     ]
+    },
+    {
+     "id": "u23-s04",
+     "target": "Mir geht es gut.",
+     "source": "I am fine.",
+     "targetAccept": [
+      "Es geht mir gut."
+     ],
+     "sourceAccept": [
+      "I am doing well.",
+      "I'm fine.",
+      "I'm doing well.",
+      "I am well.",
+      "I'm well."
+     ],
+     "words": [
+      "w-mir",
+      "w-gehen",
+      "w-es",
+      "w-gut"
+     ],
+     "cloze": {
+      "answer": "geht",
+      "distractors": [
+       "gehst",
+       "gehen"
+      ]
+     }
+    },
+    {
+     "id": "u23-s05",
+     "target": "Mir geht es schlecht.",
+     "source": "I am doing badly.",
+     "targetAccept": [
+      "Es geht mir schlecht."
+     ],
+     "sourceAccept": [
+      "I am feeling bad.",
+      "I feel bad.",
+      "I'm doing badly."
+     ],
+     "words": [
+      "w-mir",
+      "w-gehen",
+      "w-es",
+      "w-schlecht"
+     ]
+    },
+    {
+     "id": "u23-s06",
+     "target": "Der Bauch tut weh.",
+     "source": "The stomach hurts.",
+     "sourceAccept": [
+      "The belly hurts."
+     ],
+     "words": [
+      "w-bauch",
+      "w-wehtun"
+     ],
+     "cloze": {
+      "answer": "weh",
+      "distractors": [
+       "krank",
+       "gesund"
+      ]
+     }
+    },
+    {
+     "id": "u23-s07",
+     "target": "Ich suche eine Apotheke, ich bin krank.",
+     "source": "I am looking for a pharmacy, I am sick.",
+     "sourceAccept": [
+      "I'm looking for a pharmacy, I'm ill.",
+      "I'm looking for a pharmacy, I'm sick.",
+      "I am looking for a pharmacy, I am ill."
+     ],
+     "words": [
+      "w-ich",
+      "w-suchen",
+      "w-eine",
+      "w-apotheke",
+      "w-sein",
+      "w-krank"
+     ]
+    },
+    {
+     "id": "u23-s08",
+     "target": "Gehst du zum Arzt?",
+     "source": "Are you going to the doctor?",
+     "sourceAccept": [
+      "Do you go to the doctor?"
+     ],
+     "words": [
+      "w-gehen",
+      "w-du",
+      "w-zu",
+      "w-arzt"
+     ]
+    },
+    {
+     "id": "u23-s09",
+     "target": "Bist du müde?",
+     "source": "Are you tired?",
+     "words": [
+      "w-sein",
+      "w-du",
+      "w-muede"
+     ]
+    },
+    {
+     "id": "u23-s10",
+     "target": "Der Arzt hilft mir.",
+     "source": "The doctor helps me.",
+     "sourceAccept": [
+      "The doctor is helping me."
+     ],
+     "words": [
+      "w-arzt",
+      "w-helfen",
+      "w-mir"
+     ],
+     "cloze": {
+      "answer": "hilft",
+      "distractors": [
+       "helfe",
+       "helfen"
+      ]
+     }
+    },
+    {
+     "id": "u23-s11",
+     "target": "Heute geht es mir besser.",
+     "source": "Today I am better.",
+     "targetAccept": [
+      "Es geht mir heute besser.",
+      "Mir geht es heute besser."
+     ],
+     "sourceAccept": [
+      "I am doing better today.",
+      "I feel better today.",
+      "Today I feel better."
+     ],
+     "words": [
+      "w-heute",
+      "w-gehen",
+      "w-es",
+      "w-mir",
+      "w-besser"
+     ],
+     "cloze": {
+      "answer": "mir",
+      "distractors": [
+       "ich",
+       "mich"
+      ]
+     }
+    },
+    {
+     "id": "u23-s12",
+     "target": "Mein Kopf und mein Bauch tun weh.",
+     "source": "My head and my stomach hurt.",
+     "sourceAccept": [
+      "My head and my belly hurt."
+     ],
+     "words": [
+      "w-mein",
+      "w-kopf",
+      "w-und",
+      "w-bauch",
+      "w-wehtun"
+     ]
+    },
+    {
+     "id": "u23-s13",
+     "target": "Die Apotheke ist dort.",
+     "source": "The pharmacy is there.",
+     "sourceAccept": [
+      "The pharmacy is over there."
+     ],
+     "words": [
+      "w-apotheke",
+      "w-sein",
+      "w-dort"
+     ]
+    },
+    {
+     "id": "u23-s14",
+     "target": "Es geht mir besser, ich bin gesund.",
+     "source": "I am better, I am healthy.",
+     "targetAccept": [
+      "Mir geht es besser, ich bin gesund."
+     ],
+     "sourceAccept": [
+      "I'm better, I'm healthy.",
+      "I am doing better, I am healthy."
+     ],
+     "words": [
+      "w-es",
+      "w-gehen",
+      "w-mir",
+      "w-besser",
+      "w-ich",
+      "w-sein",
+      "w-gesund"
+     ]
+    },
+    {
+     "id": "u23-s15",
+     "target": "Wir sind müde.",
+     "source": "We are tired.",
+     "sourceAccept": [
+      "We're tired."
+     ],
+     "words": [
+      "w-wir",
+      "w-sein",
+      "w-muede"
+     ]
+    },
+    {
+     "id": "u23-s16",
+     "target": "Der Arzt kommt heute.",
+     "source": "The doctor is coming today.",
+     "targetAccept": [
+      "Heute kommt der Arzt."
+     ],
+     "sourceAccept": [
+      "The doctor comes today.",
+      "Today the doctor is coming."
+     ],
+     "words": [
+      "w-arzt",
+      "w-kommen",
+      "w-heute"
+     ]
+    },
+    {
+     "id": "u23-s17",
+     "target": "Brauchst du den Arzt?",
+     "source": "Do you need the doctor?",
+     "words": [
+      "w-brauchen",
+      "w-du",
+      "w-den",
+      "w-arzt"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u24",
+   "title": "Free time",
+   "canDo": "say what I enjoy and invite someone",
+   "tip": {
+    "title": "Gern vs Lieber",
+    "body": "We learned that adding **gern** after a verb means you like doing that activity.\n\nTo say you prefer an activity, use the word **lieber** (rather) instead. Just like **gern**, it usually goes right after the verb.",
+    "examples": [
+     {
+      "target": "Ich laufe gern.",
+      "source": "I like running."
+     },
+     {
+      "target": "Ich laufe lieber.",
+      "source": "I prefer running."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-hobby",
+     "target": "das Hobby",
+     "source": "the hobby",
+     "sourceAccept": [
+      "hobby"
+     ],
+     "plural": "die Hobbys",
+     "pos": "noun"
+    },
+    {
+     "id": "w-musik",
+     "target": "die Musik",
+     "source": "the music",
+     "sourceAccept": [
+      "music"
+     ],
+     "emoji": "🎵",
+     "pos": "noun"
+    },
+    {
+     "id": "w-film",
+     "target": "der Film",
+     "source": "the film",
+     "sourceAccept": [
+      "film",
+      "the movie",
+      "movie"
+     ],
+     "plural": "die Filme",
+     "emoji": "🎬",
+     "pos": "noun"
+    },
+    {
+     "id": "w-konzert",
+     "target": "das Konzert",
+     "source": "the concert",
+     "sourceAccept": [
+      "concert"
+     ],
+     "plural": "die Konzerte",
+     "pos": "noun"
+    },
+    {
+     "id": "w-sport",
+     "target": "der Sport",
+     "source": "the sport",
+     "sourceAccept": [
+      "sport",
+      "sports",
+      "the sports"
+     ],
+     "emoji": "⚽",
+     "pos": "noun"
+    },
+    {
+     "id": "w-sehen",
+     "target": "sehen",
+     "source": "to see",
+     "sourceAccept": [
+      "to watch"
+     ],
+     "forms": [
+      "sehe",
+      "siehst",
+      "sieht",
+      "seht"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-laufen",
+     "target": "laufen",
+     "source": "to run",
+     "forms": [
+      "laufe",
+      "läufst",
+      "läuft",
+      "lauft"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-singen",
+     "target": "singen",
+     "source": "to sing",
+     "forms": [
+      "singe",
+      "singst",
+      "singt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-kino",
+     "target": "das Kino",
+     "source": "the cinema",
+     "sourceAccept": [
+      "cinema",
+      "the movie theater",
+      "movie theater"
+     ],
+     "plural": "die Kinos",
+     "pos": "noun"
+    },
+    {
+     "id": "w-lieber",
+     "target": "lieber",
+     "source": "rather",
+     "sourceAccept": [
+      "prefer"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u24-s01",
+     "target": "Mein Hobby ist Musik.",
+     "source": "My hobby is music.",
+     "words": [
+      "w-mein",
+      "w-hobby",
+      "w-sein",
+      "w-musik"
+     ]
+    },
+    {
+     "id": "u24-s02",
+     "target": "Ich höre gern Musik.",
+     "source": "I like listening to music.",
+     "sourceAccept": [
+      "I like to listen to music.",
+      "I gladly listen to music."
+     ],
+     "words": [
+      "w-ich",
+      "w-hoeren",
+      "w-gern",
+      "w-musik"
+     ]
+    },
+    {
+     "id": "u24-s03",
+     "target": "Siehst du den Film?",
+     "source": "Are you watching the film?",
+     "sourceAccept": [
+      "Do you see the movie?",
+      "Are you watching the movie?",
+      "Do you see the film?",
+      "Are you seeing the film?",
+      "Are you seeing the movie?"
+     ],
+     "words": [
+      "w-sehen",
+      "w-du",
+      "w-den",
+      "w-film"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "der",
+       "das"
+      ]
+     }
+    },
+    {
+     "id": "u24-s04",
+     "target": "Wir gehen in das Kino.",
+     "source": "We are going to the cinema.",
+     "sourceAccept": [
+      "We go to the cinema.",
+      "We're going to the cinema.",
+      "We are going to the movie theater."
+     ],
+     "words": [
+      "w-wir",
+      "w-gehen",
+      "w-in",
+      "w-kino"
+     ],
+     "cloze": {
+      "answer": "das",
+      "distractors": [
+       "der",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u24-s05",
+     "target": "Ich mache gern Sport, aber ich laufe lieber.",
+     "source": "I like doing sports, but I prefer running.",
+     "sourceAccept": [
+      "I like to do sports, but I prefer to run.",
+      "I like doing sport but I prefer running.",
+      "I like doing sports but I prefer running."
+     ],
+     "words": [
+      "w-ich",
+      "w-machen",
+      "w-gern",
+      "w-sport",
+      "w-aber",
+      "w-laufen",
+      "w-lieber"
+     ],
+     "cloze": {
+      "answer": "mache",
+      "distractors": [
+       "machst",
+       "machen"
+      ]
+     }
+    },
+    {
+     "id": "u24-s06",
+     "target": "Singst du gern?",
+     "source": "Do you like singing?",
+     "sourceAccept": [
+      "Do you like to sing?"
+     ],
+     "words": [
+      "w-singen",
+      "w-du",
+      "w-gern"
+     ]
+    },
+    {
+     "id": "u24-s07",
+     "target": "Das Konzert ist morgen.",
+     "source": "The concert is tomorrow.",
+     "targetAccept": [
+      "Morgen ist das Konzert."
+     ],
+     "words": [
+      "w-konzert",
+      "w-sein",
+      "w-morgen"
+     ]
+    },
+    {
+     "id": "u24-s08",
+     "target": "Sie läuft heute.",
+     "source": "She is running today.",
+     "targetAccept": [
+      "Heute läuft sie."
+     ],
+     "sourceAccept": [
+      "She runs today."
+     ],
+     "words": [
+      "w-sie-she",
+      "w-laufen",
+      "w-heute"
+     ]
+    },
+    {
+     "id": "u24-s09",
+     "target": "Wir sehen einen Film.",
+     "source": "We are watching a movie.",
+     "sourceAccept": [
+      "We are watching a film.",
+      "We watch a film.",
+      "We watch a movie.",
+      "We see a film."
+     ],
+     "words": [
+      "w-wir",
+      "w-sehen",
+      "w-einen",
+      "w-film"
+     ]
+    },
+    {
+     "id": "u24-s10",
+     "target": "Hörst du lieber Musik?",
+     "source": "Do you prefer listening to music?",
+     "sourceAccept": [
+      "Do you prefer to listen to music?"
+     ],
+     "words": [
+      "w-hoeren",
+      "w-du",
+      "w-lieber",
+      "w-musik"
+     ],
+     "cloze": {
+      "answer": "lieber",
+      "distractors": [
+       "liebst",
+       "lieben"
+      ]
+     }
+    },
+    {
+     "id": "u24-s11",
+     "target": "Mein Hobby ist Sport.",
+     "source": "My hobby is sport.",
+     "sourceAccept": [
+      "My hobby is sports."
+     ],
+     "words": [
+      "w-mein",
+      "w-hobby",
+      "w-sein",
+      "w-sport"
+     ]
+    },
+    {
+     "id": "u24-s12",
+     "target": "Sie singen heute.",
+     "source": "You are singing today.",
+     "targetAccept": [
+      "Heute singen Sie."
+     ],
+     "sourceAccept": [
+      "They are singing today.",
+      "You sing today.",
+      "They sing today."
+     ],
+     "words": [
+      "w-sie",
+      "w-singen",
+      "w-heute"
+     ]
+    },
+    {
+     "id": "u24-s13",
+     "target": "Ich sehe den Film lieber allein.",
+     "source": "I prefer watching the film alone.",
+     "sourceAccept": [
+      "I prefer watching the movie alone.",
+      "I prefer to watch the film alone."
+     ],
+     "words": [
+      "w-ich",
+      "w-sehen",
+      "w-den",
+      "w-film",
+      "w-lieber",
+      "w-allein"
+     ]
+    },
+    {
+     "id": "u24-s14",
+     "target": "Wir laufen und wir singen.",
+     "source": "We run and we sing.",
+     "sourceAccept": [
+      "We are running and we are singing.",
+      "We're running and we're singing."
+     ],
+     "words": [
+      "w-wir",
+      "w-laufen",
+      "w-und",
+      "w-singen"
+     ]
+    },
+    {
+     "id": "u24-s15",
+     "target": "Geht ihr in das Kino oder in das Konzert?",
+     "source": "Are you going to the cinema or to the concert?",
+     "sourceAccept": [
+      "Do you go to the cinema or to the concert?",
+      "Are you all going to the cinema or to the concert?"
+     ],
+     "words": [
+      "w-gehen",
+      "w-ihr",
+      "w-in",
+      "w-kino",
+      "w-oder",
+      "w-konzert"
+     ],
+     "cloze": {
+      "answer": "ihr",
+      "distractors": [
+       "wir",
+       "du"
+      ]
+     }
+    },
+    {
+     "id": "u24-s16",
+     "target": "Mein Bruder macht Sport.",
+     "source": "My brother plays sports.",
+     "sourceAccept": [
+      "My brother does sports.",
+      "My brother is doing sports."
+     ],
+     "words": [
+      "w-mein",
+      "w-bruder",
+      "w-machen",
+      "w-sport"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u25",
+   "title": "Yesterday, briefly",
+   "canDo": "understand a few common past statements",
+   "tip": {
+    "title": "Talking about the past",
+    "body": "To talk about the past, German uses a helping verb (usually **haben**) in the second position of the sentence.\n\nThe real action goes to the very end of the sentence and usually starts with **ge-** (like **gemacht** or **gekauft**).\n\nIf the action involves moving from A to B (like travelling or coming), use **sein** (to be) as the helping verb instead of **haben**.",
+    "examples": [
+     {
+      "target": "Er hat gestern viel gemacht.",
+      "source": "He did a lot yesterday."
+     },
+     {
+      "target": "Wir sind pünktlich gekommen.",
+      "source": "We arrived on time."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-gestern",
+     "target": "gestern",
+     "source": "yesterday",
+     "pos": "adv"
+    },
+    {
+     "id": "w-gewesen",
+     "target": "gewesen",
+     "source": "been",
+     "pos": "verb"
+    },
+    {
+     "id": "w-gehabt",
+     "target": "gehabt",
+     "source": "had",
+     "pos": "verb"
+    },
+    {
+     "id": "w-gemacht",
+     "target": "gemacht",
+     "source": "done",
+     "sourceAccept": [
+      "made",
+      "did"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-gelernt",
+     "target": "gelernt",
+     "source": "learned",
+     "sourceAccept": [
+      "studied"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-gekauft",
+     "target": "gekauft",
+     "source": "bought",
+     "pos": "verb"
+    },
+    {
+     "id": "w-gefahren",
+     "target": "gefahren",
+     "source": "travelled",
+     "sourceAccept": [
+      "driven"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-gekommen",
+     "target": "gekommen",
+     "source": "come",
+     "sourceAccept": [
+      "arrived"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-schon",
+     "target": "schon",
+     "source": "already",
+     "pos": "adv"
+    },
+    {
+     "id": "w-noch",
+     "target": "noch",
+     "source": "still",
+     "sourceAccept": [
+      "yet"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u25-s01",
+     "target": "Ich bin gestern in Berlin gewesen.",
+     "source": "I was in Berlin yesterday.",
+     "targetAccept": [
+      "Gestern bin ich in Berlin gewesen."
+     ],
+     "sourceAccept": [
+      "Yesterday I was in Berlin.",
+      "I have been in Berlin yesterday."
+     ],
+     "words": [
+      "w-ich",
+      "w-sein",
+      "w-gestern",
+      "w-in",
+      "w-gewesen"
+     ],
+     "cloze": {
+      "answer": "bin",
+      "distractors": [
+       "habe",
+       "hast"
+      ]
+     }
+    },
+    {
+     "id": "u25-s02",
+     "target": "Hast du das Buch schon gekauft?",
+     "source": "Have you already bought the book?",
+     "sourceAccept": [
+      "Did you already buy the book?",
+      "Have you bought the book already?"
+     ],
+     "words": [
+      "w-haben",
+      "w-du",
+      "w-buch",
+      "w-schon",
+      "w-gekauft"
+     ],
+     "cloze": {
+      "answer": "gekauft",
+      "distractors": [
+       "kaufst",
+       "kaufen"
+      ]
+     }
+    },
+    {
+     "id": "u25-s03",
+     "target": "Wir haben gestern Deutsch gelernt.",
+     "source": "We learned German yesterday.",
+     "targetAccept": [
+      "Gestern haben wir Deutsch gelernt."
+     ],
+     "sourceAccept": [
+      "Yesterday we learned German.",
+      "We have learned German yesterday."
+     ],
+     "words": [
+      "w-wir",
+      "w-haben",
+      "w-gestern",
+      "w-deutsch",
+      "w-gelernt"
+     ],
+     "cloze": {
+      "answer": "haben",
+      "distractors": [
+       "sind",
+       "seid"
+      ]
+     }
+    },
+    {
+     "id": "u25-s04",
+     "target": "Er ist schon gekommen.",
+     "source": "He has already come.",
+     "sourceAccept": [
+      "He already came.",
+      "He is already here."
+     ],
+     "words": [
+      "w-er",
+      "w-sein",
+      "w-schon",
+      "w-gekommen"
+     ],
+     "cloze": {
+      "answer": "gekommen",
+      "distractors": [
+       "kommen",
+       "kommt"
+      ]
+     }
+    },
+    {
+     "id": "u25-s05",
+     "target": "Bist du nach England gefahren?",
+     "source": "Did you travel to England?",
+     "sourceAccept": [
+      "Have you travelled to England?",
+      "Did you drive to England?",
+      "Have you driven to England?"
+     ],
+     "words": [
+      "w-sein",
+      "w-du",
+      "w-nach",
+      "w-england",
+      "w-gefahren"
+     ],
+     "cloze": {
+      "answer": "gefahren",
+      "distractors": [
+       "fahre",
+       "fährst"
+      ]
+     }
+    },
+    {
+     "id": "u25-s06",
+     "target": "Was hast du gestern gemacht?",
+     "source": "What did you do yesterday?",
+     "sourceAccept": [
+      "What have you done yesterday?"
+     ],
+     "words": [
+      "w-was",
+      "w-haben",
+      "w-du",
+      "w-gestern",
+      "w-gemacht"
+     ]
+    },
+    {
+     "id": "u25-s07",
+     "target": "Ich habe noch keine Zeitung gekauft.",
+     "source": "I have not bought a newspaper yet.",
+     "sourceAccept": [
+      "I haven't bought a newspaper yet.",
+      "I still haven't bought a newspaper."
+     ],
+     "words": [
+      "w-ich",
+      "w-haben",
+      "w-noch",
+      "w-keine",
+      "w-zeitung",
+      "w-gekauft"
+     ]
+    },
+    {
+     "id": "u25-s08",
+     "target": "Sie hat gestern frei gehabt.",
+     "source": "She had time off yesterday.",
+     "targetAccept": [
+      "Gestern hat sie frei gehabt."
+     ],
+     "sourceAccept": [
+      "She was free yesterday.",
+      "Yesterday she was free.",
+      "She had yesterday off."
+     ],
+     "words": [
+      "w-sie-she",
+      "w-haben",
+      "w-gestern",
+      "w-frei",
+      "w-gehabt"
+     ]
+    },
+    {
+     "id": "u25-s09",
+     "target": "Wir sind pünktlich gekommen.",
+     "source": "We arrived on time.",
+     "sourceAccept": [
+      "We came on time.",
+      "We have come on time."
+     ],
+     "words": [
+      "w-wir",
+      "w-sein",
+      "w-puenktlich",
+      "w-gekommen"
+     ]
+    },
+    {
+     "id": "u25-s10",
+     "target": "Habt ihr schon gelernt?",
+     "source": "Have you already learned?",
+     "sourceAccept": [
+      "Have you already studied?",
+      "Did you already study?",
+      "Did you all already study?"
+     ],
+     "words": [
+      "w-haben",
+      "w-ihr",
+      "w-schon",
+      "w-gelernt"
+     ]
+    },
+    {
+     "id": "u25-s11",
+     "target": "Ich bin gestern nicht gefahren.",
+     "source": "I did not drive yesterday.",
+     "targetAccept": [
+      "Gestern bin ich nicht gefahren."
+     ],
+     "sourceAccept": [
+      "I didn't drive yesterday.",
+      "I did not travel yesterday."
+     ],
+     "words": [
+      "w-ich",
+      "w-sein",
+      "w-gestern",
+      "w-nicht",
+      "w-gefahren"
+     ]
+    },
+    {
+     "id": "u25-s12",
+     "target": "Er hat gestern viel gemacht.",
+     "source": "He did a lot yesterday.",
+     "targetAccept": [
+      "Gestern hat er viel gemacht."
+     ],
+     "sourceAccept": [
+      "He has done a lot yesterday."
+     ],
+     "words": [
+      "w-er",
+      "w-haben",
+      "w-gestern",
+      "w-viel",
+      "w-gemacht"
+     ]
+    },
+    {
+     "id": "u25-s13",
+     "target": "Wir sind schon in Berlin gewesen.",
+     "source": "We have already been in Berlin.",
+     "sourceAccept": [
+      "We were already in Berlin."
+     ],
+     "words": [
+      "w-wir",
+      "w-sein",
+      "w-schon",
+      "w-in",
+      "w-gewesen"
+     ]
+    },
+    {
+     "id": "u25-s14",
+     "target": "Ist Leon schon gekommen?",
+     "source": "Has Leon already come?",
+     "sourceAccept": [
+      "Did Leon already come?",
+      "Is Leon already here?"
+     ],
+     "words": [
+      "w-sein",
+      "w-schon",
+      "w-gekommen"
+     ]
+    },
+    {
+     "id": "u25-s15",
+     "target": "Ich habe noch Zeit gehabt.",
+     "source": "I still had time.",
+     "sourceAccept": [
+      "I have still had time."
+     ],
+     "words": [
+      "w-ich",
+      "w-haben",
+      "w-noch",
+      "w-zeit",
+      "w-gehabt"
+     ]
+    },
+    {
+     "id": "u25-s16",
+     "target": "Was haben Sie gestern gemacht?",
+     "source": "What did you do yesterday?",
+     "sourceAccept": [
+      "What have you done yesterday?"
+     ],
+     "words": [
+      "w-was",
+      "w-haben",
+      "w-sie",
+      "w-gestern",
+      "w-gemacht"
+     ]
+    },
+    {
+     "id": "u25-s17",
+     "target": "Hast du das Ticket schon gekauft?",
+     "source": "Have you already bought the ticket?",
+     "sourceAccept": [
+      "Did you already buy the ticket?"
+     ],
+     "words": [
+      "w-haben",
+      "w-du",
+      "w-ticket",
+      "w-schon",
+      "w-gekauft"
+     ]
+    }
+   ]
+  }
+ ]
+}

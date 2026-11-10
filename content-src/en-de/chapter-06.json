@@ -1,0 +1,2435 @@
+{
+ "id": "c06",
+ "title": "Chapter 6 — Travel and A1 tasks",
+ "cefr": "A1",
+ "description": "Book a room, buy tickets, invite friends, and read basic forms.",
+ "units": [
+  {
+   "id": "u26",
+   "title": "At the hotel",
+   "canDo": "Check in and ask about a room",
+   "tip": {
+    "title": "Who is it for?",
+    "body": "When you use **für** (for), the next word is the direct object (accusative). So masculine words change their article to **den** or **einen**.\n\nFeminine and neuter words don't change. You can say **für das Einzelzimmer** or **für den Vater**.",
+    "examples": [
+     {
+      "target": "Das ist für den Vater.",
+      "source": "That is for the father."
+     },
+     {
+      "target": "Der Schlüssel ist für das Doppelzimmer.",
+      "source": "The key is for the double room."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-reservieren",
+     "target": "reservieren",
+     "source": "to reserve",
+     "targetAccept": [
+      "buchen"
+     ],
+     "sourceAccept": [
+      "to book"
+     ],
+     "forms": [
+      "reserviere",
+      "reservierst",
+      "reserviert"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-einzelzimmer",
+     "target": "das Einzelzimmer",
+     "source": "the single room",
+     "sourceAccept": [
+      "single room"
+     ],
+     "plural": "die Einzelzimmer",
+     "pos": "noun"
+    },
+    {
+     "id": "w-fuer",
+     "target": "für",
+     "source": "for",
+     "pos": "prep"
+    },
+    {
+     "id": "w-nacht",
+     "target": "die Nacht",
+     "source": "the night",
+     "sourceAccept": [
+      "night"
+     ],
+     "plural": "die Nächte",
+     "pos": "noun"
+    },
+    {
+     "id": "w-doppelzimmer",
+     "target": "das Doppelzimmer",
+     "source": "the double room",
+     "sourceAccept": [
+      "double room"
+     ],
+     "plural": "die Doppelzimmer",
+     "pos": "noun"
+    },
+    {
+     "id": "w-reservierung",
+     "target": "die Reservierung",
+     "source": "the reservation",
+     "sourceAccept": [
+      "reservation",
+      "the booking",
+      "booking"
+     ],
+     "plural": "die Reservierungen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-bleiben",
+     "target": "bleiben",
+     "source": "to stay",
+     "sourceAccept": [
+      "to remain"
+     ],
+     "forms": [
+      "bleibe",
+      "bleibst",
+      "bleibt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-pass",
+     "target": "der Pass",
+     "source": "the passport",
+     "sourceAccept": [
+      "passport"
+     ],
+     "plural": "die Pässe",
+     "pos": "noun",
+     "emoji": "🛂"
+    },
+    {
+     "id": "w-schluessel",
+     "target": "der Schlüssel",
+     "source": "the key",
+     "sourceAccept": [
+      "key"
+     ],
+     "plural": "die Schlüssel",
+     "pos": "noun",
+     "emoji": "🔑"
+    },
+    {
+     "id": "w-gepaeck",
+     "target": "das Gepäck",
+     "source": "the luggage",
+     "sourceAccept": [
+      "luggage",
+      "the baggage",
+      "baggage"
+     ],
+     "pos": "noun",
+     "emoji": "🧳"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u26-s01",
+     "target": "Ich reserviere das Einzelzimmer für eine Nacht.",
+     "source": "I am reserving the single room for one night.",
+     "targetAccept": [
+      "Das Einzelzimmer reserviere ich für eine Nacht."
+     ],
+     "sourceAccept": [
+      "I reserve the single room for one night.",
+      "I book the single room for a night.",
+      "I am booking the single room for one night."
+     ],
+     "words": [
+      "w-ich",
+      "w-reservieren",
+      "w-einzelzimmer",
+      "w-fuer",
+      "w-eine",
+      "w-nacht"
+     ],
+     "cloze": {
+      "answer": "reserviere",
+      "distractors": [
+       "reserviert",
+       "reservierst"
+      ]
+     }
+    },
+    {
+     "id": "u26-s02",
+     "target": "Das Einzelzimmer ist für eine Nacht.",
+     "source": "The single room is for one night.",
+     "targetAccept": [
+      "Für eine Nacht ist das Einzelzimmer."
+     ],
+     "sourceAccept": [
+      "The single room is for a night."
+     ],
+     "words": [
+      "w-einzelzimmer",
+      "w-sein",
+      "w-fuer",
+      "w-eine",
+      "w-nacht"
+     ]
+    },
+    {
+     "id": "u26-s03",
+     "target": "Reservieren Sie das Doppelzimmer?",
+     "source": "Are you reserving the double room?",
+     "targetAccept": [
+      "Reservierst du das Doppelzimmer?",
+      "Reserviert ihr das Doppelzimmer?"
+     ],
+     "sourceAccept": [
+      "Do you reserve the double room?",
+      "Are you booking the double room?",
+      "Do you book the double room?"
+     ],
+     "words": [
+      "w-reservieren",
+      "w-sie",
+      "w-doppelzimmer"
+     ]
+    },
+    {
+     "id": "u26-s04",
+     "target": "Die Reservierung ist für zwei Nächte.",
+     "source": "The reservation is for two nights.",
+     "targetAccept": [
+      "Für zwei Nächte ist die Reservierung."
+     ],
+     "sourceAccept": [
+      "The booking is for two nights."
+     ],
+     "words": [
+      "w-reservierung",
+      "w-sein",
+      "w-fuer",
+      "w-zwei",
+      "w-nacht"
+     ],
+     "cloze": {
+      "answer": "für",
+      "distractors": [
+       "um",
+       "am"
+      ]
+     }
+    },
+    {
+     "id": "u26-s05",
+     "target": "Wir bleiben eine Nacht.",
+     "source": "We are staying one night.",
+     "targetAccept": [
+      "Eine Nacht bleiben wir."
+     ],
+     "sourceAccept": [
+      "We stay one night.",
+      "We are staying for a night."
+     ],
+     "words": [
+      "w-wir",
+      "w-bleiben",
+      "w-eine",
+      "w-nacht"
+     ]
+    },
+    {
+     "id": "u26-s06",
+     "target": "Bleiben Sie zwei Nächte?",
+     "source": "Are you staying two nights?",
+     "targetAccept": [
+      "Bleibst du zwei Nächte?",
+      "Bleibt ihr zwei Nächte?"
+     ],
+     "sourceAccept": [
+      "Do you stay two nights?",
+      "Are you staying for two nights?"
+     ],
+     "words": [
+      "w-bleiben",
+      "w-sie",
+      "w-zwei",
+      "w-nacht"
+     ],
+     "cloze": {
+      "answer": "Sie",
+      "distractors": [
+       "du",
+       "ich"
+      ]
+     }
+    },
+    {
+     "id": "u26-s07",
+     "target": "Hier ist der Pass.",
+     "source": "Here is the passport.",
+     "targetAccept": [
+      "Der Pass ist hier."
+     ],
+     "sourceAccept": [
+      "The passport is here."
+     ],
+     "words": [
+      "w-hier",
+      "w-sein",
+      "w-pass"
+     ],
+     "cloze": {
+      "answer": "der",
+      "distractors": [
+       "den",
+       "das"
+      ]
+     }
+    },
+    {
+     "id": "u26-s08",
+     "target": "Ich brauche den Pass.",
+     "source": "I need the passport.",
+     "targetAccept": [
+      "Den Pass brauche ich."
+     ],
+     "words": [
+      "w-ich",
+      "w-brauchen",
+      "w-den",
+      "w-pass"
+     ]
+    },
+    {
+     "id": "u26-s09",
+     "target": "Hier ist der Schlüssel für das Doppelzimmer.",
+     "source": "Here is the key for the double room.",
+     "targetAccept": [
+      "Der Schlüssel für das Doppelzimmer ist hier."
+     ],
+     "sourceAccept": [
+      "The key for the double room is here."
+     ],
+     "words": [
+      "w-hier",
+      "w-sein",
+      "w-schluessel",
+      "w-fuer",
+      "w-doppelzimmer"
+     ]
+    },
+    {
+     "id": "u26-s10",
+     "target": "Ich habe den Schlüssel nicht.",
+     "source": "I do not have the key.",
+     "targetAccept": [
+      "Den Schlüssel habe ich nicht."
+     ],
+     "sourceAccept": [
+      "I don't have the key."
+     ],
+     "words": [
+      "w-ich",
+      "w-haben",
+      "w-den",
+      "w-schluessel",
+      "w-nicht"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "der",
+       "dem"
+      ]
+     }
+    },
+    {
+     "id": "u26-s11",
+     "target": "Das Gepäck ist hier.",
+     "source": "The luggage is here.",
+     "targetAccept": [
+      "Hier ist das Gepäck."
+     ],
+     "sourceAccept": [
+      "The baggage is here.",
+      "Here is the luggage."
+     ],
+     "words": [
+      "w-gepaeck",
+      "w-sein",
+      "w-hier"
+     ]
+    },
+    {
+     "id": "u26-s12",
+     "target": "Haben Sie das Gepäck?",
+     "source": "Do you have the luggage?",
+     "targetAccept": [
+      "Hast du das Gepäck?",
+      "Habt ihr das Gepäck?"
+     ],
+     "sourceAccept": [
+      "Have you got the luggage?",
+      "Do you have the baggage?"
+     ],
+     "words": [
+      "w-haben",
+      "w-sie",
+      "w-gepaeck"
+     ]
+    },
+    {
+     "id": "u26-s13",
+     "target": "Wir haben eine Reservierung für heute.",
+     "source": "We have a reservation for today.",
+     "targetAccept": [
+      "Für heute haben wir eine Reservierung.",
+      "Wir haben für heute eine Reservierung."
+     ],
+     "sourceAccept": [
+      "We've got a booking for today.",
+      "We have a booking for today."
+     ],
+     "words": [
+      "w-wir",
+      "w-haben",
+      "w-eine",
+      "w-reservierung",
+      "w-fuer",
+      "w-heute"
+     ]
+    },
+    {
+     "id": "u26-s14",
+     "target": "Ist das Doppelzimmer für Sie?",
+     "source": "Is the double room for you?",
+     "targetAccept": [
+      "Ist das Doppelzimmer für dich?",
+      "Ist das Doppelzimmer für euch?"
+     ],
+     "words": [
+      "w-sein",
+      "w-doppelzimmer",
+      "w-fuer",
+      "w-sie"
+     ]
+    },
+    {
+     "id": "u26-s15",
+     "target": "Das Doppelzimmer ist für den Vater.",
+     "source": "The double room is for the father.",
+     "targetAccept": [
+      "Für den Vater ist das Doppelzimmer."
+     ],
+     "words": [
+      "w-doppelzimmer",
+      "w-sein",
+      "w-fuer",
+      "w-den",
+      "w-vater"
+     ],
+     "cloze": {
+      "answer": "den",
+      "distractors": [
+       "der",
+       "dem"
+      ]
+     }
+    },
+    {
+     "id": "u26-s16",
+     "target": "Ich suche das Gepäck.",
+     "source": "I am looking for the luggage.",
+     "targetAccept": [
+      "Das Gepäck suche ich."
+     ],
+     "sourceAccept": [
+      "I look for the luggage.",
+      "I am searching for the luggage."
+     ],
+     "words": [
+      "w-ich",
+      "w-suchen",
+      "w-gepaeck"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u27",
+   "title": "Tickets and times",
+   "canDo": "Buy a ticket and understand departure details",
+   "tip": {
+    "title": "Where are you heading?",
+    "body": "When you want to know the destination, use **wohin** (where to). Compare it with **wo** (where), which asks for a fixed location.\n\nUse **hin** for a journey there, and **zurück** for the journey back.",
+    "examples": [
+     {
+      "target": "Wo ist der Zug?",
+      "source": "Where is the train?"
+     },
+     {
+      "target": "Wohin fährt der Zug?",
+      "source": "Where is the train going?"
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-fahrkarte",
+     "target": "die Fahrkarte",
+     "source": "the ticket",
+     "sourceAccept": [
+      "ticket"
+     ],
+     "plural": "die Fahrkarten",
+     "pos": "noun",
+     "emoji": "🎫"
+    },
+    {
+     "id": "w-schalter",
+     "target": "der Schalter",
+     "source": "the ticket counter",
+     "sourceAccept": [
+      "ticket counter",
+      "the counter",
+      "counter"
+     ],
+     "plural": "die Schalter",
+     "pos": "noun"
+    },
+    {
+     "id": "w-einfach",
+     "target": "einfach",
+     "source": "one-way",
+     "sourceAccept": [
+      "simple",
+      "single"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-hin",
+     "target": "hin",
+     "source": "there",
+     "pos": "adv"
+    },
+    {
+     "id": "w-zurueck",
+     "target": "zurück",
+     "source": "back",
+     "sourceAccept": [
+      "return"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-wohin",
+     "target": "wohin",
+     "source": "where to",
+     "sourceAccept": [
+      "where"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-gleis",
+     "target": "das Gleis",
+     "source": "the platform",
+     "sourceAccept": [
+      "platform",
+      "the track",
+      "track"
+     ],
+     "plural": "die Gleise",
+     "pos": "noun"
+    },
+    {
+     "id": "w-ab",
+     "target": "ab",
+     "source": "from",
+     "sourceAccept": [
+      "departing from"
+     ],
+     "pos": "prep"
+    },
+    {
+     "id": "w-umsteigen",
+     "target": "umsteigen",
+     "source": "to change trains",
+     "sourceAccept": [
+      "to transfer",
+      "change trains"
+     ],
+     "forms": [
+      "steige",
+      "steigst",
+      "steigt",
+      "steigen",
+      "um"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-dauern",
+     "target": "dauern",
+     "source": "to take time",
+     "sourceAccept": [
+      "to take",
+      "to last"
+     ],
+     "forms": [
+      "dauert",
+      "dauern"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-stunde",
+     "target": "die Stunde",
+     "source": "the hour",
+     "sourceAccept": [
+      "hour"
+     ],
+     "plural": "die Stunden",
+     "pos": "noun"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u27-s01",
+     "target": "Ich kaufe die Fahrkarte am Schalter.",
+     "source": "I am buying the ticket at the counter.",
+     "targetAccept": [
+      "Am Schalter kaufe ich die Fahrkarte."
+     ],
+     "sourceAccept": [
+      "I buy the ticket at the ticket counter.",
+      "I'm buying the ticket at the counter."
+     ],
+     "words": [
+      "w-ich",
+      "w-kaufen",
+      "w-fahrkarte",
+      "w-am",
+      "w-schalter"
+     ]
+    },
+    {
+     "id": "u27-s02",
+     "target": "Die Fahrkarte ist einfach.",
+     "source": "The ticket is one-way.",
+     "targetAccept": [
+      "Einfach ist die Fahrkarte."
+     ],
+     "sourceAccept": [
+      "The ticket is a single."
+     ],
+     "words": [
+      "w-fahrkarte",
+      "w-sein",
+      "w-einfach"
+     ]
+    },
+    {
+     "id": "u27-s03",
+     "target": "Bitte eine Fahrkarte, einfach.",
+     "source": "A ticket please, one-way.",
+     "targetAccept": [
+      "Eine Fahrkarte, einfach bitte."
+     ],
+     "sourceAccept": [
+      "A ticket, single, please.",
+      "Please a one-way ticket."
+     ],
+     "words": [
+      "w-bitte",
+      "w-eine",
+      "w-fahrkarte",
+      "w-einfach"
+     ]
+    },
+    {
+     "id": "u27-s04",
+     "target": "Wohin fahren Sie?",
+     "source": "Where are you traveling to?",
+     "targetAccept": [
+      "Wohin fährst du?",
+      "Wohin fahrt ihr?"
+     ],
+     "sourceAccept": [
+      "Where are you going to?",
+      "Where do you travel?"
+     ],
+     "words": [
+      "w-wohin",
+      "w-fahren",
+      "w-sie"
+     ],
+     "cloze": {
+      "answer": "Wohin",
+      "distractors": [
+       "Wo",
+       "Woher"
+      ]
+     }
+    },
+    {
+     "id": "u27-s05",
+     "target": "Wohin fährst du morgen?",
+     "source": "Where are you going tomorrow?",
+     "targetAccept": [
+      "Wohin fahren Sie morgen?",
+      "Wohin fahrt ihr morgen?",
+      "Morgen fährst du wohin?"
+     ],
+     "sourceAccept": [
+      "Where are you traveling to tomorrow?",
+      "Where will you go tomorrow?"
+     ],
+     "words": [
+      "w-wohin",
+      "w-fahren",
+      "w-du",
+      "w-morgen"
+     ]
+    },
+    {
+     "id": "u27-s06",
+     "target": "Eine Fahrkarte nach Berlin, hin und zurück.",
+     "source": "A ticket to Berlin, return.",
+     "targetAccept": [
+      "Eine Fahrkarte, hin und zurück nach Berlin."
+     ],
+     "sourceAccept": [
+      "A ticket to Berlin, there and back."
+     ],
+     "words": [
+      "w-eine",
+      "w-fahrkarte",
+      "w-nach",
+      "w-hin",
+      "w-und",
+      "w-zurueck"
+     ],
+     "cloze": {
+      "answer": "hin",
+      "distractors": [
+       "hier",
+       "her"
+      ]
+     }
+    },
+    {
+     "id": "u27-s07",
+     "target": "Der Zug fährt ab Gleis zwei.",
+     "source": "The train departs from platform two.",
+     "targetAccept": [
+      "Ab Gleis zwei fährt der Zug."
+     ],
+     "sourceAccept": [
+      "The train leaves from platform two.",
+      "The train departs from track two."
+     ],
+     "words": [
+      "w-zug",
+      "w-fahren",
+      "w-ab",
+      "w-gleis",
+      "w-zwei"
+     ],
+     "cloze": {
+      "answer": "ab",
+      "distractors": [
+       "am",
+       "in"
+      ]
+     }
+    },
+    {
+     "id": "u27-s08",
+     "target": "Fährt der Bus ab Gleis zehn?",
+     "source": "Does the bus depart from platform ten?",
+     "targetAccept": [
+      "Fährt der Bus von Gleis zehn ab?"
+     ],
+     "sourceAccept": [
+      "Is the bus leaving from platform ten?"
+     ],
+     "words": [
+      "w-bus",
+      "w-fahren",
+      "w-ab",
+      "w-gleis",
+      "w-zehn"
+     ]
+    },
+    {
+     "id": "u27-s09",
+     "target": "Sie müssen in Berlin umsteigen.",
+     "source": "You must change trains in Berlin.",
+     "targetAccept": [
+      "Du musst in Berlin umsteigen.",
+      "Ihr müsst in Berlin umsteigen.",
+      "In Berlin müssen Sie umsteigen."
+     ],
+     "sourceAccept": [
+      "You have to transfer in Berlin.",
+      "You need to change in Berlin."
+     ],
+     "words": [
+      "w-sie",
+      "w-muessen",
+      "w-in",
+      "w-umsteigen"
+     ],
+     "cloze": {
+      "answer": "müssen",
+      "distractors": [
+       "muss",
+       "musst"
+      ]
+     }
+    },
+    {
+     "id": "u27-s10",
+     "target": "Müssen wir umsteigen?",
+     "source": "Do we have to change trains?",
+     "targetAccept": [
+      "Müssen wir transferieren?"
+     ],
+     "sourceAccept": [
+      "Do we need to transfer?",
+      "Must we change?"
+     ],
+     "words": [
+      "w-muessen",
+      "w-wir",
+      "w-umsteigen"
+     ]
+    },
+    {
+     "id": "u27-s11",
+     "target": "Es dauert eine Stunde.",
+     "source": "It takes an hour.",
+     "targetAccept": [
+      "Eine Stunde dauert es."
+     ],
+     "sourceAccept": [
+      "It takes one hour.",
+      "It lasts an hour."
+     ],
+     "words": [
+      "w-es",
+      "w-dauern",
+      "w-eine",
+      "w-stunde"
+     ],
+     "cloze": {
+      "answer": "dauert",
+      "distractors": [
+       "dauern",
+       "brauche"
+      ]
+     }
+    },
+    {
+     "id": "u27-s12",
+     "target": "Das dauert zwei Stunden.",
+     "source": "That takes two hours.",
+     "targetAccept": [
+      "Zwei Stunden dauert das."
+     ],
+     "sourceAccept": [
+      "That lasts two hours."
+     ],
+     "words": [
+      "w-das",
+      "w-dauern",
+      "w-zwei",
+      "w-stunde"
+     ]
+    },
+    {
+     "id": "u27-s13",
+     "target": "Wo ist der Schalter?",
+     "source": "Where is the ticket counter?",
+     "targetAccept": [
+      "Wo ist der Ticketschalter?"
+     ],
+     "sourceAccept": [
+      "Where is the counter?"
+     ],
+     "words": [
+      "w-wo",
+      "w-sein",
+      "w-schalter"
+     ]
+    },
+    {
+     "id": "u27-s14",
+     "target": "Wohin fährt der Zug?",
+     "source": "Where is the train going?",
+     "targetAccept": [
+      "Wohin fährt dieser Zug?"
+     ],
+     "sourceAccept": [
+      "Where is the train traveling to?"
+     ],
+     "words": [
+      "w-wohin",
+      "w-fahren",
+      "w-zug"
+     ]
+    },
+    {
+     "id": "u27-s15",
+     "target": "Wir fahren einfach nach Berlin.",
+     "source": "We are traveling one-way to Berlin.",
+     "targetAccept": [
+      "Einfach nach Berlin fahren wir."
+     ],
+     "sourceAccept": [
+      "We travel single to Berlin."
+     ],
+     "words": [
+      "w-wir",
+      "w-fahren",
+      "w-einfach",
+      "w-nach"
+     ]
+    },
+    {
+     "id": "u27-s16",
+     "target": "Der Zug fährt ab hier.",
+     "source": "The train departs from here.",
+     "targetAccept": [
+      "Ab hier fährt der Zug."
+     ],
+     "sourceAccept": [
+      "The train leaves from here."
+     ],
+     "words": [
+      "w-zug",
+      "w-fahren",
+      "w-ab",
+      "w-hier"
+     ]
+    },
+    {
+     "id": "u27-s17",
+     "target": "Wir fahren nicht zurück.",
+     "source": "We are not traveling back.",
+     "targetAccept": [
+      "Zurück fahren wir nicht."
+     ],
+     "sourceAccept": [
+      "We aren't traveling back.",
+      "We do not travel back.",
+      "We don't travel back."
+     ],
+     "words": [
+      "w-wir",
+      "w-fahren",
+      "w-nicht",
+      "w-zurueck"
+     ]
+    },
+    {
+     "id": "u27-s18",
+     "target": "Fahren Sie heute hin?",
+     "source": "Are you traveling there today?",
+     "targetAccept": [
+      "Fährst du heute hin?",
+      "Fahrt ihr heute hin?"
+     ],
+     "sourceAccept": [
+      "Do you travel there today?"
+     ],
+     "words": [
+      "w-fahren",
+      "w-sie",
+      "w-heute",
+      "w-hin"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u28",
+   "title": "An invitation",
+   "canDo": "Invite, accept and decline with a reason",
+   "tip": {
+    "title": "Adding some flavor",
+    "body": "The word **denn** often doesn't translate directly. In questions, it makes you sound friendlier or more curious, a bit like \"so\" or \"tell me\" in English.\n\nSeparable verbs like **einladen** split in simple sentences. The **ein** goes right to the end!",
+    "examples": [
+     {
+      "target": "Wo feiern wir denn?",
+      "source": "So, where are we celebrating?"
+     },
+     {
+      "target": "Ich lade dich ein.",
+      "source": "I am inviting you."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-party",
+     "target": "die Party",
+     "source": "the party",
+     "sourceAccept": [
+      "party"
+     ],
+     "plural": "die Partys",
+     "pos": "noun",
+     "emoji": "🎉"
+    },
+    {
+     "id": "w-wochenende",
+     "target": "das Wochenende",
+     "source": "the weekend",
+     "sourceAccept": [
+      "weekend"
+     ],
+     "plural": "die Wochenenden",
+     "pos": "noun"
+    },
+    {
+     "id": "w-feiern",
+     "target": "feiern",
+     "source": "to celebrate",
+     "sourceAccept": [
+      "to party"
+     ],
+     "forms": [
+      "feiere",
+      "feierst",
+      "feiert"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-einladen",
+     "target": "einladen",
+     "source": "to invite",
+     "forms": [
+      "lade",
+      "lädst",
+      "lädt",
+      "laden",
+      "ein"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-mitkommen",
+     "target": "mitkommen",
+     "source": "to come along",
+     "forms": [
+      "komme",
+      "kommst",
+      "kommt",
+      "kommen",
+      "mit"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-mitbringen",
+     "target": "mitbringen",
+     "source": "to bring along",
+     "forms": [
+      "bringe",
+      "bringst",
+      "bringt",
+      "bringen",
+      "mit"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-toll",
+     "target": "toll",
+     "source": "great",
+     "sourceAccept": [
+      "amazing",
+      "brilliant"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-lust",
+     "target": "die Lust",
+     "source": "the desire",
+     "sourceAccept": [
+      "desire",
+      "mood"
+     ],
+     "pos": "noun"
+    },
+    {
+     "id": "w-schade",
+     "target": "schade",
+     "source": "a pity",
+     "sourceAccept": [
+      "a shame",
+      "too bad"
+     ],
+     "pos": "adj"
+    },
+    {
+     "id": "w-denn",
+     "target": "denn",
+     "source": "then",
+     "sourceAccept": [
+      "so"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u28-s01",
+     "target": "Wir feiern am Wochenende.",
+     "source": "We are celebrating on the weekend.",
+     "targetAccept": [
+      "Am Wochenende feiern wir."
+     ],
+     "sourceAccept": [
+      "We celebrate on the weekend.",
+      "We are partying on the weekend."
+     ],
+     "words": [
+      "w-wir",
+      "w-feiern",
+      "w-am",
+      "w-wochenende"
+     ]
+    },
+    {
+     "id": "u28-s02",
+     "target": "Die Party ist am Wochenende.",
+     "source": "The party is on the weekend.",
+     "targetAccept": [
+      "Am Wochenende ist die Party."
+     ],
+     "sourceAccept": [
+      "The party is this weekend."
+     ],
+     "words": [
+      "w-party",
+      "w-sein",
+      "w-am",
+      "w-wochenende"
+     ],
+     "cloze": {
+      "answer": "am",
+      "distractors": [
+       "im",
+       "um"
+      ]
+     }
+    },
+    {
+     "id": "u28-s03",
+     "target": "Ich lade Sie zur Party ein.",
+     "source": "I am inviting you to the party.",
+     "targetAccept": [
+      "Ich lade dich zur Party ein.",
+      "Ich lade euch zur Party ein.",
+      "Zur Party lade ich Sie ein."
+     ],
+     "sourceAccept": [
+      "I invite you to the party."
+     ],
+     "words": [
+      "w-ich",
+      "w-einladen",
+      "w-sie",
+      "w-zu",
+      "w-party"
+     ],
+     "cloze": {
+      "answer": "lade",
+      "distractors": [
+       "lädt",
+       "laden"
+      ]
+     }
+    },
+    {
+     "id": "u28-s04",
+     "target": "Kommst du am Wochenende mit?",
+     "source": "Are you coming along on the weekend?",
+     "targetAccept": [
+      "Kommen Sie am Wochenende mit?",
+      "Kommt ihr am Wochenende mit?"
+     ],
+     "sourceAccept": [
+      "Do you come along on the weekend?"
+     ],
+     "words": [
+      "w-mitkommen",
+      "w-du",
+      "w-am",
+      "w-wochenende"
+     ]
+    },
+    {
+     "id": "u28-s05",
+     "target": "Ja, ich komme gern mit!",
+     "source": "Yes, I am gladly coming along!",
+     "targetAccept": [
+      "Ja, ich komme gerne mit!",
+      "Ich komme gern mit, ja!"
+     ],
+     "sourceAccept": [
+      "Yes, I would love to come along!",
+      "Yes, I like to come along."
+     ],
+     "words": [
+      "w-ja",
+      "w-ich",
+      "w-mitkommen",
+      "w-gern"
+     ]
+    },
+    {
+     "id": "u28-s06",
+     "target": "Bringst du Brot mit?",
+     "source": "Are you bringing bread along?",
+     "targetAccept": [
+      "Bringen Sie Brot mit?",
+      "Bringt ihr Brot mit?"
+     ],
+     "sourceAccept": [
+      "Do you bring bread along?"
+     ],
+     "words": [
+      "w-mitbringen",
+      "w-du",
+      "w-brot"
+     ],
+     "cloze": {
+      "answer": "Bringst",
+      "distractors": [
+       "Bringt",
+       "Bringe"
+      ]
+     }
+    },
+    {
+     "id": "u28-s07",
+     "target": "Ich bringe Kaffee mit.",
+     "source": "I am bringing coffee along.",
+     "targetAccept": [
+      "Kaffee bringe ich mit."
+     ],
+     "sourceAccept": [
+      "I bring coffee along."
+     ],
+     "words": [
+      "w-ich",
+      "w-mitbringen",
+      "w-kaffee"
+     ]
+    },
+    {
+     "id": "u28-s08",
+     "target": "Das ist toll!",
+     "source": "That is great!",
+     "targetAccept": [
+      "Toll ist das!"
+     ],
+     "sourceAccept": [
+      "That's amazing!",
+      "That is brilliant!"
+     ],
+     "words": [
+      "w-das",
+      "w-sein",
+      "w-toll"
+     ]
+    },
+    {
+     "id": "u28-s09",
+     "target": "Toll, wir feiern heute.",
+     "source": "Great, we are celebrating today.",
+     "targetAccept": [
+      "Toll, heute feiern wir."
+     ],
+     "sourceAccept": [
+      "Brilliant, we party today.",
+      "Great, we celebrate today."
+     ],
+     "words": [
+      "w-toll",
+      "w-wir",
+      "w-feiern",
+      "w-heute"
+     ]
+    },
+    {
+     "id": "u28-s10",
+     "target": "Ich habe leider keine Lust.",
+     "source": "Unfortunately I have no desire.",
+     "targetAccept": [
+      "Leider habe ich keine Lust."
+     ],
+     "sourceAccept": [
+      "I don't feel like it unfortunately.",
+      "Unfortunately I don't feel like it.",
+      "I have no desire unfortunately."
+     ],
+     "words": [
+      "w-ich",
+      "w-haben",
+      "w-leider",
+      "w-keine",
+      "w-lust"
+     ],
+     "cloze": {
+      "answer": "keine",
+      "distractors": [
+       "nicht",
+       "kein"
+      ]
+     }
+    },
+    {
+     "id": "u28-s11",
+     "target": "Hast du Lust?",
+     "source": "Do you feel like it?",
+     "targetAccept": [
+      "Haben Sie Lust?",
+      "Habt ihr Lust?"
+     ],
+     "sourceAccept": [
+      "Do you have desire?"
+     ],
+     "words": [
+      "w-haben",
+      "w-du",
+      "w-lust"
+     ]
+    },
+    {
+     "id": "u28-s12",
+     "target": "Schade, ich arbeite am Wochenende.",
+     "source": "Too bad, I work on the weekend.",
+     "targetAccept": [
+      "Schade, am Wochenende arbeite ich."
+     ],
+     "sourceAccept": [
+      "A pity, I am working on the weekend.",
+      "It is a shame, I work on the weekend."
+     ],
+     "words": [
+      "w-schade",
+      "w-ich",
+      "w-arbeiten",
+      "w-am",
+      "w-wochenende"
+     ]
+    },
+    {
+     "id": "u28-s13",
+     "target": "Das ist schade.",
+     "source": "That is a pity.",
+     "targetAccept": [
+      "Schade ist das."
+     ],
+     "sourceAccept": [
+      "That's a shame.",
+      "That is too bad."
+     ],
+     "words": [
+      "w-das",
+      "w-sein",
+      "w-schade"
+     ]
+    },
+    {
+     "id": "u28-s14",
+     "target": "Wo feiern wir denn?",
+     "source": "So, where are we celebrating?",
+     "targetAccept": [
+      "Wo feiern wir?"
+     ],
+     "sourceAccept": [
+      "Where do we celebrate then?",
+      "Where are we partying then?"
+     ],
+     "words": [
+      "w-wo",
+      "w-feiern",
+      "w-wir",
+      "w-denn"
+     ],
+     "cloze": {
+      "answer": "denn",
+      "distractors": [
+       "dann",
+       "den"
+      ]
+     }
+    },
+    {
+     "id": "u28-s15",
+     "target": "Kommst du denn nicht mit?",
+     "source": "Are you not coming along then?",
+     "targetAccept": [
+      "Kommen Sie denn nicht mit?",
+      "Kommt ihr denn nicht mit?"
+     ],
+     "sourceAccept": [
+      "So are you not coming along?",
+      "Do you not come along then?"
+     ],
+     "words": [
+      "w-mitkommen",
+      "w-du",
+      "w-denn",
+      "w-nicht"
+     ]
+    },
+    {
+     "id": "u28-s16",
+     "target": "Ich lade Mara ein.",
+     "source": "I am inviting Mara.",
+     "targetAccept": [
+      "Mara lade ich ein."
+     ],
+     "sourceAccept": [
+      "I invite Mara."
+     ],
+     "words": [
+      "w-ich",
+      "w-einladen"
+     ],
+     "cloze": {
+      "answer": "ein",
+      "distractors": [
+       "an",
+       "mit"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "u29",
+   "title": "Forms and messages",
+   "canDo": "Complete a basic form and write a short message",
+   "tip": {
+    "title": "Capitalizing on nouns",
+    "body": "In German, every single noun starts with a capital letter. Not just names like Leon, but words like **Vorname** (first name) and **Land** (country).\n\nThis makes it very easy to spot the important words when you're filling out a form or reading a message!",
+    "examples": [
+     {
+      "target": "Meine Adresse ist in Berlin.",
+      "source": "My address is in Berlin."
+     },
+     {
+      "target": "Wie ist die Postleitzahl?",
+      "source": "What is the postal code?"
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-vorname",
+     "target": "der Vorname",
+     "source": "the first name",
+     "sourceAccept": [
+      "first name",
+      "forename",
+      "the forename"
+     ],
+     "plural": "die Vornamen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-familienname",
+     "target": "der Familienname",
+     "source": "the surname",
+     "sourceAccept": [
+      "surname",
+      "the family name",
+      "family name",
+      "last name",
+      "the last name"
+     ],
+     "plural": "die Familiennamen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-adresse",
+     "target": "die Adresse",
+     "source": "the address",
+     "sourceAccept": [
+      "address"
+     ],
+     "plural": "die Adressen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-hausnummer",
+     "target": "die Hausnummer",
+     "source": "the house number",
+     "sourceAccept": [
+      "house number"
+     ],
+     "plural": "die Hausnummern",
+     "pos": "noun"
+    },
+    {
+     "id": "w-postleitzahl",
+     "target": "die Postleitzahl",
+     "source": "the postal code",
+     "sourceAccept": [
+      "postal code",
+      "zip code",
+      "the zip code",
+      "the postcode",
+      "postcode"
+     ],
+     "plural": "die Postleitzahlen",
+     "pos": "noun"
+    },
+    {
+     "id": "w-land",
+     "target": "das Land",
+     "source": "the country",
+     "sourceAccept": [
+      "country"
+     ],
+     "plural": "die Länder",
+     "pos": "noun"
+    },
+    {
+     "id": "w-geboren",
+     "target": "geboren",
+     "source": "born",
+     "pos": "adj"
+    },
+    {
+     "id": "w-unterschreiben",
+     "target": "unterschreiben",
+     "source": "to sign",
+     "forms": [
+      "unterschreibe",
+      "unterschreibst",
+      "unterschreibt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-e-mail",
+     "target": "die E-Mail",
+     "source": "the email",
+     "sourceAccept": [
+      "email",
+      "the e-mail",
+      "e-mail"
+     ],
+     "plural": "die E-Mails",
+     "pos": "noun",
+     "emoji": "📧"
+    },
+    {
+     "id": "w-nachricht",
+     "target": "die Nachricht",
+     "source": "the message",
+     "sourceAccept": [
+      "message"
+     ],
+     "plural": "die Nachrichten",
+     "pos": "noun",
+     "emoji": "💬"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u29-s01",
+     "target": "Mein Vorname ist Leon.",
+     "source": "My first name is Leon.",
+     "targetAccept": [
+      "Leon ist mein Vorname."
+     ],
+     "sourceAccept": [
+      "My forename is Leon."
+     ],
+     "words": [
+      "w-mein",
+      "w-vorname",
+      "w-sein"
+     ],
+     "cloze": {
+      "answer": "Vorname",
+      "distractors": [
+       "Hausnummer",
+       "Land"
+      ]
+     }
+    },
+    {
+     "id": "u29-s02",
+     "target": "Wie ist dein Vorname?",
+     "source": "What is your first name?",
+     "targetAccept": [
+      "Wie ist Ihr Vorname?",
+      "Wie ist euer Vorname?"
+     ],
+     "sourceAccept": [
+      "What's your first name?",
+      "What is your forename?"
+     ],
+     "words": [
+      "w-wie",
+      "w-sein",
+      "w-dein",
+      "w-vorname"
+     ]
+    },
+    {
+     "id": "u29-s03",
+     "target": "Wie ist dein Familienname?",
+     "source": "What is your surname?",
+     "targetAccept": [
+      "Wie ist Ihr Familienname?",
+      "Wie ist euer Familienname?"
+     ],
+     "sourceAccept": [
+      "What's your last name?",
+      "What is your family name?"
+     ],
+     "words": [
+      "w-wie",
+      "w-sein",
+      "w-dein",
+      "w-familienname"
+     ]
+    },
+    {
+     "id": "u29-s04",
+     "target": "Schreiben Sie die Adresse hier.",
+     "source": "Write the address here.",
+     "targetAccept": [
+      "Schreib die Adresse hier.",
+      "Schreibt die Adresse hier.",
+      "Die Adresse schreiben Sie hier."
+     ],
+     "sourceAccept": [
+      "Write the address down here."
+     ],
+     "words": [
+      "w-schreiben",
+      "w-sie",
+      "w-adresse",
+      "w-hier"
+     ],
+     "cloze": {
+      "answer": "die",
+      "distractors": [
+       "der",
+       "das"
+      ]
+     }
+    },
+    {
+     "id": "u29-s05",
+     "target": "Ist das deine Adresse?",
+     "source": "Is that your address?",
+     "targetAccept": [
+      "Ist das Ihre Adresse?",
+      "Ist das eure Adresse?"
+     ],
+     "sourceAccept": [
+      "Is this your address?"
+     ],
+     "words": [
+      "w-sein",
+      "w-das",
+      "w-dein",
+      "w-adresse"
+     ]
+    },
+    {
+     "id": "u29-s06",
+     "target": "Die Hausnummer ist zehn.",
+     "source": "The house number is ten.",
+     "targetAccept": [
+      "Zehn ist die Hausnummer."
+     ],
+     "sourceAccept": [
+      "The number of the house is ten."
+     ],
+     "words": [
+      "w-hausnummer",
+      "w-sein",
+      "w-zehn"
+     ]
+    },
+    {
+     "id": "u29-s07",
+     "target": "Was ist die Postleitzahl?",
+     "source": "What is the postal code?",
+     "targetAccept": [
+      "Wie ist die Postleitzahl?"
+     ],
+     "sourceAccept": [
+      "What is the postcode?",
+      "What's the zip code?"
+     ],
+     "words": [
+      "w-was",
+      "w-sein",
+      "w-postleitzahl"
+     ],
+     "cloze": {
+      "answer": "Was",
+      "distractors": [
+       "Wer",
+       "Woher"
+      ]
+     }
+    },
+    {
+     "id": "u29-s08",
+     "target": "Das Land ist Deutschland.",
+     "source": "The country is Germany.",
+     "targetAccept": [
+      "Deutschland ist das Land."
+     ],
+     "sourceAccept": [
+      "Germany is the country."
+     ],
+     "words": [
+      "w-land",
+      "w-sein",
+      "w-deutschland"
+     ]
+    },
+    {
+     "id": "u29-s09",
+     "target": "Wo bist du geboren?",
+     "source": "Where were you born?",
+     "targetAccept": [
+      "Wo sind Sie geboren?",
+      "Wo seid ihr geboren?"
+     ],
+     "sourceAccept": [
+      "Where are you born?"
+     ],
+     "words": [
+      "w-wo",
+      "w-sein",
+      "w-du",
+      "w-geboren"
+     ],
+     "cloze": {
+      "answer": "bist",
+      "distractors": [
+       "hast",
+       "ist"
+      ]
+     }
+    },
+    {
+     "id": "u29-s10",
+     "target": "Ich bin in Berlin geboren.",
+     "source": "I was born in Berlin.",
+     "targetAccept": [
+      "In Berlin bin ich geboren."
+     ],
+     "sourceAccept": [
+      "I am born in Berlin."
+     ],
+     "words": [
+      "w-ich",
+      "w-sein",
+      "w-in",
+      "w-geboren"
+     ]
+    },
+    {
+     "id": "u29-s11",
+     "target": "Bitte unterschreiben Sie hier.",
+     "source": "Please sign here.",
+     "targetAccept": [
+      "Unterschreiben Sie bitte hier.",
+      "Bitte unterschreibe hier.",
+      "Bitte unterschreibt hier."
+     ],
+     "sourceAccept": [
+      "Sign here please."
+     ],
+     "words": [
+      "w-bitte",
+      "w-unterschreiben",
+      "w-sie",
+      "w-hier"
+     ],
+     "cloze": {
+      "answer": "unterschreiben",
+      "distractors": [
+       "unterschreibt",
+       "unterschreibe"
+      ]
+     }
+    },
+    {
+     "id": "u29-s12",
+     "target": "Du musst hier unterschreiben.",
+     "source": "You have to sign here.",
+     "targetAccept": [
+      "Sie müssen hier unterschreiben.",
+      "Ihr müsst hier unterschreiben.",
+      "Hier musst du unterschreiben."
+     ],
+     "sourceAccept": [
+      "You must sign here.",
+      "You need to sign here."
+     ],
+     "words": [
+      "w-du",
+      "w-muessen",
+      "w-hier",
+      "w-unterschreiben"
+     ]
+    },
+    {
+     "id": "u29-s13",
+     "target": "Ich schreibe eine E-Mail.",
+     "source": "I am writing an email.",
+     "targetAccept": [
+      "Eine E-Mail schreibe ich."
+     ],
+     "sourceAccept": [
+      "I write an email."
+     ],
+     "words": [
+      "w-ich",
+      "w-schreiben",
+      "w-eine",
+      "w-e-mail"
+     ],
+     "cloze": {
+      "answer": "schreibe",
+      "distractors": [
+       "schreibst",
+       "schreibt"
+      ]
+     }
+    },
+    {
+     "id": "u29-s14",
+     "target": "Hast du die E-Mail?",
+     "source": "Do you have the email?",
+     "targetAccept": [
+      "Haben Sie die E-Mail?",
+      "Habt ihr die E-Mail?"
+     ],
+     "sourceAccept": [
+      "Have you got the email?"
+     ],
+     "words": [
+      "w-haben",
+      "w-du",
+      "w-e-mail"
+     ]
+    },
+    {
+     "id": "u29-s15",
+     "target": "Ich lese die Nachricht.",
+     "source": "I am reading the message.",
+     "targetAccept": [
+      "Die Nachricht lese ich."
+     ],
+     "sourceAccept": [
+      "I read the message."
+     ],
+     "words": [
+      "w-ich",
+      "w-lesen",
+      "w-nachricht"
+     ]
+    },
+    {
+     "id": "u29-s16",
+     "target": "Die Nachricht ist für Leon.",
+     "source": "The message is for Leon.",
+     "targetAccept": [
+      "Für Leon ist die Nachricht."
+     ],
+     "sourceAccept": [
+      "The message is to Leon."
+     ],
+     "words": [
+      "w-nachricht",
+      "w-sein",
+      "w-fuer"
+     ]
+    },
+    {
+     "id": "u29-s17",
+     "target": "Ist der Familienname richtig?",
+     "source": "Is the surname correct?",
+     "sourceAccept": [
+      "Is the last name correct?",
+      "Is the family name correct?"
+     ],
+     "words": [
+      "w-sein",
+      "w-familienname",
+      "w-richtig"
+     ]
+    },
+    {
+     "id": "u29-s18",
+     "target": "Wo ist die Hausnummer?",
+     "source": "Where is the house number?",
+     "words": [
+      "w-wo",
+      "w-sein",
+      "w-hausnummer"
+     ]
+    },
+    {
+     "id": "u29-s19",
+     "target": "Die Postleitzahl ist richtig.",
+     "source": "The postal code is correct.",
+     "targetAccept": [
+      "Richtig ist die Postleitzahl."
+     ],
+     "sourceAccept": [
+      "The zip code is correct.",
+      "The postcode is correct."
+     ],
+     "words": [
+      "w-postleitzahl",
+      "w-sein",
+      "w-richtig"
+     ]
+    },
+    {
+     "id": "u29-s20",
+     "target": "Deutschland ist ein Land.",
+     "source": "Germany is a country.",
+     "targetAccept": [
+      "Ein Land ist Deutschland."
+     ],
+     "words": [
+      "w-deutschland",
+      "w-sein",
+      "w-ein",
+      "w-land"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "u30",
+   "title": "A day in German",
+   "canDo": "Handle a short meet-and-travel scenario",
+   "tip": {
+    "title": "First this, then that",
+    "body": "When you put a time word like **zuerst** (first) or **dann** (then) at the start of your sentence, the verb must stay in position two.\n\nThat means the person doing the action moves to position three, directly after the verb!",
+    "examples": [
+     {
+      "target": "Zuerst kaufe ich das Ticket.",
+      "source": "First I buy the ticket."
+     },
+     {
+      "target": "Dann fahren wir nach Berlin.",
+      "source": "Then we travel to Berlin."
+     }
+    ]
+   },
+   "words": [
+    {
+     "id": "w-zuerst",
+     "target": "zuerst",
+     "source": "first",
+     "sourceAccept": [
+      "at first"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-dann",
+     "target": "dann",
+     "source": "then",
+     "pos": "adv"
+    },
+    {
+     "id": "w-spaeter",
+     "target": "später",
+     "source": "later",
+     "pos": "adv"
+    },
+    {
+     "id": "w-bald",
+     "target": "bald",
+     "source": "soon",
+     "pos": "adv"
+    },
+    {
+     "id": "w-endlich",
+     "target": "endlich",
+     "source": "finally",
+     "sourceAccept": [
+      "at last"
+     ],
+     "pos": "adv"
+    },
+    {
+     "id": "w-wissen",
+     "target": "wissen",
+     "source": "to know",
+     "forms": [
+      "weiß",
+      "weißt",
+      "wisst"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-geben",
+     "target": "geben",
+     "source": "to give",
+     "forms": [
+      "gebe",
+      "gibst",
+      "gibt",
+      "gebt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-bekommen",
+     "target": "bekommen",
+     "source": "to receive",
+     "sourceAccept": [
+      "to get"
+     ],
+     "forms": [
+      "bekomme",
+      "bekommst",
+      "bekommt"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-antworten",
+     "target": "antworten",
+     "source": "to answer",
+     "sourceAccept": [
+      "to reply"
+     ],
+     "forms": [
+      "antworte",
+      "antwortest",
+      "antwortet"
+     ],
+     "pos": "verb"
+    },
+    {
+     "id": "w-genau",
+     "target": "genau",
+     "source": "exactly",
+     "sourceAccept": [
+      "exact",
+      "precisely"
+     ],
+     "pos": "adv"
+    }
+   ],
+   "sentences": [
+    {
+     "id": "u30-s01",
+     "target": "Zuerst kaufe ich das Ticket.",
+     "source": "First I am buying the ticket.",
+     "targetAccept": [
+      "Ich kaufe das Ticket zuerst.",
+      "Zuerst kaufe ich das Ticket ein."
+     ],
+     "sourceAccept": [
+      "First I buy the ticket.",
+      "At first I buy the ticket."
+     ],
+     "words": [
+      "w-zuerst",
+      "w-kaufen",
+      "w-ich",
+      "w-das",
+      "w-ticket"
+     ]
+    },
+    {
+     "id": "u30-s02",
+     "target": "Dann fahren wir nach Berlin.",
+     "source": "Then we travel to Berlin.",
+     "targetAccept": [
+      "Wir fahren dann nach Berlin."
+     ],
+     "sourceAccept": [
+      "Then we are traveling to Berlin.",
+      "Then we go to Berlin."
+     ],
+     "words": [
+      "w-dann",
+      "w-fahren",
+      "w-wir",
+      "w-nach"
+     ]
+    },
+    {
+     "id": "u30-s03",
+     "target": "Später essen wir Frühstück.",
+     "source": "Later we are eating breakfast.",
+     "targetAccept": [
+      "Wir essen später Frühstück.",
+      "Später frühstücken wir."
+     ],
+     "sourceAccept": [
+      "Later we eat breakfast.",
+      "We eat breakfast later."
+     ],
+     "words": [
+      "w-spaeter",
+      "w-essen",
+      "w-wir",
+      "w-fruehstueck"
+     ]
+    },
+    {
+     "id": "u30-s04",
+     "target": "Der Bus kommt bald.",
+     "source": "The bus is coming soon.",
+     "targetAccept": [
+      "Bald kommt der Bus."
+     ],
+     "sourceAccept": [
+      "The bus comes soon."
+     ],
+     "words": [
+      "w-bus",
+      "w-kommen",
+      "w-bald"
+     ]
+    },
+    {
+     "id": "u30-s05",
+     "target": "Endlich sind wir in Berlin!",
+     "source": "Finally we are in Berlin!",
+     "targetAccept": [
+      "Wir sind endlich in Berlin!"
+     ],
+     "sourceAccept": [
+      "We are finally in Berlin!",
+      "At last we are in Berlin!"
+     ],
+     "words": [
+      "w-endlich",
+      "w-sein",
+      "w-wir",
+      "w-in"
+     ],
+     "cloze": {
+      "answer": "sind",
+      "distractors": [
+       "ist",
+       "seid"
+      ]
+     }
+    },
+    {
+     "id": "u30-s06",
+     "target": "Ich weiß das nicht.",
+     "source": "I do not know that.",
+     "targetAccept": [
+      "Das weiß ich nicht."
+     ],
+     "sourceAccept": [
+      "I don't know that."
+     ],
+     "words": [
+      "w-ich",
+      "w-wissen",
+      "w-das",
+      "w-nicht"
+     ],
+     "cloze": {
+      "answer": "weiß",
+      "distractors": [
+       "weißt",
+       "wissen"
+      ]
+     }
+    },
+    {
+     "id": "u30-s07",
+     "target": "Weißt du die Nummer?",
+     "source": "Do you know the number?",
+     "targetAccept": [
+      "Wissen Sie die Nummer?",
+      "Wisst ihr die Nummer?"
+     ],
+     "sourceAccept": [
+      "Are you aware of the number?"
+     ],
+     "words": [
+      "w-wissen",
+      "w-du",
+      "w-nummer"
+     ]
+    },
+    {
+     "id": "u30-s08",
+     "target": "Was wissen Sie?",
+     "source": "What do you know?",
+     "targetAccept": [
+      "Was weißt du?",
+      "Was wisst ihr?"
+     ],
+     "sourceAccept": [
+      "What do you know about it?"
+     ],
+     "words": [
+      "w-was",
+      "w-wissen",
+      "w-sie"
+     ]
+    },
+    {
+     "id": "u30-s09",
+     "target": "Geben Sie mir bitte den Schlüssel.",
+     "source": "Please give me the key.",
+     "targetAccept": [
+      "Gib mir bitte den Schlüssel.",
+      "Bitte geben Sie mir den Schlüssel.",
+      "Gebt mir bitte den Schlüssel."
+     ],
+     "sourceAccept": [
+      "Give me the key please."
+     ],
+     "words": [
+      "w-geben",
+      "w-sie",
+      "w-mir",
+      "w-bitte",
+      "w-den",
+      "w-schluessel"
+     ],
+     "cloze": {
+      "answer": "mir",
+      "distractors": [
+       "mich",
+       "ich"
+      ]
+     }
+    },
+    {
+     "id": "u30-s10",
+     "target": "Wir bekommen eine E-Mail.",
+     "source": "We are getting an email.",
+     "targetAccept": [
+      "Eine E-Mail bekommen wir."
+     ],
+     "sourceAccept": [
+      "We receive an email.",
+      "We get an email.",
+      "We are receiving an e-mail."
+     ],
+     "words": [
+      "w-wir",
+      "w-bekommen",
+      "w-eine",
+      "w-e-mail"
+     ],
+     "cloze": {
+      "answer": "bekommen",
+      "distractors": [
+       "bekommst",
+       "bekomme"
+      ]
+     }
+    },
+    {
+     "id": "u30-s11",
+     "target": "Bekommst du die Fahrkarte?",
+     "source": "Are you getting the ticket?",
+     "targetAccept": [
+      "Bekommen Sie die Fahrkarte?",
+      "Bekommt ihr die Fahrkarte?"
+     ],
+     "sourceAccept": [
+      "Do you get the ticket?",
+      "Are you receiving the ticket?"
+     ],
+     "words": [
+      "w-bekommen",
+      "w-du",
+      "w-fahrkarte"
+     ]
+    },
+    {
+     "id": "u30-s12",
+     "target": "Ich antworte nicht.",
+     "source": "I am not answering.",
+     "targetAccept": [
+      "Ich antworte dir nicht."
+     ],
+     "sourceAccept": [
+      "I do not answer.",
+      "I don't reply.",
+      "I am not replying."
+     ],
+     "words": [
+      "w-ich",
+      "w-antworten",
+      "w-nicht"
+     ]
+    },
+    {
+     "id": "u30-s13",
+     "target": "Bitte antworten Sie bald.",
+     "source": "Please reply soon.",
+     "targetAccept": [
+      "Antworten Sie bitte bald.",
+      "Bitte antworte bald.",
+      "Bitte antwortet bald."
+     ],
+     "sourceAccept": [
+      "Please answer soon.",
+      "Reply soon please."
+     ],
+     "words": [
+      "w-bitte",
+      "w-antworten",
+      "w-sie",
+      "w-bald"
+     ]
+    },
+    {
+     "id": "u30-s14",
+     "target": "Das ist genau richtig.",
+     "source": "That is exactly right.",
+     "targetAccept": [
+      "Genau richtig ist das."
+     ],
+     "sourceAccept": [
+      "That's exactly correct.",
+      "That is precisely right."
+     ],
+     "words": [
+      "w-das",
+      "w-sein",
+      "w-genau",
+      "w-richtig"
+     ],
+     "cloze": {
+      "answer": "genau",
+      "distractors": [
+       "gern",
+       "zuerst"
+      ]
+     }
+    },
+    {
+     "id": "u30-s15",
+     "target": "Zuerst arbeiten wir, dann feiern wir.",
+     "source": "First we work, then we celebrate.",
+     "targetAccept": [
+      "Wir arbeiten zuerst, dann feiern wir."
+     ],
+     "sourceAccept": [
+      "At first we work, then we party."
+     ],
+     "words": [
+      "w-zuerst",
+      "w-arbeiten",
+      "w-wir",
+      "w-dann",
+      "w-feiern"
+     ],
+     "cloze": {
+      "answer": "dann",
+      "distractors": [
+       "denn",
+       "aber"
+      ]
+     }
+    },
+    {
+     "id": "u30-s16",
+     "target": "Weißt du das genau?",
+     "source": "Do you know that exactly?",
+     "targetAccept": [
+      "Wissen Sie das genau?",
+      "Wisst ihr das genau?"
+     ],
+     "sourceAccept": [
+      "Are you exactly sure?",
+      "Do you know that for sure?"
+     ],
+     "words": [
+      "w-wissen",
+      "w-du",
+      "w-das",
+      "w-genau"
+     ]
+    },
+    {
+     "id": "u30-s17",
+     "target": "Geben Sie mir das später?",
+     "source": "Are you giving me that later?",
+     "targetAccept": [
+      "Gibst du mir das später?",
+      "Gebt ihr mir das später?"
+     ],
+     "sourceAccept": [
+      "Do you give me that later?",
+      "Will you give me that later?",
+      "Are you giving that to me later?"
+     ],
+     "words": [
+      "w-geben",
+      "w-sie",
+      "w-mir",
+      "w-das",
+      "w-spaeter"
+     ]
+    },
+    {
+     "id": "u30-s18",
+     "target": "Endlich essen wir!",
+     "source": "Finally we are eating!",
+     "targetAccept": [
+      "Wir essen endlich!"
+     ],
+     "sourceAccept": [
+      "Finally we eat!",
+      "We are finally eating!",
+      "We finally eat!"
+     ],
+     "words": [
+      "w-endlich",
+      "w-essen",
+      "w-wir"
+     ]
+    }
+   ]
+  }
+ ]
+}
