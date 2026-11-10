@@ -1,0 +1,46 @@
+import { expect, test } from '@playwright/test';
+
+/**
+ * Talks to the real Supabase project when the build has its settings, and checks the screens
+ * without creating any account: a wrong password must fail cleanly, with a readable message.
+ */
+test('accounts: sign-up form, a failed login shows its error, and legal pages are reachable', async ({ page }) => {
+  await page.goto('./');
+  await page.locator('.hero-cta').click();
+  await page.locator('.course-card').filter({ hasText: /German/ }).click();
+  await page.locator('.pick .btn-block').click();
+  await expect(page.locator('.path')).toBeVisible();
+
+  await page.goto('./#/account');
+  const configured = await page.locator('.account-form').count();
+  test.skip(configured === 0, 'accounts are not configured in this build');
+
+  await expect(page.getByRole('heading', { name: 'Sign up' })).toBeVisible();
+  await expect(page.locator('.age-note')).toContainText('16');
+  await page.getByRole('button', { name: 'Already have an account? Log in' }).click();
+  await page.locator('input[type=email]').fill('nobody.ohrly.test@example.com');
+  await page.locator('input[type=password]').fill('definitely-wrong-password');
+  await page.getByRole('button', { name: 'Log in', exact: true }).click();
+  await expect(page.locator('.form-msg.is-error')).toBeVisible({ timeout: 30000 });
+  await expect(page.locator('.form-msg.is-error')).toContainText(/invalid|credentials/i);
+
+  await page.goto('./#/legal');
+  await expect(page.getByRole('heading', { name: 'Privacy' })).toBeVisible();
+  await expect(page.locator('#legal-privacy')).toContainText('Paris');
+});
+
+test('streak calendar, share, achievements and level scale render', async ({ page }) => {
+  await page.goto('./');
+  await page.locator('.hero-cta').click();
+  await page.locator('.course-card').filter({ hasText: /German/ }).click();
+  await page.locator('.pick .btn-block').click();
+  await page.locator('.stat-streak:visible').first().click();
+  await expect(page.locator('.streak-calendar .cal-day')).toHaveCount(35);
+  await page.keyboard.press('Escape');
+  await page.mouse.click(5, 5);
+  await page.goto('./#/profile');
+  await expect(page.locator('main .level-scale')).toBeVisible();
+  await expect(page.locator('main .scale-labels span')).toHaveText(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
+  await expect(page.locator('.achievement')).toHaveCount(8);
+  await page.screenshot({ path: 'test-results/profile-social.png', fullPage: true });
+});

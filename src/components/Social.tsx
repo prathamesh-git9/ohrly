@@ -164,7 +164,7 @@ export function LevelScale({ course, t }: { course: Course; t: Translate }) {
         </div>
         <ShareButton t={t} kind="level" value={position < 0.05 ? 'A1' : current} />
       </div>
-      <div className="scale-track">
+      <div className="scale-track" style={{ '--beyond': `${((CEFR_SCALE.length - offered) / CEFR_SCALE.length) * 100}%` } as React.CSSProperties}>
         <motion.span
           className="scale-fill"
           initial={{ width: 0 }}
