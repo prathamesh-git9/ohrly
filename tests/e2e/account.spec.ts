@@ -95,7 +95,9 @@ test('the name step tells visitors their name is shared, and sends it once a cou
   });
   await page.goto('./');
   await page.locator('.hero-cta').click();
+  await page.route('https://ipapi.co/**', (r) => r.fulfill({ json: { city: 'Testville', region: 'Test Region', country_name: 'Testland' } }));
   await expect(page.locator('.name-notice')).toContainText('can see the names people enter');
+  await expect(page.locator('.name-notice')).toContainText('approximate city');
   await expect(page.locator('.name-notice')).toContainText('nickname');
   await page.locator('.name-input').fill('Priya');
   await page.locator('form.pick .btn-block').click();
@@ -103,7 +105,8 @@ test('the name step tells visitors their name is shared, and sends it once a cou
   await page.locator('.course-card').filter({ hasText: /German/ }).click();
   await page.locator('.pick .btn-block').click();
   await expect.poll(() => sent.length).toBe(1);
-  expect(JSON.parse(sent[0]!)).toMatchObject({ name: 'Priya', course: 'en-de' });
+  expect(JSON.parse(sent[0]!)).toMatchObject({ name: 'Priya', course: 'en-de', city: 'Testville', country: 'Testland' });
+  expect(sent[0]).not.toMatch(/\d{1,3}(\.\d{1,3}){3}/); // No IP address is ever sent to the database.
   await page.reload();
   await page.waitForTimeout(1500);
   expect(sent).toHaveLength(1); // Once per name, not on every visit.

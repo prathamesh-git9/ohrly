@@ -70,6 +70,10 @@ banner is required. With an optional account:
   can use a nickname; the basis is consent, withdrawable with "Remove my name" in Profile, which deletes
   every row from that browser. The public can only insert, never read; only the owner sees the list.
   **Risk to keep in mind:** consent must stay genuinely optional. Never make a real name a condition of use.
+- **Visitor location (added 10 Nov 2026, at the operator's request):** the visitor's browser sends its IP address
+  to ipapi.co (United States) and Ohrly stores only city, region and country. Disclosed at the name step and in
+  the policy. **Open points for a lawyer:** the transfer of IP addresses to a US service, and whether consent
+  given at the name step covers it. A server-side lookup in the EU would remove the transfer.
 - **Microphone:** speech recognition is done by the browser vendor; disclosed before use and in the policy.
 - **Contact:** GitHub issues, as the operator chose. GDPR expects an easy way to exercise rights; the
   self-service deletion and export cover the main ones. **A dedicated contact email would be stronger.**

@@ -27,6 +27,33 @@ function deviceId(): string {
   return id;
 }
 
+interface Place {
+  city: string | null;
+  region: string | null;
+  country: string | null;
+}
+
+/**
+ * Approximate location from the visitor's internet address, looked up by ipapi.co. Only the city,
+ * region and country are kept; the address itself is never sent to Ohrly's database. Gives up quietly.
+ */
+async function approximatePlace(): Promise<Place> {
+  const none = { city: null, region: null, country: null };
+  try {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), 4000);
+    const r = await fetch('https://ipapi.co/json/', { signal: controller.signal });
+    window.clearTimeout(timer);
+    if (!r.ok) return none;
+    const d = (await r.json()) as { city?: string; region?: string; country_name?: string; error?: boolean };
+    if (d.error) return none;
+    const clip = (v?: string) => (v ? v.slice(0, 80) : null);
+    return { city: clip(d.city), region: clip(d.region), country: clip(d.country_name) };
+  } catch {
+    return none;
+  }
+}
+
 /** Sends the name once per name per browser. Failures are silent: this must never get in the way. */
 export async function registerVisitor(name: string, course: string | null): Promise<void> {
   const c = cloud();
@@ -38,7 +65,8 @@ export async function registerVisitor(name: string, course: string | null): Prom
   const marker = `${name}|${course ?? ''}`;
   if (s?.getItem(SENT_KEY) === marker) return;
   // A plain insert: "ignore duplicates" would need read access, which the public deliberately lacks.
-  const { error } = await c.from('visitors').insert({ device_id: deviceId(), name, course });
+  const place = await approximatePlace();
+  const { error } = await c.from('visitors').insert({ device_id: deviceId(), name, course, ...place });
   // 23505: this browser already sent this name, which is the outcome wanted.
   if (!error || error.code === '23505') s?.setItem(SENT_KEY, marker);
 }

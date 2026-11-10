@@ -11,6 +11,13 @@ interface Visitor {
   name: string;
   course: string | null;
   created_at: string;
+  city: string | null;
+  region: string | null;
+  country: string | null;
+}
+
+function place(v: Visitor): string {
+  return [v.city, v.region, v.country].filter(Boolean).join(', ') || 'Unknown';
 }
 
 interface Stats {
@@ -43,7 +50,7 @@ export function Admin() {
     setState('loading');
     const [isAdmin, rows, counts] = await Promise.all([
       c.rpc('is_admin'),
-      c.from('visitors').select('device_id,name,course,created_at').order('created_at', { ascending: false }).limit(5000),
+      c.from('visitors').select('device_id,name,course,created_at,city,region,country').order('created_at', { ascending: false }).limit(5000),
       c.rpc('admin_stats'),
     ]);
     if (isAdmin.error || rows.error) return setState('error');
@@ -68,6 +75,8 @@ export function Admin() {
       return { day: d, count: visitors.filter((v) => dayKey(v.created_at) === d).length };
     });
     const special = visitors.filter((v) => specialGreeting(v.name));
+    const byCountry = new Map<string, number>();
+    for (const v of visitors) byCountry.set(v.country ?? 'Unknown', (byCountry.get(v.country ?? 'Unknown') ?? 0) + 1);
     return {
       total: visitors.length,
       browsers: browsers.size,
@@ -77,6 +86,7 @@ export function Admin() {
       days,
       max: Math.max(1, ...days.map((d) => d.count)),
       special,
+      byCountry: [...byCountry.entries()].sort((a, b) => b[1] - a[1]),
     };
   }, [visitors]);
 
@@ -159,13 +169,25 @@ export function Admin() {
         ))}
       </section>
 
+      <section className="admin-card">
+        <h2>Where visitors are</h2>
+        {summary.byCountry.length === 0 && <p className="muted">No visitors yet.</p>}
+        {summary.byCountry.map(([country, n]) => (
+          <div className="admin-split" key={country}>
+            <span>{country}</span>
+            <span className="admin-split-bar"><span style={{ width: `${(n / Math.max(1, summary.total)) * 100}%` }} /></span>
+            <strong>{n}</strong>
+          </div>
+        ))}
+      </section>
+
       {summary.special.length > 0 && (
         <section className="admin-card">
           <h2>Special greeting</h2>
           <ul className="admin-list">
             {summary.special.map((v) => (
               <li key={`${v.device_id}-${v.created_at}`}>
-                {v.name} · {COURSE_LABEL[v.course ?? ''] ?? v.course} · {new Date(v.created_at).toLocaleString()}
+                {v.name} · {COURSE_LABEL[v.course ?? ''] ?? v.course} · {place(v)} · {new Date(v.created_at).toLocaleString()}
               </li>
             ))}
           </ul>
@@ -181,18 +203,19 @@ export function Admin() {
         <div className="admin-table-wrap">
           <table className="admin-table">
             <thead>
-              <tr><th>Name</th><th>Course</th><th>When</th></tr>
+              <tr><th>Name</th><th>Course</th><th>Location</th><th>When</th></tr>
             </thead>
             <tbody>
               {shown.map((v) => (
                 <tr key={`${v.device_id}-${v.name}`}>
                   <td>{v.name}</td>
                   <td>{COURSE_LABEL[v.course ?? ''] ?? v.course ?? '-'}</td>
+                  <td>{place(v)}</td>
                   <td>{new Date(v.created_at).toLocaleString()}</td>
                 </tr>
               ))}
               {shown.length === 0 && (
-                <tr><td colSpan={3} className="muted">No visitors{query ? ' match' : ' yet'}.</td></tr>
+                <tr><td colSpan={4} className="muted">No visitors{query ? ' match' : ' yet'}.</td></tr>
               )}
             </tbody>
           </table>
