@@ -17,8 +17,13 @@ case "$level" in
 esac
 
 vocab="$logdir/$id-taught.txt"
-run_codex() { # prompt report log
-  codex exec -C "$win" --sandbox workspace-write -c approval_policy="never" --skip-git-repo-check \
+# Writing, auditing and exams use the default model. A repair round only fixes validator errors, so it
+# uses the cheaper model at low effort to save quota.
+CHEAP=(-m gpt-5.6-luna -c model_reasoning_effort="low")
+run_codex() { # prompt report log [cheap]
+  local extra=()
+  [ "${4:-}" = cheap ] && extra=("${CHEAP[@]}")
+  codex exec "${extra[@]}" -C "$win" --sandbox workspace-write -c approval_policy="never" --skip-git-repo-check \
     --output-last-message "$2" - < "$1" > "$3" 2>&1
   local code=$?
   if grep -qiE "usage limit|hit your" "$3"; then echo "$id $level: QUOTA EXHAUSTED"; exit 3; fi
@@ -48,7 +53,7 @@ for n in $(seq "$first" "$last"); do
       echo "Write $file. Section id \"c$ch\", cefr \"$level\". Unit ids \"u$(printf "%03d" $ustart)\" to \"u$(printf "%03d" $(( ustart + 4 )))\"; word, sentence and passage ids are prefixed by them."
       [ "$attempt" = 2 ] && { echo; echo "A previous attempt failed validation. The file may be partial. Fix or finish it."; }
     } > "$prompt"
-    run_codex "$prompt" "$logdir/$id-$ch.report.txt" "$logdir/$id-$ch.log"
+    run_codex "$prompt" "$logdir/$id-$ch.report.txt" "$logdir/$id-$ch.log" "$([ "$attempt" = 2 ] && echo cheap)"
     if [ -f "$file" ] && valid "$logdir/$id-$ch.validate.txt"; then
       echo "$id chapter $ch ok: $(head -1 "$logdir/$id-$ch.validate.txt")"; break
     fi
@@ -76,7 +81,7 @@ for attempt in 1 2; do
     echo "Level: $level. Write $exam."
     [ "$attempt" = 2 ] && { echo; echo "A previous attempt failed validation. Fix or finish the file."; }
   } > "$prompt"
-  run_codex "$prompt" "$logdir/$id-exam-$level.report.txt" "$logdir/$id-exam-$level.log"
+  run_codex "$prompt" "$logdir/$id-exam-$level.report.txt" "$logdir/$id-exam-$level.log" "$([ "$attempt" = 2 ] && echo cheap)"
   if [ -f "$exam" ] && valid "$logdir/$id-exam-$level.validate.txt"; then
     echo "$id exam $level ok: $(head -1 "$logdir/$id-exam-$level.validate.txt")"; break
   fi
