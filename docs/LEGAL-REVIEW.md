@@ -58,7 +58,7 @@ local storage, which the user asked for, and no cookies, analytics or trackers a
 banner is required. With an optional account:
 
 - **Data:** email, a hashed password (by Supabase Auth), and the learner's progress.
-- **Where:** Supabase, EU region (Frankfurt). Supabase acts as processor; accept its Data Processing
+- **Where:** Supabase, EU region (Paris, eu-west-3). Supabase acts as processor; accept its Data Processing
   Addendum in the Supabase dashboard (Organization settings > Legal documents).
 - **Access control:** row-level security in supabase/schema.sql lets each user read and write only their
   own row. The public "anon" key in the site is meant to be public; it grants nothing without those rules.

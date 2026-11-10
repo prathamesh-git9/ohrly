@@ -9,6 +9,15 @@ create table if not exists public.progress (
 
 alter table public.progress enable row level security;
 
+-- New tables are not exposed to the API automatically in this project, so grant exactly what the app
+-- needs: signed-in users may use their own row (row-level security below enforces "own"). Visitors who
+-- are not signed in get nothing.
+grant usage on schema public to authenticated;
+grant select, insert, update, delete on public.progress to authenticated;
+revoke all on public.progress from anon;
+-- Default privileges also hand out these; TRUNCATE would bypass row-level security, so none of them.
+revoke truncate, references, trigger on public.progress from authenticated;
+
 drop policy if exists "read own progress" on public.progress;
 create policy "read own progress" on public.progress
   for select using (auth.uid() = user_id);
