@@ -5,6 +5,7 @@ import { Fenn } from '../components/Fenn';
 import { Btn, Flag, MadeBy } from '../components/ui';
 import { COURSES } from '../content';
 import { browserLang, LANGUAGE_NAMES, translator } from '../i18n';
+import { cleanName } from '../domain/greeting';
 import { useStore } from '../state/store';
 
 const GOALS = [
@@ -16,6 +17,8 @@ const GOALS = [
 
 export function Welcome() {
   const finish = useStore((s) => s.finishOnboarding);
+  const setName = useStore((s) => s.setName);
+  const [name, setNameDraft] = useState('');
   const [step, setStep] = useState(0);
   const [lang] = useState(browserLang);
   const [courseId, setCourseId] = useState<string | null>(null);
@@ -62,6 +65,35 @@ export function Welcome() {
           )}
 
           {step === 1 && (
+            <form
+              className="pick"
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (!cleanName(name)) return;
+                setName(cleanName(name));
+                setStep(2);
+              }}
+            >
+              <Fenn size={110} mood="happy" />
+              <h2>{t('askName')}</h2>
+              <p className="muted">{t('askNameBody')}</p>
+              <input
+                className="name-input"
+                autoFocus
+                maxLength={30}
+                autoComplete="given-name"
+                aria-label={t('askName')}
+                placeholder={t('namePlaceholder')}
+                value={name}
+                onChange={(e) => setNameDraft(e.target.value)}
+              />
+              <Btn block type="submit" disabled={!cleanName(name)}>
+                {t('continue')}
+              </Btn>
+            </form>
+          )}
+
+          {step === 2 && (
             <div className="pick">
               <h2>{t('chooseCourse')}</h2>
               <div className="course-cards">
@@ -72,7 +104,7 @@ export function Welcome() {
                     className="card-option course-card"
                     onClick={() => {
                       setCourseId(c.id);
-                      setStep(2);
+                      setStep(3);
                     }}
                   >
                     <Flag lang={c.to} size={64} />
@@ -88,7 +120,7 @@ export function Welcome() {
             </div>
           )}
 
-          {step === 2 && courseId && (
+          {step === 3 && courseId && (
             <div className="pick">
               <Fenn size={110} mood="think" />
               <h2>{t('dailyGoalTitle')}</h2>

@@ -11,6 +11,7 @@ export interface SyncedCourse {
 }
 
 export interface SyncedState {
+  name?: string;
   courseId: string | null;
   dailyGoal: number;
   xp: number;
@@ -54,6 +55,7 @@ export function mergeState(local: SyncedState, remote: SyncedState): SyncedState
     ? local.streak
     : remote.streak;
   return {
+    name: local.name || remote.name || '',
     courseId: local.courseId ?? remote.courseId,
     dailyGoal: local.dailyGoal,
     xp: Math.max(local.xp, remote.xp, Object.values(xpByDay).reduce((n, v) => n + v, 0)),

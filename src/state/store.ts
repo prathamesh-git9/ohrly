@@ -44,6 +44,8 @@ export interface LessonSummary extends Rewards {
 
 interface State {
   onboarded: boolean;
+  /** What the learner asked to be called. Kept on this device, and in their account if they have one. */
+  name: string;
   courseId: string | null;
   dailyGoal: number;
   settings: Settings;
@@ -58,6 +60,7 @@ interface State {
   seenAchievements: string[];
 
   markAchievementsSeen(ids: readonly string[]): void;
+  setName(name: string): void;
   finishOnboarding(courseId: string, dailyGoal: number): void;
   switchCourse(courseId: string): void;
   setDailyGoal(goal: number): void;
@@ -84,6 +87,7 @@ interface State {
 
 const initial = {
   onboarded: false,
+  name: '',
   courseId: null as string | null,
   dailyGoal: 20,
   settings: { sound: true, voice: true, speaking: true, listening: true },
@@ -146,6 +150,8 @@ export const useStore = create<State>()(
 
       return {
         ...initial,
+
+        setName: (name) => set({ name }),
 
         markAchievementsSeen: (ids) =>
           set((s) => ({ seenAchievements: [...new Set([...s.seenAchievements, ...ids])] })),
@@ -290,6 +296,7 @@ export const useStore = create<State>()(
       storage: safeStorage,
       partialize: (s) => ({
         onboarded: s.onboarded,
+        name: s.name,
         courseId: s.courseId,
         dailyGoal: s.dailyGoal,
         settings: s.settings,

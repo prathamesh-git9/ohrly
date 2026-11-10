@@ -6,6 +6,7 @@ import { Scenery } from '../components/Scenery';
 import { Btn, SpeakerButton, Modal } from '../components/ui';
 import { buildPath, UNIT_LESSONS } from '../domain/course';
 import { examFor } from '../content/exams';
+import { Greeting } from '../components/Greeting';
 import { currentLevel, currentNodeId, examNodeId, levelOf, levelStatuses } from '../domain/levels';
 import type { Course, NodeKind, PathNode, Unit } from '../domain/types';
 import type { Translate, UiKey } from '../i18n';
@@ -183,6 +184,7 @@ export function Home({ course, t }: { course: Course; t: Translate }) {
 
   return (
     <div className="path">
+      <Greeting t={t} />
       <div className="level-ladder" role="list" aria-label={t('yourLevel')}>
         {statuses.map((s) => (
           <button

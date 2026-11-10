@@ -34,6 +34,24 @@ export function onAuthChange(cb: (session: Session | null) => void): () => void 
   return () => data.subscription.unsubscribe();
 }
 
+/** True when a request never reached the server, as opposed to the server saying no. */
+export function isNetworkError(error: unknown): boolean {
+  const message = (error as Error)?.message ?? '';
+  return /failed to fetch|networkerror|load failed|network request failed|fetch failed/i.test(message)
+    || (error as { name?: string })?.name === 'AuthRetryableFetchError';
+}
+
+/** One automatic retry for a dropped connection; a real answer from the server is never retried. */
+async function withRetry<T>(fn: () => Promise<T>): Promise<T> {
+  try {
+    return await fn();
+  } catch (error) {
+    if (!isNetworkError(error)) throw error;
+    await new Promise((r) => setTimeout(r, 1200));
+    return fn();
+  }
+}
+
 /** Where confirmation emails send people back to: wherever the app is being served from. */
 function homeUrl(): string {
   return `${window.location.origin}${window.location.pathname}`;
@@ -42,7 +60,11 @@ function homeUrl(): string {
 export async function signUp(email: string, password: string) {
   const c = cloud();
   if (!c) throw new Error('Accounts are not set up');
-  const { data, error } = await c.auth.signUp({ email, password, options: { emailRedirectTo: homeUrl() } });
+  const { data, error } = await withRetry(async () => {
+    const r = await c.auth.signUp({ email, password, options: { emailRedirectTo: homeUrl() } });
+    if (r.error && isNetworkError(r.error)) throw r.error;
+    return r;
+  });
   if (error) throw error;
   // With email confirmation on, there is a user but no session until the link is clicked.
   return { needsConfirmation: !data.session };
@@ -51,7 +73,11 @@ export async function signUp(email: string, password: string) {
 export async function signIn(email: string, password: string) {
   const c = cloud();
   if (!c) throw new Error('Accounts are not set up');
-  const { error } = await c.auth.signInWithPassword({ email, password });
+  const { error } = await withRetry(async () => {
+    const r = await c.auth.signInWithPassword({ email, password });
+    if (r.error && isNetworkError(r.error)) throw r.error;
+    return r;
+  });
   if (error) throw error;
 }
 

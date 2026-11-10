@@ -9,6 +9,7 @@ export type SyncStatus = 'off' | 'signed-out' | 'syncing' | 'synced' | 'error';
 function snapshot(): SyncedState {
   const s = useStore.getState();
   return {
+    name: s.name,
     courseId: s.courseId,
     dailyGoal: s.dailyGoal,
     xp: s.xp,

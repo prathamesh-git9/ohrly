@@ -7,6 +7,8 @@ import { expect, test } from '@playwright/test';
 test('accounts: sign-up form, a failed login shows its error, and legal pages are reachable', async ({ page }) => {
   await page.goto('./');
   await page.locator('.hero-cta').click();
+  await page.locator('.name-input').fill('Mara');
+  await page.locator('form.pick .btn-block').click();
   await page.locator('.course-card').filter({ hasText: /German/ }).click();
   await page.locator('.pick .btn-block').click();
   await expect(page.locator('.path')).toBeVisible();
@@ -22,7 +24,8 @@ test('accounts: sign-up form, a failed login shows its error, and legal pages ar
   await page.locator('input[type=password]').fill('definitely-wrong-password');
   await page.getByRole('button', { name: 'Log in', exact: true }).click();
   await expect(page.locator('.form-msg.is-error')).toBeVisible({ timeout: 30000 });
-  await expect(page.locator('.form-msg.is-error')).toContainText(/invalid|credentials/i);
+  // Either the server's answer, or the friendly message if the connection dropped twice: never raw jargon.
+  await expect(page.locator('.form-msg.is-error')).toContainText(/invalid login credentials|couldn't reach the server/i);
 
   await page.goto('./#/legal');
   await expect(page.getByRole('heading', { name: 'Privacy' })).toBeVisible();
@@ -32,6 +35,8 @@ test('accounts: sign-up form, a failed login shows its error, and legal pages ar
 test('streak calendar, share, achievements and level scale render', async ({ page }) => {
   await page.goto('./');
   await page.locator('.hero-cta').click();
+  await page.locator('.name-input').fill('Mara');
+  await page.locator('form.pick .btn-block').click();
   await page.locator('.course-card').filter({ hasText: /German/ }).click();
   await page.locator('.pick .btn-block').click();
   await page.locator('.stat-streak:visible').first().click();
@@ -44,3 +49,21 @@ test('streak calendar, share, achievements and level scale render', async ({ pag
   await expect(page.locator('.achievement')).toHaveCount(8);
   await page.screenshot({ path: 'test-results/profile-social.png', fullPage: true });
 });
+
+for (const [label, name, expected] of [
+  ['any learner', 'Mara', 'Good to see you, Mara!'],
+  ['the one special name', atob('UmVzaGFs'), atob('V2VsY29tZSBTdW5kYXIgRHIgamk=')],
+] as const) {
+  test(`asks the name at the start and greets ${label}`, async ({ page }, info) => {
+    await page.goto('./');
+    await page.locator('.hero-cta').click();
+    await expect(page.locator('form.pick .btn-block')).toBeDisabled(); // A name is required.
+    await page.locator('.name-input').fill(name);
+    await page.locator('form.pick .btn-block').click();
+    await page.locator('.course-card').filter({ hasText: /German/ }).click();
+    await page.locator('.pick .btn-block').click();
+    await expect(page.locator('.greeting')).toHaveText(expected);
+    if (label === 'any learner') await expect(page.locator('.greeting')).not.toHaveClass(/is-special/);
+    await page.screenshot({ path: `test-results/greeting-${label.replace(/\W+/g, '-')}-${info.project.name}.png` });
+  });
+}

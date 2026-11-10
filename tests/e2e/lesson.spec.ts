@@ -15,6 +15,8 @@ function loadCourse(id: string) {
 async function onboard(page: Page, course: RegExp) {
   await page.goto('./');
   await page.locator('.hero-cta').click();
+  await page.locator('.name-input').fill('Mara');
+  await page.locator('form.pick .btn-block').click();
   await page.locator('.course-card').filter({ hasText: course }).click();
   await page.locator('.goal-row').nth(1).click();
   await page.locator('.pick .btn-block').click();

@@ -5,7 +5,7 @@ import { Fenn } from '../components/Fenn';
 import { Btn, Modal } from '../components/ui';
 import type { Translate } from '../i18n';
 import { navigate } from '../router';
-import { cloudEnabled, deleteAccount, resetPassword, signIn, signOut, signUp } from '../sync/cloud';
+import { cloudEnabled, deleteAccount, isNetworkError, resetPassword, signIn, signOut, signUp } from '../sync/cloud';
 import { useCloud } from '../sync/useCloudSync';
 
 export function Account({ t }: { t: Translate }) {
@@ -35,7 +35,11 @@ export function Account({ t }: { t: Translate }) {
     try {
       await fn();
     } catch (error) {
-      setMessage({ kind: 'error', text: (error as Error).message || t('authError') });
+      // The server's own messages ("Invalid login credentials") are clear; a dropped connection is not.
+      setMessage({
+        kind: 'error',
+        text: isNetworkError(error) ? t('networkError') : (error as Error).message || t('authError'),
+      });
     } finally {
       setBusy(false);
     }
