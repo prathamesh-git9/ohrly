@@ -19,13 +19,13 @@
       },
       "words": [
         { "id": "w-now", "target": "now", "source": "jetzt", "sourceAccept": ["gerade"], "pos": "adv" },
-        { "id": "w-walk", "target": "walk", "source": "zu Fuß gehen", "sourceAccept": ["gehe zu Fuß", "gehst zu Fuß", "geht zu Fuß"], "forms": ["walks", "walking", "walked"], "pos": "verb" },
+        { "id": "w-walk", "target": "walk", "source": "zu Fuß gehen", "sourceAccept": ["gehen", "gehe zu Fuß", "gehst zu Fuß", "geht zu Fuß", "laufen", "laufe", "läufst", "läuft"], "forms": ["walks", "walking", "walked"], "pos": "verb" },
         { "id": "w-sit", "target": "sit", "source": "sitzen", "sourceAccept": ["sitze", "sitzt"], "forms": ["sits", "sitting", "sat"], "pos": "verb" },
         { "id": "w-stand", "target": "stand", "source": "stehen", "sourceAccept": ["stehe", "stehst", "steht"], "forms": ["stands", "standing", "stood"], "pos": "verb" },
-        { "id": "w-talk", "target": "talk", "source": "reden", "sourceAccept": ["rede", "redest", "redet", "sprechen"], "forms": ["talks", "talking", "talked"], "pos": "verb" },
+        { "id": "w-talk", "target": "talk", "source": "reden", "sourceAccept": ["rede", "redest", "redet", "sprechen", "spreche", "sprichst", "spricht"], "forms": ["talks", "talking", "talked"], "pos": "verb" },
         { "id": "w-wait", "target": "wait", "source": "warten", "sourceAccept": ["warte", "wartest", "wartet"], "forms": ["waits", "waiting", "waited"], "pos": "verb" },
         { "id": "w-wear", "target": "wear", "source": "tragen", "sourceAccept": ["trage", "trägst", "trägt"], "forms": ["wears", "wearing", "wore", "worn"], "pos": "verb" },
-        { "id": "w-move", "target": "move", "source": "sich bewegen", "sourceAccept": ["bewege mich", "bewegst dich", "bewegt sich", "verschieben", "verschiebe", "verschiebst", "verschiebt"], "forms": ["moves", "moving", "moved"], "pos": "verb" }
+        { "id": "w-move", "target": "move", "source": "bewegen", "sourceAccept": ["sich bewegen", "bewege", "bewegst", "bewegt", "bewege mich", "bewegst dich", "bewegt sich", "verschieben", "verschiebe", "verschiebst", "verschiebt"], "forms": ["moves", "moving", "moved"], "pos": "verb" }
       ],
       "sentences": [
         { "id": "u21-s01", "target": "I am walking now.", "source": "Ich gehe gerade zu Fuß.", "targetAccept": ["I'm walking now."], "words": ["w-i", "w-am", "w-walk", "w-now"], "cloze": { "answer": "walking", "distractors": ["walk", "walks"] } },
@@ -57,7 +57,7 @@
         "body": "Für Gewohnheiten und dauerhafte Zustände verwendest du das **present simple**: **I usually work at home.** Signalwörter sind zum Beispiel **usually** und **every day**.\n\nFür etwas, das gerade oder nur vorübergehend passiert, steht **am/is/are + -ing**: **I am working at home today.** Anders als im Deutschen zeigen die beiden englischen Formen den Unterschied direkt am Verb.",
         "examples": [
           { "target": "She plays in the park every day.", "source": "Sie spielt jeden Tag im Park." },
-          { "target": "She is playing in the park now.", "source": "Sie spielt jetzt gerade im Park." },
+          { "target": "She is playing in the park now.", "source": "Sie spielt gerade im Park." },
           { "target": "I am staying in London this month.", "source": "Ich wohne diesen Monat vorübergehend in London." }
         ]
       },
@@ -75,7 +75,7 @@
         { "id": "u22-s01", "target": "I usually work outside.", "source": "Ich arbeite normalerweise draußen.", "words": ["w-i", "w-usually", "w-work", "w-outside"], "cloze": { "answer": "work", "distractors": ["working", "works"] } },
         { "id": "u22-s02", "target": "I am working inside today.", "source": "Ich arbeite heute drinnen.", "targetAccept": ["I'm working inside today.", "I work inside today."], "words": ["w-i", "w-am", "w-work", "w-inside", "w-today"], "cloze": { "answer": "working", "distractors": ["work", "works"] } },
         { "id": "u22-s03", "target": "She plays in the park every day.", "source": "Sie spielt jeden Tag im Park.", "words": ["w-she", "w-play", "w-live-in", "w-park", "w-every", "w-day"], "cloze": { "answer": "plays", "distractors": ["play", "playing"] } },
-        { "id": "u22-s04", "target": "She is playing in the park now.", "source": "Sie spielt jetzt gerade im Park.", "targetAccept": ["She's playing in the park now."], "words": ["w-she", "w-is", "w-play", "w-live-in", "w-park", "w-now"], "cloze": { "answer": "playing", "distractors": ["play", "plays"] } },
+        { "id": "u22-s04", "target": "She is playing in the park now.", "source": "Sie spielt gerade im Park.", "targetAccept": ["She's playing in the park now."], "sourceAccept": ["Sie spielt jetzt im Park."], "words": ["w-she", "w-is", "w-play", "w-live-in", "w-park", "w-now"], "cloze": { "answer": "playing", "distractors": ["play", "plays"] } },
         { "id": "u22-s05", "target": "I live in a flat.", "source": "Ich wohne in einer Wohnung.", "targetAccept": ["I live in an apartment."], "words": ["w-i", "w-live-in", "w-a", "w-flat"] },
         { "id": "u22-s06", "target": "I am staying in London this month.", "source": "Ich wohne diesen Monat vorübergehend in London.", "targetAccept": ["I'm staying in London this month."], "sourceAccept": ["Ich bleibe diesen Monat in London."], "words": ["w-i", "w-am", "w-stay", "w-live-in", "w-this", "w-month"], "cloze": { "answer": "staying", "distractors": ["stay", "stays"] } },
         { "id": "u22-s07", "target": "My friend lives in a flat.", "source": "Mein Freund wohnt in einer Wohnung.", "sourceAccept": ["Meine Freundin wohnt in einer Wohnung."], "targetAccept": ["My friend lives in an apartment."], "words": ["w-my", "w-friend", "w-live-in", "w-a", "w-flat"] },
@@ -113,8 +113,8 @@
         { "id": "w-hot", "target": "hot", "source": "heiß", "pos": "adj" },
         { "id": "w-cold", "target": "cold", "source": "kalt", "pos": "adj" },
         { "id": "w-coat", "target": "coat", "source": "der Mantel", "targetAccept": ["the coat", "a coat"], "sourceAccept": ["Mantel", "ein Mantel"], "forms": ["coats"], "pos": "noun", "emoji": "🧥" },
-        { "id": "w-trousers", "target": "trousers", "source": "die Hose", "targetAccept": ["the trousers", "pants", "the pants"], "sourceAccept": ["Hose", "eine Hose"], "pos": "noun" },
-        { "id": "w-shirt", "target": "shirt", "source": "das Hemd", "targetAccept": ["the shirt", "a shirt"], "sourceAccept": ["Hemd", "ein Hemd"], "forms": ["shirts"], "pos": "noun", "emoji": "👕" },
+        { "id": "w-trousers", "target": "trousers", "source": "die Hose", "targetAccept": ["the trousers", "a pair of trousers", "pants", "the pants", "a pair of pants"], "sourceAccept": ["Hose", "eine Hose"], "pos": "noun" },
+        { "id": "w-shirt", "target": "shirt", "source": "das Hemd", "targetAccept": ["the shirt", "a shirt"], "sourceAccept": ["Hemd", "ein Hemd"], "forms": ["shirts"], "pos": "noun" },
         { "id": "w-shoes", "target": "shoes", "source": "die Schuhe", "targetAccept": ["the shoes"], "sourceAccept": ["Schuhe"], "pos": "noun", "emoji": "👞" }
       ],
       "sentences": [
@@ -156,26 +156,26 @@
         { "id": "w-film", "target": "film", "source": "der Film", "targetAccept": ["the film", "a film", "movie", "the movie", "a movie"], "sourceAccept": ["Film", "ein Film"], "forms": ["films", "movies"], "pos": "noun", "emoji": "🎬" },
         { "id": "w-sport", "target": "sport", "source": "der Sport", "targetAccept": ["sports"], "sourceAccept": ["Sport"], "pos": "noun" },
         { "id": "w-weekend", "target": "weekend", "source": "das Wochenende", "targetAccept": ["the weekend", "a weekend"], "sourceAccept": ["Wochenende", "ein Wochenende"], "forms": ["weekends"], "pos": "noun" },
-        { "id": "w-love", "target": "love", "source": "sehr gern mögen", "sourceAccept": ["liebe", "liebst", "liebt"], "forms": ["loves", "loving", "loved"], "pos": "verb" },
+        { "id": "w-love", "target": "love", "source": "lieben", "sourceAccept": ["liebe", "liebst", "liebt", "sehr gern mögen"], "forms": ["loves", "loving", "loved"], "pos": "verb" },
         { "id": "w-enjoy", "target": "enjoy", "source": "genießen", "sourceAccept": ["genieße", "genießt", "gern machen", "macht gern"], "forms": ["enjoys", "enjoying", "enjoyed"], "pos": "verb" },
         { "id": "w-lets", "target": "let's", "source": "lass uns", "sourceAccept": ["lasst uns", "lassen Sie uns"], "pos": "phrase" },
         { "id": "w-run", "target": "run", "source": "laufen", "sourceAccept": ["laufe", "läufst", "läuft"], "forms": ["runs", "running", "ran"], "pos": "verb" }
       ],
       "sentences": [
         { "id": "u24-s01", "target": "I love music.", "source": "Ich liebe Musik.", "sourceAccept": ["Ich mag Musik sehr gern."], "words": ["w-i", "w-love", "w-music"] },
-        { "id": "u24-s02", "target": "She is enjoying this film.", "source": "Sie genießt gerade diesen Film.", "sourceAccept": ["Sie genießt diesen Film gerade."], "targetAccept": ["She's enjoying this film.", "She is enjoying this movie.", "She's enjoying this movie."], "words": ["w-she", "w-is", "w-enjoy", "w-this", "w-film"] },
+        { "id": "u24-s02", "target": "She is enjoying this film.", "source": "Der Film gefällt ihr gerade sehr gut.", "sourceAccept": ["Sie genießt gerade diesen Film.", "Sie genießt diesen Film gerade."], "targetAccept": ["She's enjoying this film.", "She is enjoying this movie.", "She's enjoying this movie."], "words": ["w-she", "w-is", "w-enjoy", "w-this", "w-film"] },
         { "id": "u24-s03", "target": "Do you like sport?", "source": "Magst du Sport?", "sourceAccept": ["Mögt ihr Sport?", "Mögen Sie Sport?"], "targetAccept": ["Do you like sports?"], "words": ["w-do", "w-you", "w-like", "w-sport"], "cloze": { "answer": "Do", "distractors": ["Are", "Does"] } },
-        { "id": "u24-s04", "target": "Yes, I love swimming.", "source": "Ja, ich schwimme sehr gern.", "words": ["w-yes", "w-i", "w-love", "w-swim"], "cloze": { "answer": "swimming", "distractors": ["swim", "swims"] } },
+        { "id": "u24-s04", "target": "Yes, I love swimming.", "source": "Ja, ich schwimme sehr gern.", "targetAccept": ["Yes, I love to swim."], "words": ["w-yes", "w-i", "w-love", "w-swim"], "cloze": { "answer": "swimming", "distractors": ["swim", "swims"] } },
         { "id": "u24-s05", "target": "I enjoy reading in the evening.", "source": "Ich lese abends gern.", "words": ["w-i", "w-enjoy", "w-read", "w-live-in", "w-evening"], "cloze": { "answer": "reading", "distractors": ["read", "reads"] } },
-        { "id": "u24-s06", "target": "He likes running in the park.", "source": "Er läuft gern im Park.", "words": ["w-he", "w-like", "w-run", "w-live-in", "w-park"], "cloze": { "answer": "running", "distractors": ["run", "runs"] } },
+        { "id": "u24-s06", "target": "He likes running in the park.", "source": "Er läuft gern im Park.", "targetAccept": ["He likes to run in the park."], "words": ["w-he", "w-like", "w-run", "w-live-in", "w-park"], "cloze": { "answer": "running", "distractors": ["run", "runs"] } },
         { "id": "u24-s07", "target": "Let's listen to music.", "source": "Lass uns Musik hören.", "targetAccept": ["Let's listen to some music."], "sourceAccept": ["Lasst uns Musik hören.", "Lassen Sie uns Musik hören."], "words": ["w-lets", "w-listen", "w-to", "w-music"], "cloze": { "answer": "listen", "distractors": ["listening", "listens"] } },
         { "id": "u24-s08", "target": "Let's watch a film.", "source": "Lass uns einen Film ansehen.", "sourceAccept": ["Lasst uns einen Film ansehen.", "Lassen Sie uns einen Film ansehen."], "targetAccept": ["Let's watch a movie."], "words": ["w-lets", "w-watch", "w-a", "w-film"] },
         { "id": "u24-s09", "target": "Let's run outside.", "source": "Lass uns draußen laufen.", "targetAccept": ["Let's go running outside."], "sourceAccept": ["Lasst uns draußen laufen.", "Lassen Sie uns draußen laufen."], "words": ["w-lets", "w-run", "w-outside"] },
         { "id": "u24-s10", "target": "What do you enjoy doing?", "source": "Was machst du gern?", "sourceAccept": ["Was macht ihr gern?", "Was machen Sie gern?"], "words": ["w-what", "w-do", "w-you", "w-enjoy"] },
         { "id": "u24-s11", "target": "I enjoy cooking at the weekend.", "source": "Ich koche am Wochenende gern.", "targetAccept": ["I enjoy cooking on the weekend."], "words": ["w-i", "w-enjoy", "w-cook", "w-at", "w-weekend"] },
-        { "id": "u24-s12", "target": "My sister loves dancing.", "source": "Meine Schwester tanzt sehr gern.", "words": ["w-my", "w-sister", "w-love", "w-dance"] },
-        { "id": "u24-s13", "target": "Do you like reading at the weekend?", "source": "Liest du am Wochenende gern?", "targetAccept": ["Do you like reading on the weekend?"], "sourceAccept": ["Lest ihr am Wochenende gern?", "Lesen Sie am Wochenende gern?"], "words": ["w-do", "w-you", "w-like", "w-read", "w-at", "w-weekend"] },
-        { "id": "u24-s14", "target": "No, I like swimming at the weekend.", "source": "Nein, ich schwimme am Wochenende gern.", "targetAccept": ["No, I like swimming on the weekend."], "words": ["w-no", "w-i", "w-like", "w-swim", "w-at", "w-weekend"] },
+        { "id": "u24-s12", "target": "My sister loves dancing.", "source": "Meine Schwester tanzt sehr gern.", "targetAccept": ["My sister loves to dance."], "words": ["w-my", "w-sister", "w-love", "w-dance"] },
+        { "id": "u24-s13", "target": "Do you like reading at the weekend?", "source": "Liest du am Wochenende gern?", "targetAccept": ["Do you like to read at the weekend?", "Do you like reading on the weekend?", "Do you like to read on the weekend?"], "sourceAccept": ["Lest ihr am Wochenende gern?", "Lesen Sie am Wochenende gern?"], "words": ["w-do", "w-you", "w-like", "w-read", "w-at", "w-weekend"] },
+        { "id": "u24-s14", "target": "No, I like swimming at the weekend.", "source": "Nein, ich schwimme am Wochenende gern.", "targetAccept": ["No, I like to swim at the weekend.", "No, I like swimming on the weekend.", "No, I like to swim on the weekend."], "words": ["w-no", "w-i", "w-like", "w-swim", "w-at", "w-weekend"] },
         { "id": "u24-s15", "target": "Let's watch this film at the weekend.", "source": "Lass uns diesen Film am Wochenende ansehen.", "sourceAccept": ["Lasst uns diesen Film am Wochenende ansehen.", "Lassen Sie uns diesen Film am Wochenende ansehen."], "targetAccept": ["Let's watch this movie at the weekend.", "Let's watch this film on the weekend.", "Let's watch this movie on the weekend."], "words": ["w-lets", "w-watch", "w-this", "w-film", "w-at", "w-weekend"] },
         { "id": "u24-s16", "target": "The children enjoy sport at school.", "source": "Die Kinder machen in der Schule gern Sport.", "targetAccept": ["The children enjoy sports at school."], "words": ["w-child", "w-enjoy", "w-sport", "w-at", "w-school"] },
         { "id": "u24-s17", "target": "He runs every morning.", "source": "Er läuft jeden Morgen.", "words": ["w-he", "w-run", "w-every", "w-morning"] },
@@ -188,7 +188,7 @@
       "canDo": "Du kannst eine einfache Beschwerde nennen und sagen, was du brauchst.",
       "tip": {
         "title": "Beschwerden mit have und hurt",
-        "body": "Für manche Beschwerden verwendet Englisch **have**: **I have a headache.** Im Deutschen sagt man oft „Ich habe Kopfschmerzen“; die englische Einzahl braucht dabei **a**.\n\nMit **hurt** sagst du, wo es wehtut: **My stomach hurts.** Bei **he/she/it** kommt im Präsens **-s** hinzu. Einfache Ratschläge stehen wie andere Anweisungen in der Grundform: **Rest at home.**",
+        "body": "Für manche Beschwerden verwendet Englisch **have**: **I have a headache.** Im Deutschen sagt man oft „Ich habe Kopfschmerzen“; die englische Einzahl braucht dabei **a**.\n\nMit **hurt** sagst du, wo es wehtut: **My stomach hurts.** Bei einem Subjekt in der dritten Person Singular – zum Beispiel **he**, **she**, **it** oder **my stomach** – kommt im Präsens **-s** hinzu. Einfache Ratschläge stehen wie andere Anweisungen in der Grundform: **Rest at home.**",
         "examples": [
           { "target": "I have a headache.", "source": "Ich habe Kopfschmerzen." },
           { "target": "My stomach hurts.", "source": "Mein Bauch tut weh." },
@@ -209,22 +209,22 @@
       "sentences": [
         { "id": "u25-s01", "target": "I am ill today.", "source": "Ich bin heute krank.", "targetAccept": ["I am sick today.", "I'm ill today.", "I'm sick today."], "words": ["w-i", "w-am", "w-ill", "w-today"], "cloze": { "answer": "am", "distractors": ["are", "have"] } },
         { "id": "u25-s02", "target": "Are you better?", "source": "Geht es dir besser?", "targetAccept": ["Are you feeling better?"], "sourceAccept": ["Geht es euch besser?", "Geht es Ihnen besser?", "Fühlst du dich besser?", "Fühlt ihr euch besser?", "Fühlen Sie sich besser?"], "words": ["w-are", "w-you", "w-better"] },
-        { "id": "u25-s03", "target": "No, I have a headache.", "source": "Nein, ich habe Kopfschmerzen.", "words": ["w-no", "w-i", "w-have", "w-a", "w-headache"], "cloze": { "answer": "have", "distractors": ["has", "having"] } },
-        { "id": "u25-s04", "target": "My stomach hurts.", "source": "Mein Bauch tut weh.", "sourceAccept": ["Mein Magen tut weh."], "words": ["w-my", "w-stomach", "w-hurt"], "cloze": { "answer": "hurts", "distractors": ["hurt", "hurting"] } },
+        { "id": "u25-s03", "target": "No, I have a headache.", "source": "Nein, ich habe Kopfschmerzen.", "targetAccept": ["No, I've got a headache."], "words": ["w-no", "w-i", "w-have", "w-a", "w-headache"], "cloze": { "answer": "have", "distractors": ["has", "having"] } },
+        { "id": "u25-s04", "target": "My stomach hurts.", "source": "Mein Bauch tut weh.", "sourceAccept": ["Mein Magen tut weh.", "Ich habe Bauchschmerzen.", "Ich habe Magenschmerzen."], "targetAccept": ["I have a stomach ache.", "I have a stomachache."], "words": ["w-my", "w-stomach", "w-hurt"], "cloze": { "answer": "hurts", "distractors": ["hurt", "hurting"] } },
         { "id": "u25-s05", "target": "I need a doctor.", "source": "Ich brauche einen Arzt.", "sourceAccept": ["Ich brauche eine Ärztin."], "words": ["w-i", "w-need", "w-a", "w-doctor"] },
         { "id": "u25-s06", "target": "Where is the pharmacy?", "source": "Wo ist die Apotheke?", "targetAccept": ["Where's the pharmacy?", "Where is the chemist's?", "Where's the chemist's?", "Where is the drugstore?", "Where's the drugstore?"], "words": ["w-where", "w-is", "w-pharmacy"] },
         { "id": "u25-s07", "target": "I need some medicine.", "source": "Ich brauche Medizin.", "sourceAccept": ["Ich brauche etwas Medizin.", "Ich brauche ein Medikament."], "targetAccept": ["I need some medication.", "I need medicine.", "I need medication."], "words": ["w-i", "w-need", "w-some", "w-medicine"], "cloze": { "answer": "some", "distractors": ["any", "many"] } },
         { "id": "u25-s08", "target": "Please rest at home.", "source": "Ruh dich bitte zu Hause aus.", "targetAccept": ["Rest at home, please."], "sourceAccept": ["Ruht euch bitte zu Hause aus.", "Ruhen Sie sich bitte zu Hause aus."], "words": ["w-please", "w-rest", "w-at", "w-home"] },
-        { "id": "u25-s09", "target": "Does your stomach hurt?", "source": "Tut dein Bauch weh?", "sourceAccept": ["Tut euer Bauch weh?", "Tut Ihr Bauch weh?", "Tut dein Magen weh?", "Tut euer Magen weh?", "Tut Ihr Magen weh?"], "words": ["w-does", "w-your", "w-stomach", "w-hurt"], "cloze": { "answer": "hurt", "distractors": ["hurts", "hurting"] } },
-        { "id": "u25-s10", "target": "I am better now.", "source": "Mir geht es jetzt besser.", "targetAccept": ["I'm better now."], "words": ["w-i", "w-am", "w-better", "w-now"] },
-        { "id": "u25-s11", "target": "The doctor is at the hospital.", "source": "Der Arzt ist im Krankenhaus.", "targetAccept": ["The doctor's at the hospital."], "sourceAccept": ["Die Ärztin ist im Krankenhaus."], "words": ["w-doctor", "w-is", "w-at", "w-hospital"] },
-        { "id": "u25-s12", "target": "Is there a pharmacy near here?", "source": "Gibt es hier in der Nähe eine Apotheke?", "targetAccept": ["Is there a chemist's near here?", "Is there a drugstore near here?"], "words": ["w-is", "w-there", "w-a", "w-pharmacy", "w-near", "w-here"] },
+        { "id": "u25-s09", "target": "Does your stomach hurt?", "source": "Tut dein Bauch weh?", "sourceAccept": ["Tut euer Bauch weh?", "Tut Ihr Bauch weh?", "Tut dein Magen weh?", "Tut euer Magen weh?", "Tut Ihr Magen weh?", "Hast du Bauchschmerzen?", "Habt ihr Bauchschmerzen?", "Haben Sie Bauchschmerzen?", "Hast du Magenschmerzen?", "Habt ihr Magenschmerzen?", "Haben Sie Magenschmerzen?"], "words": ["w-does", "w-your", "w-stomach", "w-hurt"], "cloze": { "answer": "hurt", "distractors": ["hurts", "hurting"] } },
+        { "id": "u25-s10", "target": "I am better now.", "source": "Mir geht es jetzt besser.", "targetAccept": ["I'm better now."], "sourceAccept": ["Jetzt geht es mir besser."], "words": ["w-i", "w-am", "w-better", "w-now"] },
+        { "id": "u25-s11", "target": "The doctor is at the hospital.", "source": "Der Arzt ist im Krankenhaus.", "targetAccept": ["The doctor's at the hospital.", "The doctor is in the hospital.", "The doctor's in the hospital."], "sourceAccept": ["Die Ärztin ist im Krankenhaus."], "words": ["w-doctor", "w-is", "w-at", "w-hospital"] },
+        { "id": "u25-s12", "target": "Is there a pharmacy near here?", "source": "Gibt es hier in der Nähe eine Apotheke?", "targetAccept": ["Is there a pharmacy nearby?", "Is there a chemist's near here?", "Is there a chemist's nearby?", "Is there a drugstore near here?", "Is there a drugstore nearby?"], "words": ["w-is", "w-there", "w-a", "w-pharmacy", "w-near", "w-here"] },
         { "id": "u25-s13", "target": "Rest and drink some water.", "source": "Ruh dich aus und trink etwas Wasser.", "sourceAccept": ["Ruht euch aus und trinkt etwas Wasser.", "Ruhen Sie sich aus und trinken Sie etwas Wasser."], "words": ["w-rest", "w-and", "w-drink", "w-some", "w-water"] },
-        { "id": "u25-s14", "target": "This medicine helps.", "source": "Dieses Medikament hilft.", "sourceAccept": ["Diese Medizin hilft."], "targetAccept": ["This medication helps."], "words": ["w-this", "w-medicine", "w-help"] },
+        { "id": "u25-s14", "target": "This medicine helps.", "source": "Dieses Medikament hilft.", "sourceAccept": ["Diese Medizin hilft."], "targetAccept": ["This medicine works.", "This medication helps.", "This medication works."], "words": ["w-this", "w-medicine", "w-help"] },
         { "id": "u25-s15", "target": "My headache is better now.", "source": "Meine Kopfschmerzen sind jetzt besser.", "targetAccept": ["My headache's better now."], "words": ["w-my", "w-headache", "w-is", "w-better", "w-now"] },
         { "id": "u25-s16", "target": "The child is ill.", "source": "Das Kind ist krank.", "targetAccept": ["The child is sick.", "The child's ill.", "The child's sick."], "words": ["w-child", "w-is", "w-ill"] },
-        { "id": "u25-s17", "target": "Do you have a headache?", "source": "Hast du Kopfschmerzen?", "sourceAccept": ["Habt ihr Kopfschmerzen?", "Haben Sie Kopfschmerzen?"], "words": ["w-do", "w-you", "w-have", "w-a", "w-headache"] },
-        { "id": "u25-s18", "target": "No, my stomach hurts.", "source": "Nein, mein Bauch tut weh.", "sourceAccept": ["Nein, mein Magen tut weh."], "words": ["w-no", "w-my", "w-stomach", "w-hurt"] }
+        { "id": "u25-s17", "target": "Do you have a headache?", "source": "Hast du Kopfschmerzen?", "sourceAccept": ["Habt ihr Kopfschmerzen?", "Haben Sie Kopfschmerzen?"], "targetAccept": ["Have you got a headache?"], "words": ["w-do", "w-you", "w-have", "w-a", "w-headache"] },
+        { "id": "u25-s18", "target": "No, my stomach hurts.", "source": "Nein, mein Bauch tut weh.", "sourceAccept": ["Nein, mein Magen tut weh.", "Nein, ich habe Bauchschmerzen.", "Nein, ich habe Magenschmerzen."], "targetAccept": ["No, I have a stomach ache.", "No, I have a stomachache."], "words": ["w-no", "w-my", "w-stomach", "w-hurt"] }
       ]
     }
   ]
