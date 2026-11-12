@@ -1,35 +1,31 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useState } from 'react';
-import { sfx } from '../audio/sfx';
-import { cleanName, specialGreeting } from '../domain/greeting';
+import { cleanName } from '../domain/greeting';
 import type { Translate } from '../i18n';
 import { useStore } from '../state/store';
 import { Fenn } from './Fenn';
-import { Btn, Confetti, Modal } from './ui';
+import { Btn, Modal } from './ui';
 
 /** Greets once per visit, not on every return to the path. */
 let greetedThisVisit = false;
 
 /**
  * Greets the learner by name when the app opens, floating over the page so it is seen even after the
- * path scrolls to the current lesson. Learners from before names were asked are asked once. One name
- * gets its own greeting; everyone else sees the usual welcome.
+ * path scrolls to the current lesson. Learners from before names were asked are asked once.
  */
 export function Greeting({ t }: { t: Translate }) {
   const name = useStore((s) => s.name);
   const setName = useStore((s) => s.setName);
   const [draft, setDraft] = useState('');
   const [showing, setShowing] = useState(false);
-  const special = name ? specialGreeting(name) : null;
 
   useEffect(() => {
     if (!name || greetedThisVisit) return;
     greetedThisVisit = true;
     setShowing(true);
-    if (special) window.setTimeout(() => sfx.complete(), 250);
-    const timer = window.setTimeout(() => setShowing(false), special ? 7000 : 3200);
+    const timer = window.setTimeout(() => setShowing(false), 3200);
     return () => window.clearTimeout(timer);
-  }, [name, special]);
+  }, [name]);
 
   if (!name) {
     return (
@@ -65,7 +61,7 @@ export function Greeting({ t }: { t: Translate }) {
       {showing && (
         <motion.button
           type="button"
-          className={`greeting${special ? ' is-special' : ''}`}
+          className="greeting"
           initial={{ y: -40, opacity: 0, scale: 0.9, x: '-50%' }}
           animate={{ y: 0, opacity: 1, scale: 1, x: '-50%' }}
           exit={{ y: -40, opacity: 0, x: '-50%' }}
@@ -73,9 +69,8 @@ export function Greeting({ t }: { t: Translate }) {
           onClick={() => setShowing(false)}
           role="status"
         >
-          {special && <Confetti count={30} />}
-          <Fenn size={special ? 64 : 44} mood={special ? 'cheer' : 'happy'} />
-          <span>{special ?? t('greetBack', { name })}</span>
+          <Fenn size={44} mood="happy" />
+          <span>{t('greetBack', { name })}</span>
         </motion.button>
       )}
     </AnimatePresence>

@@ -2,7 +2,6 @@ import { RefreshCw, Search, ShieldCheck } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Fenn } from '../components/Fenn';
 import { Btn } from '../components/ui';
-import { specialGreeting } from '../domain/greeting';
 import { cloud, cloudEnabled } from '../sync/cloud';
 import { useCloud } from '../sync/useCloudSync';
 
@@ -74,7 +73,6 @@ export function Admin() {
       const d = new Date(now - (29 - i) * 86_400_000).toISOString().slice(0, 10);
       return { day: d, count: visitors.filter((v) => dayKey(v.created_at) === d).length };
     });
-    const special = visitors.filter((v) => specialGreeting(v.name));
     const byCountry = new Map<string, number>();
     for (const v of visitors) byCountry.set(v.country ?? 'Unknown', (byCountry.get(v.country ?? 'Unknown') ?? 0) + 1);
     return {
@@ -85,7 +83,6 @@ export function Admin() {
       byCourse: [...byCourse.entries()].sort((a, b) => b[1] - a[1]),
       days,
       max: Math.max(1, ...days.map((d) => d.count)),
-      special,
       byCountry: [...byCountry.entries()].sort((a, b) => b[1] - a[1]),
     };
   }, [visitors]);
@@ -139,10 +136,6 @@ export function Admin() {
         <div className="admin-tile"><strong>{summary.week}</strong><span>Last 7 days</span></div>
         <div className="admin-tile"><strong>{summary.browsers}</strong><span>Different browsers</span></div>
         <div className="admin-tile"><strong>{stats?.accounts ?? '…'}</strong><span>Accounts ({stats?.confirmed_accounts ?? 0} confirmed)</span></div>
-        <div className="admin-tile is-special">
-          <strong>{summary.special.length}</strong>
-          <span>Special greeting shown</span>
-        </div>
       </div>
 
       <section className="admin-card">
@@ -180,19 +173,6 @@ export function Admin() {
           </div>
         ))}
       </section>
-
-      {summary.special.length > 0 && (
-        <section className="admin-card">
-          <h2>Special greeting</h2>
-          <ul className="admin-list">
-            {summary.special.map((v) => (
-              <li key={`${v.device_id}-${v.created_at}`}>
-                {v.name} · {COURSE_LABEL[v.course ?? ''] ?? v.course} · {place(v)} · {new Date(v.created_at).toLocaleString()}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       <section className="admin-card">
         <h2>All visitors</h2>

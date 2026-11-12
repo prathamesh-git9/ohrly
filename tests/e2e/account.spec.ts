@@ -50,23 +50,17 @@ test('streak calendar, share, achievements and level scale render', async ({ pag
   await page.screenshot({ path: 'test-results/profile-social.png', fullPage: true });
 });
 
-for (const [label, name, expected] of [
-  ['any learner', 'Mara', 'Good to see you, Mara!'],
-  ['the one special name', atob('UmVzaGFs'), atob('V2VsY29tZSBTdW5kYXIgRHIgamk=')],
-] as const) {
-  test(`asks the name at the start and greets ${label}`, async ({ page }, info) => {
-    await page.goto('./');
-    await page.locator('.hero-cta').click();
-    await expect(page.locator('form.pick .btn-block')).toBeDisabled(); // A name is required.
-    await page.locator('.name-input').fill(name);
-    await page.locator('form.pick .btn-block').click();
-    await page.locator('.course-card').filter({ hasText: /German/ }).click();
-    await page.locator('.pick .btn-block').click();
-    await expect(page.locator('.greeting')).toHaveText(expected);
-    if (label === 'any learner') await expect(page.locator('.greeting')).not.toHaveClass(/is-special/);
-    await page.screenshot({ path: `test-results/greeting-${label.replace(/\W+/g, '-')}-${info.project.name}.png` });
-  });
-}
+test('asks the name at the start and greets the learner by it', async ({ page }, info) => {
+  await page.goto('./');
+  await page.locator('.hero-cta').click();
+  await expect(page.locator('form.pick .btn-block')).toBeDisabled(); // A name is required.
+  await page.locator('.name-input').fill('Mara');
+  await page.locator('form.pick .btn-block').click();
+  await page.locator('.course-card').filter({ hasText: /German/ }).click();
+  await page.locator('.pick .btn-block').click();
+  await expect(page.locator('.greeting')).toHaveText('Good to see you, Mara!');
+  await page.screenshot({ path: `test-results/greeting-${info.project.name}.png` });
+});
 
 test('automated browsers are not counted as visitors', async ({ page }) => {
   const sent: string[] = [];

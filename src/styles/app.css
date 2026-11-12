@@ -569,7 +569,6 @@ button { font: inherit; color: inherit; }
 .name-input { width: 100%; font: inherit; font-size: 20px; text-align: center; padding: 14px; border: 2px solid var(--line-strong); border-bottom-width: 4px; border-radius: 14px; background: var(--card); color: var(--ink); }
 .name-input:focus { outline: 0; border-color: var(--primary); }
 .greeting { appearance: none; position: fixed; z-index: 110; top: 74px; left: 50%; display: flex; align-items: center; gap: 12px; padding: 10px 20px 10px 12px; border: 2px solid var(--primary); border-bottom-width: 5px; border-radius: 22px; background: var(--card); color: var(--primary); font-family: var(--font-head); font-size: 20px; font-weight: 600; cursor: pointer; max-width: calc(100vw - 24px); text-align: left; }
-.greeting.is-special { top: 30%; padding: 18px 26px 18px 16px; border-color: #d98a3a; background: linear-gradient(90deg, #ffe08a, #ffb86b, #ff8fb1); color: #4a2600; font-size: 28px; }
 .name-prompt { display: grid; gap: 10px; width: 100%; }
 .name-prompt .name-input { flex: 1; min-width: 160px; font-size: 17px; padding: 10px; }
 
@@ -585,8 +584,6 @@ button { font: inherit; color: inherit; }
 .admin-tile { display: grid; gap: 2px; padding: 14px; border: 2px solid var(--line-strong); border-radius: var(--radius); background: var(--card); }
 .admin-tile strong { font-family: var(--font-head); font-size: 30px; font-weight: 600; color: var(--primary); }
 .admin-tile span { font-size: 13px; color: var(--ink-2); font-weight: 700; }
-.admin-tile.is-special { background: linear-gradient(90deg, #ffe08a, #ffb86b); border-color: #d98a3a; }
-.admin-tile.is-special strong, .admin-tile.is-special span { color: #4a2600; }
 .admin-card { padding: 16px; border: 2px solid var(--line); border-radius: var(--radius); background: var(--card); display: grid; gap: 10px; }
 .admin-card h2 { font-size: 18px; }
 .admin-chart { height: 120px; display: grid; grid-template-columns: repeat(30, 1fr); gap: 3px; align-items: end; }
