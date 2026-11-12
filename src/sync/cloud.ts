@@ -1,4 +1,4 @@
-import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
+import type { Session, SupabaseClient } from '@supabase/supabase-js';
 import { mergeState, type SyncedState } from '../domain/merge';
 
 /**
@@ -11,27 +11,43 @@ const key = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 
 export const cloudEnabled = !!(url && key);
 
-let client: SupabaseClient | null = null;
-export function cloud(): SupabaseClient | null {
-  if (!cloudEnabled) return null;
-  client ??= createClient(url!, key!, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'ohrly-auth' },
+/**
+ * The client, loaded on first use. The library is a separate download, so the first screen does not
+ * wait for it.
+ */
+let client: Promise<SupabaseClient | null> | null = null;
+export function cloud(): Promise<SupabaseClient | null> {
+  if (!cloudEnabled) return Promise.resolve(null);
+  client ??= import('@supabase/supabase-js').then(({ createClient }) =>
+    createClient(url!, key!, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true, storageKey: 'ohrly-auth' },
+    }),
+  ).catch(() => {
+    client = null; // A failed download can be retried later.
+    return null;
   });
   return client;
 }
 
 export async function currentSession(): Promise<Session | null> {
-  const c = cloud();
+  const c = await cloud();
   if (!c) return null;
   const { data } = await c.auth.getSession();
   return data.session;
 }
 
 export function onAuthChange(cb: (session: Session | null) => void): () => void {
-  const c = cloud();
-  if (!c) return () => {};
-  const { data } = c.auth.onAuthStateChange((_event, session) => cb(session));
-  return () => data.subscription.unsubscribe();
+  let stopped = false;
+  let stop = () => {};
+  void cloud().then((c) => {
+    if (!c || stopped) return;
+    const { data } = c.auth.onAuthStateChange((_event, session) => cb(session));
+    stop = () => data.subscription.unsubscribe();
+  });
+  return () => {
+    stopped = true;
+    stop();
+  };
 }
 
 /** True when a request never reached the server, as opposed to the server saying no. */
@@ -58,7 +74,7 @@ function homeUrl(): string {
 }
 
 export async function signUp(email: string, password: string) {
-  const c = cloud();
+  const c = await cloud();
   if (!c) throw new Error('Accounts are not set up');
   const { data, error } = await withRetry(async () => {
     const r = await c.auth.signUp({ email, password, options: { emailRedirectTo: homeUrl() } });
@@ -71,7 +87,7 @@ export async function signUp(email: string, password: string) {
 }
 
 export async function signIn(email: string, password: string) {
-  const c = cloud();
+  const c = await cloud();
   if (!c) throw new Error('Accounts are not set up');
   const { error } = await withRetry(async () => {
     const r = await c.auth.signInWithPassword({ email, password });
@@ -82,19 +98,19 @@ export async function signIn(email: string, password: string) {
 }
 
 export async function resetPassword(email: string) {
-  const c = cloud();
+  const c = await cloud();
   if (!c) throw new Error('Accounts are not set up');
   const { error } = await c.auth.resetPasswordForEmail(email, { redirectTo: homeUrl() });
   if (error) throw error;
 }
 
 export async function signOut() {
-  await cloud()?.auth.signOut();
+  await (await cloud())?.auth.signOut();
 }
 
 /** Deletes the account and its saved progress, through a database function only the owner can call. */
 export async function deleteAccount() {
-  const c = cloud();
+  const c = await cloud();
   if (!c) return;
   const { error } = await c.rpc('delete_my_account');
   if (error) throw error;
@@ -102,7 +118,7 @@ export async function deleteAccount() {
 }
 
 export async function pull(userId: string): Promise<SyncedState | null> {
-  const c = cloud();
+  const c = await cloud();
   if (!c) return null;
   const { data, error } = await c.from('progress').select('data').eq('user_id', userId).maybeSingle();
   if (error) throw error;
@@ -110,7 +126,7 @@ export async function pull(userId: string): Promise<SyncedState | null> {
 }
 
 export async function push(userId: string, state: SyncedState): Promise<void> {
-  const c = cloud();
+  const c = await cloud();
   if (!c) return;
   const { error } = await c
     .from('progress')

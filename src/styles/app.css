@@ -395,6 +395,25 @@ button { font: inherit; color: inherit; }
 .done-foot { padding: 14px 16px calc(16px + env(safe-area-inset-bottom)); max-width: 680px; width: 100%; margin: 0 auto; }
 .streak-flame { position: relative; color: var(--flame); display: grid; place-items: center; }
 .streak-num { position: absolute; bottom: 14px; font-family: var(--font-head); font-size: 36px; color: #fff; }
+.week-row { display: flex; justify-content: center; gap: 8px; margin: 18px auto 6px; padding: 12px 14px; border: 2px solid var(--line); border-radius: 18px; background: var(--card); width: max-content; max-width: 100%; }
+.week-day { display: grid; justify-items: center; gap: 6px; color: var(--ink-2); font-weight: 800; }
+.week-day small { font-size: 13px; }
+.week-dot { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--line); color: #fff; }
+.week-day.is-active .week-dot { background: var(--flame); box-shadow: 0 3px 0 color-mix(in srgb, var(--flame) 70%, #000); }
+.week-day.is-today small { color: var(--flame); }
+.week-day.is-today:not(.is-active) .week-dot { border: 2px dashed var(--flame); background: transparent; }
+.week-day.is-future .week-dot { opacity: .45; }
+.done-badge-milestone { background: #fff1c7; color: #8a5a00; margin-top: 10px; }
+.done-badge-rest { background: var(--primary-soft); color: var(--primary); margin-top: 10px; }
+.streak-next { margin-top: 10px; color: var(--ink-2); font-weight: 700; }
+.streak-nudge { display: flex; align-items: center; gap: 12px; margin: 0 auto 18px; padding: 12px 14px; max-width: 520px; border: 2px solid color-mix(in srgb, var(--flame) 45%, var(--line)); border-bottom-width: 4px; border-radius: 18px; background: color-mix(in srgb, var(--flame) 9%, var(--card)); }
+.streak-nudge.is-start { border-color: var(--line-strong); background: var(--card); }
+.streak-nudge.is-late { border-color: var(--flame); background: color-mix(in srgb, var(--flame) 18%, var(--card)); }
+.streak-nudge-flame { color: var(--flame); display: grid; flex: none; }
+.streak-nudge.is-start .streak-nudge-flame { color: var(--locked-ink); }
+.streak-nudge-text { flex: 1; display: grid; gap: 2px; min-width: 0; }
+.streak-nudge-text small { color: var(--ink-2); font-weight: 600; }
+.streak-nudge .btn { flex: none; }
 .confetti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
 .confetti span { position: absolute; top: 0; display: block; }
 

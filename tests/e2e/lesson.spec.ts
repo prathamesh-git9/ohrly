@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { expect, test, type Page } from '@playwright/test';
+import type { Page } from '@playwright/test';
+import { expect, test } from './silent';
 import { tokenize } from '../../src/domain/check';
 import type { Course, Sentence, Word } from '../../src/domain/types';
 
@@ -171,22 +172,6 @@ async function playPerfectly(page: Page, courseId: string) {
 }
 
 /** Records every spoken text: the only way a test can know what a listening exercise said. */
-async function recordSpeech(page: Page) {
-  await page.addInitScript(() => {
-    const realPlay = HTMLMediaElement.prototype.play;
-    HTMLMediaElement.prototype.play = function () {
-      return realPlay.call(this).catch(() => undefined) as Promise<void>;
-    };
-    if ('speechSynthesis' in window) {
-      const realSpeak = window.speechSynthesis.speak.bind(window.speechSynthesis);
-      window.speechSynthesis.speak = (u: SpeechSynthesisUtterance) => {
-        (window as unknown as { __said: string }).__said = u.text;
-        realSpeak(u);
-      };
-    }
-  });
-}
-
 /** Forces browser-voice playback so the spoken text is observable, whatever audio is installed. */
 async function forceBrowserVoice(page: Page) {
   await page.route('**/audio/*/manifest.json', (r) => r.fulfill({ json: {} }));
@@ -197,6 +182,7 @@ test('new learner onboards and sees the path with one open lesson', async ({ pag
   await expect(page.locator('.chapter-head').first()).toBeVisible();
   await expect(page.locator('.path-node.is-current')).toHaveCount(1);
   await expect(page.locator('.path-node.is-locked').first()).toBeVisible();
+  await expect(page.locator('.streak-nudge.is-start')).toBeVisible(); // No streak yet: invited to start one.
   await page.screenshot({ path: 'test-results/path.png' });
   const noScroll = await page.evaluate(
     () => document.documentElement.scrollWidth <= document.documentElement.clientWidth,
@@ -212,7 +198,6 @@ test('German speakers get a German interface', async ({ page }) => {
 
 for (const [courseId, label] of [['en-de', /German/], ['de-en', /Englisch/]] as const) {
   test(`${courseId}: a perfect lesson finishes, unlocks the next, and pays exactly once`, async ({ page }) => {
-    await recordSpeech(page);
     await forceBrowserVoice(page);
     await onboard(page, label);
     await startCurrentLesson(page);
@@ -232,8 +217,12 @@ for (const [courseId, label] of [['en-de', /German/], ['de-en', /Englisch/]] as 
 
     await page.locator('.done-foot .btn').click(); // Stats, then the streak screen.
     await expect(page.locator('.streak-flame')).toBeVisible();
+    await expect(page.locator('.week-day.is-today.is-active')).toHaveCount(1); // Today ticked on the week row.
+    await expect(page.locator('.streak-next')).toBeVisible(); // Distance to the first milestone.
+    await page.screenshot({ path: `test-results/${courseId}-streak.png` });
     await page.locator('.done-foot .btn').click();
     await expect(page.locator('.path')).toBeVisible();
+    await expect(page.locator('.streak-nudge')).toHaveCount(0); // Today is done, so no reminder.
     await expect(page.locator('.path-node.is-done')).toHaveCount(1);
     await expect(page.locator('.path-node.is-current')).toHaveCount(1);
   });
@@ -242,7 +231,6 @@ for (const [courseId, label] of [['en-de', /German/], ['de-en', /Englisch/]] as 
 for (const [courseId, label] of [['en-de', /German/], ['de-en', /Englisch/]] as const) {
   test(`${courseId}: every lesson type can be answered correctly, including the chapter test`, async ({ page }) => {
     test.setTimeout(420_000);
-    await recordSpeech(page);
     await forceBrowserVoice(page);
     await onboard(page, label);
     const seen = new Set<string>();
@@ -262,7 +250,6 @@ for (const [courseId, label] of [['en-de', /German/], ['de-en', /Englisch/]] as 
 }
 
 test('a wrong answer costs a heart, shows the answer and comes back later', async ({ page }) => {
-  await recordSpeech(page);
   await forceBrowserVoice(page);
   await onboard(page, /German/);
   await startCurrentLesson(page);
@@ -291,7 +278,6 @@ test('a wrong answer costs a heart, shows the answer and comes back later', asyn
 });
 
 test('running out of hearts never dead-ends: practice earns one back for free', async ({ page }) => {
-  await recordSpeech(page);
   await forceBrowserVoice(page);
   await onboard(page, /German/);
   await startCurrentLesson(page);

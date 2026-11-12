@@ -85,6 +85,52 @@ export function displayedStreak(state: StreakState, today: string): number {
   return gap - 1 <= state.freezes ? state.count : 0;
 }
 
+/** Streak lengths worth a celebration, and the sparks each one pays. */
+export const STREAK_MILESTONES: ReadonlyMap<number, number> = new Map([
+  [3, 20],
+  [7, 50],
+  [14, 75],
+  [30, 150],
+  [50, 200],
+  [100, 500],
+  [150, 300],
+  [200, 400],
+  [365, 1000],
+  [500, 750],
+  [1000, 2000],
+]);
+
+/** The sparks a streak of this length earns on the day it is reached, or 0 if it is not a milestone. */
+export function milestoneSparks(count: number): number {
+  return STREAK_MILESTONES.get(count) ?? 0;
+}
+
+/** The next milestone above this streak, if any. */
+export function nextMilestone(count: number): number | null {
+  for (const m of STREAK_MILESTONES.keys()) if (m > count) return m;
+  return null;
+}
+
+export type StreakNudge =
+  | { kind: 'done' }
+  /** No streak to protect: invite the learner to start one. */
+  | { kind: 'start' }
+  /** A streak is alive and today is not done yet. `late` from 18:00, when it is more urgent. */
+  | { kind: 'keep'; count: number; late: boolean; covered: boolean };
+
+/**
+ * What the path should say about the streak right now. `covered` means a rest day would save the
+ * streak if today is missed, so the message can be gentler.
+ */
+export function streakNudge(state: StreakState, now: Date): StreakNudge {
+  const today = dayKey(now);
+  if (state.lastDay === today) return { kind: 'done' };
+  const count = displayedStreak(state, today);
+  if (count === 0) return { kind: 'start' };
+  const missedSoFar = daysBetween(state.lastDay!, today) - 1;
+  return { kind: 'keep', count, late: now.getHours() >= 18, covered: state.freezes - missedSoFar > 0 };
+}
+
 export interface HeartState {
   count: number;
   /** When the next heart started regenerating. Null while full. */

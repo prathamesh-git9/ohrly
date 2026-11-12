@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vitest';
 import {
   computeRewards,
   daysBetween,
+  milestoneSparks,
+  nextMilestone,
+  streakNudge,
   displayedStreak,
   gainHeart,
   HEART_REGEN_MS,
@@ -91,5 +94,42 @@ describe('rewards', () => {
     const r = computeRewards({ total: 8, mistakes: 2, seconds: 60, isCheckpoint: false, isReplay: false });
     expect(r.accuracy).toBeCloseTo(0.8);
     expect(r.xp).toBe(10);
+  });
+});
+
+describe('streak milestones and nudges', () => {
+  const base = { count: 5, best: 5, lastDay: '2026-11-11', freezes: 0 };
+  const at = (day: string, hour: number) => {
+    const [y, m, d] = day.split('-').map(Number);
+    return new Date(y!, m! - 1, d!, hour);
+  };
+
+  it('pays sparks only on milestone days and knows the next one', () => {
+    expect(milestoneSparks(7)).toBe(50);
+    expect(milestoneSparks(8)).toBe(0);
+    expect(milestoneSparks(365)).toBe(1000);
+    expect(nextMilestone(5)).toBe(7);
+    expect(nextMilestone(7)).toBe(14);
+    expect(nextMilestone(1000)).toBeNull();
+  });
+
+  it('says nothing once today is done', () => {
+    expect(streakNudge({ ...base, lastDay: '2026-11-12' }, at('2026-11-12', 20))).toEqual({ kind: 'done' });
+  });
+
+  it('asks to keep a live streak, urgently from 6 pm', () => {
+    expect(streakNudge(base, at('2026-11-12', 9))).toEqual({ kind: 'keep', count: 5, late: false, covered: false });
+    expect(streakNudge(base, at('2026-11-12', 18))).toMatchObject({ kind: 'keep', late: true });
+  });
+
+  it('knows when a rest day would cover today', () => {
+    expect(streakNudge({ ...base, freezes: 1 }, at('2026-11-12', 20))).toMatchObject({ covered: true });
+    // Yesterday was already missed and used the only rest day's cover: today is not covered.
+    expect(streakNudge({ ...base, freezes: 1 }, at('2026-11-13', 20))).toMatchObject({ kind: 'keep', covered: false });
+  });
+
+  it('invites a start when there is no streak to keep', () => {
+    expect(streakNudge({ ...base, count: 0, lastDay: null }, at('2026-11-12', 10))).toEqual({ kind: 'start' });
+    expect(streakNudge(base, at('2026-11-14', 10))).toEqual({ kind: 'start' });
   });
 });

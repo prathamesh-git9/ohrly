@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test';
+import { expect, test } from './silent';
 
 /**
  * Talks to the real Supabase project when the build has its settings, and checks the screens

@@ -44,7 +44,7 @@ export function Admin() {
   const [query, setQuery] = useState('');
 
   const load = useCallback(async () => {
-    const c = cloud();
+    const c = await cloud();
     if (!c || !session) return;
     setState('loading');
     const [isAdmin, rows, counts] = await Promise.all([

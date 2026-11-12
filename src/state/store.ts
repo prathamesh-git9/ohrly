@@ -8,6 +8,7 @@ import {
   loseHeart,
   MAX_FREEZES,
   MAX_HEARTS,
+  milestoneSparks,
   recordActivity,
   settleHearts,
   STREAK_FREEZE_COST,
@@ -38,6 +39,10 @@ export interface LessonSummary extends Rewards {
   streakExtended: boolean;
   streakCount: number;
   freezesUsed: number;
+  /** The streak was broken and has restarted at one day. */
+  streakLost: boolean;
+  /** Sparks paid for reaching a streak milestone today, or 0. */
+  milestoneSparks: number;
   dailyGoalReached: boolean;
   heartEarned: boolean;
 }
@@ -131,9 +136,10 @@ export const useStore = create<State>()(
         const before = s.xpByDay[today] ?? 0;
         const after = before + rewards.xp;
         const streak = recordActivity(s.streak, today);
+        const bonus = streak.extended ? milestoneSparks(streak.next.count) : 0;
         set({
           xp: s.xp + rewards.xp,
-          gems: s.gems + rewards.gems,
+          gems: s.gems + rewards.gems + bonus,
           xpByDay: { ...s.xpByDay, [today]: after },
           streak: streak.next,
           perfectLessons: s.perfectLessons + (rewards.perfect ? 1 : 0),
@@ -143,6 +149,8 @@ export const useStore = create<State>()(
           streakExtended: streak.extended,
           streakCount: streak.next.count,
           freezesUsed: streak.freezesUsed,
+          streakLost: streak.lost,
+          milestoneSparks: bonus,
           dailyGoalReached: before < s.dailyGoal && after >= s.dailyGoal,
           heartEarned,
         };

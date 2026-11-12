@@ -56,7 +56,7 @@ async function approximatePlace(): Promise<Place> {
 
 /** Sends the name once per name per browser. Failures are silent: this must never get in the way. */
 export async function registerVisitor(name: string, course: string | null): Promise<void> {
-  const c = cloud();
+  const c = await cloud();
   const s = storage();
   if (!c || !name) return;
   // Automated browsers (test runs, crawlers) are not visitors. Tests that check this flow opt in.
@@ -73,7 +73,7 @@ export async function registerVisitor(name: string, course: string | null): Prom
 
 /** Removes every name this browser has sent. */
 export async function forgetVisitor(): Promise<void> {
-  const c = cloud();
+  const c = await cloud();
   if (!c) return;
   const { error } = await c.rpc('forget_visitor', { p_device: deviceId() });
   if (error) throw error;

@@ -9,6 +9,8 @@ export default defineConfig({
     baseURL: 'http://localhost:4173/',
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
+    // Tests play lesson audio; never let it reach the speakers.
+    launchOptions: { args: ['--mute-audio'] },
   },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1280, height: 800 } } },

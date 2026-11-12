@@ -378,10 +378,10 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
           <motion.div
             key={slot.id}
             className="lesson-stage"
-            initial={{ x: 40, opacity: 0 }}
+            initial={{ x: 28, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -40, opacity: 0, transition: { duration: 0.12, ease: 'easeIn' } }}
-            transition={{ type: 'spring', stiffness: 520, damping: 36 }}
+            exit={{ x: -24, opacity: 0, transition: { duration: 0.16, ease: [0.4, 0, 1, 1] } }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30, mass: 0.9 }}
           >
             <ExerciseView ex={slot.ex} ctx={ctx} />
           </motion.div>
@@ -394,10 +394,10 @@ export function Lesson({ course, spec, t }: { course: Course; spec: LessonSpec; 
             <motion.div
               className="feedback"
               role="status"
-              initial={{ y: 16, opacity: 0 }}
+              initial={{ y: 24, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.18 }}
+              exit={{ y: 12, opacity: 0, transition: { duration: 0.14 } }}
+              transition={{ type: 'spring', stiffness: 340, damping: 30 }}
             >
               <FeedbackBody verdict={verdict} slot={slot} praise={praise} course={course} t={t} />
             </motion.div>

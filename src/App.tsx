@@ -1,6 +1,6 @@
 import { BookOpen, Dumbbell, Flame, Sparkle, Heart, Home as HomeIcon, Target, User, Zap } from 'lucide-react';
-import { MotionConfig } from 'motion/react';
-import { useEffect, useState } from 'react';
+import { motion, MotionConfig } from 'motion/react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { setSfxEnabled } from './audio/sfx';
 import { setVoicesEnabled } from './audio/speech';
 import { Fenn } from './components/Fenn';
@@ -10,11 +10,7 @@ import { dayKey, displayedStreak } from './domain/gamify';
 import type { Course } from './domain/types';
 import { browserLang, translator, type Translate } from './i18n';
 import { navigate, useRoute } from './router';
-import { Exam } from './screens/Exam';
 import { Home } from './screens/Home';
-import { Legal } from './screens/Legal';
-import { Account } from './screens/Account';
-import { Admin } from './screens/Admin';
 import { AchievementToasts, LevelScale, ShareButton, StreakModal } from './components/Social';
 import { useCloud, useCloudSyncEngine } from './sync/useCloudSync';
 import { cloudEnabled } from './sync/cloud';
@@ -22,11 +18,39 @@ import { registerVisitor } from './sync/visitors';
 import { AnimatePresence } from 'motion/react';
 import { Share2, UserPlus } from 'lucide-react';
 import { Lesson, type LessonSpec } from './screens/Lesson';
-import { Practice } from './screens/Practice';
-import { Profile } from './screens/Profile';
 import { Welcome } from './screens/Welcome';
-import { WordList } from './screens/WordList';
 import { useStore } from './state/store';
+
+// Screens most visits never open are separate downloads, so the path appears sooner.
+const Exam = lazy(() => import('./screens/Exam').then((m) => ({ default: m.Exam })));
+const Legal = lazy(() => import('./screens/Legal').then((m) => ({ default: m.Legal })));
+const Account = lazy(() => import('./screens/Account').then((m) => ({ default: m.Account })));
+const Admin = lazy(() => import('./screens/Admin').then((m) => ({ default: m.Admin })));
+const Practice = lazy(() => import('./screens/Practice').then((m) => ({ default: m.Practice })));
+const Profile = lazy(() => import('./screens/Profile').then((m) => ({ default: m.Profile })));
+const WordList = lazy(() => import('./screens/WordList').then((m) => ({ default: m.WordList })));
+
+/** Fetches the split-off screens once the browser is idle, so opening a tab later is instant. */
+function preloadScreens() {
+  const load = () => {
+    void import('./screens/Practice');
+    void import('./screens/Profile');
+    void import('./screens/WordList');
+    void import('./screens/Exam');
+  };
+  const idle = (window as unknown as { requestIdleCallback?: (cb: () => void) => void }).requestIdleCallback;
+  if (idle) idle(load);
+  else window.setTimeout(load, 2000);
+}
+
+/** Shown for the moment a split-off screen is downloading. */
+function ScreenLoading() {
+  return (
+    <div className="center-screen" aria-busy="true">
+      <Fenn mood="think" size={90} />
+    </div>
+  );
+}
 
 function useCourse(id: string | null) {
   const [state, setState] = useState<{ id: string; course: Course } | null>(null);
@@ -226,6 +250,10 @@ export function App() {
     return () => window.clearInterval(timer);
   }, [refreshHearts]);
 
+  useEffect(() => {
+    if (onboarded) preloadScreens();
+  }, [onboarded]);
+
   const lang = courseId ? courseInfo(courseId).from : undefined;
   useEffect(() => {
     if (lang) document.documentElement.lang = lang;
@@ -270,7 +298,17 @@ export function App() {
         );
       view = (
         <Shell route={route} course={course} t={t}>
-          {page}
+          <Suspense fallback={<ScreenLoading />}>
+            {/* A soft fade between tabs instead of a hard cut. */}
+            <motion.div
+              key={route}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.22, ease: 'easeOut' }}
+            >
+              {page}
+            </motion.div>
+          </Suspense>
         </Shell>
       );
     }
@@ -278,7 +316,7 @@ export function App() {
 
   return (
     <MotionConfig reducedMotion="user">
-      {view}
+      <Suspense fallback={<ScreenLoading />}>{view}</Suspense>
       {course && <AchievementToasts t={translator(course.from)} />}
     </MotionConfig>
   );
