@@ -63,7 +63,11 @@ export function Home({ course, t }: { course: Course; t: Translate }) {
   const currentRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    currentRef.current?.scrollIntoView({ block: 'center' });
+    // Only jump when the current lesson is off-screen, so the top of the path stays in view for new learners.
+    const el = currentRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > window.innerHeight - 120) el.scrollIntoView({ block: 'center' });
   }, []);
 
   useEffect(() => {

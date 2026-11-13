@@ -218,6 +218,9 @@ const en = {
   nudgeLate: 'Your {n}-day streak ends at midnight! One quick lesson saves it.',
   nudgeCovered: 'A rest day will cover today if you miss it, but a lesson keeps it growing.',
   nudgeGo: 'Go',
+  close: 'Close',
+  accountPitchTitle: 'Save your progress',
+  accountPitchBody: 'Create a free account to keep your streak safe and learn on any device.',
   goalReached: 'Daily goal reached!',
   heartEarned: 'You earned back a heart.',
 
@@ -507,6 +510,9 @@ const de: Record<UiKey, string> = {
   nudgeLate: 'Deine {n}-Tage-Serie endet um Mitternacht! Eine kurze Lektion rettet sie.',
   nudgeCovered: 'Ein Ruhetag deckt heute ab, falls du aussetzt, aber eine Lektion lässt sie wachsen.',
   nudgeGo: 'Los',
+  close: 'Schließen',
+  accountPitchTitle: 'Fortschritt sichern',
+  accountPitchBody: 'Erstelle ein kostenloses Konto, damit deine Serie sicher ist und du auf jedem Gerät lernen kannst.',
   goalReached: 'Tagesziel erreicht!',
   heartEarned: 'Du hast dir ein Herz zurückverdient.',
 

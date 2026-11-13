@@ -9,6 +9,8 @@ import {
   Zap,
 } from 'lucide-react';
 import { AnimatePresence } from 'motion/react';
+import { ChevronRight, CloudUpload } from 'lucide-react';
+import { useCloud } from '../sync/useCloudSync';
 import { useMemo, useRef, useState, type ChangeEvent } from 'react';
 import { AchievementGrid, LevelScale } from '../components/Social';
 import { Btn, Flag, Modal } from '../components/ui';
@@ -94,11 +96,22 @@ export function Profile({ course, t }: { course: Course; t: Translate }) {
     { label: t('gems'), value: state.gems, Icon: Gem },
   ];
 
+  const { session } = useCloud();
+
   return (
     <div className="page profile-page">
       <h1 className="page-title">{t('navProfile')}</h1>
       <LevelScale course={course} t={t} />
-      <a className="account-row" href="#/account">{t('account')}</a>
+      {cloudEnabled && (
+        <a className="account-row" href="#/account">
+          <CloudUpload size={26} />
+          <span>
+            <strong>{session ? t('account') : t('accountPitchTitle')}</strong>
+            <small>{session ? session.user.email : t('accountPitchBody')}</small>
+          </span>
+          <ChevronRight size={22} />
+        </a>
+      )}
 
       <section className="profile-section" aria-labelledby="profile-stats">
         <h2 id="profile-stats">{t('yourStats')}</h2>
